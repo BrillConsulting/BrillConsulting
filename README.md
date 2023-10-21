@@ -15,22 +15,22 @@ I am a data analysis and AI enthusiast with years of industry experience. My pro
 ## 💼 Projects
 
 ### 📊 Data Analysis
--  Data analysis and visualization of real estate prices using Python and libraries like Pandas and Seaborn.
+-  Data analysis and visualization
 
 ### 🤖 Machine Learning
--  ML model for classifying movie reviews using Scikit-Learn and TensorFlow.
+-  ML model 
 
 ### 📝 Natural Language Processing
--  Natural language processing in action - detecting fake news.
+-  Natural language processing in action 
 
 ### 📷 Computer Vision
--  Utilizing OpenCV and neural networks for object recognition in images.
+-  Utilizing OpenCV and neural networks 
 
 ### ☁️ MLOps
--  An example MLOps pipeline based on Docker and Kubernetes containers.
+-  An example MLOps pipeline 
 
 ### 🏗️ Data Architecture
--  Description of a data architecture project for real-time processing and analysis.
+-  Data architecture project
 
 ## 🚀 How to Run Projects
 In each project, you'll find detailed instructions on how to run and test the project. Check the README in each project to learn more.
