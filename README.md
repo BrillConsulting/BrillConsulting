@@ -15,27 +15,27 @@ Jestem pasjonatem analizy danych i AI z wieloletnim doświadczeniem w branży. M
 ## 💼 Projekty
 
 ### 📊 Analiza Danych
-- **Ceny Nieruchomości:** Analiza i wizualizacja cen nieruchomości przy użyciu narzędzi Python i bibliotek takich jak Pandas i Seaborn.
+- Analiza i wizualizacja cen nieruchomości przy użyciu narzędzi Python i bibliotek takich jak Pandas i Seaborn.
 
 ### 🤖 Machine Learning
-- **Klasyfikacja Recenzji Filmowych:** Model ML do klasyfikacji recenzji filmowych, wykorzystujący Scikit-Learn i TensorFlow.
+-  Model ML do klasyfikacji recenzji filmowych, wykorzystujący Scikit-Learn i TensorFlow.
 
 ### 📝 Natural Language Processing
-- **Detekcja Fałszywych Wiadomości:** Przetwarzanie języka naturalnego w akcji - wykrywanie fałszywych wiadomości.
+-  Przetwarzanie języka naturalnego w akcji - wykrywanie fałszywych wiadomości.
 
 ### 📷 Computer Vision
-- **Rozpoznawanie Obiektów na Zdjęciach:** OpenCV i sieci neuronowe do rozpoznawania obiektów na zdjęciach.
+-  OpenCV i sieci neuronowe do rozpoznawania obiektów na zdjęciach.
 
 ### ☁️ MLOps
-- **Pipeline Uczenia Maszynowego z Docker i Kubernetes:** Przykład pipeline MLOps oparty na kontenerach Docker i Kubernetes.
+-  Przykład pipeline MLOps oparty na kontenerach Docker i Kubernetes.
 
 ### 🏗️ Data Architecture
-- **Architektura Danych dla Analizy w Czasie Rzeczywistym:** Opis projektu architektury danych do przetwarzania i analizy w czasie rzeczywistym.
+-  Opis projektu architektury danych do przetwarzania i analizy w czasie rzeczywistym.
 
 ## 🚀 Jak Uruchomić Projekty
 W każdym z projektów znajdziesz szczegółowe instrukcje dotyczące uruchamiania i testowania projektu. Sprawdź README w danym projekcie, aby dowiedzieć się więcej.
 
 ## 📧 Kontakt
-Jeśli masz pytania, sugestie lub chciałbyś ze mną nawiązać kontakt w sprawie współpracy, śmiało pisz na [adres e-mail](mailto:twoj@email.com) lub odwiedź [mój profil LinkedIn](https://www.linkedin.com/in/twoje-imie).
+Jeśli masz pytania, sugestie lub chciałbyś ze mną nawiązać kontakt w sprawie współpracy, śmiało pisz na [adres e-mail](mailto:clientbrill@gmail.com) lub odwiedź [mój profil LinkedIn](https://www.linkedin.com/in/brillconsulting).
 
 Dziękuję za odwiedzenie mojego repozytorium!
