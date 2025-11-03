@@ -10,30 +10,14 @@
 
 ## 📋 About Me
 
-I am a data analysis and AI enthusiast with years of industry experience. My projects are not just about technology; they tell stories through data.
+I'm an AI Consultant and Data Scientist passionate about turning data into strategy.  
+For me, artificial intelligence is not just about algorithms — it's about **understanding context, solving problems, and creating value that lasts**.
 
-## 💼 Projects
+With years of experience across AI, MLOps, and advanced analytics, I bridge the gap between technology and business impact.  
+I design intelligent systems that empower organizations to make smarter, faster, and more ethical decisions.
 
-### 📊 Data Analysis
--  Data analysis and visualization
+When I'm not training models, I’m usually training minds — sharing knowledge, mentoring teams, and building the next generation of data-driven leaders.
 
-### 🤖 Machine Learning
--  ML model 
-
-### 📝 Natural Language Processing
--  Natural language processing in action 
-
-### 📷 Computer Vision
--  Utilizing OpenCV and neural networks 
-
-### ☁️ MLOps
--  An example MLOps pipeline 
-
-### 🏗️ Data Architecture
--  Data architecture project
-
-## 🚀 How to Run Projects
-In each project, you'll find detailed instructions on how to run and test the project. Check the README in each project to learn more.
 
 ## 📧 Contact
 If you have questions, suggestions, or would like to get in touch with me for collaboration, don't hesitate to email me at [email address](clientbrill@gmail.com) or visit [my LinkedIn profile](https://www.linkedin.com/in/brillconsulting).
