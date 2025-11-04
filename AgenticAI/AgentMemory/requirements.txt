@@ -1,0 +1,4 @@
+# No external dependencies required for basic functionality
+# Optional: Add vector database for semantic search
+# chromadb>=0.4.0
+# faiss-cpu>=1.7.0

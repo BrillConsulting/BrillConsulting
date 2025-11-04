@@ -88,7 +88,7 @@ Professional data visualization projects with interactive dashboards and publica
 
 ---
 
-### 🔬 [Data Science Portfolio](DataScience/)
+###  [Data Science Portfolio](DataScience/)
 
 Comprehensive data science toolkit covering the full analytics lifecycle:
 
@@ -105,7 +105,7 @@ Comprehensive data science toolkit covering the full analytics lifecycle:
 
 ---
 
-### 🤖 [LLM (Large Language Models) Portfolio](LLM/)
+###  [LLM (Large Language Models) Portfolio](LLM/)
 
 Comprehensive LLM toolkit from chatbots to fine-tuning and evaluation:
 
@@ -122,7 +122,7 @@ Comprehensive LLM toolkit from chatbots to fine-tuning and evaluation:
 
 ---
 
-### ⚙️ [MLOps (ML Operations) Portfolio](MLOps/)
+###  [MLOps (ML Operations) Portfolio](MLOps/)
 
 Production ML operations covering the full ML lifecycle:
 
@@ -139,7 +139,7 @@ Production ML operations covering the full ML lifecycle:
 
 ---
 
-### 🏗️ [Data Architecture Portfolio](DataArchitecture/)
+###  [Data Architecture Portfolio](DataArchitecture/)
 
 Enterprise data architecture from ETL to governance:
 
@@ -153,6 +153,23 @@ Enterprise data architecture from ETL to governance:
 **Technologies:** Pandas, SQLAlchemy, PyArrow, NumPy
 
 **[Explore Data Architecture Projects →](DataArchitecture/)**
+
+---
+
+###  [Agentic AI Portfolio](AgenticAI/)
+
+Advanced AI agent systems with autonomous capabilities and intelligent orchestration:
+
+#### Projects:
+1. **Autonomous Agent** - Self-directed planning, execution, and reflection
+2. **Multi-Agent System** - Coordinated collaboration and consensus mechanisms
+3. **Agent Memory** - Long-term and short-term memory with consolidation
+4. **Tool Calling** - Function calling framework with validation and chaining
+5. **Agent Orchestration** - Complex workflow management (sequential, parallel, conditional)
+
+**Technologies:** Python, Type Hints, Modular Design
+
+**[Explore Agentic AI Projects →](AgenticAI/)**
 
 ---
 
