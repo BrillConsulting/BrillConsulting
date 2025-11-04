@@ -1,0 +1,4 @@
+# No external dependencies required for basic functionality
+# Optional: Add communication libraries as needed
+# redis>=4.0.0
+# pika>=1.3.0
