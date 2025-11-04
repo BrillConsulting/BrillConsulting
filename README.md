@@ -20,16 +20,16 @@ When I'm not training models, I'm usually training minds — sharing knowledge, 
 
 ## 🎯 Featured Projects
 
-### 🖼️ [Computer Vision Portfolio](ComputerVision/)
+### [Computer Vision Portfolio](ComputerVision/)
 
 Professional Computer Vision projects showcasing state-of-the-art deep learning solutions:
 
 #### Projects:
-1. **🎯 Object Detection** - Real-time detection with YOLOv8 (80+ classes, 60+ FPS)
-2. **👤 Face Recognition** - Advanced enrollment and identification system (99.38% accuracy)
-3. **🎨 Image Segmentation** - Semantic & instance segmentation with DeepLabV3+ and Mask R-CNN
-4. **📝 OCR** - Multi-language text recognition (80+ languages supported)
-5. **🖼️ Image Classification** - State-of-the-art classification with 12+ models (1000 ImageNet classes)
+1. **Object Detection** - Real-time detection with YOLOv8 (80+ classes, 60+ FPS)
+2. **Face Recognition** - Advanced enrollment and identification system (99.38% accuracy)
+3. **Image Segmentation** - Semantic & instance segmentation with DeepLabV3+ and Mask R-CNN
+4. **OCR** - Multi-language text recognition (80+ languages supported)
+5. **Image Classification** - State-of-the-art classification with 12+ models (1000 ImageNet classes)
 
 **Technologies:** PyTorch, YOLOv8, OpenCV, EasyOCR, Transformers
 
@@ -42,11 +42,11 @@ Professional Computer Vision projects showcasing state-of-the-art deep learning 
 Classic Machine Learning algorithms with production-ready implementations and automatic model selection:
 
 #### Projects:
-1. **📈 Regression Analysis** - Linear, Ridge, Lasso, Polynomial regression with hyperparameter tuning
-2. **🎯 Classification Models** - 7 algorithms including SVM, Random Forest, Gradient Boosting
-3. **🎨 Clustering** - K-Means, DBSCAN, Hierarchical with automatic cluster selection
-4. **📈 Time Series Forecasting** - ARIMA, SARIMA, Exponential Smoothing
-5. **🎭 Ensemble Methods** - Bagging, Boosting, Voting, Stacking techniques
+1. **Regression Analysis** - Linear, Ridge, Lasso, Polynomial regression with hyperparameter tuning
+2. **Classification Models** - 7 algorithms including SVM, Random Forest, Gradient Boosting
+3. **Clustering** - K-Means, DBSCAN, Hierarchical with automatic cluster selection
+4. **Time Series Forecasting** - ARIMA, SARIMA, Exponential Smoothing
+5. **Ensemble Methods** - Bagging, Boosting, Voting, Stacking techniques
 
 **Technologies:** scikit-learn, statsmodels, pandas, matplotlib
 
@@ -59,11 +59,11 @@ Classic Machine Learning algorithms with production-ready implementations and au
 NLP projects covering text analysis, entity extraction, and language understanding:
 
 #### Projects:
-1. **📝 Text Classification** - Sentiment analysis with Naive Bayes, Logistic Regression, SVM
-2. **🏷️ Named Entity Recognition** - Extract persons, organizations, locations using spaCy
-3. **📚 Topic Modeling** - Discover topics with LDA and NMF
-4. **📄 Text Summarization** - Extractive summarization with TF-IDF and TextRank
-5. **✨ Text Generation** - N-gram and Markov chain text generation
+1. **Text Classification** - Sentiment analysis with Naive Bayes, Logistic Regression, SVM
+2. **Named Entity Recognition** - Extract persons, organizations, locations using spaCy
+3. **Topic Modeling** - Discover topics with LDA and NMF
+4. **Text Summarization** - Extractive summarization with TF-IDF and TextRank
+5. **Text Generation** - N-gram and Markov chain text generation
 
 **Technologies:** NLTK, spaCy, scikit-learn, NetworkX
 
