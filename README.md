@@ -156,6 +156,23 @@ Enterprise data architecture from ETL to governance:
 
 ---
 
+### 🤖 [Agentic AI Portfolio](AgenticAI/)
+
+Advanced AI agent systems with autonomous capabilities and intelligent orchestration:
+
+#### Projects:
+1. **Autonomous Agent** - Self-directed planning, execution, and reflection
+2. **Multi-Agent System** - Coordinated collaboration and consensus mechanisms
+3. **Agent Memory** - Long-term and short-term memory with consolidation
+4. **Tool Calling** - Function calling framework with validation and chaining
+5. **Agent Orchestration** - Complex workflow management (sequential, parallel, conditional)
+
+**Technologies:** Python, Type Hints, Modular Design
+
+**[Explore Agentic AI Projects →](AgenticAI/)**
+
+---
+
 ## 📧 Contact
 If you have questions, suggestions, or would like to get in touch with me for collaboration, don't hesitate to email me at [email address](clientbrill@gmail.com) or visit [my LinkedIn profile](https://www.linkedin.com/in/brillconsulting).
 
