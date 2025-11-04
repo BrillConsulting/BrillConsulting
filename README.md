@@ -139,6 +139,23 @@ Production ML operations covering the full ML lifecycle:
 
 ---
 
+### 🏗️ [Data Architecture Portfolio](DataArchitecture/)
+
+Enterprise data architecture from ETL to governance:
+
+#### Projects:
+1. **ETL Pipeline** - Multi-source extraction, transformation, and loading
+2. **Data Warehouse** - Star schema, dimensional modeling, SCD Type 2
+3. **Data Lake** - Multi-zone architecture (raw/curated/refined)
+4. **Data Governance** - Metadata, lineage, compliance tracking
+5. **Data Quality** - Validation rules, profiling, anomaly detection
+
+**Technologies:** Pandas, SQLAlchemy, PyArrow, NumPy
+
+**[Explore Data Architecture Projects →](DataArchitecture/)**
+
+---
+
 ## 📧 Contact
 If you have questions, suggestions, or would like to get in touch with me for collaboration, don't hesitate to email me at [email address](clientbrill@gmail.com) or visit [my LinkedIn profile](https://www.linkedin.com/in/brillconsulting).
 
