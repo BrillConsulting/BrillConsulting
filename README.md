@@ -122,6 +122,23 @@ Comprehensive LLM toolkit from chatbots to fine-tuning and evaluation:
 
 ---
 
+### ⚙️ [MLOps (ML Operations) Portfolio](MLOps/)
+
+Production ML operations covering the full ML lifecycle:
+
+#### Projects:
+1. **Training Pipeline** - Automated end-to-end training with artifact management
+2. **Model Deployment** - FastAPI REST API with Docker containerization
+3. **Model Monitoring** - Data drift detection and performance tracking
+4. **CI/CD Pipeline** - Automated testing, validation, and deployment
+5. **Experiment Tracking** - MLflow-like parameter and metric tracking
+
+**Technologies:** FastAPI, Docker, Pytest, MLflow, SciPy, NumPy
+
+**[Explore MLOps Projects →](MLOps/)**
+
+---
+
 ## 📧 Contact
 If you have questions, suggestions, or would like to get in touch with me for collaboration, don't hesitate to email me at [email address](clientbrill@gmail.com) or visit [my LinkedIn profile](https://www.linkedin.com/in/brillconsulting).
 
