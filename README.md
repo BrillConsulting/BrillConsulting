@@ -190,6 +190,40 @@ Comprehensive Azure cloud solutions and services:
 
 ---
 
+### ☁️ [Google Cloud Platform (GCP) Portfolio](GCP/)
+
+Comprehensive GCP cloud solutions and services:
+
+#### Projects:
+1. **Compute Engine** - VM instances, managed instance groups, autoscaling
+2. **Cloud Functions** - Serverless functions with multiple triggers
+3. **Cloud Storage** - Object storage with lifecycle policies and versioning
+4. **Vertex AI** - Machine learning training and deployment
+5. **Cloud Build** - CI/CD pipelines and automation
+
+**Technologies:** GCP SDK, Cloud Functions, Vertex AI, Cloud Build
+
+**[Explore GCP Projects →](GCP/)**
+
+---
+
+### ☁️ [Amazon Web Services (AWS) Portfolio](AWS/)
+
+Comprehensive AWS cloud solutions and services:
+
+#### Projects:
+1. **EC2** - Elastic compute instances and auto-scaling
+2. **Lambda** - Serverless functions with event triggers
+3. **S3** - Simple Storage Service with versioning and lifecycle policies
+4. **SageMaker** - Machine learning training and deployment
+5. **CodePipeline** - CI/CD automation and multi-stage workflows
+
+**Technologies:** Boto3, AWS Lambda, SageMaker, CodePipeline
+
+**[Explore AWS Projects →](AWS/)**
+
+---
+
 ## 📧 Contact
 If you have questions, suggestions, or would like to get in touch with me for collaboration, don't hesitate to email me at [email address](clientbrill@gmail.com) or visit [my LinkedIn profile](https://www.linkedin.com/in/brillconsulting).
 
