@@ -76,11 +76,11 @@ NLP projects covering text analysis, entity extraction, and language understandi
 Professional data visualization projects with interactive dashboards and publication-ready plots:
 
 #### Projects:
-1. **📈 Interactive Dashboard** - Multi-tab Dash application with real-time filters and KPIs
-2. **📊 Statistical Visualizations** - Publication-ready plots with matplotlib/seaborn (distributions, correlations, regression)
-3. **🗺️ Geographic Visualizations** - Interactive maps with Folium (heatmaps, choropleth, clustering)
-4. **🕸️ Network Visualizations** - Graph analysis with NetworkX (community detection, centrality)
-5. **📉 Time Series Visualizations** - Financial charts with technical indicators (candlestick, Bollinger Bands)
+1. **Interactive Dashboard** - Multi-tab Dash application with real-time filters and KPIs
+2. **Statistical Visualizations** - Publication-ready plots with matplotlib/seaborn (distributions, correlations, regression)
+3. **Geographic Visualizations** - Interactive maps with Folium (heatmaps, choropleth, clustering)
+4. **Network Visualizations** - Graph analysis with NetworkX (community detection, centrality)
+5. **Time Series Visualizations** - Financial charts with technical indicators (candlestick, Bollinger Bands)
 
 **Technologies:** Plotly, Dash, Matplotlib, Seaborn, Folium, NetworkX, Statsmodels
 
