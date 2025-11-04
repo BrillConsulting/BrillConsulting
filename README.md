@@ -88,6 +88,23 @@ Professional data visualization projects with interactive dashboards and publica
 
 ---
 
+### 🔬 [Data Science Portfolio](DataScience/)
+
+Comprehensive data science toolkit covering the full analytics lifecycle:
+
+#### Projects:
+1. **Exploratory Data Analysis** - Automated profiling, distributions, correlations, outliers
+2. **Feature Engineering** - Transformations, encoding, interactions, automated selection
+3. **Data Preprocessing** - Missing values, outliers, cleaning, validation
+4. **A/B Testing** - Statistical tests, sample size, Bayesian analysis
+5. **Predictive Analytics** - End-to-end ML pipeline, model comparison, tuning
+
+**Technologies:** Scikit-learn, Pandas, SciPy, NumPy, Matplotlib, Seaborn
+
+**[Explore Data Science Projects →](DataScience/)**
+
+---
+
 ## 📧 Contact
 If you have questions, suggestions, or would like to get in touch with me for collaboration, don't hesitate to email me at [email address](clientbrill@gmail.com) or visit [my LinkedIn profile](https://www.linkedin.com/in/brillconsulting).
 
