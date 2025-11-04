@@ -1,0 +1,4 @@
+# No external dependencies required for basic functionality
+# Optional: Add workflow orchestration libraries
+# prefect>=2.0.0
+# airflow>=2.5.0
