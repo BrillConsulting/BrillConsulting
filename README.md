@@ -37,6 +37,23 @@ Professional Computer Vision projects showcasing state-of-the-art deep learning 
 
 ---
 
+### 🤖 [Machine Learning Portfolio](MachineLearning/)
+
+Classic Machine Learning algorithms with production-ready implementations and automatic model selection:
+
+#### Projects:
+1. **📈 Regression Analysis** - Linear, Ridge, Lasso, Polynomial regression with hyperparameter tuning
+2. **🎯 Classification Models** - 7 algorithms including SVM, Random Forest, Gradient Boosting
+3. **🎨 Clustering** - K-Means, DBSCAN, Hierarchical with automatic cluster selection
+4. **📈 Time Series Forecasting** - ARIMA, SARIMA, Exponential Smoothing
+5. **🎭 Ensemble Methods** - Bagging, Boosting, Voting, Stacking techniques
+
+**Technologies:** scikit-learn, statsmodels, pandas, matplotlib
+
+**[Explore Machine Learning Projects →](MachineLearning/)**
+
+---
+
 ## 📧 Contact
 If you have questions, suggestions, or would like to get in touch with me for collaboration, don't hesitate to email me at [email address](clientbrill@gmail.com) or visit [my LinkedIn profile](https://www.linkedin.com/in/brillconsulting).
 
