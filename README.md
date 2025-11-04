@@ -88,7 +88,7 @@ Professional data visualization projects with interactive dashboards and publica
 
 ---
 
-### 🔬 [Data Science Portfolio](DataScience/)
+###  [Data Science Portfolio](DataScience/)
 
 Comprehensive data science toolkit covering the full analytics lifecycle:
 
@@ -105,7 +105,7 @@ Comprehensive data science toolkit covering the full analytics lifecycle:
 
 ---
 
-### 🤖 [LLM (Large Language Models) Portfolio](LLM/)
+###  [LLM (Large Language Models) Portfolio](LLM/)
 
 Comprehensive LLM toolkit from chatbots to fine-tuning and evaluation:
 
@@ -122,7 +122,7 @@ Comprehensive LLM toolkit from chatbots to fine-tuning and evaluation:
 
 ---
 
-### ⚙️ [MLOps (ML Operations) Portfolio](MLOps/)
+###  [MLOps (ML Operations) Portfolio](MLOps/)
 
 Production ML operations covering the full ML lifecycle:
 
@@ -139,7 +139,7 @@ Production ML operations covering the full ML lifecycle:
 
 ---
 
-### 🏗️ [Data Architecture Portfolio](DataArchitecture/)
+###  [Data Architecture Portfolio](DataArchitecture/)
 
 Enterprise data architecture from ETL to governance:
 
@@ -156,7 +156,7 @@ Enterprise data architecture from ETL to governance:
 
 ---
 
-### 🤖 [Agentic AI Portfolio](AgenticAI/)
+###  [Agentic AI Portfolio](AgenticAI/)
 
 Advanced AI agent systems with autonomous capabilities and intelligent orchestration:
 
