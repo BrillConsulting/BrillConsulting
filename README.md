@@ -105,6 +105,23 @@ Comprehensive data science toolkit covering the full analytics lifecycle:
 
 ---
 
+### 🤖 [LLM (Large Language Models) Portfolio](LLM/)
+
+Comprehensive LLM toolkit from chatbots to fine-tuning and evaluation:
+
+#### Projects:
+1. **LLM Chatbot** - Conversational AI with history management and streaming
+2. **RAG System** - Retrieval-Augmented Generation for document Q&A
+3. **Fine-Tuning** - Domain adaptation with LoRA/QLoRA
+4. **Prompt Engineering** - Templates, few-shot, chain-of-thought optimization
+5. **LLM Evaluation** - BLEU, ROUGE, benchmarking, model comparison
+
+**Technologies:** OpenAI API, Transformers, PEFT, FAISS, Sentence Transformers
+
+**[Explore LLM Projects →](LLM/)**
+
+---
+
 ## 📧 Contact
 If you have questions, suggestions, or would like to get in touch with me for collaboration, don't hesitate to email me at [email address](clientbrill@gmail.com) or visit [my LinkedIn profile](https://www.linkedin.com/in/brillconsulting).
 
