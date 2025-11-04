@@ -1,0 +1,5 @@
+# Azure SDK for Python (optional)
+# azure-mgmt-compute>=30.0.0
+# azure-mgmt-network>=23.0.0
+# azure-mgmt-storage>=21.0.0
+# azure-identity>=1.14.0
