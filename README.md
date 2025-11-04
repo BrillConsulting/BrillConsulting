@@ -173,6 +173,23 @@ Advanced AI agent systems with autonomous capabilities and intelligent orchestra
 
 ---
 
+### ☁️ [Microsoft Azure Cloud Portfolio](Azure/)
+
+Comprehensive Azure cloud solutions and services:
+
+#### Projects:
+1. **Infrastructure as Code** - Terraform and ARM templates for Azure resources
+2. **Serverless Functions** - Azure Functions with multiple trigger types
+3. **Data Services** - SQL Database, Cosmos DB, Blob Storage, Data Lake
+4. **Machine Learning** - Azure ML workspace, training, and deployment
+5. **DevOps & CI/CD** - Azure DevOps pipelines and automation
+
+**Technologies:** Azure SDK, Terraform, Azure Functions, Azure ML, Azure DevOps
+
+**[Explore Azure Projects →](Azure/)**
+
+---
+
 ## 📧 Contact
 If you have questions, suggestions, or would like to get in touch with me for collaboration, don't hesitate to email me at [email address](clientbrill@gmail.com) or visit [my LinkedIn profile](https://www.linkedin.com/in/brillconsulting).
 
