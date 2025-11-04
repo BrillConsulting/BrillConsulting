@@ -8,7 +8,7 @@
   🌟 **Feel free to explore my projects that combine advanced technologies and creativity.** 🌟
 </p>
 
-## 📋 About Me
+## About Me
 
 I'm an AI Consultant and Data Scientist passionate about turning data into strategy.  
 For me, artificial intelligence is not just about algorithms — it's about **understanding context, solving problems, and creating value that lasts**.
@@ -18,7 +18,7 @@ I design intelligent systems that empower organizations to make smarter, faster,
 
 When I'm not training models, I'm usually training minds — sharing knowledge, mentoring teams, and building the next generation of data-driven leaders.
 
-## 🎯 Featured Projects
+##  Featured Projects
 
 ### [Computer Vision Portfolio](ComputerVision/)
 
@@ -37,7 +37,7 @@ Professional Computer Vision projects showcasing state-of-the-art deep learning 
 
 ---
 
-### 🤖 [Machine Learning Portfolio](MachineLearning/)
+###  [Machine Learning Portfolio](MachineLearning/)
 
 Classic Machine Learning algorithms with production-ready implementations and automatic model selection:
 
@@ -54,7 +54,7 @@ Classic Machine Learning algorithms with production-ready implementations and au
 
 ---
 
-### 🗣️ [Natural Language Processing Portfolio](NaturalLanguageProcessing/)
+###  [Natural Language Processing Portfolio](NaturalLanguageProcessing/)
 
 NLP projects covering text analysis, entity extraction, and language understanding:
 
@@ -71,7 +71,7 @@ NLP projects covering text analysis, entity extraction, and language understandi
 
 ---
 
-### 📊 [Data Visualization Portfolio](DataVisualization/)
+###  [Data Visualization Portfolio](DataVisualization/)
 
 Professional data visualization projects with interactive dashboards and publication-ready plots:
 
