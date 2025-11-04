@@ -54,6 +54,23 @@ Classic Machine Learning algorithms with production-ready implementations and au
 
 ---
 
+### 🗣️ [Natural Language Processing Portfolio](NaturalLanguageProcessing/)
+
+NLP projects covering text analysis, entity extraction, and language understanding:
+
+#### Projects:
+1. **📝 Text Classification** - Sentiment analysis with Naive Bayes, Logistic Regression, SVM
+2. **🏷️ Named Entity Recognition** - Extract persons, organizations, locations using spaCy
+3. **📚 Topic Modeling** - Discover topics with LDA and NMF
+4. **📄 Text Summarization** - Extractive summarization with TF-IDF and TextRank
+5. **✨ Text Generation** - N-gram and Markov chain text generation
+
+**Technologies:** NLTK, spaCy, scikit-learn, NetworkX
+
+**[Explore NLP Projects →](NaturalLanguageProcessing/)**
+
+---
+
 ## 📧 Contact
 If you have questions, suggestions, or would like to get in touch with me for collaboration, don't hesitate to email me at [email address](clientbrill@gmail.com) or visit [my LinkedIn profile](https://www.linkedin.com/in/brillconsulting).
 
