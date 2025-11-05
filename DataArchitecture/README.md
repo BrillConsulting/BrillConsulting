@@ -173,6 +173,91 @@ Enterprise data architecture solutions from ETL pipelines to data governance.
 
 ---
 
+### 11. Data Lineage
+**Description:** End-to-end data lineage tracking and visualization
+
+**Features:**
+- Column-level lineage tracking
+- Impact analysis
+- Lineage visualization
+- Dependency mapping
+- Automated lineage extraction
+- Lineage versioning
+
+**Technologies:** Pandas, NetworkX
+
+**[View Project →](DataLineage/)**
+
+---
+
+### 12. Change Data Capture
+**Description:** Real-time CDC for data synchronization
+
+**Features:**
+- Real-time change detection
+- Log-based CDC
+- Incremental synchronization
+- Change event streaming
+- Schema evolution handling
+- Multiple source support
+
+**Technologies:** Pandas, SQLAlchemy
+
+**[View Project →](ChangeDataCapture/)**
+
+---
+
+### 13. Data Observability
+**Description:** Comprehensive data pipeline monitoring
+
+**Features:**
+- Data quality monitoring
+- Pipeline health tracking
+- Anomaly detection
+- SLA monitoring
+- Alerting and notifications
+- Performance metrics
+
+**Technologies:** Pandas, NumPy
+
+**[View Project →](DataObservability/)**
+
+---
+
+### 14. Data Versioning
+**Description:** Version control for datasets and schemas
+
+**Features:**
+- Dataset versioning
+- Schema versioning
+- Time travel queries
+- Rollback capabilities
+- Change tracking
+- Version comparison
+
+**Technologies:** Pandas, Git-like versioning
+
+**[View Project →](DataVersioning/)**
+
+---
+
+### 15. Schema Registry
+**Description:** Centralized schema management and evolution
+
+**Features:**
+- Schema registration and storage
+- Schema versioning
+- Compatibility checking
+- Schema evolution rules
+- Multiple format support (Avro, JSON, Protobuf)
+- Schema validation
+
+**Technologies:** Pandas, JSON Schema
+
+**[View Project →](SchemaRegistry/)**
+
+---
+
 ## 🚀 Getting Started
 
 Each project contains:
