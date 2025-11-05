@@ -35,8 +35,13 @@ Professional Computer Vision projects showcasing state-of-the-art deep learning 
 8. **Style Transfer** - Neural artistic style transfer with VGG19
 9. **Super Resolution** - AI-powered 4x/8x upscaling with ESRGAN
 10. **Anomaly Detection** - Visual defect detection for quality control
+11. **Image Restoration** - Image denoising and damage repair with deep learning
+12. **Object Tracking** - Advanced multi-object tracking in video sequences (SORT, DeepSORT)
+13. **Scene Recognition** - Scene classification and context understanding (Places365)
+14. **Image Matching** - Feature matching, homography, image alignment (SIFT, RANSAC)
+15. **Depth Estimation** - Monocular depth estimation from single images (MiDaS)
 
-**Technologies:** PyTorch, YOLOv8, OpenCV, EasyOCR, Transformers, MediaPipe, ESRGAN
+**Technologies:** PyTorch, YOLOv8, OpenCV, EasyOCR, Transformers, MediaPipe, ESRGAN, MiDaS, Places365
 
 **[Explore Computer Vision Projects →](ComputerVision/)
 
@@ -57,8 +62,13 @@ Classic Machine Learning algorithms with production-ready implementations and au
 8. **Reinforcement Learning** - Q-Learning, Deep Q-Network, Policy Gradients
 9. **AutoML** - Automated model selection and hyperparameter optimization
 10. **Model Interpretability** - SHAP, LIME, feature importance, partial dependence plots
+11. **Feature Selection** - Automated feature selection with filter, wrapper, embedded methods
+12. **Imbalanced Learning** - SMOTE, ADASYN, class weighting for skewed datasets
+13. **Multi-Task Learning** - Joint learning of multiple related tasks
+14. **Online Learning** - Incremental learning for streaming data
+15. **Meta-Learning** - Learning to learn, few-shot learning approaches
 
-**Technologies:** scikit-learn, statsmodels, pandas, matplotlib, SHAP, LIME, gym
+**Technologies:** scikit-learn, statsmodels, pandas, matplotlib, SHAP, LIME, gym, imbalanced-learn, river
 
 **[Explore Machine Learning Projects →](MachineLearning/)**
 
@@ -79,8 +89,13 @@ NLP projects covering text analysis, entity extraction, and language understandi
 8. **Advanced Text Summarization** - Abstractive summarization with transformers
 9. **Sentiment Analysis** - Multi-class, aspect-based, emotion detection
 10. **Language Modeling** - GPT-style causal language models and text generation
+11. **Named Entity Linking** - Link entities to knowledge bases (Wikipedia, DBpedia)
+12. **Text Clustering** - Hierarchical and k-means document clustering
+13. **Intent Classification** - Intent recognition and classification for chatbots
+14. **Keyphrase Extraction** - Automatic extraction of key terms and concepts (YAKE, RAKE)
+15. **Advanced Text Generation** - GPT-powered creative text generation
 
-**Technologies:** NLTK, spaCy, scikit-learn, NetworkX, Transformers, PyTorch
+**Technologies:** NLTK, spaCy, scikit-learn, NetworkX, Transformers, PyTorch, YAKE
 
 **[Explore NLP Projects →](NaturalLanguageProcessing/)**
 
