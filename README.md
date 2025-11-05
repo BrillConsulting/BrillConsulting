@@ -20,8 +20,6 @@ For me, artificial intelligence is not just about algorithms — it's about **un
 With years of experience across AI, MLOps, and advanced analytics, I bridge the gap between technology and business impact.  
 I design intelligent systems that empower organizations to make smarter, faster, and more ethical decisions.
 
-When I'm not training models, I'm usually training minds — sharing knowledge, mentoring teams, and building the next generation of data-driven leaders.
-
 > "For me, artificial intelligence is not about algorithms, but about building systems that understand context, adapt, and create real value."
 
 ##  Featured Projects
