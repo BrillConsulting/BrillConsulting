@@ -18,6 +18,8 @@ I design intelligent systems that empower organizations to make smarter, faster,
 
 When I'm not training models, I'm usually training minds — sharing knowledge, mentoring teams, and building the next generation of data-driven leaders.
 
+> "For me, artificial intelligence is not about algorithms, but about building systems that understand context, adapt, and create real value."
+
 ##  Featured Projects
 
 ### [Computer Vision Portfolio](ComputerVision/)
