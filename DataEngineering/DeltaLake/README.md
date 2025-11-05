@@ -1,14 +1,30 @@
-# Delta Lake Data Lakehouse
+# 🌊 Delta Lake Manager
 
-ACID transactions and time travel for data lakes.
+**ACID transactions and time travel for data lakes**
 
-## Features
+## Overview
+Delta Lake implementation providing ACID transactions, time travel, and schema evolution for data lakes.
+
+## Key Features
+- Delta table creation with partitioning
 - ACID transactions
-- Time travel (versioning)
+- Time travel and versioning
 - Schema evolution
-- Upserts and deletes
-- Data quality constraints
+- Upserts (merge operations)
+- Optimize and vacuum
+
+## Quick Start
+```python
+from delta_manager import DeltaLakeManager
+
+mgr = DeltaLakeManager()
+table = mgr.create_delta_table({'name': 'events', 'partitions': ['date']})
+query = mgr.time_travel_query('events', version=5)
+```
 
 ## Technologies
-- Delta Lake, Apache Spark
-- Parquet format
+- Delta Lake
+- PySpark
+- ACID transactions
+
+**Author:** Brill Consulting | clientbrill@gmail.com
