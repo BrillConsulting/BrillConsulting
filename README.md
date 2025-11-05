@@ -52,8 +52,13 @@ Classic Machine Learning algorithms with production-ready implementations and au
 3. **Clustering** - K-Means, DBSCAN, Hierarchical with automatic cluster selection
 4. **Time Series Forecasting** - ARIMA, SARIMA, Exponential Smoothing
 5. **Ensemble Methods** - Bagging, Boosting, Voting, Stacking techniques
+6. **Dimensionality Reduction** - PCA, t-SNE, UMAP for feature reduction and visualization
+7. **Anomaly Detection** - Isolation Forest, One-Class SVM, Local Outlier Factor
+8. **Reinforcement Learning** - Q-Learning, Deep Q-Network, Policy Gradients
+9. **AutoML** - Automated model selection and hyperparameter optimization
+10. **Model Interpretability** - SHAP, LIME, feature importance, partial dependence plots
 
-**Technologies:** scikit-learn, statsmodels, pandas, matplotlib
+**Technologies:** scikit-learn, statsmodels, pandas, matplotlib, SHAP, LIME, gym
 
 **[Explore Machine Learning Projects →](MachineLearning/)**
 
@@ -69,8 +74,13 @@ NLP projects covering text analysis, entity extraction, and language understandi
 3. **Topic Modeling** - Discover topics with LDA and NMF
 4. **Text Summarization** - Extractive summarization with TF-IDF and TextRank
 5. **Text Generation** - N-gram and Markov chain text generation
+6. **Machine Translation** - Neural machine translation with transformer models
+7. **Question Answering** - Extractive and abstractive QA systems with BERT/T5
+8. **Advanced Text Summarization** - Abstractive summarization with transformers
+9. **Sentiment Analysis** - Multi-class, aspect-based, emotion detection
+10. **Language Modeling** - GPT-style causal language models and text generation
 
-**Technologies:** NLTK, spaCy, scikit-learn, NetworkX
+**Technologies:** NLTK, spaCy, scikit-learn, NetworkX, Transformers, PyTorch
 
 **[Explore NLP Projects →](NaturalLanguageProcessing/)**
 
@@ -86,8 +96,13 @@ Professional data visualization projects with interactive dashboards and publica
 3. **Geographic Visualizations** - Interactive maps with Folium (heatmaps, choropleth, clustering)
 4. **Network Visualizations** - Graph analysis with NetworkX (community detection, centrality)
 5. **Time Series Visualizations** - Financial charts with technical indicators (candlestick, Bollinger Bands)
+6. **Real-Time Dashboards** - Live streaming data visualization with WebSocket updates
+7. **3D Visualization** - Interactive 3D scatter plots, surface plots, volumetric rendering
+8. **Geospatial Mapping** - Advanced GIS analysis with spatial indexing and routing
+9. **Animated Charts** - Dynamic animations with transitions and keyframe control
+10. **Business Intelligence** - Executive dashboards with drill-down capabilities and KPI tracking
 
-**Technologies:** Plotly, Dash, Matplotlib, Seaborn, Folium, NetworkX, Statsmodels
+**Technologies:** Plotly, Dash, Matplotlib, Seaborn, Folium, NetworkX, Plotly Express, D3.js
 
 **[Explore Data Visualization Projects →](DataVisualization/)**
 
@@ -103,8 +118,13 @@ Comprehensive data science toolkit covering the full analytics lifecycle:
 3. **Data Preprocessing** - Missing values, outliers, cleaning, validation
 4. **A/B Testing** - Statistical tests, sample size, Bayesian analysis
 5. **Predictive Analytics** - End-to-end ML pipeline, model comparison, tuning
+6. **Statistical Modeling** - Linear models, GLM, mixed effects, hierarchical models
+7. **Experiment Design** - DOE, factorial designs, response surface methodology
+8. **Survival Analysis** - Kaplan-Meier, Cox regression, time-to-event modeling
+9. **Bayesian Inference** - MCMC sampling, probabilistic programming with PyMC
+10. **Causal Inference** - Propensity score matching, instrumental variables, DiD
 
-**Technologies:** Scikit-learn, Pandas, SciPy, NumPy, Matplotlib, Seaborn
+**Technologies:** Scikit-learn, Pandas, SciPy, NumPy, Matplotlib, Seaborn, PyMC, Lifelines
 
 **[Explore Data Science Projects →](DataScience/)**
 
@@ -120,8 +140,13 @@ Comprehensive LLM toolkit from chatbots to fine-tuning and evaluation:
 3. **Fine-Tuning** - Domain adaptation with LoRA/QLoRA
 4. **Prompt Engineering** - Templates, few-shot, chain-of-thought optimization
 5. **LLM Evaluation** - BLEU, ROUGE, benchmarking, model comparison
+6. **Agentic Workflows** - Multi-step autonomous agent workflows with reasoning
+7. **Multi-Modal LLM** - Vision + language models for image understanding
+8. **LLM Chaining** - Complex orchestration with sequential and parallel chains
+9. **Prompt Optimization** - Automated prompt tuning and optimization
+10. **LLM Security** - Jailbreak detection, content filtering, safety guardrails
 
-**Technologies:** OpenAI API, Transformers, PEFT, FAISS, Sentence Transformers
+**Technologies:** OpenAI API, Transformers, PEFT, FAISS, Sentence Transformers, LangChain
 
 **[Explore LLM Projects →](LLM/)**
 
@@ -137,8 +162,13 @@ Production ML operations covering the full ML lifecycle:
 3. **Model Monitoring** - Data drift detection and performance tracking
 4. **CI/CD Pipeline** - Automated testing, validation, and deployment
 5. **Experiment Tracking** - MLflow-like parameter and metric tracking
+6. **Feature Store** - Centralized feature management and serving
+7. **Model Versioning** - Model registry with version control and lineage
+8. **A/B Testing** - Experiment framework for model comparison in production
+9. **Data Validation** - Schema validation, data quality checks, drift detection
+10. **Model Governance** - Compliance tracking, audit trails, model explainability
 
-**Technologies:** FastAPI, Docker, Pytest, MLflow, SciPy, NumPy
+**Technologies:** FastAPI, Docker, Pytest, MLflow, SciPy, NumPy, Feast, Great Expectations
 
 **[Explore MLOps Projects →](MLOps/)**
 
@@ -154,8 +184,13 @@ Enterprise data architecture from ETL to governance:
 3. **Data Lake** - Multi-zone architecture (raw/curated/refined)
 4. **Data Governance** - Metadata, lineage, compliance tracking
 5. **Data Quality** - Validation rules, profiling, anomaly detection
+6. **Stream Processing** - Real-time data streams with windowing and aggregations
+7. **Data Catalog** - Metadata management with search and discovery
+8. **Data Mesh** - Domain-oriented decentralized data architecture
+9. **Data Virtualization** - Unified data access layer across sources
+10. **Master Data Management** - Golden records, entity resolution, MDM platform
 
-**Technologies:** Pandas, SQLAlchemy, PyArrow, NumPy
+**Technologies:** Pandas, SQLAlchemy, PyArrow, NumPy, Kafka Streams, Apache Flink
 
 **[Explore Data Architecture Projects →](DataArchitecture/)**
 
@@ -171,8 +206,13 @@ Advanced AI agent systems with autonomous capabilities and intelligent orchestra
 3. **Agent Memory** - Long-term and short-term memory with consolidation
 4. **Tool Calling** - Function calling framework with validation and chaining
 5. **Agent Orchestration** - Complex workflow management (sequential, parallel, conditional)
+6. **Planning Agents** - Goal-oriented planning with hierarchical task networks
+7. **Reactive Agents** - Event-driven agents with real-time decision making
+8. **Learning Agents** - Reinforcement learning for agent improvement
+9. **Swarm Intelligence** - Multi-agent coordination and emergent behavior
+10. **Agent Communication** - Inter-agent messaging with protocols and negotiation
 
-**Technologies:** Python, Type Hints, Modular Design
+**Technologies:** Python, Type Hints, Modular Design, OpenAI Functions, LangChain
 
 **[Explore Agentic AI Projects →](AgenticAI/)**
 
@@ -232,8 +272,13 @@ Comprehensive Azure cloud solutions and services:
 3. **Data Services** - SQL Database, Cosmos DB, Blob Storage, Data Lake
 4. **Machine Learning** - Azure ML workspace, training, and deployment
 5. **DevOps & CI/CD** - Azure DevOps pipelines and automation
+6. **Azure AI** - Cognitive Services integration (Vision, Speech, Language)
+7. **Container Apps** - Serverless containers with auto-scaling
+8. **Azure Monitor** - Application insights, metrics, alerts, log analytics
+9. **Key Vault** - Secret management, key rotation, certificate storage
+10. **Cognitive Services** - Pre-built AI models for vision, speech, language
 
-**Technologies:** Azure SDK, Terraform, Azure Functions, Azure ML, Azure DevOps
+**Technologies:** Azure SDK, Terraform, Azure Functions, Azure ML, Azure DevOps, Azure Monitor
 
 **[Explore Azure Projects →](Azure/)**
 
@@ -249,8 +294,13 @@ Comprehensive GCP cloud solutions and services:
 3. **Cloud Storage** - Object storage with lifecycle policies and versioning
 4. **Vertex AI** - Machine learning training and deployment
 5. **Cloud Build** - CI/CD pipelines and automation
+6. **BigQuery** - Serverless data warehouse with SQL analytics
+7. **Cloud Run** - Fully managed serverless containers
+8. **Pub/Sub** - Asynchronous messaging and event streaming
+9. **Cloud Logging** - Centralized log management and analysis
+10. **Secret Manager** - Secure secret storage and access control
 
-**Technologies:** GCP SDK, Cloud Functions, Vertex AI, Cloud Build
+**Technologies:** GCP SDK, Cloud Functions, Vertex AI, Cloud Build, BigQuery, Cloud Run
 
 **[Explore GCP Projects →](GCP/)**
 
@@ -266,8 +316,13 @@ Comprehensive AWS cloud solutions and services:
 3. **S3** - Simple Storage Service with versioning and lifecycle policies
 4. **SageMaker** - Machine learning training and deployment
 5. **CodePipeline** - CI/CD automation and multi-stage workflows
+6. **ECS** - Elastic Container Service for Docker orchestration
+7. **EventBridge** - Serverless event bus for event-driven architectures
+8. **DynamoDB** - NoSQL database with single-digit millisecond latency
+9. **CloudWatch** - Monitoring, logging, metrics, and alarms
+10. **Secrets Manager** - Secrets rotation and lifecycle management
 
-**Technologies:** Boto3, AWS Lambda, SageMaker, CodePipeline
+**Technologies:** Boto3, AWS Lambda, SageMaker, CodePipeline, ECS, EventBridge, DynamoDB
 
 **[Explore AWS Projects →](AWS/)**
 
