@@ -173,6 +173,23 @@ Advanced AI agent systems with autonomous capabilities and intelligent orchestra
 
 ---
 
+### [Data Engineering Portfolio](DataEngineering/)
+
+Modern data engineering stack covering distributed processing, data platforms, and container orchestration:
+
+#### Projects:
+1. **Databricks** - Workspace management, Delta Lake, MLflow, Auto Loader streaming
+2. **Snowflake** - Data warehouse, Snowpipe, streams, zero-copy cloning
+3. **Kubernetes** - Container orchestration, deployments, services, autoscaling
+4. **Docker** - Image building, container management, multi-stage builds, docker-compose
+5. **Apache Spark** - Distributed processing, Spark SQL, Structured Streaming
+
+**Technologies:** Databricks, Snowflake, Kubernetes, Docker, PySpark, Delta Lake
+
+**[Explore Data Engineering Projects →](DataEngineering/)**
+
+---
+
 ### ☁️ [Microsoft Azure Cloud Portfolio](Azure/)
 
 Comprehensive Azure cloud solutions and services:
