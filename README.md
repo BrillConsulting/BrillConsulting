@@ -190,6 +190,23 @@ Modern data engineering stack covering distributed processing, data platforms, a
 
 ---
 
+### [Deep Learning Frameworks Portfolio](DeepLearning/)
+
+Comprehensive deep learning implementations across industry-leading frameworks:
+
+#### Projects:
+1. **PyTorch** - CNN, RNN/LSTM, Transformers, training loops, GPU support
+2. **TensorFlow/Keras** - Sequential/Functional API, transfer learning, callbacks
+3. **FastAI** - Vision, text, tabular learners, progressive resizing, one-cycle
+4. **Hugging Face Transformers** - Pre-trained models, NLP pipelines, fine-tuning
+5. **JAX/Flax** - High-performance computing, JIT, vmap, pmap, XLA
+
+**Technologies:** PyTorch, TensorFlow, FastAI, Transformers, JAX, Flax
+
+**[Explore Deep Learning Projects →](DeepLearning/)**
+
+---
+
 ### ☁️ [Microsoft Azure Cloud Portfolio](Azure/)
 
 Comprehensive Azure cloud solutions and services:

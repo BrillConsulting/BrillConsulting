@@ -1,0 +1,5 @@
+fastai>=2.7.0
+torch>=2.0.0
+torchvision>=0.15.0
+pillow>=10.0.0
+pandas>=2.0.0
