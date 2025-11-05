@@ -1,6 +1,7 @@
 """
 GitLab API Management
-Complete GitLab API integration for projects, issues, merge requests, and more
+Author: BrillConsulting
+Description: Complete GitLab API integration for projects, issues, merge requests, and more
 """
 
 import json

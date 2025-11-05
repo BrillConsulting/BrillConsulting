@@ -1,6 +1,7 @@
 """
 GitLab Runner Management
-Complete GitLab Runner registration, configuration, and monitoring
+Author: BrillConsulting
+Description: Complete GitLab Runner registration, configuration, and monitoring
 """
 
 import json

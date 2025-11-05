@@ -1,6 +1,7 @@
 """
 Kubernetes Orchestration & Management
-Complete Kubernetes cluster management and application deployment
+Author: BrillConsulting
+Description: Complete Kubernetes cluster management and application deployment
 """
 
 import json

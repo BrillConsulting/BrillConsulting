@@ -1,6 +1,7 @@
 """
 Linux Shell Scripting
-Advanced Bash scripting and automation toolkit
+Author: BrillConsulting
+Description: Advanced Bash scripting and automation toolkit
 """
 
 import json
