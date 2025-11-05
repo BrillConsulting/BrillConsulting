@@ -84,6 +84,91 @@ Advanced AI agent systems with autonomous capabilities, multi-agent coordination
 
 ---
 
+### 6. Planning Agents
+**Description:** Advanced planning and reasoning agents
+
+**Features:**
+- Hierarchical planning
+- Goal decomposition
+- Plan optimization
+- Constraint satisfaction
+- Plan execution monitoring
+- Replanning on failure
+
+**Technologies:** Python
+
+**[View Project →](PlanningAgents/)**
+
+---
+
+### 7. Reactive Agents
+**Description:** Fast, real-time reactive agents
+
+**Features:**
+- Condition-action rules
+- Sensor processing
+- Immediate response
+- Behavior trees
+- Subsumption architecture
+- Priority-based actions
+
+**Technologies:** Python
+
+**[View Project →](ReactiveAgents/)**
+
+---
+
+### 8. Learning Agents
+**Description:** Agents that improve through experience
+
+**Features:**
+- Reinforcement learning
+- Experience replay
+- Reward optimization
+- Q-learning integration
+- Policy improvement
+- Transfer learning
+
+**Technologies:** Python
+
+**[View Project →](LearningAgents/)**
+
+---
+
+### 9. Swarm Intelligence
+**Description:** Collective behavior and emergent intelligence
+
+**Features:**
+- Particle swarm optimization
+- Ant colony algorithms
+- Flocking behavior
+- Collective decision making
+- Distributed problem solving
+- Emergence patterns
+
+**Technologies:** Python
+
+**[View Project →](SwarmIntelligence/)**
+
+---
+
+### 10. Agent Communication
+**Description:** Protocol and messaging for multi-agent systems
+
+**Features:**
+- Message passing protocols
+- FIPA ACL standards
+- Negotiation protocols
+- Information sharing
+- Coordination messages
+- Broadcast and unicast
+
+**Technologies:** Python
+
+**[View Project →](AgentCommunication/)**
+
+---
+
 ## 🚀 Getting Started
 
 Each project contains:

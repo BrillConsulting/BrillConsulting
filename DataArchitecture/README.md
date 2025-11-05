@@ -88,6 +88,91 @@ Enterprise data architecture solutions from ETL pipelines to data governance.
 
 ---
 
+### 6. Stream Processing
+**Description:** Real-time data streaming and processing
+
+**Features:**
+- Event stream ingestion
+- Real-time transformations
+- Windowing and aggregations
+- Event time processing
+- State management
+- Backpressure handling
+
+**Technologies:** Kafka, Pandas, PyArrow
+
+**[View Project →](StreamProcessing/)**
+
+---
+
+### 7. Data Catalog
+**Description:** Centralized metadata and data discovery
+
+**Features:**
+- Asset registration
+- Business glossary
+- Technical metadata
+- Search and discovery
+- Tagging and classification
+- Impact analysis
+
+**Technologies:** Pandas, SQLAlchemy
+
+**[View Project →](DataCatalog/)**
+
+---
+
+### 8. Data Mesh
+**Description:** Decentralized domain-driven data architecture
+
+**Features:**
+- Domain-oriented ownership
+- Data products
+- Self-serve infrastructure
+- Federated governance
+- Product thinking
+- Computational policies
+
+**Technologies:** Pandas, FastAPI
+
+**[View Project →](DataMesh/)**
+
+---
+
+### 9. Data Virtualization
+**Description:** Unified access layer for distributed data
+
+**Features:**
+- Federated queries
+- Data abstraction layer
+- Query optimization
+- Caching strategies
+- Multiple source integration
+- Virtual views
+
+**Technologies:** SQLAlchemy, Pandas
+
+**[View Project →](DataVirtualization/)**
+
+---
+
+### 10. Master Data Management
+**Description:** Single source of truth for critical business entities
+
+**Features:**
+- Entity resolution
+- Golden record creation
+- Data matching and merging
+- Survivorship rules
+- Hierarchy management
+- Data stewardship workflows
+
+**Technologies:** Pandas, FuzzyWuzzy
+
+**[View Project →](MasterDataManagement/)**
+
+---
+
 ## 🚀 Getting Started
 
 Each project contains:

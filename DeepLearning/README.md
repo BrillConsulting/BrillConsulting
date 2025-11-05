@@ -102,6 +102,91 @@ Comprehensive deep learning implementations across the industry's leading framew
 
 ---
 
+### 6. Keras
+**Description:** High-level neural networks API
+
+**Features:**
+- Simple model building
+- Layer abstraction
+- Built-in preprocessing
+- Model serialization
+- Callbacks and metrics
+- Multi-backend support
+
+**Technologies:** Keras, TensorFlow
+
+**[View Project →](Keras/)**
+
+---
+
+### 7. XGBoost
+**Description:** Gradient boosting framework
+
+**Features:**
+- Classification and regression
+- Tree-based models
+- Feature importance
+- Cross-validation
+- Early stopping
+- GPU acceleration
+
+**Technologies:** XGBoost, scikit-learn
+
+**[View Project →](XGBoost/)**
+
+---
+
+### 8. LightGBM
+**Description:** Fast gradient boosting framework
+
+**Features:**
+- High performance and efficiency
+- Low memory usage
+- Categorical feature support
+- GPU support
+- Distributed training
+- Feature binning
+
+**Technologies:** LightGBM, scikit-learn
+
+**[View Project →](LightGBM/)**
+
+---
+
+### 9. ONNX
+**Description:** Open Neural Network Exchange format
+
+**Features:**
+- Model conversion between frameworks
+- PyTorch to ONNX export
+- TensorFlow to ONNX export
+- ONNX Runtime inference
+- Model optimization
+- Cross-platform deployment
+
+**Technologies:** ONNX, ONNX Runtime
+
+**[View Project →](ONNX/)**
+
+---
+
+### 10. MLflow
+**Description:** ML lifecycle management platform
+
+**Features:**
+- Experiment tracking
+- Model registry
+- Model deployment
+- Parameter logging
+- Artifact storage
+- Model versioning
+
+**Technologies:** MLflow, Python
+
+**[View Project →](MLflow/)**
+
+---
+
 ## 🚀 Getting Started
 
 Each project contains:

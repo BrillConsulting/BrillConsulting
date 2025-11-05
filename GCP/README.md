@@ -82,6 +82,91 @@ Comprehensive GCP cloud solutions covering compute, serverless, storage, AI/ML, 
 
 ---
 
+### 6. BigQuery
+**Description:** Serverless data warehouse and analytics
+
+**Features:**
+- Dataset and table management
+- SQL query execution
+- Streaming inserts
+- Data loading from GCS
+- Scheduled queries
+- BI Engine integration
+
+**Technologies:** BigQuery
+
+**[View Project →](BigQuery/)**
+
+---
+
+### 7. Cloud Run
+**Description:** Serverless container platform
+
+**Features:**
+- Container deployment
+- Auto-scaling
+- Traffic management
+- Service configuration
+- Cloud Run Jobs
+- Private services
+
+**Technologies:** Cloud Run
+
+**[View Project →](CloudRun/)**
+
+---
+
+### 8. Pub/Sub
+**Description:** Asynchronous messaging service
+
+**Features:**
+- Topic and subscription management
+- Message publishing
+- Pull and push subscriptions
+- Dead letter topics
+- Ordering keys
+- Schema validation
+
+**Technologies:** Pub/Sub
+
+**[View Project →](PubSub/)**
+
+---
+
+### 9. Cloud Logging
+**Description:** Logging and monitoring solution
+
+**Features:**
+- Log entry creation
+- Log queries and filtering
+- Sink configuration
+- Log-based metrics
+- Alert policies
+- Log analysis
+
+**Technologies:** Cloud Logging
+
+**[View Project →](CloudLogging/)**
+
+---
+
+### 10. Secret Manager
+**Description:** Secret storage and management
+
+**Features:**
+- Secret creation and versioning
+- Secret access control
+- Automatic secret rotation
+- Audit logging
+- Regional replication
+- Integration with Cloud Run/Functions
+
+**Technologies:** Secret Manager
+
+**[View Project →](SecretManager/)**
+
+---
+
 ## 🚀 Getting Started
 
 Each project contains:
