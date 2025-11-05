@@ -173,6 +173,96 @@ Comprehensive Azure cloud solutions covering infrastructure, serverless, data se
 
 ---
 
+### 11. Azure OpenAI
+**Description:** Azure OpenAI Service for advanced AI capabilities
+
+**Features:**
+- GPT-4 and GPT-3.5 integration
+- Chat completion API
+- Embeddings generation
+- Fine-tuning support
+- Streaming responses
+- Token usage tracking
+- Content filtering
+
+**Technologies:** Azure OpenAI Service, GPT Models
+
+**[View Project →](AzureOpenAI/)**
+
+---
+
+### 12. Cosmos DB
+**Description:** Globally distributed NoSQL database
+
+**Features:**
+- Multi-model database (SQL, MongoDB, Cassandra)
+- Horizontal partitioning
+- Global distribution
+- Automatic indexing
+- Change feed processing
+- Conflict resolution
+- Stored procedures and triggers
+
+**Technologies:** Azure Cosmos DB, NoSQL
+
+**[View Project →](CosmosDB/)**
+
+---
+
+### 13. Azure Synapse Analytics
+**Description:** Analytics service for big data and data warehousing
+
+**Features:**
+- Serverless SQL pools
+- Dedicated SQL pools
+- Apache Spark integration
+- Data integration pipelines
+- Data exploration and visualization
+- Security and compliance
+- Performance optimization
+
+**Technologies:** Azure Synapse, SQL, Apache Spark
+
+**[View Project →](AzureSynapse/)**
+
+---
+
+### 14. Service Bus
+**Description:** Enterprise messaging service for application integration
+
+**Features:**
+- Queue management
+- Topic and subscription
+- Message scheduling
+- Dead letter handling
+- Session-based messaging
+- Duplicate detection
+- Transaction support
+
+**Technologies:** Azure Service Bus, Message Queue
+
+**[View Project →](ServiceBus/)**
+
+---
+
+### 15. Logic Apps
+**Description:** Workflow automation and integration platform
+
+**Features:**
+- Visual workflow designer
+- 400+ connectors
+- Scheduled workflows
+- Event-driven automation
+- Enterprise integration
+- B2B workflows
+- Monitoring and diagnostics
+
+**Technologies:** Azure Logic Apps, Integration Services
+
+**[View Project →](LogicApps/)**
+
+---
+
 ## 🚀 Getting Started
 
 Each project contains:
@@ -196,12 +286,16 @@ python project_file.py
 
 ## 🎯 Key Azure Services
 
-- **Compute**: VMs, App Service, Functions
-- **Storage**: Blob, Data Lake, SQL, Cosmos DB
-- **AI/ML**: Azure Machine Learning
-- **DevOps**: Azure DevOps, Pipelines
-- **Networking**: VNets, Subnets
-- **Management**: Resource Groups, ARM Templates
+- **Compute**: VMs, App Service, Container Apps, Functions
+- **Storage**: Blob, Data Lake, SQL, Cosmos DB, Table Storage
+- **AI/ML**: Azure OpenAI, Machine Learning, Cognitive Services, Azure AI
+- **Integration**: Service Bus, Logic Apps, Event Grid
+- **DevOps**: Azure DevOps, Pipelines, CI/CD
+- **Analytics**: Synapse Analytics, Data Services
+- **Security**: Key Vault, Managed Identities
+- **Monitoring**: Azure Monitor, Application Insights
+- **Networking**: VNets, Subnets, Container Networking
+- **Management**: Resource Groups, ARM Templates, Terraform
 
 ## 📚 Technologies Used
 
