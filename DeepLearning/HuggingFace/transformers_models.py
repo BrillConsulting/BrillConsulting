@@ -1,6 +1,7 @@
 """
 Hugging Face Transformers Models
-State-of-the-art transformers for NLP, vision, audio, and multimodal tasks
+Author: BrillConsulting
+Description: State-of-the-art transformers for NLP, vision, audio, and multimodal tasks
 """
 
 import json

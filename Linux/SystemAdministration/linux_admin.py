@@ -1,6 +1,7 @@
 """
 Linux System Administration
-Complete Linux system administration and management toolkit
+Author: BrillConsulting
+Description: Complete Linux system administration and management toolkit
 """
 
 import json

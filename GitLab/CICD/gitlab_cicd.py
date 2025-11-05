@@ -1,6 +1,7 @@
 """
 GitLab CI/CD Pipeline Management
-Complete GitLab CI/CD pipeline creation and management
+Author: BrillConsulting
+Description: Complete GitLab CI/CD pipeline creation and management
 """
 
 import json
