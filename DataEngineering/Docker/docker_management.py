@@ -1,6 +1,7 @@
 """
 Docker Container Management
-Complete Docker containerization and image management
+Author: BrillConsulting
+Description: Complete Docker containerization and image management
 """
 
 import json

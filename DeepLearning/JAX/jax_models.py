@@ -1,6 +1,7 @@
 """
 JAX/Flax Deep Learning Models
-High-performance numerical computing and neural networks with JAX
+Author: BrillConsulting
+Description: High-performance numerical computing and neural networks with JAX
 """
 
 import json

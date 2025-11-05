@@ -1,6 +1,7 @@
 """
 Linux Process Management
-Complete process monitoring, management, and control toolkit
+Author: BrillConsulting
+Description: Complete process monitoring, management, and control toolkit
 """
 
 import json

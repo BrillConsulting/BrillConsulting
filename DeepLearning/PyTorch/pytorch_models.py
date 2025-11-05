@@ -1,6 +1,7 @@
 """
 PyTorch Deep Learning Models
-Complete PyTorch implementation for neural networks and deep learning
+Author: BrillConsulting
+Description: Complete PyTorch implementation for neural networks and deep learning
 """
 
 import json

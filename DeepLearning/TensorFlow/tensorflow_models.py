@@ -1,6 +1,7 @@
 """
 TensorFlow/Keras Deep Learning Models
-Complete TensorFlow implementation for neural networks and deep learning
+Author: BrillConsulting
+Description: Complete TensorFlow implementation for neural networks and deep learning
 """
 
 import json

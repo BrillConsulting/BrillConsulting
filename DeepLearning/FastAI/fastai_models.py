@@ -1,6 +1,7 @@
 """
 FastAI Deep Learning Models
-High-level deep learning with FastAI library
+Author: BrillConsulting
+Description: High-level deep learning with FastAI library
 """
 
 import json

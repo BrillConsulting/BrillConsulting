@@ -1,6 +1,7 @@
 """
 Snowflake Data Warehouse Management
-Complete Snowflake integration for data warehousing and analytics
+Author: BrillConsulting
+Description: Complete Snowflake integration for data warehousing and analytics
 """
 
 import json

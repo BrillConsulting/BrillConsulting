@@ -1,6 +1,7 @@
 """
 Databricks Workspace Management
-Complete Databricks integration for data processing, ML, and analytics
+Author: BrillConsulting
+Description: Complete Databricks integration for data processing, ML, and analytics
 """
 
 import json

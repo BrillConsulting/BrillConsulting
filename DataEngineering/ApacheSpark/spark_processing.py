@@ -1,6 +1,7 @@
 """
 Apache Spark Distributed Data Processing
-Complete PySpark implementation for big data analytics
+Author: BrillConsulting
+Description: Complete PySpark implementation for big data analytics
 """
 
 import json
