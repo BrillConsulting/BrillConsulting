@@ -1,14 +1,31 @@
-# Terraform Infrastructure as Code
+# 🏗️ Terraform Infrastructure as Code
 
-Infrastructure provisioning and management with Terraform.
+**Multi-cloud infrastructure provisioning**
 
-## Features
-- Infrastructure as Code
-- Multi-cloud support (AWS, Azure, GCP)
+## Overview
+Terraform implementation for automated infrastructure provisioning across AWS, Azure, and GCP.
+
+## Key Features
+- Multi-cloud support
+- Resource provisioning
 - State management
-- Module reusability
-- Plan and apply workflow
+- Module creation
+- Plan and apply workflows
+- Variable management
+
+## Quick Start
+```python
+from terraform_manager import TerraformManager
+
+mgr = TerraformManager('production')
+config = mgr.create_infrastructure({'provider': 'aws'})
+mgr.plan()
+mgr.apply()
+```
 
 ## Technologies
-- Terraform, HCL
-- Cloud providers (AWS, Azure, GCP)
+- Terraform HCL
+- AWS/Azure/GCP APIs
+- Infrastructure as Code
+
+**Author:** Brill Consulting | clientbrill@gmail.com

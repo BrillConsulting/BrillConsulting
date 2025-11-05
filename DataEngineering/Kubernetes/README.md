@@ -1,57 +1,95 @@
-# Kubernetes Orchestration & Management
+# ☸️ Kubernetes Orchestration
 
-Complete Kubernetes cluster management and application deployment.
+**Container orchestration at scale**
 
-## Features
+## Overview
+Complete Kubernetes implementation for deploying, scaling, and managing containerized applications with deployments, services, and advanced features.
 
-- **Deployment Management**: Create and manage deployments with rolling updates
-- **Service Discovery**: ClusterIP, NodePort, LoadBalancer services
-- **Configuration**: ConfigMaps and Secrets management
-- **Ingress**: HTTP/HTTPS routing with TLS termination
-- **Storage**: PersistentVolumes and PersistentVolumeClaims
-- **Autoscaling**: HorizontalPodAutoscaler with CPU/memory metrics
-- **Batch Jobs**: Job and CronJob scheduling
-- **Scaling**: Dynamic replica management
+## Key Features
 
-## Technologies
+### Workload Management
+- Deployments with rolling updates
+- StatefulSets for stateful apps
+- DaemonSets for node-level services
+- Jobs and CronJobs
 
-- Kubernetes API
-- kubectl
-- YAML manifests
-- Container orchestration
+### Networking & Discovery
+- Services (ClusterIP, NodePort, LoadBalancer)
+- Ingress with TLS termination
+- Network policies
+- DNS-based service discovery
 
-## Usage
+### Configuration & Storage
+- ConfigMaps for configuration
+- Secrets for sensitive data
+- PersistentVolumes and PVCs
+- StorageClasses
+
+### Scaling & Reliability
+- HorizontalPodAutoscaler
+- VerticalPodAutoscaler
+- Resource quotas and limits
+- Liveness and readiness probes
+
+## Quick Start
 
 ```python
-from k8s_orchestration import KubernetesOrchestrator
+from k8s_orchestration import K8sOrchestrator
 
-# Initialize orchestrator
-k8s = KubernetesOrchestrator(
-    cluster_name='production-cluster',
-    namespace='production'
-)
+orchestrator = K8sOrchestrator()
 
 # Create deployment
-deployment = k8s.create_deployment({
+deployment = orchestrator.create_deployment({
     'name': 'web-app',
+    'image': 'nginx:latest',
     'replicas': 3,
-    'containers': [{
-        'name': 'web',
-        'image': 'nginx:1.21',
-        'ports': [{'containerPort': 80}]
-    }]
+    'port': 80
 })
 
 # Create service
-service = k8s.create_service({
+service = orchestrator.create_service({
     'name': 'web-service',
     'type': 'LoadBalancer',
-    'selector': {'app': 'web'}
+    'selector': {'app': 'web-app'},
+    'port': 80
+})
+
+# Create HPA
+hpa = orchestrator.create_hpa({
+    'name': 'web-hpa',
+    'deployment': 'web-app',
+    'min_replicas': 3,
+    'max_replicas': 10,
+    'cpu_percent': 70
+})
+
+# Create ingress
+ingress = orchestrator.create_ingress({
+    'name': 'web-ingress',
+    'host': 'app.example.com',
+    'service': 'web-service',
+    'tls': True
 })
 ```
 
-## Demo
+## Use Cases
+- **Microservices** - Orchestrate containers
+- **Auto-Scaling** - Dynamic resource allocation
+- **High Availability** - Self-healing applications
+- **Cloud-Native Apps** - Modern application architecture
 
+## Technologies
+- Kubernetes API
+- kubectl
+- YAML manifests
+- Helm concepts
+
+## Installation
 ```bash
+pip install -r requirements.txt
 python k8s_orchestration.py
 ```
+
+---
+
+**Author:** Brill Consulting | clientbrill@gmail.com

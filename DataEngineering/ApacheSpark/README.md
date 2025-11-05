@@ -1,59 +1,82 @@
-# Apache Spark Distributed Data Processing
+# ⚡ Apache Spark Distributed Processing
 
-Complete PySpark implementation for big data analytics and processing.
+**Big data processing and analytics at scale**
 
-## Features
+## Overview
+Complete PySpark implementation for distributed data processing with support for batch, streaming, SQL, and machine learning workloads.
 
-- **Spark Session**: Configure and create Spark sessions with optimizations
-- **Data Reading**: Read from multiple formats (Parquet, JSON, CSV, Avro, Delta)
-- **Transformations**: Filter, map, withColumn, dropDuplicates operations
-- **Aggregations**: GroupBy, window functions, complex aggregations
-- **Joins**: Inner, outer, left, right, cross joins
-- **Spark SQL**: Execute distributed SQL queries
-- **Streaming**: Structured Streaming with Kafka, Delta Lake
-- **Optimization**: Caching, repartitioning, coalescing, adaptive query execution
-- **Data Writing**: Write with partitioning and compression
+## Key Features
 
-## Technologies
+### Data Processing
+- Multi-format reading (Parquet, JSON, CSV, Delta, Avro)
+- Advanced transformations and aggregations
+- Complex joins (inner, outer, left, right, cross)
+- Window functions and partitioning
 
-- Apache Spark 3.5+
-- PySpark
-- Delta Lake
-- Structured Streaming
+### Performance
+- Spark SQL with Catalyst optimizer
+- Adaptive query execution
+- Caching and persistence
+- Broadcast joins for small tables
+- Repartitioning strategies
 
-## Usage
+### Streaming
+- Structured Streaming with Kafka
+- Windowed aggregations
+- Watermarking for late data
+- Exactly-once processing
+
+## Quick Start
 
 ```python
 from spark_processing import SparkProcessor
 
-# Initialize processor
-spark = SparkProcessor(
-    app_name='DataProcessingApp',
-    master='spark://master:7077'
-)
+processor = SparkProcessor('MyApp', 'local[*]')
 
-# Create session
-session = spark.create_spark_session({
-    'spark.sql.adaptive.enabled': 'true',
-    'spark.executor.memory': '4g'
+# Create Spark session
+session = processor.create_spark_session({
+    'spark.sql.adaptive.enabled': 'true'
 })
 
 # Read data
-df = spark.read_data({
-    'name': 'sales_data',
+df = processor.read_data({
+    'name': 'customers',
     'format': 'parquet',
-    'path': 's3://bucket/sales/'
+    'path': '/data/customers'
 })
 
-# Transform and aggregate
-transformed = spark.transform_data({
-    'source_df': 'sales_data',
-    'transformations': ['filter', 'withColumn']
+# Transform
+transformed = processor.transform_data({
+    'source_df': 'customers',
+    'transformations': ['filter', 'aggregate']
+})
+
+# Write results
+processor.write_data({
+    'df_name': 'transformed',
+    'format': 'delta',
+    'path': '/output/'
 })
 ```
 
-## Demo
+## Use Cases
+- **ETL Pipelines** - Process terabytes of data
+- **Real-Time Analytics** - Streaming data processing
+- **ML Feature Engineering** - Large-scale feature preparation
+- **Data Lake Processing** - Query massive datasets
 
+## Technologies
+- Apache Spark 3.5+
+- PySpark
+- Delta Lake integration
+- Structured Streaming
+
+## Installation
 ```bash
+pip install -r requirements.txt
 python spark_processing.py
 ```
+
+---
+
+**Author:** Brill Consulting | clientbrill@gmail.com
