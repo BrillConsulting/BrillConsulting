@@ -1,0 +1,2 @@
+# SwarmIntelligence
+Professional swarmintelligence implementation

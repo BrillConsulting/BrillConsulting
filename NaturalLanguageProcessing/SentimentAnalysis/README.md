@@ -1,0 +1,2 @@
+# SentimentAnalysis
+Advanced sentimentanalysis implementation
