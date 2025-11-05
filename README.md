@@ -241,6 +241,36 @@ Comprehensive AWS cloud solutions and services:
 
 ---
 
+### [Linux Administration Portfolio](Linux/)
+
+Comprehensive Linux system administration, automation, and process management:
+
+#### Projects:
+1. **System Administration** - User/group management, systemd, firewall, cron, SSH
+2. **Shell Scripting** - Bash automation, backups, monitoring, deployment scripts
+3. **Process Management** - Process monitoring, control, resource tracking
+
+**Technologies:** Linux, systemd, Bash, psutil, UFW/iptables, cron
+
+**[Explore Linux Projects →](Linux/)**
+
+---
+
+### [GitLab DevOps Portfolio](GitLab/)
+
+Complete GitLab CI/CD, API integration, and runner management:
+
+#### Projects:
+1. **CI/CD Pipelines** - .gitlab-ci.yml generation, Docker/K8s pipelines, multi-stage workflows
+2. **API Management** - Projects, issues, merge requests, webhooks, automation
+3. **Runner Management** - Runner registration, configuration, monitoring (Docker/Shell/K8s)
+
+**Technologies:** GitLab CI/CD, GitLab API, GitLab Runner, Docker, Kubernetes
+
+**[Explore GitLab Projects →](GitLab/)**
+
+---
+
 ## 📧 Contact
 If you have questions, suggestions, or would like to get in touch with me for collaboration, don't hesitate to email me at [email address](clientbrill@gmail.com) or visit [my LinkedIn profile](https://www.linkedin.com/in/brillconsulting).
 
