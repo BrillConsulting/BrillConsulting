@@ -1,0 +1,7 @@
+# Terraform Infrastructure as Code Dependencies
+# Terraform is not a Python package - install from https://www.terraform.io/
+
+# Python SDK for cloud providers (optional)
+# boto3>=1.28.0  # AWS
+# azure-mgmt>=4.0.0  # Azure
+# google-cloud>=1.0.0  # GCP

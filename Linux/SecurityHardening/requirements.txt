@@ -1,0 +1,8 @@
+# Linux Security Hardening Dependencies
+
+# No external Python packages required for basic functionality
+# Standard library only
+
+# Optional: For advanced security scanning
+# lynis  # Security auditing tool (not Python package)
+# clamav  # Antivirus scanning
