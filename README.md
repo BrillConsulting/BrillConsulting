@@ -448,6 +448,13 @@ Complete GitLab CI/CD, API integration, and runner management:
 
 ---
 
+### 📊 Tools & Tech Stack
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=python,pytorch,azure,aws,gcp,docker,kubernetes,fastapi,git,githubactions,postgresql,vscode" />
+</p>
+
+---
+
 ## 📧 Contact
 If you have questions, suggestions, or would like to get in touch with me for collaboration, don't hesitate to email me at [email address](clientbrill@gmail.com) or visit [my LinkedIn profile](https://www.linkedin.com/in/brillconsulting).
 
