@@ -30,10 +30,15 @@ Professional Computer Vision projects showcasing state-of-the-art deep learning 
 3. **Image Segmentation** - Semantic & instance segmentation with DeepLabV3+ and Mask R-CNN
 4. **OCR** - Multi-language text recognition (80+ languages supported)
 5. **Image Classification** - State-of-the-art classification with 12+ models (1000 ImageNet classes)
+6. **Video Analysis** - Multi-object tracking, motion analysis, keyframe extraction
+7. **Pose Estimation** - 2D/3D human pose detection and skeleton tracking
+8. **Style Transfer** - Neural artistic style transfer with VGG19
+9. **Super Resolution** - AI-powered 4x/8x upscaling with ESRGAN
+10. **Anomaly Detection** - Visual defect detection for quality control
 
-**Technologies:** PyTorch, YOLOv8, OpenCV, EasyOCR, Transformers
+**Technologies:** PyTorch, YOLOv8, OpenCV, EasyOCR, Transformers, MediaPipe, ESRGAN
 
-**[Explore Computer Vision Projects →](ComputerVision/)**
+**[Explore Computer Vision Projects →](ComputerVision/)
 
 ---
 
