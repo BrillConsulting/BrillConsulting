@@ -1,0 +1,2 @@
+# GitLab Container Registry Dependencies
+# Standard library only

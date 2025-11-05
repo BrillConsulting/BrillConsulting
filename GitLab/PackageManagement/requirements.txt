@@ -1,0 +1,2 @@
+# GitLab Package Management Dependencies
+# Standard library only
