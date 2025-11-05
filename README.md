@@ -1,5 +1,14 @@
 <h1 align="center">🚀 AI Consultant & Data Scientist Portfolio 🚀</h1>
 
+<h1 align="center">👋 Hi, I'm Ava from Brill Consulting</h1>
+<p align="center">
+  <b>AI Consultant | Data Scientist | MLOps Architect</b><br>
+  🚀 Transforming ideas into scalable, ethical, and intelligent systems.<br><br>
+  🌐 <a href="https://www.linkedin.com/in/brillconsulting">LinkedIn</a> • 
+  💼 <a href="https://github.com/BrillConsulting">GitHub</a> • 
+  📧 <a href="mailto:clientbrill@gmail.com">Contact</a>
+</p>
+
 <p align="center">
   Welcome to my GitHub Portfolio! Here you'll find my passions and skills in the fields of Data Science, Machine Learning, NLP, Computer Vision, MLOps, and Data Architecture.
 </p>
