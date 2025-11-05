@@ -224,8 +224,13 @@ Enterprise data architecture from ETL to governance:
 8. **Data Mesh** - Domain-oriented decentralized data architecture
 9. **Data Virtualization** - Unified data access layer across sources
 10. **Master Data Management** - Golden records, entity resolution, MDM platform
+11. **Change Data Capture** - CDC for real-time data synchronization (Debezium)
+12. **Data Lineage** - End-to-end data lineage tracking with Apache Atlas
+13. **Data Observability** - Data quality monitoring and incident management
+14. **Schema Registry** - Centralized schema management for streaming data
+15. **Data Versioning** - Data version control and tracking (DVC, Git-LFS)
 
-**Technologies:** Pandas, SQLAlchemy, PyArrow, NumPy, Kafka Streams, Apache Flink
+**Technologies:** Pandas, SQLAlchemy, PyArrow, NumPy, Kafka Streams, Apache Flink, Debezium, Apache Atlas, DVC
 
 **[Explore Data Architecture Projects →](DataArchitecture/)**
 
@@ -246,8 +251,13 @@ Advanced AI agent systems with autonomous capabilities and intelligent orchestra
 8. **Learning Agents** - Reinforcement learning for agent improvement
 9. **Swarm Intelligence** - Multi-agent coordination and emergent behavior
 10. **Agent Communication** - Inter-agent messaging with protocols and negotiation
+11. **Task Planning** - Hierarchical task planning and decomposition (HTN)
+12. **Agent Simulation** - Multi-agent simulation environments (Mesa framework)
+13. **Knowledge Graphs** - Agent knowledge representation with graph databases
+14. **Goal Reasoning** - Dynamic goal management and priority adjustment
+15. **Social Agents** - Social interaction models and teamwork coordination
 
-**Technologies:** Python, Type Hints, Modular Design, OpenAI Functions, LangChain
+**Technologies:** Python, Type Hints, Modular Design, OpenAI Functions, LangChain, Mesa, Neo4j
 
 **[Explore Agentic AI Projects →](AgenticAI/)**
 
@@ -268,8 +278,13 @@ Modern data engineering stack covering distributed processing, data platforms, a
 8. **dbt** - SQL-based data transformation and modeling
 9. **Apache Kafka** - Real-time streaming, producer/consumer APIs, stream processing
 10. **Terraform** - Infrastructure as Code for multi-cloud provisioning
+11. **Data Quality Framework** - Automated data quality validation (Great Expectations)
+12. **Real-Time ETL** - Real-time data pipelines with Apache Flink
+13. **Data Lineage Tracking** - Automated lineage tracking (OpenLineage)
+14. **Schema Evolution** - Schema migration management (Alembic, Flyway)
+15. **Data Profiling** - Automated data profiling and exploration (pandas-profiling)
 
-**Technologies:** Databricks, Snowflake, Kubernetes, Docker, PySpark, Airflow, Delta Lake, dbt, Kafka, Terraform
+**Technologies:** Databricks, Snowflake, Kubernetes, Docker, PySpark, Airflow, Delta Lake, dbt, Kafka, Terraform, Great Expectations, Flink, OpenLineage
 
 **[Explore Data Engineering Projects →](DataEngineering/)**
 
@@ -290,8 +305,13 @@ Comprehensive deep learning implementations across industry-leading frameworks:
 8. **LightGBM** - Fast gradient boosting with low memory usage
 9. **ONNX** - Model interchange format for cross-framework compatibility
 10. **MLflow** - ML lifecycle management, experiment tracking, model registry
+11. **Model Compression** - Pruning, quantization, knowledge distillation
+12. **Neural Architecture Search** - AutoML for architecture discovery (NNI)
+13. **Federated Learning** - Privacy-preserving distributed training (Flower)
+14. **Model Interpretation** - Neural network interpretability (Captum, SHAP)
+15. **Transfer Learning Hub** - Pre-trained model fine-tuning and adaptation
 
-**Technologies:** PyTorch, TensorFlow, FastAI, Transformers, JAX, Keras, XGBoost, LightGBM, ONNX, MLflow
+**Technologies:** PyTorch, TensorFlow, FastAI, Transformers, JAX, Keras, XGBoost, LightGBM, ONNX, MLflow, NNI, Flower, Captum
 
 **[Explore Deep Learning Projects →](DeepLearning/)**
 
