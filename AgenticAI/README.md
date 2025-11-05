@@ -169,6 +169,91 @@ Advanced AI agent systems with autonomous capabilities, multi-agent coordination
 
 ---
 
+### 11. Task Planning
+**Description:** Hierarchical task planning and decomposition (HTN)
+
+**Features:**
+- Hierarchical Task Networks (HTN)
+- Task decomposition
+- Method selection
+- Constraint handling
+- Plan validation
+- Backtracking and replanning
+
+**Technologies:** Python
+
+**[View Project →](TaskPlanning/)**
+
+---
+
+### 12. Agent Simulation
+**Description:** Multi-agent simulation environments
+
+**Features:**
+- Mesa framework integration
+- Agent-based modeling
+- Spatial environments
+- Discrete event simulation
+- Data collection and analysis
+- Visualization tools
+
+**Technologies:** Python, Mesa
+
+**[View Project →](AgentSimulation/)**
+
+---
+
+### 13. Knowledge Graphs
+**Description:** Agent knowledge representation with graph databases
+
+**Features:**
+- Neo4j integration
+- Entity and relationship modeling
+- Graph queries (Cypher)
+- Knowledge inference
+- Semantic reasoning
+- Graph traversal
+
+**Technologies:** Python, Neo4j
+
+**[View Project →](KnowledgeGraphs/)**
+
+---
+
+### 14. Goal Reasoning
+**Description:** Dynamic goal management and priority adjustment
+
+**Features:**
+- Goal lifecycle management
+- Priority adjustment
+- Goal conflicts resolution
+- Goal achievement tracking
+- Dynamic goal adoption
+- Goal abandonment strategies
+
+**Technologies:** Python
+
+**[View Project →](GoalReasoning/)**
+
+---
+
+### 15. Social Agents
+**Description:** Social interaction models and teamwork coordination
+
+**Features:**
+- Social behavior modeling
+- Team formation
+- Role assignment
+- Shared mental models
+- Trust and reputation
+- Social learning
+
+**Technologies:** Python
+
+**[View Project →](SocialAgents/)**
+
+---
+
 ## 🚀 Getting Started
 
 Each project contains:
@@ -199,17 +284,27 @@ python project_file.py
 
 ## 📚 Technologies Used
 
-- **Python**: Core implementation
-- **Type Hints**: Enhanced code clarity
-- **Modular Design**: Reusable components
+- **Python**: Core implementation language
+- **Type Hints**: Enhanced code clarity and type safety
+- **Modular Design**: Reusable and extensible components
+- **OpenAI Functions**: Tool calling and function integration
+- **LangChain**: Agent frameworks and chains
+- **Mesa**: Agent-based modeling and simulation
+- **Neo4j**: Graph database for knowledge representation
+- **NumPy/SciPy**: Numerical computations for optimization
 
 ## 💡 Use Cases
 
-- Autonomous task execution
-- Multi-agent systems
-- Agent-based workflows
-- Tool-using AI agents
-- Complex orchestration patterns
+- **Autonomous Systems**: Self-directed agents for task automation
+- **Multi-Agent Collaboration**: Coordinated teams solving complex problems
+- **Intelligent Assistants**: Tool-using agents with memory and reasoning
+- **Simulation and Modeling**: Agent-based simulations for research
+- **Knowledge Management**: Graph-based knowledge representation
+- **Workflow Orchestration**: Complex multi-step agent workflows
+- **Swarm Robotics**: Distributed coordination algorithms
+- **Social AI**: Agents with social behavior and teamwork
+- **Planning Systems**: Hierarchical task planning and scheduling
+- **Adaptive Systems**: Learning agents that improve over time
 
 ## 📧 Contact
 
