@@ -98,6 +98,91 @@ Modern data engineering stack covering distributed processing, data platforms, a
 
 ---
 
+### 6. Apache Airflow
+**Description:** Workflow orchestration and scheduling
+
+**Features:**
+- DAG (Directed Acyclic Graph) creation
+- Task dependencies and scheduling
+- Operators for common tasks
+- XCom for inter-task communication
+- Connection management
+- Task retry and failure handling
+
+**Technologies:** Apache Airflow, Python
+
+**[View Project →](ApacheAirflow/)**
+
+---
+
+### 7. Delta Lake
+**Description:** ACID transactions for data lakes
+
+**Features:**
+- Delta table creation and management
+- Time travel and versioning
+- ACID transactions
+- Schema evolution
+- Upserts and deletes
+- Streaming and batch processing
+
+**Technologies:** Delta Lake, PySpark
+
+**[View Project →](DeltaLake/)**
+
+---
+
+### 8. dbt (Data Build Tool)
+**Description:** SQL-based data transformation
+
+**Features:**
+- Model creation and dependencies
+- Testing and documentation
+- Incremental models
+- Macros and packages
+- Snapshot management
+- Source freshness checks
+
+**Technologies:** dbt, SQL, Jinja
+
+**[View Project →](dbt/)**
+
+---
+
+### 9. Apache Kafka
+**Description:** Distributed event streaming platform
+
+**Features:**
+- Topic creation and management
+- Producer and consumer implementation
+- Consumer groups
+- Partition management
+- Stream processing
+- Schema registry integration
+
+**Technologies:** Apache Kafka, Confluent
+
+**[View Project →](ApacheKafka/)**
+
+---
+
+### 10. Terraform
+**Description:** Infrastructure as Code for cloud resources
+
+**Features:**
+- Resource provisioning
+- State management
+- Module creation
+- Multi-cloud support
+- Plan and apply workflows
+- Remote state backends
+
+**Technologies:** Terraform, HCL
+
+**[View Project →](Terraform/)**
+
+---
+
 ## 🚀 Getting Started
 
 Each project contains:

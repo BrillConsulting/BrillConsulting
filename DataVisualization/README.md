@@ -81,6 +81,91 @@ Financial and temporal data visualization:
 
 ---
 
+### 6. 📡 [Real-Time Dashboards](RealTimeDashboards/)
+Live streaming data visualization with automatic updates.
+
+**Technologies:** Dash, Plotly, WebSockets
+
+**Features:**
+- Real-time data streaming
+- Auto-refresh capabilities
+- Live metrics and KPIs
+- WebSocket integration
+- Multi-source data aggregation
+- Alert thresholds
+
+**[View Project →](RealTimeDashboards/)**
+
+---
+
+### 7. 🎲 [3D Visualization](3DVisualization/)
+Three-dimensional data visualization and exploration.
+
+**Technologies:** Plotly, Matplotlib, PyVista
+
+**Features:**
+- 3D scatter plots and surfaces
+- Volume rendering
+- Interactive rotation and zoom
+- Multiple 3D chart types
+- Mesh and point cloud visualization
+- Scientific 3D visualization
+
+**[View Project →](3DVisualization/)**
+
+---
+
+### 8. 🗺️ [Geo-Spatial Mapping](GeoSpatialMapping/)
+Advanced geographic and spatial data visualization.
+
+**Technologies:** Folium, GeoPandas, Plotly
+
+**Features:**
+- Multiple map layers
+- Choropleth visualizations
+- Spatial analysis
+- Route optimization display
+- Custom markers and popups
+- GeoJSON support
+
+**[View Project →](GeoSpatialMapping/)**
+
+---
+
+### 9. 🎬 [Animated Charts](AnimatedCharts/)
+Dynamic animated visualizations showing data evolution over time.
+
+**Technologies:** Plotly, Matplotlib Animation
+
+**Features:**
+- Time-series animations
+- Frame-by-frame control
+- Race bar charts
+- Scatter plot animations
+- Export to GIF/MP4
+- Interactive playback controls
+
+**[View Project →](AnimatedCharts/)**
+
+---
+
+### 10. 📊 [Business Intelligence Dashboards](BusinessIntelligence/)
+Executive dashboards with comprehensive business metrics.
+
+**Technologies:** Dash, Plotly, Pandas
+
+**Features:**
+- KPI cards and scorecards
+- Drill-down capabilities
+- Multi-tab layouts
+- Financial charts
+- Performance metrics
+- Export to PDF/Excel
+
+**[View Project →](BusinessIntelligence/)**
+
+---
+
 ## 🚀 Getting Started
 
 Each project contains:

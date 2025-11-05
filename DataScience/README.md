@@ -98,6 +98,91 @@ Comprehensive data science toolkit covering the full analytics lifecycle from da
 
 ---
 
+### 6. Statistical Modeling
+**Description:** Advanced statistical models and regression techniques
+
+**Features:**
+- Generalized Linear Models (GLM)
+- Mixed-effects models
+- Time series regression
+- Robust regression
+- Model diagnostics
+- Residual analysis
+
+**Technologies:** Statsmodels, SciPy, Pandas
+
+**[View Project →](StatisticalModeling/)**
+
+---
+
+### 7. Experiment Design
+**Description:** Design and analyze scientific experiments
+
+**Features:**
+- Factorial design
+- Randomized block design
+- Latin square design
+- Power analysis
+- Sample size calculation
+- ANOVA and post-hoc tests
+
+**Technologies:** SciPy, Statsmodels, Pandas
+
+**[View Project →](ExperimentDesign/)**
+
+---
+
+### 8. Survival Analysis
+**Description:** Time-to-event analysis and modeling
+
+**Features:**
+- Kaplan-Meier curves
+- Cox proportional hazards
+- Log-rank tests
+- Survival probability estimation
+- Censored data handling
+- Risk stratification
+
+**Technologies:** Lifelines, Pandas, Matplotlib
+
+**[View Project →](SurvivalAnalysis/)**
+
+---
+
+### 9. Bayesian Inference
+**Description:** Probabilistic modeling and Bayesian statistics
+
+**Features:**
+- Prior and posterior distributions
+- MCMC sampling
+- Credible intervals
+- Bayesian hypothesis testing
+- Hierarchical models
+- Model comparison (Bayes factors)
+
+**Technologies:** PyMC, ArviZ, NumPy
+
+**[View Project →](BayesianInference/)**
+
+---
+
+### 10. Causal Inference
+**Description:** Establish causality from observational data
+
+**Features:**
+- Propensity score matching
+- Difference-in-differences
+- Instrumental variables
+- Regression discontinuity
+- Causal graphs (DAGs)
+- Treatment effect estimation
+
+**Technologies:** DoWhy, EconML, Pandas
+
+**[View Project →](CausalInference/)**
+
+---
+
 ## 🚀 Getting Started
 
 Each project contains:

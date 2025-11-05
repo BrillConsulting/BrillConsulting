@@ -35,8 +35,13 @@ Professional Computer Vision projects showcasing state-of-the-art deep learning 
 8. **Style Transfer** - Neural artistic style transfer with VGG19
 9. **Super Resolution** - AI-powered 4x/8x upscaling with ESRGAN
 10. **Anomaly Detection** - Visual defect detection for quality control
+11. **Image Restoration** - Image denoising and damage repair with deep learning
+12. **Object Tracking** - Advanced multi-object tracking in video sequences (SORT, DeepSORT)
+13. **Scene Recognition** - Scene classification and context understanding (Places365)
+14. **Image Matching** - Feature matching, homography, image alignment (SIFT, RANSAC)
+15. **Depth Estimation** - Monocular depth estimation from single images (MiDaS)
 
-**Technologies:** PyTorch, YOLOv8, OpenCV, EasyOCR, Transformers, MediaPipe, ESRGAN
+**Technologies:** PyTorch, YOLOv8, OpenCV, EasyOCR, Transformers, MediaPipe, ESRGAN, MiDaS, Places365
 
 **[Explore Computer Vision Projects →](ComputerVision/)
 
@@ -57,8 +62,13 @@ Classic Machine Learning algorithms with production-ready implementations and au
 8. **Reinforcement Learning** - Q-Learning, Deep Q-Network, Policy Gradients
 9. **AutoML** - Automated model selection and hyperparameter optimization
 10. **Model Interpretability** - SHAP, LIME, feature importance, partial dependence plots
+11. **Feature Selection** - Automated feature selection with filter, wrapper, embedded methods
+12. **Imbalanced Learning** - SMOTE, ADASYN, class weighting for skewed datasets
+13. **Multi-Task Learning** - Joint learning of multiple related tasks
+14. **Online Learning** - Incremental learning for streaming data
+15. **Meta-Learning** - Learning to learn, few-shot learning approaches
 
-**Technologies:** scikit-learn, statsmodels, pandas, matplotlib, SHAP, LIME, gym
+**Technologies:** scikit-learn, statsmodels, pandas, matplotlib, SHAP, LIME, gym, imbalanced-learn, river
 
 **[Explore Machine Learning Projects →](MachineLearning/)**
 
@@ -79,8 +89,13 @@ NLP projects covering text analysis, entity extraction, and language understandi
 8. **Advanced Text Summarization** - Abstractive summarization with transformers
 9. **Sentiment Analysis** - Multi-class, aspect-based, emotion detection
 10. **Language Modeling** - GPT-style causal language models and text generation
+11. **Named Entity Linking** - Link entities to knowledge bases (Wikipedia, DBpedia)
+12. **Text Clustering** - Hierarchical and k-means document clustering
+13. **Intent Classification** - Intent recognition and classification for chatbots
+14. **Keyphrase Extraction** - Automatic extraction of key terms and concepts (YAKE, RAKE)
+15. **Advanced Text Generation** - GPT-powered creative text generation
 
-**Technologies:** NLTK, spaCy, scikit-learn, NetworkX, Transformers, PyTorch
+**Technologies:** NLTK, spaCy, scikit-learn, NetworkX, Transformers, PyTorch, YAKE
 
 **[Explore NLP Projects →](NaturalLanguageProcessing/)**
 
@@ -101,6 +116,11 @@ Professional data visualization projects with interactive dashboards and publica
 8. **Geospatial Mapping** - Advanced GIS analysis with spatial indexing and routing
 9. **Animated Charts** - Dynamic animations with transitions and keyframe control
 10. **Business Intelligence** - Executive dashboards with drill-down capabilities and KPI tracking
+11. **Heatmaps and Contours** - Advanced heatmap visualizations with contour overlays
+12. **Sankey Diagrams** - Flow and process visualization for resource tracking
+13. **Treemap Charts** - Hierarchical data visualization with nested rectangles
+14. **Radar Charts** - Multi-dimensional comparison and spider charts
+15. **Waterfall Charts** - Cumulative effect visualization for financial analysis
 
 **Technologies:** Plotly, Dash, Matplotlib, Seaborn, Folium, NetworkX, Plotly Express, D3.js
 
@@ -123,8 +143,13 @@ Comprehensive data science toolkit covering the full analytics lifecycle:
 8. **Survival Analysis** - Kaplan-Meier, Cox regression, time-to-event modeling
 9. **Bayesian Inference** - MCMC sampling, probabilistic programming with PyMC
 10. **Causal Inference** - Propensity score matching, instrumental variables, DiD
+11. **Time Series Analysis** - Decomposition, autocorrelation, and forecasting
+12. **Monte Carlo Simulation** - Probabilistic modeling and risk analysis
+13. **Network Analysis** - Graph theory, centrality measures, community detection
+14. **Spatial Statistics** - Geospatial analysis, kriging, spatial autocorrelation
+15. **Text Mining** - Document analysis, text analytics, information extraction
 
-**Technologies:** Scikit-learn, Pandas, SciPy, NumPy, Matplotlib, Seaborn, PyMC, Lifelines
+**Technologies:** Scikit-learn, Pandas, SciPy, NumPy, Matplotlib, Seaborn, PyMC, Lifelines, NetworkX, GeoPandas, NLTK
 
 **[Explore Data Science Projects →](DataScience/)**
 
@@ -145,8 +170,13 @@ Comprehensive LLM toolkit from chatbots to fine-tuning and evaluation:
 8. **LLM Chaining** - Complex orchestration with sequential and parallel chains
 9. **Prompt Optimization** - Automated prompt tuning and optimization
 10. **LLM Security** - Jailbreak detection, content filtering, safety guardrails
+11. **Vector Databases** - Pinecone, ChromaDB, Weaviate integration for embeddings
+12. **LLM Caching** - Redis-based response caching for cost optimization
+13. **Token Optimization** - Token usage reduction and cost management
+14. **LLM Routing** - Intelligent routing to optimal models based on query
+15. **Context Compression** - Context window optimization and summarization
 
-**Technologies:** OpenAI API, Transformers, PEFT, FAISS, Sentence Transformers, LangChain
+**Technologies:** OpenAI API, Transformers, PEFT, FAISS, Sentence Transformers, LangChain, Pinecone, ChromaDB, Redis
 
 **[Explore LLM Projects →](LLM/)**
 
@@ -167,8 +197,13 @@ Production ML operations covering the full ML lifecycle:
 8. **A/B Testing** - Experiment framework for model comparison in production
 9. **Data Validation** - Schema validation, data quality checks, drift detection
 10. **Model Governance** - Compliance tracking, audit trails, model explainability
+11. **Model Registry** - Centralized model management with MLflow integration
+12. **Pipeline Orchestration** - Airflow-based ML pipeline automation and scheduling
+13. **Model Packaging** - Docker containerization and artifact packaging
+14. **Performance Monitoring** - Real-time model performance and latency tracking
+15. **Cost Optimization** - Infrastructure cost monitoring and optimization
 
-**Technologies:** FastAPI, Docker, Pytest, MLflow, SciPy, NumPy, Feast, Great Expectations
+**Technologies:** FastAPI, Docker, Pytest, MLflow, SciPy, NumPy, Feast, Great Expectations, Airflow, Prometheus
 
 **[Explore MLOps Projects →](MLOps/)**
 
@@ -189,8 +224,13 @@ Enterprise data architecture from ETL to governance:
 8. **Data Mesh** - Domain-oriented decentralized data architecture
 9. **Data Virtualization** - Unified data access layer across sources
 10. **Master Data Management** - Golden records, entity resolution, MDM platform
+11. **Change Data Capture** - CDC for real-time data synchronization (Debezium)
+12. **Data Lineage** - End-to-end data lineage tracking with Apache Atlas
+13. **Data Observability** - Data quality monitoring and incident management
+14. **Schema Registry** - Centralized schema management for streaming data
+15. **Data Versioning** - Data version control and tracking (DVC, Git-LFS)
 
-**Technologies:** Pandas, SQLAlchemy, PyArrow, NumPy, Kafka Streams, Apache Flink
+**Technologies:** Pandas, SQLAlchemy, PyArrow, NumPy, Kafka Streams, Apache Flink, Debezium, Apache Atlas, DVC
 
 **[Explore Data Architecture Projects →](DataArchitecture/)**
 
@@ -211,8 +251,13 @@ Advanced AI agent systems with autonomous capabilities and intelligent orchestra
 8. **Learning Agents** - Reinforcement learning for agent improvement
 9. **Swarm Intelligence** - Multi-agent coordination and emergent behavior
 10. **Agent Communication** - Inter-agent messaging with protocols and negotiation
+11. **Task Planning** - Hierarchical task planning and decomposition (HTN)
+12. **Agent Simulation** - Multi-agent simulation environments (Mesa framework)
+13. **Knowledge Graphs** - Agent knowledge representation with graph databases
+14. **Goal Reasoning** - Dynamic goal management and priority adjustment
+15. **Social Agents** - Social interaction models and teamwork coordination
 
-**Technologies:** Python, Type Hints, Modular Design, OpenAI Functions, LangChain
+**Technologies:** Python, Type Hints, Modular Design, OpenAI Functions, LangChain, Mesa, Neo4j
 
 **[Explore Agentic AI Projects →](AgenticAI/)**
 
@@ -233,8 +278,13 @@ Modern data engineering stack covering distributed processing, data platforms, a
 8. **dbt** - SQL-based data transformation and modeling
 9. **Apache Kafka** - Real-time streaming, producer/consumer APIs, stream processing
 10. **Terraform** - Infrastructure as Code for multi-cloud provisioning
+11. **Data Quality Framework** - Automated data quality validation (Great Expectations)
+12. **Real-Time ETL** - Real-time data pipelines with Apache Flink
+13. **Data Lineage Tracking** - Automated lineage tracking (OpenLineage)
+14. **Schema Evolution** - Schema migration management (Alembic, Flyway)
+15. **Data Profiling** - Automated data profiling and exploration (pandas-profiling)
 
-**Technologies:** Databricks, Snowflake, Kubernetes, Docker, PySpark, Airflow, Delta Lake, dbt, Kafka, Terraform
+**Technologies:** Databricks, Snowflake, Kubernetes, Docker, PySpark, Airflow, Delta Lake, dbt, Kafka, Terraform, Great Expectations, Flink, OpenLineage
 
 **[Explore Data Engineering Projects →](DataEngineering/)**
 
@@ -255,8 +305,13 @@ Comprehensive deep learning implementations across industry-leading frameworks:
 8. **LightGBM** - Fast gradient boosting with low memory usage
 9. **ONNX** - Model interchange format for cross-framework compatibility
 10. **MLflow** - ML lifecycle management, experiment tracking, model registry
+11. **Model Compression** - Pruning, quantization, knowledge distillation
+12. **Neural Architecture Search** - AutoML for architecture discovery (NNI)
+13. **Federated Learning** - Privacy-preserving distributed training (Flower)
+14. **Model Interpretation** - Neural network interpretability (Captum, SHAP)
+15. **Transfer Learning Hub** - Pre-trained model fine-tuning and adaptation
 
-**Technologies:** PyTorch, TensorFlow, FastAI, Transformers, JAX, Keras, XGBoost, LightGBM, ONNX, MLflow
+**Technologies:** PyTorch, TensorFlow, FastAI, Transformers, JAX, Keras, XGBoost, LightGBM, ONNX, MLflow, NNI, Flower, Captum
 
 **[Explore Deep Learning Projects →](DeepLearning/)**
 
@@ -277,8 +332,13 @@ Comprehensive Azure cloud solutions and services:
 8. **Azure Monitor** - Application insights, metrics, alerts, log analytics
 9. **Key Vault** - Secret management, key rotation, certificate storage
 10. **Cognitive Services** - Pre-built AI models for vision, speech, language
+11. **Azure OpenAI** - Azure OpenAI Service integration (GPT-4, DALL-E)
+12. **Cosmos DB** - Globally distributed NoSQL database operations
+13. **Service Bus** - Enterprise message queuing and pub/sub patterns
+14. **Logic Apps** - Workflow automation and system integration
+15. **Azure Synapse** - Analytics platform and data warehousing
 
-**Technologies:** Azure SDK, Terraform, Azure Functions, Azure ML, Azure DevOps, Azure Monitor
+**Technologies:** Azure SDK, Terraform, Azure Functions, Azure ML, Azure DevOps, Azure Monitor, Azure OpenAI, Cosmos DB, Service Bus
 
 **[Explore Azure Projects →](Azure/)**
 
@@ -299,8 +359,13 @@ Comprehensive GCP cloud solutions and services:
 8. **Pub/Sub** - Asynchronous messaging and event streaming
 9. **Cloud Logging** - Centralized log management and analysis
 10. **Secret Manager** - Secure secret storage and access control
+11. **Dataflow** - Stream and batch data processing (Apache Beam)
+12. **Firestore** - NoSQL document database with real-time sync
+13. **Cloud Tasks** - Asynchronous task execution and queueing
+14. **Dataproc** - Managed Spark and Hadoop for big data processing
+15. **Cloud Scheduler** - Fully managed cron job service
 
-**Technologies:** GCP SDK, Cloud Functions, Vertex AI, Cloud Build, BigQuery, Cloud Run
+**Technologies:** GCP SDK, Cloud Functions, Vertex AI, Cloud Build, BigQuery, Cloud Run, Dataflow, Firestore, Dataproc
 
 **[Explore GCP Projects →](GCP/)**
 
@@ -321,8 +386,13 @@ Comprehensive AWS cloud solutions and services:
 8. **DynamoDB** - NoSQL database with single-digit millisecond latency
 9. **CloudWatch** - Monitoring, logging, metrics, and alarms
 10. **Secrets Manager** - Secrets rotation and lifecycle management
+11. **Step Functions** - Workflow orchestration with visual workflows
+12. **Athena** - Serverless SQL queries on S3 data
+13. **Glue** - Serverless ETL and data catalog service
+14. **SNS** - Simple Notification Service for pub/sub messaging
+15. **SQS** - Simple Queue Service for message queueing
 
-**Technologies:** Boto3, AWS Lambda, SageMaker, CodePipeline, ECS, EventBridge, DynamoDB
+**Technologies:** Boto3, AWS Lambda, SageMaker, CodePipeline, ECS, EventBridge, DynamoDB, Step Functions, Athena, Glue
 
 **[Explore AWS Projects →](AWS/)**
 
@@ -341,8 +411,13 @@ Comprehensive Linux system administration, automation, and process management:
 6. **Performance Tuning** - CPU, memory, disk I/O, network optimization
 7. **Backup & Recovery** - Full/incremental backups, snapshots, disaster recovery
 8. **Log Management** - Centralized logging, ELK stack, rsyslog, logrotate
+9. **Container Management** - Docker and Podman administration
+10. **Kernel Tuning** - Kernel parameter optimization (sysctl)
+11. **File System Management** - Advanced filesystem operations (ext4, xfs, btrfs)
+12. **User Auditing** - User activity monitoring and compliance (auditd)
+13. **Disaster Recovery** - Business continuity and system recovery procedures
 
-**Technologies:** Linux, systemd, Bash, SELinux, UFW/iptables, WireGuard, Filebeat, Logstash
+**Technologies:** Linux, systemd, Bash, SELinux, UFW/iptables, WireGuard, Filebeat, Logstash, Docker, Podman
 
 **[Explore Linux Projects →](Linux/)**
 
@@ -361,8 +436,13 @@ Complete GitLab CI/CD, API integration, and runner management:
 6. **Security Scanning** - SAST, DAST, dependency scanning, container scanning
 7. **Group Management** - Groups, permissions, RBAC, LDAP/SAML integration
 8. **Mirror Management** - Repository mirroring, pull/push mirrors, sync automation
+9. **Project Templates** - Project template management and scaffolding
+10. **Access Control** - Fine-grained permissions and role-based access
+11. **Audit Logs** - Compliance tracking and audit trail logging
+12. **Integration Management** - Third-party service integrations and webhooks
+13. **Backup & Restore** - Full/incremental backups and disaster recovery
 
-**Technologies:** GitLab CI/CD, GitLab API, GitLab Runner, Docker Registry, Security Scanners
+**Technologies:** GitLab CI/CD, GitLab API, GitLab Runner, Docker Registry, Security Scanners, python-gitlab
 
 **[Explore GitLab Projects →](GitLab/)**
 
