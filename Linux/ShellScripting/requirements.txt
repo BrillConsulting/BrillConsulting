@@ -1,0 +1,2 @@
+# No external dependencies required for shell script generation
+# Scripts are generated as pure Bash
