@@ -332,8 +332,13 @@ Comprehensive Azure cloud solutions and services:
 8. **Azure Monitor** - Application insights, metrics, alerts, log analytics
 9. **Key Vault** - Secret management, key rotation, certificate storage
 10. **Cognitive Services** - Pre-built AI models for vision, speech, language
+11. **Azure OpenAI** - Azure OpenAI Service integration (GPT-4, DALL-E)
+12. **Cosmos DB** - Globally distributed NoSQL database operations
+13. **Service Bus** - Enterprise message queuing and pub/sub patterns
+14. **Logic Apps** - Workflow automation and system integration
+15. **Azure Synapse** - Analytics platform and data warehousing
 
-**Technologies:** Azure SDK, Terraform, Azure Functions, Azure ML, Azure DevOps, Azure Monitor
+**Technologies:** Azure SDK, Terraform, Azure Functions, Azure ML, Azure DevOps, Azure Monitor, Azure OpenAI, Cosmos DB, Service Bus
 
 **[Explore Azure Projects →](Azure/)**
 
@@ -354,8 +359,13 @@ Comprehensive GCP cloud solutions and services:
 8. **Pub/Sub** - Asynchronous messaging and event streaming
 9. **Cloud Logging** - Centralized log management and analysis
 10. **Secret Manager** - Secure secret storage and access control
+11. **Dataflow** - Stream and batch data processing (Apache Beam)
+12. **Firestore** - NoSQL document database with real-time sync
+13. **Cloud Tasks** - Asynchronous task execution and queueing
+14. **Dataproc** - Managed Spark and Hadoop for big data processing
+15. **Cloud Scheduler** - Fully managed cron job service
 
-**Technologies:** GCP SDK, Cloud Functions, Vertex AI, Cloud Build, BigQuery, Cloud Run
+**Technologies:** GCP SDK, Cloud Functions, Vertex AI, Cloud Build, BigQuery, Cloud Run, Dataflow, Firestore, Dataproc
 
 **[Explore GCP Projects →](GCP/)**
 
@@ -376,8 +386,13 @@ Comprehensive AWS cloud solutions and services:
 8. **DynamoDB** - NoSQL database with single-digit millisecond latency
 9. **CloudWatch** - Monitoring, logging, metrics, and alarms
 10. **Secrets Manager** - Secrets rotation and lifecycle management
+11. **Step Functions** - Workflow orchestration with visual workflows
+12. **Athena** - Serverless SQL queries on S3 data
+13. **Glue** - Serverless ETL and data catalog service
+14. **SNS** - Simple Notification Service for pub/sub messaging
+15. **SQS** - Simple Queue Service for message queueing
 
-**Technologies:** Boto3, AWS Lambda, SageMaker, CodePipeline, ECS, EventBridge, DynamoDB
+**Technologies:** Boto3, AWS Lambda, SageMaker, CodePipeline, ECS, EventBridge, DynamoDB, Step Functions, Athena, Glue
 
 **[Explore AWS Projects →](AWS/)**
 
@@ -396,8 +411,13 @@ Comprehensive Linux system administration, automation, and process management:
 6. **Performance Tuning** - CPU, memory, disk I/O, network optimization
 7. **Backup & Recovery** - Full/incremental backups, snapshots, disaster recovery
 8. **Log Management** - Centralized logging, ELK stack, rsyslog, logrotate
+9. **Container Management** - Docker and Podman administration
+10. **Kernel Tuning** - Kernel parameter optimization (sysctl)
+11. **File System Management** - Advanced filesystem operations (ext4, xfs, btrfs)
+12. **User Auditing** - User activity monitoring and compliance (auditd)
+13. **Disaster Recovery** - Business continuity and system recovery procedures
 
-**Technologies:** Linux, systemd, Bash, SELinux, UFW/iptables, WireGuard, Filebeat, Logstash
+**Technologies:** Linux, systemd, Bash, SELinux, UFW/iptables, WireGuard, Filebeat, Logstash, Docker, Podman
 
 **[Explore Linux Projects →](Linux/)**
 
@@ -416,8 +436,13 @@ Complete GitLab CI/CD, API integration, and runner management:
 6. **Security Scanning** - SAST, DAST, dependency scanning, container scanning
 7. **Group Management** - Groups, permissions, RBAC, LDAP/SAML integration
 8. **Mirror Management** - Repository mirroring, pull/push mirrors, sync automation
+9. **Project Templates** - Project template management and scaffolding
+10. **Access Control** - Fine-grained permissions and role-based access
+11. **Audit Logs** - Compliance tracking and audit trail logging
+12. **Integration Management** - Third-party service integrations and webhooks
+13. **Backup & Restore** - Full/incremental backups and disaster recovery
 
-**Technologies:** GitLab CI/CD, GitLab API, GitLab Runner, Docker Registry, Security Scanners
+**Technologies:** GitLab CI/CD, GitLab API, GitLab Runner, Docker Registry, Security Scanners, python-gitlab
 
 **[Explore GitLab Projects →](GitLab/)**
 
