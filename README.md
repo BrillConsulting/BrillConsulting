@@ -116,6 +116,11 @@ Professional data visualization projects with interactive dashboards and publica
 8. **Geospatial Mapping** - Advanced GIS analysis with spatial indexing and routing
 9. **Animated Charts** - Dynamic animations with transitions and keyframe control
 10. **Business Intelligence** - Executive dashboards with drill-down capabilities and KPI tracking
+11. **Heatmaps and Contours** - Advanced heatmap visualizations with contour overlays
+12. **Sankey Diagrams** - Flow and process visualization for resource tracking
+13. **Treemap Charts** - Hierarchical data visualization with nested rectangles
+14. **Radar Charts** - Multi-dimensional comparison and spider charts
+15. **Waterfall Charts** - Cumulative effect visualization for financial analysis
 
 **Technologies:** Plotly, Dash, Matplotlib, Seaborn, Folium, NetworkX, Plotly Express, D3.js
 
@@ -138,8 +143,13 @@ Comprehensive data science toolkit covering the full analytics lifecycle:
 8. **Survival Analysis** - Kaplan-Meier, Cox regression, time-to-event modeling
 9. **Bayesian Inference** - MCMC sampling, probabilistic programming with PyMC
 10. **Causal Inference** - Propensity score matching, instrumental variables, DiD
+11. **Time Series Analysis** - Decomposition, autocorrelation, and forecasting
+12. **Monte Carlo Simulation** - Probabilistic modeling and risk analysis
+13. **Network Analysis** - Graph theory, centrality measures, community detection
+14. **Spatial Statistics** - Geospatial analysis, kriging, spatial autocorrelation
+15. **Text Mining** - Document analysis, text analytics, information extraction
 
-**Technologies:** Scikit-learn, Pandas, SciPy, NumPy, Matplotlib, Seaborn, PyMC, Lifelines
+**Technologies:** Scikit-learn, Pandas, SciPy, NumPy, Matplotlib, Seaborn, PyMC, Lifelines, NetworkX, GeoPandas, NLTK
 
 **[Explore Data Science Projects →](DataScience/)**
 
@@ -160,8 +170,13 @@ Comprehensive LLM toolkit from chatbots to fine-tuning and evaluation:
 8. **LLM Chaining** - Complex orchestration with sequential and parallel chains
 9. **Prompt Optimization** - Automated prompt tuning and optimization
 10. **LLM Security** - Jailbreak detection, content filtering, safety guardrails
+11. **Vector Databases** - Pinecone, ChromaDB, Weaviate integration for embeddings
+12. **LLM Caching** - Redis-based response caching for cost optimization
+13. **Token Optimization** - Token usage reduction and cost management
+14. **LLM Routing** - Intelligent routing to optimal models based on query
+15. **Context Compression** - Context window optimization and summarization
 
-**Technologies:** OpenAI API, Transformers, PEFT, FAISS, Sentence Transformers, LangChain
+**Technologies:** OpenAI API, Transformers, PEFT, FAISS, Sentence Transformers, LangChain, Pinecone, ChromaDB, Redis
 
 **[Explore LLM Projects →](LLM/)**
 
@@ -182,8 +197,13 @@ Production ML operations covering the full ML lifecycle:
 8. **A/B Testing** - Experiment framework for model comparison in production
 9. **Data Validation** - Schema validation, data quality checks, drift detection
 10. **Model Governance** - Compliance tracking, audit trails, model explainability
+11. **Model Registry** - Centralized model management with MLflow integration
+12. **Pipeline Orchestration** - Airflow-based ML pipeline automation and scheduling
+13. **Model Packaging** - Docker containerization and artifact packaging
+14. **Performance Monitoring** - Real-time model performance and latency tracking
+15. **Cost Optimization** - Infrastructure cost monitoring and optimization
 
-**Technologies:** FastAPI, Docker, Pytest, MLflow, SciPy, NumPy, Feast, Great Expectations
+**Technologies:** FastAPI, Docker, Pytest, MLflow, SciPy, NumPy, Feast, Great Expectations, Airflow, Prometheus
 
 **[Explore MLOps Projects →](MLOps/)**
 
