@@ -183,8 +183,13 @@ Modern data engineering stack covering distributed processing, data platforms, a
 3. **Kubernetes** - Container orchestration, deployments, services, autoscaling
 4. **Docker** - Image building, container management, multi-stage builds, docker-compose
 5. **Apache Spark** - Distributed processing, Spark SQL, Structured Streaming
+6. **Apache Airflow** - Workflow orchestration, DAG creation, task scheduling
+7. **Delta Lake** - ACID transactions, time travel, data lakehouse architecture
+8. **dbt** - SQL-based data transformation and modeling
+9. **Apache Kafka** - Real-time streaming, producer/consumer APIs, stream processing
+10. **Terraform** - Infrastructure as Code for multi-cloud provisioning
 
-**Technologies:** Databricks, Snowflake, Kubernetes, Docker, PySpark, Delta Lake
+**Technologies:** Databricks, Snowflake, Kubernetes, Docker, PySpark, Airflow, Delta Lake, dbt, Kafka, Terraform
 
 **[Explore Data Engineering Projects →](DataEngineering/)**
 
@@ -200,8 +205,13 @@ Comprehensive deep learning implementations across industry-leading frameworks:
 3. **FastAI** - Vision, text, tabular learners, progressive resizing, one-cycle
 4. **Hugging Face Transformers** - Pre-trained models, NLP pipelines, fine-tuning
 5. **JAX/Flax** - High-performance computing, JIT, vmap, pmap, XLA
+6. **Keras API** - High-level neural networks, Sequential and Functional models
+7. **XGBoost** - Extreme gradient boosting for classification and regression
+8. **LightGBM** - Fast gradient boosting with low memory usage
+9. **ONNX** - Model interchange format for cross-framework compatibility
+10. **MLflow** - ML lifecycle management, experiment tracking, model registry
 
-**Technologies:** PyTorch, TensorFlow, FastAI, Transformers, JAX, Flax
+**Technologies:** PyTorch, TensorFlow, FastAI, Transformers, JAX, Keras, XGBoost, LightGBM, ONNX, MLflow
 
 **[Explore Deep Learning Projects →](DeepLearning/)**
 
@@ -266,8 +276,13 @@ Comprehensive Linux system administration, automation, and process management:
 1. **System Administration** - User/group management, systemd, firewall, cron, SSH
 2. **Shell Scripting** - Bash automation, backups, monitoring, deployment scripts
 3. **Process Management** - Process monitoring, control, resource tracking
+4. **Network Management** - Interface configuration, routing, DNS, VPN, NAT
+5. **Security Hardening** - SELinux, AppArmor, fail2ban, auditd, kernel tuning
+6. **Performance Tuning** - CPU, memory, disk I/O, network optimization
+7. **Backup & Recovery** - Full/incremental backups, snapshots, disaster recovery
+8. **Log Management** - Centralized logging, ELK stack, rsyslog, logrotate
 
-**Technologies:** Linux, systemd, Bash, psutil, UFW/iptables, cron
+**Technologies:** Linux, systemd, Bash, SELinux, UFW/iptables, WireGuard, Filebeat, Logstash
 
 **[Explore Linux Projects →](Linux/)**
 
@@ -281,8 +296,13 @@ Complete GitLab CI/CD, API integration, and runner management:
 1. **CI/CD Pipelines** - .gitlab-ci.yml generation, Docker/K8s pipelines, multi-stage workflows
 2. **API Management** - Projects, issues, merge requests, webhooks, automation
 3. **Runner Management** - Runner registration, configuration, monitoring (Docker/Shell/K8s)
+4. **Container Registry** - Docker image management, tag cleanup, storage optimization
+5. **Package Management** - Maven, npm, PyPI, NuGet registry integration
+6. **Security Scanning** - SAST, DAST, dependency scanning, container scanning
+7. **Group Management** - Groups, permissions, RBAC, LDAP/SAML integration
+8. **Mirror Management** - Repository mirroring, pull/push mirrors, sync automation
 
-**Technologies:** GitLab CI/CD, GitLab API, GitLab Runner, Docker, Kubernetes
+**Technologies:** GitLab CI/CD, GitLab API, GitLab Runner, Docker Registry, Security Scanners
 
 **[Explore GitLab Projects →](GitLab/)**
 

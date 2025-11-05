@@ -1,0 +1,9 @@
+# Linux Network Management Dependencies
+
+# No external Python packages required for basic functionality
+# Standard library only
+
+# Optional: For advanced network operations
+# pyroute2>=0.7.0  # Netlink library for network configuration
+# scapy>=2.5.0  # Packet manipulation
+# dnspython>=2.4.0  # DNS toolkit
