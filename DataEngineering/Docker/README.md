@@ -1,61 +1,86 @@
-# Docker Container Management
+# 🐳 Docker Container Management
 
-Complete Docker containerization, image management, and orchestration.
+**Application containerization and orchestration**
 
-## Features
+## Overview
+Complete Docker SDK implementation for container lifecycle management, image building, networking, and Docker Compose orchestration.
 
-- **Image Building**: Build Docker images with custom configurations
-- **Dockerfile Generation**: Create optimized Dockerfiles (single and multi-stage)
-- **Container Management**: Create, start, stop, and manage containers
-- **Network Management**: Custom bridge networks with subnets
-- **Volume Management**: Persistent data storage with Docker volumes
-- **Docker Compose**: Generate docker-compose.yml for multi-container apps
-- **Registry Operations**: Push images to Docker registries
-- **Multi-Stage Builds**: Optimized image sizes with multi-stage Dockerfiles
+## Key Features
 
-## Technologies
+### Image Management
+- Dockerfile generation (single and multi-stage)
+- Image building and tagging
+- Registry operations (push/pull)
+- Multi-stage builds for optimization
 
-- Docker Engine
-- Docker Compose
-- Dockerfile
-- Container registries
+### Container Operations
+- Lifecycle management (create, start, stop, remove)
+- Resource limits (CPU, memory)
+- Health checks
+- Log management
 
-## Usage
+### Networking & Storage
+- Custom networks (bridge, host, overlay)
+- Volume management
+- Named volumes for persistence
+- Bind mounts
+
+### Orchestration
+- docker-compose.yml generation
+- Multi-container applications
+- Service dependencies
+- Environment configuration
+
+## Quick Start
 
 ```python
 from docker_management import DockerManager
 
-# Initialize manager
-docker = DockerManager()
+manager = DockerManager()
+
+# Generate Dockerfile
+dockerfile = manager.generate_dockerfile({
+    'base_image': 'python:3.9-slim',
+    'app_name': 'my-app',
+    'port': 8000
+})
 
 # Build image
-image = docker.build_image({
-    'repository': 'myapp',
-    'tag': 'v1.0.0',
-    'dockerfile': 'Dockerfile'
+image = manager.build_image({
+    'tag': 'my-app:latest',
+    'dockerfile': dockerfile
 })
 
 # Create container
-container = docker.create_container({
-    'name': 'web-app',
-    'image': 'myapp:v1.0.0',
-    'ports': {'8000/tcp': 8000},
-    'environment': {'ENV': 'production'}
+container = manager.create_container({
+    'image': 'my-app:latest',
+    'name': 'my-app-container',
+    'ports': {'8000/tcp': 8000}
 })
 
 # Generate docker-compose
-compose = docker.create_docker_compose({
-    'services': {
-        'web': {
-            'image': 'myapp:v1.0.0',
-            'ports': ['8000:8000']
-        }
-    }
+compose = manager.generate_docker_compose({
+    'services': ['web', 'db', 'redis']
 })
 ```
 
-## Demo
+## Use Cases
+- **Microservices** - Containerize applications
+- **Development Environments** - Consistent dev setups
+- **CI/CD** - Build and test containers
+- **Multi-Service Apps** - Orchestrate dependencies
 
+## Technologies
+- Docker Engine
+- Docker Compose
+- Container registries (Docker Hub, ECR, GCR)
+
+## Installation
 ```bash
+pip install -r requirements.txt
 python docker_management.py
 ```
+
+---
+
+**Author:** Brill Consulting | clientbrill@gmail.com

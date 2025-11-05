@@ -1,56 +1,87 @@
-# Snowflake Data Warehouse Management
+# ❄️ Snowflake Data Warehouse
 
-Complete Snowflake integration for enterprise data warehousing and analytics.
+**Cloud data warehouse management**
 
-## Features
+## Overview
+Complete Snowflake connector implementation for warehouse operations, data loading, streaming, and advanced features.
 
-- **Warehouse Management**: Create and configure virtual warehouses with auto-suspend/resume
-- **Database & Schema**: Full DDL operations for databases and schemas
-- **Table Management**: Create tables with clustering and partitioning
-- **External Stages**: S3/Azure/GCS integration for data loading
-- **Snowpipe**: Continuous, automated data ingestion
-- **Streams**: Change Data Capture (CDC) for incremental processing
-- **Tasks**: Schedule and orchestrate SQL workflows
-- **Materialized Views**: Pre-computed aggregations for performance
-- **Zero-Copy Cloning**: Instant database/table clones
+## Key Features
 
-## Technologies
+### Warehouse Management
+- Virtual warehouse creation
+- Auto-suspend/auto-resume
+- Multi-cluster warehouses
+- Resource monitoring
 
-- Snowflake Connector
-- Snowflake SQL
-- External Stages (S3/Azure/GCS)
-- Snowpipe
+### Data Operations
+- Database, schema, table management
+- External stages (S3, Azure, GCS)
+- Snowpipe for continuous loading
+- Streams for CDC
+- Tasks for scheduling
 
-## Usage
+### Advanced Features
+- Materialized views
+- Zero-copy cloning
+- Time Travel
+- Data sharing
+- Secure views
+
+## Quick Start
 
 ```python
 from snowflake_warehouse import SnowflakeWarehouse
 
-# Initialize connection
-snowflake = SnowflakeWarehouse(
-    account='my_account.us-east-1',
-    user='admin',
-    password='password123'
+warehouse = SnowflakeWarehouse(
+    account='your-account',
+    user='your-user',
+    password='your-password'
 )
 
 # Create warehouse
-warehouse = snowflake.create_warehouse({
+wh = warehouse.create_warehouse({
     'name': 'ANALYTICS_WH',
     'size': 'LARGE',
-    'auto_suspend': 300
+    'auto_suspend': 300,
+    'auto_resume': True
 })
 
-# Create table
-table = snowflake.create_table({
-    'database': 'SALES_DB',
-    'schema': 'TRANSACTIONS',
-    'name': 'orders',
-    'cluster_by': ['order_date']
+# Create database
+db = warehouse.create_database('ANALYTICS', 'Production analytics data')
+
+# Create external stage
+stage = warehouse.create_stage({
+    'name': 'S3_STAGE',
+    'url': 's3://bucket/path/',
+    'credentials': {'AWS_KEY_ID': 'xxx', 'AWS_SECRET_KEY': 'yyy'}
+})
+
+# Create Snowpipe
+pipe = warehouse.create_snowpipe({
+    'name': 'CONTINUOUS_LOAD',
+    'table': 'raw_events',
+    'stage': 'S3_STAGE'
 })
 ```
 
-## Demo
+## Use Cases
+- **Enterprise Data Warehousing** - Scalable analytics
+- **Data Sharing** - Cross-organization collaboration
+- **BI and Reporting** - Business intelligence
+- **Data Lake Integration** - Query external data
 
+## Technologies
+- Snowflake SQL
+- Snowflake Connector
+- External stages
+- Snowpipe
+
+## Installation
 ```bash
+pip install -r requirements.txt
 python snowflake_warehouse.py
 ```
+
+---
+
+**Author:** Brill Consulting | clientbrill@gmail.com
