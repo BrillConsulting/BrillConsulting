@@ -166,6 +166,91 @@ Comprehensive AWS cloud solutions covering compute, serverless, storage, machine
 
 ---
 
+### 11. Step Functions
+**Description:** Workflow orchestration service
+
+**Features:**
+- State machine creation (Standard and Express)
+- Workflow execution and monitoring
+- Error handling and retry logic
+- Parallel and sequential execution
+- Activity workers
+- Visual workflow designer
+
+**Technologies:** AWS Step Functions
+
+**[View Project →](StepFunctions/)**
+
+---
+
+### 12. SNS (Simple Notification Service)
+**Description:** Pub/Sub messaging service
+
+**Features:**
+- Topic creation (Standard and FIFO)
+- Multiple subscription protocols (Email, SMS, HTTP, Lambda, SQS)
+- Message filtering
+- Batch publishing
+- Mobile push notifications
+- Dead-letter queues
+
+**Technologies:** AWS SNS
+
+**[View Project →](SNS/)**
+
+---
+
+### 13. SQS (Simple Queue Service)
+**Description:** Message queueing service
+
+**Features:**
+- Queue creation (Standard and FIFO)
+- Message sending and receiving
+- Batch operations
+- Dead-letter queues
+- Long polling
+- Visibility timeout management
+
+**Technologies:** AWS SQS
+
+**[View Project →](SQS/)**
+
+---
+
+### 14. Athena
+**Description:** Serverless SQL query service
+
+**Features:**
+- Query execution on S3 data
+- Database and table management
+- Named queries
+- Workgroup management
+- Cost control
+- Federated queries
+
+**Technologies:** AWS Athena
+
+**[View Project →](Athena/)**
+
+---
+
+### 15. Glue
+**Description:** ETL and data catalog service
+
+**Features:**
+- Data catalog management
+- Crawler creation for schema discovery
+- ETL job creation and execution
+- Apache Spark and Python Shell jobs
+- Job bookmarks
+- Workflow orchestration
+
+**Technologies:** AWS Glue
+
+**[View Project →](Glue/)**
+
+---
+
 ## 🚀 Getting Started
 
 Each project contains:
@@ -183,27 +268,41 @@ python project_file.py
 
 ## 🎯 Key AWS Services
 
-- **Compute**: EC2, Lambda
+- **Compute**: EC2, Lambda, ECS
 - **Storage**: S3
+- **Databases**: DynamoDB
 - **Machine Learning**: SageMaker
-- **CI/CD**: CodePipeline, CodeBuild
-- **Networking**: VPC, Security Groups
-- **Monitoring**: CloudWatch
+- **CI/CD**: CodePipeline
+- **Messaging**: SNS, SQS, EventBridge
+- **Monitoring & Security**: CloudWatch, Secrets Manager
+- **Workflow & Analytics**: Step Functions, Athena, Glue
 
 ## 📚 Technologies Used
 
-- **Boto3**: AWS SDK for Python
+- **Boto3**: AWS SDK for Python (v1.28.0+)
 - **AWS Lambda**: Serverless compute
-- **AWS SageMaker**: Machine learning
+- **AWS SageMaker**: Machine learning platform
 - **AWS CodePipeline**: CI/CD automation
+- **AWS ECS/Fargate**: Container orchestration
+- **AWS EventBridge**: Event-driven architectures
+- **AWS DynamoDB**: NoSQL database
+- **AWS Step Functions**: Workflow orchestration
+- **AWS Athena**: Serverless SQL analytics
+- **AWS Glue**: ETL and data catalog
+- **AWS SNS/SQS**: Messaging services
 
 ## 💡 Use Cases
 
-- Scalable web applications
-- Serverless APIs and backends
-- Object storage and CDN
-- ML model training and deployment
-- Automated deployment pipelines
+- **Compute & Scaling**: Scalable web applications with EC2 and auto-scaling
+- **Serverless Architectures**: APIs and backends with Lambda, API Gateway
+- **Data Storage**: Object storage with S3, NoSQL with DynamoDB
+- **Machine Learning**: End-to-end ML pipelines with SageMaker
+- **CI/CD**: Automated deployment with CodePipeline
+- **Container Workloads**: Microservices with ECS and Fargate
+- **Event-Driven Systems**: Real-time processing with EventBridge, SNS, SQS
+- **Workflow Automation**: Complex orchestration with Step Functions
+- **Data Analytics**: Data lakes and ETL with Athena and Glue
+- **Monitoring & Security**: CloudWatch metrics, alarms, and Secrets Manager
 
 ## 📧 Contact
 
