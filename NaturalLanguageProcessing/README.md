@@ -116,6 +116,124 @@ python text_generator.py --train-file corpus.txt --n 3 --length 100
 
 ---
 
+### 6. 🌐 [Machine Translation](MachineTranslation/)
+Neural machine translation using Transformer models.
+
+**Features:**
+- Multi-language translation
+- Transformer architecture
+- BLEU score evaluation
+- Batch translation
+
+**Key Features:**
+- Pre-trained models (mBART, MarianMT)
+- Bidirectional translation
+- Context-aware translation
+- High accuracy
+
+**Technologies:** Transformers, PyTorch
+
+```bash
+cd MachineTranslation
+python translator.py --source en --target pl --text "Hello world"
+```
+
+---
+
+### 7. ❓ [Question Answering](QuestionAnswering/)
+Extract answers from context using BERT-based models.
+
+**Features:**
+- Context-based QA
+- BERT/RoBERTa models
+- Confidence scoring
+- Multi-document support
+
+**Key Features:**
+- Extractive QA
+- SQuAD-trained models
+- Real-time inference
+- API integration
+
+**Technologies:** Transformers, BERT
+
+```bash
+cd QuestionAnswering
+python qa_system.py --context document.txt --question "What is AI?"
+```
+
+---
+
+### 8. 📋 [Advanced Text Summarization](AdvancedTextSummarization/)
+Abstractive summarization using T5 and BART models.
+
+**Methods:**
+- T5 (Text-to-Text Transfer Transformer)
+- BART (Bidirectional and Auto-Regressive Transformers)
+- Pegasus
+
+**Key Features:**
+- Abstractive summaries
+- Multi-document summarization
+- Controllable length
+- Fine-tuning support
+
+**Technologies:** Transformers, T5, BART
+
+```bash
+cd AdvancedTextSummarization
+python abstractive_summarizer.py --file article.txt --max-length 150
+```
+
+---
+
+### 9. 😊 [Sentiment Analysis](SentimentAnalysis/)
+Advanced sentiment classification with fine-grained emotions.
+
+**Features:**
+- Multi-class sentiment (positive/negative/neutral)
+- Emotion detection (joy, anger, sadness, fear)
+- Aspect-based sentiment
+- Real-time analysis
+
+**Key Features:**
+- Transformer-based models
+- Social media text support
+- Confidence scores
+- Batch processing
+
+**Technologies:** Transformers, BERT, RoBERTa
+
+```bash
+cd SentimentAnalysis
+python sentiment_analyzer.py --text "This product is amazing!" --model bert
+```
+
+---
+
+### 10. 🧠 [Language Modeling](LanguageModeling/)
+Train and use language models for text generation and prediction.
+
+**Models:**
+- GPT-2 fine-tuning
+- LSTM language models
+- N-gram models
+
+**Key Features:**
+- Text generation
+- Next-word prediction
+- Perplexity evaluation
+- Custom domain training
+
+**Technologies:** Transformers, GPT-2, PyTorch
+
+```bash
+cd LanguageModeling
+python language_model.py --train corpus.txt --generate --prompt "Once upon a time"
+```
+
+---
+
 ## 🚀 Quick Start
 
 ### Installation
@@ -242,6 +360,11 @@ Tested on standard datasets:
 | Topic Modeling | 20 Newsgroups | Coherence | 0.65 | 5s |
 | Summarization | CNN/DM | ROUGE-L | 0.42 | 0.3s |
 | Generation | Shakespeare | Perplexity | 45 | 10s |
+| Machine Translation | WMT14 EN-FR | BLEU | 38.5 | 1.5s |
+| Question Answering | SQuAD 2.0 | F1 | 0.87 | 0.4s |
+| Advanced Summarization | CNN/DM | ROUGE-L | 0.48 | 2s |
+| Sentiment Analysis | SST-2 | Accuracy | 0.93 | 0.3s |
+| Language Modeling | WikiText-103 | Perplexity | 22.4 | 15s |
 
 ## 🔬 Advanced Techniques
 

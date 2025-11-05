@@ -88,6 +88,91 @@ Comprehensive Azure cloud solutions covering infrastructure, serverless, data se
 
 ---
 
+### 6. Azure AI Services
+**Description:** AI and cognitive services integration
+
+**Features:**
+- OpenAI Service integration
+- Computer Vision API
+- Speech services
+- Language understanding (LUIS)
+- Form Recognizer
+- Custom Vision
+
+**Technologies:** Azure AI, OpenAI, Cognitive Services
+
+**[View Project →](AzureAI/)**
+
+---
+
+### 7. Container Apps
+**Description:** Serverless container deployment
+
+**Features:**
+- Container app deployment
+- Auto-scaling configuration
+- Revision management
+- Traffic splitting
+- Dapr integration
+- Ingress configuration
+
+**Technologies:** Azure Container Apps
+
+**[View Project →](ContainerApps/)**
+
+---
+
+### 8. Azure Monitor
+**Description:** Observability and monitoring
+
+**Features:**
+- Metrics collection
+- Log Analytics queries
+- Application Insights
+- Alert rules
+- Diagnostic settings
+- Workbook dashboards
+
+**Technologies:** Azure Monitor, Application Insights
+
+**[View Project →](AzureMonitor/)**
+
+---
+
+### 9. Key Vault
+**Description:** Secrets and key management
+
+**Features:**
+- Secret storage and retrieval
+- Key management
+- Certificate management
+- Access policies
+- Managed identities integration
+- Secret rotation
+
+**Technologies:** Azure Key Vault
+
+**[View Project →](KeyVault/)**
+
+---
+
+### 10. Cognitive Services
+**Description:** Pre-built AI models and APIs
+
+**Features:**
+- Text analytics and sentiment
+- Speech-to-text and text-to-speech
+- Image analysis and OCR
+- Language translation
+- Anomaly detection
+- Content moderation
+
+**Technologies:** Azure Cognitive Services
+
+**[View Project →](CognitiveServices/)**
+
+---
+
 ## 🚀 Getting Started
 
 Each project contains:

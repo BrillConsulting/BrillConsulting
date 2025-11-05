@@ -88,6 +88,91 @@ Production-ready ML operations toolkit covering the full ML lifecycle from train
 
 ---
 
+### 6. Feature Store
+**Description:** Centralized feature management and serving
+
+**Features:**
+- Feature registration and versioning
+- Online and offline serving
+- Point-in-time correctness
+- Feature transformation pipeline
+- Feature monitoring
+- Integration with training/serving
+
+**Technologies:** Feast, Pandas, Redis
+
+**[View Project →](FeatureStore/)**
+
+---
+
+### 7. Model Versioning
+**Description:** Track and manage model versions
+
+**Features:**
+- Model registry
+- Version control and tagging
+- Model lineage tracking
+- Metadata management
+- Model comparison
+- Rollback capabilities
+
+**Technologies:** MLflow, DVC
+
+**[View Project →](ModelVersioning/)**
+
+---
+
+### 8. A/B Testing
+**Description:** Statistical testing for model comparisons
+
+**Features:**
+- Multi-armed bandit
+- Statistical significance testing
+- Traffic splitting
+- Metric collection
+- Winner selection
+- Automated experiment tracking
+
+**Technologies:** SciPy, NumPy, Pandas
+
+**[View Project →](ABTesting/)**
+
+---
+
+### 9. Data Validation
+**Description:** Input data quality checks for ML pipelines
+
+**Features:**
+- Schema validation
+- Distribution shift detection
+- Constraint checking
+- Anomaly detection
+- Data profiling
+- Automated alerts
+
+**Technologies:** Great Expectations, Pandas
+
+**[View Project →](DataValidation/)**
+
+---
+
+### 10. Model Governance
+**Description:** Compliance, auditing, and model risk management
+
+**Features:**
+- Model approval workflows
+- Audit trail logging
+- Bias and fairness testing
+- Regulatory compliance
+- Model documentation
+- Risk assessment
+
+**Technologies:** Pandas, NumPy
+
+**[View Project →](ModelGovernance/)**
+
+---
+
 ## 🚀 Getting Started
 
 Each project contains:

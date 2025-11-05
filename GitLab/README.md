@@ -64,6 +64,91 @@ Complete GitLab CI/CD, API integration, and runner management toolkit.
 
 ---
 
+### 4. Container Registry
+**Description:** Docker container registry management
+
+**Features:**
+- Registry authentication and configuration
+- Image push and pull operations
+- Tag management and cleanup
+- Image vulnerability scanning
+- Repository permissions
+- Registry garbage collection
+
+**Technologies:** GitLab Container Registry, Docker
+
+**[View Project →](ContainerRegistry/)**
+
+---
+
+### 5. Package Management
+**Description:** Package registry for multiple formats
+
+**Features:**
+- Maven, NPM, PyPI, NuGet packages
+- Package publishing and versioning
+- Dependency resolution
+- Package download and installation
+- Access control and permissions
+- Package cleanup policies
+
+**Technologies:** GitLab Package Registry
+
+**[View Project →](PackageManagement/)**
+
+---
+
+### 6. Security Scanning
+**Description:** Integrated security testing and compliance
+
+**Features:**
+- SAST (Static Application Security Testing)
+- DAST (Dynamic Application Security Testing)
+- Dependency scanning
+- Container scanning
+- License compliance
+- Vulnerability management
+
+**Technologies:** GitLab Security Scanners
+
+**[View Project →](SecurityScanning/)**
+
+---
+
+### 7. Mirror Management
+**Description:** Repository mirroring and synchronization
+
+**Features:**
+- Pull mirroring from external repos
+- Push mirroring to external repos
+- Scheduled synchronization
+- Protected branches in mirrors
+- Authentication management
+- Mirror status monitoring
+
+**Technologies:** GitLab Repository Mirroring
+
+**[View Project →](MirrorManagement/)**
+
+---
+
+### 8. Backup and Restore
+**Description:** GitLab backup and disaster recovery
+
+**Features:**
+- Full backup creation
+- Incremental backups
+- Repository and database backup
+- Backup encryption
+- Remote backup storage
+- Automated restore procedures
+
+**Technologies:** GitLab Backup, rsync, S3
+
+**[View Project →](BackupRestore/)**
+
+---
+
 ## 🚀 Getting Started
 
 Each project contains:

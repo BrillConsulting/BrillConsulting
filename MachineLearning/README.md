@@ -125,6 +125,122 @@ python ensemble_models.py --data data.csv --target label
 
 ---
 
+### 6. 📉 [Dimensionality Reduction](DimensionalityReduction/)
+Reduce feature space while preserving important information.
+
+**Techniques:**
+- PCA (Principal Component Analysis)
+- t-SNE
+- UMAP
+
+**Key Features:**
+- Feature space visualization
+- Noise reduction
+- Data compression
+- Pattern discovery
+
+**Technologies:** scikit-learn, umap-learn
+
+```bash
+cd DimensionalityReduction
+python dimensionality_reduction.py --data highdim.csv --method umap
+```
+
+---
+
+### 7. 🚨 [Anomaly Detection](AnomalyDetection/)
+Identify outliers and anomalous patterns in data.
+
+**Algorithms:**
+- Isolation Forest
+- One-Class SVM
+- Local Outlier Factor
+
+**Key Features:**
+- Unsupervised detection
+- Contamination estimation
+- Outlier scoring
+- Visualization
+
+**Technologies:** scikit-learn, PyOD
+
+```bash
+cd AnomalyDetection
+python anomaly_detection.py --data transactions.csv --output anomalies.csv
+```
+
+---
+
+### 8. 🎮 [Reinforcement Learning](ReinforcementLearning/)
+Learn optimal policies through trial and error.
+
+**Algorithms:**
+- Q-Learning
+- Deep Q-Networks (DQN)
+- Policy Gradients
+
+**Key Features:**
+- Environment simulation
+- Reward optimization
+- Policy learning
+- Agent training
+
+**Technologies:** Gym, Stable-Baselines3
+
+```bash
+cd ReinforcementLearning
+python rl_agent.py --env CartPole-v1 --episodes 1000
+```
+
+---
+
+### 9. 🤖 [AutoML](AutoML/)
+Automated machine learning pipeline with model selection.
+
+**Features:**
+- Automatic algorithm selection
+- Hyperparameter optimization
+- Feature engineering
+- Model ensembling
+
+**Key Features:**
+- End-to-end automation
+- Performance comparison
+- Pipeline optimization
+- Production deployment
+
+**Technologies:** Auto-sklearn, TPOT
+
+```bash
+cd AutoML
+python automl_pipeline.py --data dataset.csv --target label --time-limit 3600
+```
+
+---
+
+### 10. 🔍 [Model Interpretability](ModelInterpretability/)
+Explain and interpret ML model predictions.
+
+**Techniques:**
+- SHAP (SHapley Additive exPlanations)
+- LIME (Local Interpretable Model-agnostic Explanations)
+- Feature Importance
+
+**Key Features:**
+- Model-agnostic explanations
+- Individual prediction interpretation
+- Feature contribution analysis
+- Visualization tools
+
+**Technologies:** SHAP, LIME, scikit-learn
+
+```bash
+cd ModelInterpretability
+python model_explainer.py --model trained_model.pkl --data test.csv
+```
+
+---
+
 ## 🚀 Quick Start
 
 ### Installation
@@ -156,6 +272,11 @@ pip install numpy pandas scikit-learn matplotlib seaborn statsmodels scipy jobli
 | K-Means | Clustering | Customer segmentation | Fast, simple | Assumes spherical clusters |
 | DBSCAN | Clustering | Arbitrary shapes | No need to specify k | Sensitive to parameters |
 | ARIMA | Time Series | Stationary series | Statistical foundation | Needs stationarity |
+| PCA/t-SNE | Dimensionality | Visualization | Reduces complexity | May lose information |
+| Isolation Forest | Anomaly | Outlier detection | Fast, scalable | Needs tuning |
+| Q-Learning | RL | Sequential decisions | Optimal policies | Exploration challenge |
+| AutoML | Automation | Quick modeling | Time-saving | Less control |
+| SHAP/LIME | Interpretability | Model explanation | Trust, transparency | Computational cost |
 
 ## 🎨 Use Cases by Industry
 
@@ -190,6 +311,11 @@ Tested on standard datasets:
 | Clustering | Mall Customers | Silhouette | 0.55 | 0.2s |
 | Time Series | Air Passengers | RMSE | 18.5 | 0.5s |
 | Ensemble | Wine Quality | Accuracy | 0.92 | 1.2s |
+| Dimensionality Reduction | MNIST | Variance | 95% | 0.8s |
+| Anomaly Detection | Credit Card Fraud | F1 | 0.88 | 0.3s |
+| Reinforcement Learning | CartPole | Reward | 195+ | 120s |
+| AutoML | Titanic | Accuracy | 0.82 | 300s |
+| Model Interpretability | Housing Prices | - | - | 5s |
 
 ## 🔧 Advanced Features
 

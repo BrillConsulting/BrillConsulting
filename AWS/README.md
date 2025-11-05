@@ -81,6 +81,91 @@ Comprehensive AWS cloud solutions covering compute, serverless, storage, machine
 
 ---
 
+### 6. ECS (Elastic Container Service)
+**Description:** Container orchestration service
+
+**Features:**
+- Task definition management
+- Service creation and scaling
+- Fargate and EC2 launch types
+- Load balancer integration
+- Auto-scaling policies
+- Blue/green deployments
+
+**Technologies:** AWS ECS, Fargate
+
+**[View Project →](ECS/)**
+
+---
+
+### 7. EventBridge
+**Description:** Serverless event bus service
+
+**Features:**
+- Event bus creation
+- Rule configuration
+- Event pattern matching
+- Target configuration (Lambda, SQS, SNS)
+- Scheduled events
+- Event replay
+
+**Technologies:** AWS EventBridge
+
+**[View Project →](EventBridge/)**
+
+---
+
+### 8. DynamoDB
+**Description:** NoSQL database service
+
+**Features:**
+- Table creation and management
+- Item operations (CRUD)
+- Query and scan operations
+- Secondary indexes
+- DynamoDB Streams
+- Batch operations
+
+**Technologies:** AWS DynamoDB
+
+**[View Project →](DynamoDB/)**
+
+---
+
+### 9. CloudWatch
+**Description:** Monitoring and observability
+
+**Features:**
+- Metrics publishing
+- Log group management
+- Dashboard creation
+- Alarm configuration
+- Log insights queries
+- Metrics math
+
+**Technologies:** AWS CloudWatch
+
+**[View Project →](CloudWatch/)**
+
+---
+
+### 10. Secrets Manager
+**Description:** Secrets and credentials management
+
+**Features:**
+- Secret storage and retrieval
+- Automatic rotation
+- Version management
+- Cross-region replication
+- Resource policies
+- Audit trails
+
+**Technologies:** AWS Secrets Manager
+
+**[View Project →](SecretsManager/)**
+
+---
+
 ## 🚀 Getting Started
 
 Each project contains:
