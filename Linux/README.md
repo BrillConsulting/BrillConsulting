@@ -63,6 +63,91 @@ Comprehensive Linux system administration, shell scripting, and process manageme
 
 ---
 
+### 4. Network Management
+**Description:** Network configuration and troubleshooting
+
+**Features:**
+- Network interface configuration
+- DNS and routing management
+- Network testing and diagnostics
+- Bandwidth monitoring
+- Port scanning and analysis
+- VPN configuration
+
+**Technologies:** Linux networking, netstat, ss, ip, iptables
+
+**[View Project →](NetworkManagement/)**
+
+---
+
+### 5. Security Hardening
+**Description:** System security and compliance
+
+**Features:**
+- Security auditing and scanning
+- SELinux/AppArmor configuration
+- File integrity monitoring
+- Password policies
+- Security updates automation
+- Vulnerability assessment
+
+**Technologies:** SELinux, fail2ban, AIDE, ClamAV
+
+**[View Project →](SecurityHardening/)**
+
+---
+
+### 6. Performance Tuning
+**Description:** System performance optimization
+
+**Features:**
+- CPU and memory tuning
+- Disk I/O optimization
+- Kernel parameter tuning
+- Process priority management
+- Resource limit configuration
+- Performance profiling
+
+**Technologies:** sysctl, nice, ionice, tuned
+
+**[View Project →](PerformanceTuning/)**
+
+---
+
+### 7. Backup and Recovery
+**Description:** Data backup and disaster recovery
+
+**Features:**
+- Automated backup scripts
+- Incremental and differential backups
+- Backup rotation and retention
+- Remote backup with rsync
+- System snapshot management
+- Recovery testing automation
+
+**Technologies:** rsync, tar, dd, LVM snapshots
+
+**[View Project →](BackupRecovery/)**
+
+---
+
+### 8. Log Management
+**Description:** Centralized logging and analysis
+
+**Features:**
+- Log aggregation and parsing
+- Log rotation configuration
+- Real-time log monitoring
+- Alert on critical events
+- Log archival and compression
+- Log analytics and reporting
+
+**Technologies:** rsyslog, logrotate, journalctl, Elasticsearch
+
+**[View Project →](LogManagement/)**
+
+---
+
 ## 🚀 Getting Started
 
 Each project contains:

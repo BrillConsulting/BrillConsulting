@@ -89,6 +89,91 @@ Comprehensive toolkit for working with large language models, from chatbots to f
 
 ---
 
+### 6. Agentic Workflows
+**Description:** Build autonomous agents with task execution
+
+**Features:**
+- Multi-step task planning
+- Tool use and function calling
+- Agent memory and state
+- Goal-driven execution
+- ReAct pattern implementation
+- Agent orchestration
+
+**Technologies:** LangChain, OpenAI, Transformers
+
+**[View Project →](AgenticWorkflows/)**
+
+---
+
+### 7. Multi-Modal LLM
+**Description:** Work with text, images, and audio in LLMs
+
+**Features:**
+- Vision-language models (GPT-4V, LLaVA)
+- Image captioning and VQA
+- Audio transcription (Whisper)
+- Multi-modal embeddings
+- Cross-modal retrieval
+- Document understanding with OCR
+
+**Technologies:** OpenAI, Transformers, Whisper
+
+**[View Project →](MultiModalLLM/)**
+
+---
+
+### 8. LLM Chaining
+**Description:** Build complex LLM workflows with chains
+
+**Features:**
+- Sequential chains
+- Parallel execution
+- Router chains
+- Map-reduce patterns
+- Error handling and retries
+- Chain composition
+
+**Technologies:** LangChain, OpenAI
+
+**[View Project →](LLMChaining/)**
+
+---
+
+### 9. Prompt Optimization
+**Description:** Automated prompt engineering and testing
+
+**Features:**
+- A/B testing for prompts
+- Genetic algorithm optimization
+- Prompt versioning
+- Performance metrics
+- Best prompt selection
+- Template management
+
+**Technologies:** OpenAI API, NumPy
+
+**[View Project →](PromptOptimization/)**
+
+---
+
+### 10. LLM Security
+**Description:** Safety, adversarial testing, and content filtering
+
+**Features:**
+- Prompt injection detection
+- Content moderation
+- PII detection and redaction
+- Jailbreak testing
+- Output validation
+- Safety guardrails
+
+**Technologies:** OpenAI Moderation API, Transformers
+
+**[View Project →](LLMSecurity/)**
+
+---
+
 ## 🚀 Getting Started
 
 Each project contains:
