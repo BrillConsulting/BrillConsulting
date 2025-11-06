@@ -1,2 +1,25 @@
-# Linux Performance Tuning Dependencies
-# Standard library only
+# Linux Performance Tuning System v2.0.0
+# Dependencies
+
+# Standard Python library only - no external packages required
+# Python 3.7 or higher
+
+# Optional system tools (install via package manager):
+# - cpupower (linux-tools-common, linux-tools-generic)
+# - tuned (tuned, tuned-utils)
+# - perf (linux-tools-generic, linux-perf)
+# - sysstat (sar, iostat, mpstat)
+# - iotop
+# - sysbench
+# - fio
+# - iperf3
+
+# Installation commands:
+# Ubuntu/Debian:
+#   sudo apt-get install linux-tools-common linux-tools-generic tuned sysstat iotop sysbench fio iperf3
+#
+# RHEL/CentOS:
+#   sudo yum install kernel-tools tuned sysstat iotop sysbench fio iperf3
+#
+# Fedora:
+#   sudo dnf install kernel-tools tuned sysstat iotop sysbench fio iperf3

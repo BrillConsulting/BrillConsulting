@@ -1,1 +1,18 @@
+# FileSystemManagement v2.0.0 Requirements
+
+# System and process monitoring
 psutil>=5.9.0
+
+# Standard library packages (included with Python)
+# - subprocess: Command execution
+# - os: Operating system interface
+# - re: Regular expressions
+# - json: JSON encoding/decoding
+# - logging: Logging facility
+# - pathlib: Object-oriented filesystem paths
+# - dataclasses: Data classes
+# - enum: Enumerations
+# - datetime: Date and time types
+# - typing: Type hints support
+# - pwd: Unix password database
+# - grp: Unix group database
