@@ -1,14 +1,17 @@
-# 📈 Regression Analysis
+# 📈 Advanced Regression Analysis System v2.0
 
-Comprehensive regression analysis system featuring multiple algorithms with automatic model selection, hyperparameter tuning, and performance comparison.
+**Production-ready regression with 10+ algorithms including XGBoost, LightGBM, and ensemble methods**
 
-## 🌟 Features
+Comprehensive regression analysis system featuring multiple algorithms with automatic model selection, hyperparameter tuning, and advanced diagnostics.
 
-- **Multiple Algorithms**: Linear, Ridge, Lasso, Polynomial Regression
-- **Automatic Hyperparameter Tuning**: Grid search for optimal parameters
-- **Model Comparison**: Side-by-side performance metrics
+## 🌟 Key Features
+
+- **10+ Algorithms**: Linear, Ridge, Lasso, Polynomial, Random Forest, Gradient Boosting, SVR, XGBoost, LightGBM
+- **Automatic Hyperparameter Tuning**: Grid search for optimal parameters across all models
+- **Model Comparison**: Side-by-side performance metrics with automatic best model selection
+- **Advanced Diagnostics**: Residual analysis, feature importance, normality tests
 - **Feature Scaling**: Automatic standardization
-- **Visualization**: Prediction vs actual plots
+- **Visualization**: Prediction vs actual plots for all models
 - **Model Persistence**: Save/load trained models
 
 ## 📦 Installation
@@ -51,25 +54,63 @@ python regression_models.py \
 
 ## 📊 Algorithms
 
-### 1. Linear Regression
+### Linear Models
+
+#### 1. Linear Regression
 - **Use**: Simple linear relationships
-- **Pros**: Fast, interpretable
-- **Cons**: Assumes linearity
+- **Pros**: Fast, interpretable, baseline model
+- **Cons**: Assumes linearity, sensitive to outliers
 
-### 2. Ridge Regression (L2 Regularization)
+#### 2. Ridge Regression (L2 Regularization)
 - **Use**: Multicollinearity, prevent overfitting
-- **Pros**: Handles correlated features well
-- **Hyperparameter**: alpha (regularization strength)
+- **Pros**: Handles correlated features well, stable coefficients
+- **Hyperparameter**: alpha (regularization strength: 0.001-100)
 
-### 3. Lasso Regression (L1 Regularization)
+#### 3. Lasso Regression (L1 Regularization)
 - **Use**: Feature selection, sparse models
-- **Pros**: Automatic feature selection
-- **Hyperparameter**: alpha (regularization strength)
+- **Pros**: Automatic feature selection, interpretable
+- **Hyperparameter**: alpha (regularization strength: 0.001-10)
 
-### 4. Polynomial Regression
+#### 4. Polynomial Regression
 - **Use**: Non-linear relationships
-- **Pros**: Captures complex patterns
-- **Hyperparameter**: degree (polynomial degree)
+- **Pros**: Captures complex patterns without feature engineering
+- **Hyperparameter**: degree (polynomial degree: 2-4)
+
+### Tree-Based Models
+
+#### 5. Random Forest ⭐
+- **Use**: Non-linear relationships, robust to outliers
+- **Pros**: High accuracy, feature importance, handles missing values
+- **Hyperparameters**: n_estimators (50-200), max_depth (10-30)
+- **Performance**: Often best for structured data
+
+#### 6. Gradient Boosting ⭐
+- **Use**: High accuracy regression tasks
+- **Pros**: State-of-the-art performance, adaptive
+- **Hyperparameters**: n_estimators (50-200), learning_rate (0.01-0.1), max_depth (3-7)
+- **Performance**: Excellent for competition-grade models
+
+#### 7. XGBoost ⭐ (Optional)
+- **Use**: Maximum performance, large datasets
+- **Pros**: Fastest gradient boosting, regularization, GPU support
+- **Hyperparameters**: n_estimators, learning_rate, max_depth, subsample, colsample_bytree
+- **Performance**: Industry standard for structured data
+- **Note**: Requires `pip install xgboost`
+
+#### 8. LightGBM ⭐ (Optional)
+- **Use**: Very large datasets, fast training
+- **Pros**: 10-20x faster than traditional GBDT, low memory
+- **Hyperparameters**: n_estimators, learning_rate, num_leaves, max_depth
+- **Performance**: Best for datasets >10K samples
+- **Note**: Requires `pip install lightgbm`
+
+### Other Methods
+
+#### 9. Support Vector Regression (SVR)
+- **Use**: Non-linear patterns, robust predictions
+- **Pros**: Effective in high dimensions, kernel trick
+- **Hyperparameters**: C (0.1-100), kernel (rbf/linear), gamma
+- **Performance**: Good for small-medium datasets
 
 ## 📝 Example Code
 
