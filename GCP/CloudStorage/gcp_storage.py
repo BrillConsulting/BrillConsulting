@@ -1,274 +1,634 @@
 """
-Google Cloud Storage
-====================
-
-Cloud storage and data management:
-- Bucket management
-- Object upload/download
-- Lifecycle policies
-- Access control
-- Signed URLs
-
+Google Cloud Storage - Advanced Object Storage
 Author: Brill Consulting
+Description: Comprehensive cloud storage with lifecycle, CORS, IAM, versioning, and signed URLs
 """
 
-from typing import List, Dict, Optional
-from datetime import datetime, timedelta
 import json
+from typing import Dict, List, Any, Optional
+from datetime import datetime, timedelta
+import base64
 
 
-class GCPCloudStorage:
-    """GCP Cloud Storage management."""
+class BucketManager:
+    """Manage storage buckets"""
 
     def __init__(self, project_id: str):
+        """Initialize bucket manager"""
         self.project_id = project_id
         self.buckets = {}
 
-    def create_bucket(self, bucket_name: str, location: str = "US",
-                     storage_class: str = "STANDARD") -> Dict:
-        """Create storage bucket."""
-        print(f"\n🪣 Creating bucket: {bucket_name}")
-        print(f"   Location: {location}")
-        print(f"   Storage class: {storage_class}")
+    def create_bucket(self, config: Dict[str, Any]) -> Dict[str, Any]:
+        """Create storage bucket"""
+        print(f"\n{'='*60}")
+        print("Creating Storage Bucket")
+        print(f"{'='*60}")
 
-        bucket = {
-            "name": bucket_name,
-            "location": location,
-            "storageClass": storage_class,
-            "objects": [],
-            "versioning": {"enabled": False},
-            "lifecycle": [],
-            "created_at": datetime.now().isoformat()
+        name = config.get('name', 'my-bucket')
+        location = config.get('location', 'US')
+        storage_class = config.get('storage_class', 'STANDARD')
+
+        code = f"""
+from google.cloud import storage
+
+storage_client = storage.Client()
+
+# Create bucket
+bucket = storage_client.bucket('{name}')
+bucket.storage_class = '{storage_class}'
+
+new_bucket = storage_client.create_bucket(
+    bucket,
+    location='{location}'
+)
+
+print(f"Bucket {{new_bucket.name}} created in {{new_bucket.location}}")
+"""
+
+        result = {
+            'name': name,
+            'location': location,
+            'storage_class': storage_class,
+            'versioning': False,
+            'lifecycle_rules': [],
+            'code': code,
+            'timestamp': datetime.now().isoformat()
         }
 
-        self.buckets[bucket_name] = bucket
-        print(f"✓ Bucket created: gs://{bucket_name}")
+        self.buckets[name] = result
 
-        return bucket
+        print(f"✓ Bucket created: gs://{name}")
+        print(f"  Location: {location}")
+        print(f"  Storage class: {storage_class}")
+        print(f"{'='*60}")
 
-    def upload_object(self, bucket_name: str, object_name: str, data: bytes,
-                     metadata: Optional[Dict] = None) -> Dict:
-        """Upload object to bucket."""
-        if bucket_name not in self.buckets:
-            return {"error": f"Bucket {bucket_name} not found"}
+        return result
 
-        print(f"\n⬆️  Uploading: gs://{bucket_name}/{object_name}")
+    def enable_versioning(self, bucket_name: str) -> Dict[str, Any]:
+        """Enable bucket versioning"""
+        print(f"\n{'='*60}")
+        print("Enabling Versioning")
+        print(f"{'='*60}")
 
-        obj = {
-            "name": object_name,
-            "bucket": bucket_name,
-            "size": len(data),
-            "contentType": "application/octet-stream",
-            "metadata": metadata or {},
-            "uploaded_at": datetime.now().isoformat(),
-            "generation": "1",
-            "etag": f"etag_{datetime.now().timestamp()}"
+        code = f"""
+from google.cloud import storage
+
+storage_client = storage.Client()
+bucket = storage_client.bucket('{bucket_name}')
+
+bucket.versioning_enabled = True
+bucket.patch()
+
+print(f"Versioning enabled for {{bucket.name}}")
+"""
+
+        result = {
+            'bucket': bucket_name,
+            'versioning_enabled': True,
+            'code': code
         }
 
-        self.buckets[bucket_name]["objects"].append(obj)
-        print(f"✓ Object uploaded ({obj['size']} bytes)")
+        if bucket_name in self.buckets:
+            self.buckets[bucket_name]['versioning'] = True
 
-        return obj
+        print(f"✓ Versioning enabled: {bucket_name}")
+        print(f"{'='*60}")
 
-    def list_objects(self, bucket_name: str, prefix: str = "") -> List[Dict]:
-        """List objects in bucket."""
-        if bucket_name not in self.buckets:
-            return []
+        return result
 
-        objects = self.buckets[bucket_name]["objects"]
+    def set_cors(self, bucket_name: str, cors_config: List[Dict[str, Any]]) -> Dict[str, Any]:
+        """Configure CORS for bucket"""
+        print(f"\n{'='*60}")
+        print("Configuring CORS")
+        print(f"{'='*60}")
 
-        if prefix:
-            objects = [obj for obj in objects if obj["name"].startswith(prefix)]
+        code = f"""
+from google.cloud import storage
 
-        print(f"\n📋 Listing objects in gs://{bucket_name}")
-        print(f"   Prefix: {prefix if prefix else '(all)'}")
-        print(f"   Found: {len(objects)} objects")
+storage_client = storage.Client()
+bucket = storage_client.bucket('{bucket_name}')
 
-        return objects
+# CORS configuration
+cors_configuration = {cors_config}
 
-    def delete_object(self, bucket_name: str, object_name: str) -> Dict:
-        """Delete object from bucket."""
-        if bucket_name not in self.buckets:
-            return {"error": f"Bucket {bucket_name} not found"}
+bucket.cors = cors_configuration
+bucket.patch()
 
-        bucket = self.buckets[bucket_name]
-        bucket["objects"] = [obj for obj in bucket["objects"] if obj["name"] != object_name]
+print(f"CORS configured for {{bucket.name}}")
+"""
 
-        print(f"🗑️  Deleted: gs://{bucket_name}/{object_name}")
+        result = {
+            'bucket': bucket_name,
+            'cors_rules': len(cors_config),
+            'code': code
+        }
 
-        return {"status": "deleted"}
+        print(f"✓ CORS configured: {bucket_name}")
+        print(f"  Rules: {len(cors_config)}")
+        print(f"{'='*60}")
 
-    def enable_versioning(self, bucket_name: str) -> Dict:
-        """Enable versioning for bucket."""
-        if bucket_name not in self.buckets:
-            return {"error": f"Bucket {bucket_name} not found"}
+        return result
 
-        self.buckets[bucket_name]["versioning"]["enabled"] = True
-        print(f"✓ Versioning enabled for: {bucket_name}")
 
-        return {"versioning": "enabled"}
+class ObjectManager:
+    """Manage storage objects"""
 
-    def set_lifecycle_policy(self, bucket_name: str, rules: List[Dict]) -> Dict:
-        """Set lifecycle policy."""
-        if bucket_name not in self.buckets:
-            return {"error": f"Bucket {bucket_name} not found"}
+    def __init__(self, project_id: str):
+        """Initialize object manager"""
+        self.project_id = project_id
 
-        print(f"\n🔄 Setting lifecycle policy for: {bucket_name}")
+    def upload_object(self, config: Dict[str, Any]) -> Dict[str, Any]:
+        """Upload object to bucket"""
+        print(f"\n{'='*60}")
+        print("Uploading Object")
+        print(f"{'='*60}")
 
-        self.buckets[bucket_name]["lifecycle"] = rules
+        bucket_name = config.get('bucket_name', 'my-bucket')
+        object_name = config.get('object_name', 'file.txt')
+        source_file = config.get('source_file', '/path/to/file')
 
-        for i, rule in enumerate(rules, 1):
-            action = rule.get("action", {}).get("type")
-            condition = rule.get("condition", {})
-            print(f"   Rule {i}: {action}")
-            if "age" in condition:
-                print(f"     Age: {condition['age']} days")
+        code = f"""
+from google.cloud import storage
 
-        print(f"✓ Lifecycle policy set ({len(rules)} rules)")
+storage_client = storage.Client()
+bucket = storage_client.bucket('{bucket_name}')
+blob = bucket.blob('{object_name}')
 
-        return {"rules": len(rules)}
+# Upload from file
+blob.upload_from_filename('{source_file}')
 
-    def generate_signed_url(self, bucket_name: str, object_name: str,
-                          expiration_minutes: int = 60) -> str:
-        """Generate signed URL for object."""
+# Or upload from string
+# blob.upload_from_string('data content')
+
+print(f"File uploaded to gs://{bucket_name}/{object_name}")
+"""
+
+        result = {
+            'bucket': bucket_name,
+            'object': object_name,
+            'code': code,
+            'timestamp': datetime.now().isoformat()
+        }
+
+        print(f"✓ Object uploaded: gs://{bucket_name}/{object_name}")
+        print(f"{'='*60}")
+
+        return result
+
+    def generate_signed_url(self, config: Dict[str, Any]) -> Dict[str, Any]:
+        """Generate signed URL for object access"""
+        print(f"\n{'='*60}")
+        print("Generating Signed URL")
+        print(f"{'='*60}")
+
+        bucket_name = config.get('bucket_name', 'my-bucket')
+        object_name = config.get('object_name', 'file.txt')
+        expiration_minutes = config.get('expiration_minutes', 15)
+
+        code = f"""
+from google.cloud import storage
+from datetime import timedelta
+
+storage_client = storage.Client()
+bucket = storage_client.bucket('{bucket_name}')
+blob = bucket.blob('{object_name}')
+
+# Generate signed URL
+url = blob.generate_signed_url(
+    version="v4",
+    expiration=timedelta(minutes={expiration_minutes}),
+    method="GET"
+)
+
+print(f"Signed URL generated (expires in {expiration_minutes} minutes)")
+print(f"URL: {{url}}")
+"""
+
         expiration = datetime.now() + timedelta(minutes=expiration_minutes)
 
-        signed_url = f"https://storage.googleapis.com/{bucket_name}/{object_name}?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=...&X-Goog-Expires={expiration_minutes*60}"
+        result = {
+            'bucket': bucket_name,
+            'object': object_name,
+            'expiration': expiration.isoformat(),
+            'code': code
+        }
 
-        print(f"\n🔐 Generated signed URL:")
-        print(f"   Object: gs://{bucket_name}/{object_name}")
-        print(f"   Expires: {expiration.isoformat()}")
+        print(f"✓ Signed URL generated: {object_name}")
+        print(f"  Expires: {expiration.strftime('%Y-%m-%d %H:%M:%S')}")
+        print(f"{'='*60}")
 
-        return signed_url
+        return result
 
-    def copy_object(self, source_bucket: str, source_object: str,
-                   dest_bucket: str, dest_object: str) -> Dict:
-        """Copy object between buckets."""
-        print(f"\n📋 Copying object:")
-        print(f"   From: gs://{source_bucket}/{source_object}")
-        print(f"   To: gs://{dest_bucket}/{dest_object}")
+    def set_object_metadata(self, config: Dict[str, Any]) -> Dict[str, Any]:
+        """Set custom metadata for object"""
+        print(f"\n{'='*60}")
+        print("Setting Object Metadata")
+        print(f"{'='*60}")
 
-        # Find source object
-        if source_bucket not in self.buckets:
-            return {"error": f"Source bucket {source_bucket} not found"}
+        bucket_name = config.get('bucket_name', 'my-bucket')
+        object_name = config.get('object_name', 'file.txt')
+        metadata = config.get('metadata', {})
 
-        source_obj = next(
-            (obj for obj in self.buckets[source_bucket]["objects"] if obj["name"] == source_object),
-            None
-        )
+        code = f"""
+from google.cloud import storage
 
-        if not source_obj:
-            return {"error": f"Source object {source_object} not found"}
+storage_client = storage.Client()
+bucket = storage_client.bucket('{bucket_name}')
+blob = bucket.blob('{object_name}')
 
-        # Create copy in destination
-        copied_obj = source_obj.copy()
-        copied_obj["bucket"] = dest_bucket
-        copied_obj["name"] = dest_object
+# Set custom metadata
+blob.metadata = {metadata}
+blob.patch()
 
-        if dest_bucket in self.buckets:
-            self.buckets[dest_bucket]["objects"].append(copied_obj)
+print(f"Metadata set for {{blob.name}}")
+"""
 
-        print(f"✓ Object copied successfully")
+        result = {
+            'bucket': bucket_name,
+            'object': object_name,
+            'metadata': metadata,
+            'code': code
+        }
 
-        return copied_obj
+        print(f"✓ Metadata set: {object_name}")
+        print(f"  Keys: {', '.join(metadata.keys())}")
+        print(f"{'='*60}")
 
-    def get_bucket_stats(self, bucket_name: str) -> Dict:
-        """Get bucket statistics."""
-        if bucket_name not in self.buckets:
-            return {"error": f"Bucket {bucket_name} not found"}
+        return result
 
-        bucket = self.buckets[bucket_name]
-        total_size = sum(obj["size"] for obj in bucket["objects"])
 
+class LifecycleManager:
+    """Manage bucket lifecycle policies"""
+
+    def __init__(self, project_id: str):
+        """Initialize lifecycle manager"""
+        self.project_id = project_id
+
+    def set_lifecycle_policy(self, config: Dict[str, Any]) -> Dict[str, Any]:
+        """Set lifecycle policy for bucket"""
+        print(f"\n{'='*60}")
+        print("Setting Lifecycle Policy")
+        print(f"{'='*60}")
+
+        bucket_name = config.get('bucket_name', 'my-bucket')
+        rules = config.get('rules', [])
+
+        code = f"""
+from google.cloud import storage
+
+storage_client = storage.Client()
+bucket = storage_client.bucket('{bucket_name}')
+
+# Define lifecycle rules
+rules = {json.dumps(rules, indent=4)}
+
+bucket.lifecycle_rules = rules
+bucket.patch()
+
+print(f"Lifecycle policy set for {{bucket.name}}")
+print(f"Rules: {{len(rules)}}")
+"""
+
+        result = {
+            'bucket': bucket_name,
+            'rules': rules,
+            'rules_count': len(rules),
+            'code': code
+        }
+
+        print(f"✓ Lifecycle policy set: {bucket_name}")
+        print(f"  Rules: {len(rules)}")
+        for i, rule in enumerate(rules, 1):
+            action = rule.get('action', {}).get('type', 'Unknown')
+            print(f"    {i}. {action}")
+        print(f"{'='*60}")
+
+        return result
+
+
+class IAMManager:
+    """Manage IAM policies for buckets"""
+
+    def __init__(self, project_id: str):
+        """Initialize IAM manager"""
+        self.project_id = project_id
+
+    def make_bucket_public(self, bucket_name: str) -> Dict[str, Any]:
+        """Make bucket publicly readable"""
+        print(f"\n{'='*60}")
+        print("Making Bucket Public")
+        print(f"{'='*60}")
+
+        code = f"""
+from google.cloud import storage
+
+storage_client = storage.Client()
+bucket = storage_client.bucket('{bucket_name}')
+
+# Make public
+policy = bucket.get_iam_policy(requested_policy_version=3)
+policy.bindings.append(
+    {{
+        "role": "roles/storage.objectViewer",
+        "members": {{"allUsers"}},
+    }}
+)
+
+bucket.set_iam_policy(policy)
+
+print(f"Bucket {{bucket.name}} is now public")
+"""
+
+        result = {
+            'bucket': bucket_name,
+            'public': True,
+            'code': code
+        }
+
+        print(f"✓ Bucket made public: {bucket_name}")
+        print(f"  Warning: All objects are publicly accessible")
+        print(f"{'='*60}")
+
+        return result
+
+    def grant_access(self, config: Dict[str, Any]) -> Dict[str, Any]:
+        """Grant access to bucket"""
+        print(f"\n{'='*60}")
+        print("Granting Bucket Access")
+        print(f"{'='*60}")
+
+        bucket_name = config.get('bucket_name', 'my-bucket')
+        member = config.get('member', 'user:user@example.com')
+        role = config.get('role', 'roles/storage.objectViewer')
+
+        code = f"""
+from google.cloud import storage
+
+storage_client = storage.Client()
+bucket = storage_client.bucket('{bucket_name}')
+
+# Grant access
+policy = bucket.get_iam_policy(requested_policy_version=3)
+policy.bindings.append(
+    {{
+        "role": "{role}",
+        "members": {{"{member}"}},
+    }}
+)
+
+bucket.set_iam_policy(policy)
+
+print(f"Access granted to {{'{member}'}}")
+"""
+
+        result = {
+            'bucket': bucket_name,
+            'member': member,
+            'role': role,
+            'code': code
+        }
+
+        print(f"✓ Access granted: {bucket_name}")
+        print(f"  Member: {member}")
+        print(f"  Role: {role}")
+        print(f"{'='*60}")
+
+        return result
+
+
+class NotificationManager:
+    """Manage Pub/Sub notifications"""
+
+    def __init__(self, project_id: str):
+        """Initialize notification manager"""
+        self.project_id = project_id
+
+    def create_notification(self, config: Dict[str, Any]) -> Dict[str, Any]:
+        """Create Pub/Sub notification for bucket"""
+        print(f"\n{'='*60}")
+        print("Creating Pub/Sub Notification")
+        print(f"{'='*60}")
+
+        bucket_name = config.get('bucket_name', 'my-bucket')
+        topic_name = config.get('topic_name', 'projects/project/topics/storage-events')
+
+        code = f"""
+from google.cloud import storage
+
+storage_client = storage.Client()
+bucket = storage_client.bucket('{bucket_name}')
+
+# Create notification
+notification = bucket.notification(
+    topic_name='{topic_name}',
+    custom_attributes={{'source': 'cloud-storage'}}
+)
+
+notification.event_types = [
+    'OBJECT_FINALIZE',
+    'OBJECT_DELETE',
+]
+
+notification.create()
+
+print(f"Notification created: {{notification.notification_id}}")
+"""
+
+        result = {
+            'bucket': bucket_name,
+            'topic': topic_name,
+            'events': ['OBJECT_FINALIZE', 'OBJECT_DELETE'],
+            'code': code
+        }
+
+        print(f"✓ Notification created: {bucket_name}")
+        print(f"  Topic: {topic_name}")
+        print(f"  Events: OBJECT_FINALIZE, OBJECT_DELETE")
+        print(f"{'='*60}")
+
+        return result
+
+
+class TransferManager:
+    """Manage storage transfer operations"""
+
+    def __init__(self, project_id: str):
+        """Initialize transfer manager"""
+        self.project_id = project_id
+
+    def parallel_upload(self, config: Dict[str, Any]) -> Dict[str, Any]:
+        """Upload multiple files in parallel"""
+        print(f"\n{'='*60}")
+        print("Parallel Upload")
+        print(f"{'='*60}")
+
+        bucket_name = config.get('bucket_name', 'my-bucket')
+        files = config.get('files', [])
+
+        code = f"""
+from google.cloud import storage
+from concurrent.futures import ThreadPoolExecutor
+
+storage_client = storage.Client()
+bucket = storage_client.bucket('{bucket_name}')
+
+files_to_upload = {files}
+
+def upload_file(file_path):
+    blob = bucket.blob(file_path.split('/')[-1])
+    blob.upload_from_filename(file_path)
+    return file_path
+
+# Parallel upload
+with ThreadPoolExecutor(max_workers=10) as executor:
+    results = list(executor.map(upload_file, files_to_upload))
+
+print(f"Uploaded {{len(results)}} files to {{bucket.name}}")
+"""
+
+        result = {
+            'bucket': bucket_name,
+            'files': len(files),
+            'code': code
+        }
+
+        print(f"✓ Parallel upload configured: {len(files)} files")
+        print(f"  Bucket: {bucket_name}")
+        print(f"{'='*60}")
+
+        return result
+
+
+class CloudStorageManager:
+    """Comprehensive Cloud Storage management"""
+
+    def __init__(self, project_id: str = 'my-project'):
+        """
+        Initialize Cloud Storage manager
+
+        Args:
+            project_id: GCP project ID
+        """
+        self.project_id = project_id
+        self.buckets = BucketManager(project_id)
+        self.objects = ObjectManager(project_id)
+        self.lifecycle = LifecycleManager(project_id)
+        self.iam = IAMManager(project_id)
+        self.notifications = NotificationManager(project_id)
+        self.transfer = TransferManager(project_id)
+
+    def get_manager_info(self) -> Dict[str, Any]:
+        """Get manager information"""
         return {
-            "bucket": bucket_name,
-            "object_count": len(bucket["objects"]),
-            "total_size_bytes": total_size,
-            "storage_class": bucket["storageClass"],
-            "versioning_enabled": bucket["versioning"]["enabled"],
-            "lifecycle_rules": len(bucket["lifecycle"])
+            'project_id': self.project_id,
+            'buckets': len(self.buckets.buckets),
+            'features': [
+                'bucket_management',
+                'object_operations',
+                'lifecycle_policies',
+                'versioning',
+                'signed_urls',
+                'cors_configuration',
+                'iam_policies',
+                'pubsub_notifications',
+                'parallel_transfers'
+            ],
+            'timestamp': datetime.now().isoformat()
         }
 
 
 def demo():
-    """Demo GCP Cloud Storage."""
-    print("Google Cloud Storage Demo")
+    """Demonstrate Cloud Storage capabilities"""
+    print("=" * 60)
+    print("Cloud Storage Comprehensive Demo")
     print("=" * 60)
 
-    storage = GCPCloudStorage("my-gcp-project")
+    project_id = 'my-gcp-project'
 
-    # 1. Create buckets
-    print("\n1. Create Storage Buckets")
-    print("-" * 60)
+    # Initialize manager
+    mgr = CloudStorageManager(project_id)
 
-    storage.create_bucket("my-data-bucket", "US", "STANDARD")
-    storage.create_bucket("my-archive-bucket", "US", "COLDLINE")
+    # Create bucket
+    bucket = mgr.buckets.create_bucket({
+        'name': 'my-data-bucket',
+        'location': 'US',
+        'storage_class': 'STANDARD'
+    })
 
-    # 2. Upload objects
-    print("\n2. Upload Objects")
-    print("-" * 60)
+    # Enable versioning
+    versioning = mgr.buckets.enable_versioning('my-data-bucket')
 
-    storage.upload_object("my-data-bucket", "data/file1.txt", b"content here", {"author": "Alice"})
-    storage.upload_object("my-data-bucket", "data/file2.txt", b"more content", {"author": "Bob"})
-    storage.upload_object("my-data-bucket", "images/photo.jpg", b"image data" * 1000)
-
-    # 3. List objects
-    print("\n3. List Objects")
-    print("-" * 60)
-
-    all_objects = storage.list_objects("my-data-bucket")
-    data_objects = storage.list_objects("my-data-bucket", prefix="data/")
-
-    # 4. Versioning
-    print("\n4. Enable Versioning")
-    print("-" * 60)
-
-    storage.enable_versioning("my-data-bucket")
-
-    # 5. Lifecycle policy
-    print("\n5. Lifecycle Policy")
-    print("-" * 60)
-
-    lifecycle_rules = [
+    # Configure CORS
+    cors = mgr.buckets.set_cors('my-data-bucket', [
         {
-            "action": {"type": "Delete"},
-            "condition": {"age": 30}
-        },
-        {
-            "action": {"type": "SetStorageClass", "storageClass": "COLDLINE"},
-            "condition": {"age": 90}
+            'origin': ['https://example.com'],
+            'method': ['GET', 'POST'],
+            'responseHeader': ['Content-Type'],
+            'maxAgeSeconds': 3600
         }
-    ]
+    ])
 
-    storage.set_lifecycle_policy("my-data-bucket", lifecycle_rules)
+    # Upload object
+    upload = mgr.objects.upload_object({
+        'bucket_name': 'my-data-bucket',
+        'object_name': 'data/file.txt',
+        'source_file': '/tmp/file.txt'
+    })
 
-    # 6. Signed URL
-    print("\n6. Generate Signed URL")
-    print("-" * 60)
+    # Generate signed URL
+    signed_url = mgr.objects.generate_signed_url({
+        'bucket_name': 'my-data-bucket',
+        'object_name': 'data/file.txt',
+        'expiration_minutes': 15
+    })
 
-    signed_url = storage.generate_signed_url("my-data-bucket", "data/file1.txt", 60)
+    # Set lifecycle policy
+    lifecycle = mgr.lifecycle.set_lifecycle_policy({
+        'bucket_name': 'my-data-bucket',
+        'rules': [
+            {
+                'action': {'type': 'Delete'},
+                'condition': {'age': 30}
+            },
+            {
+                'action': {'type': 'SetStorageClass', 'storageClass': 'NEARLINE'},
+                'condition': {'age': 90}
+            }
+        ]
+    })
 
-    # 7. Copy object
-    print("\n7. Copy Object")
-    print("-" * 60)
+    # Grant access
+    access = mgr.iam.grant_access({
+        'bucket_name': 'my-data-bucket',
+        'member': 'user:user@example.com',
+        'role': 'roles/storage.objectViewer'
+    })
 
-    storage.copy_object("my-data-bucket", "data/file1.txt",
-                       "my-archive-bucket", "archive/file1.txt")
+    # Create notification
+    notification = mgr.notifications.create_notification({
+        'bucket_name': 'my-data-bucket',
+        'topic_name': 'projects/my-project/topics/storage-events'
+    })
 
-    # 8. Bucket statistics
-    print("\n8. Bucket Statistics")
-    print("-" * 60)
+    # Manager info
+    info = mgr.get_manager_info()
+    print(f"\n{'='*60}")
+    print("Cloud Storage Manager Summary")
+    print(f"{'='*60}")
+    print(f"Project: {info['project_id']}")
+    print(f"Buckets: {info['buckets']}")
+    print(f"Features: {', '.join(info['features'])}")
+    print(f"{'='*60}")
 
-    for bucket_name in ["my-data-bucket", "my-archive-bucket"]:
-        stats = storage.get_bucket_stats(bucket_name)
-        print(f"\n  {bucket_name}:")
-        print(f"    Objects: {stats['object_count']}")
-        print(f"    Total size: {stats['total_size_bytes']} bytes")
-        print(f"    Storage class: {stats['storage_class']}")
-        print(f"    Versioning: {'Enabled' if stats['versioning_enabled'] else 'Disabled'}")
+    print("\n✓ Demo completed successfully!")
+    print("\nCloud Storage Best Practices:")
+    print("  1. Enable versioning for important data")
+    print("  2. Set lifecycle policies to reduce costs")
+    print("  3. Use signed URLs for temporary access")
+    print("  4. Configure CORS for web applications")
+    print("  5. Use IAM for fine-grained access control")
+    print("  6. Enable notifications for event-driven workflows")
 
-    print("\n✓ GCP Cloud Storage Demo Complete!")
 
-
-if __name__ == '__main__':
+if __name__ == "__main__":
     demo()
