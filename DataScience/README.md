@@ -1,8 +1,10 @@
 # Data Science Portfolio
 
-Comprehensive data science toolkit covering the full analytics lifecycle from data exploration to predictive modeling and advanced statistical analysis.
+Comprehensive data science toolkit covering the full analytics lifecycle from data exploration to predictive modeling and advanced statistical analysis. This portfolio features **27 production-ready projects** spanning data preparation, statistical inference, machine learning, and specialized analytics.
 
 ## Projects Overview
+
+### Data Preparation & Exploration
 
 ### 1. Exploratory Data Analysis (EDA)
 **Description:** Automated data profiling and insights discovery
@@ -60,6 +62,28 @@ Comprehensive data science toolkit covering the full analytics lifecycle from da
 
 ---
 
+### 16. Anomaly Detection
+**Description:** Identify outliers and anomalies in datasets
+
+**Features:**
+- Statistical methods (Z-score, IQR, Grubbs' test)
+- Isolation Forest for high-dimensional data
+- Local Outlier Factor (LOF) detection
+- One-Class SVM for novelty detection
+- DBSCAN-based outlier identification
+- Time series anomaly detection
+- Multivariate anomaly detection
+- Anomaly visualization and scoring
+- Real-time anomaly monitoring
+
+**Technologies:** Scikit-learn, NumPy, Pandas, SciPy, Matplotlib, Seaborn
+
+**[View Project →](AnomalyDetection/)**
+
+---
+
+### Statistical Analysis & Inference
+
 ### 4. A/B Testing
 **Description:** Statistical experimentation and hypothesis testing
 
@@ -76,25 +100,6 @@ Comprehensive data science toolkit covering the full analytics lifecycle from da
 **Technologies:** SciPy, NumPy, Matplotlib, Seaborn
 
 **[View Project →](ABTesting/)**
-
----
-
-### 5. Predictive Analytics
-**Description:** End-to-end machine learning pipeline
-
-**Features:**
-- Data preparation and stratified splitting
-- Multiple model training and comparison
-- Comprehensive evaluation metrics
-- Cross-validation for robust estimates
-- Hyperparameter tuning with GridSearchCV
-- Feature importance ranking
-- Model persistence (save/load)
-- Prediction generation for new data
-
-**Technologies:** Scikit-learn, Joblib, Matplotlib, Seaborn
-
-**[View Project →](PredictiveAnalytics/)**
 
 ---
 
@@ -193,6 +198,169 @@ Comprehensive data science toolkit covering the full analytics lifecycle from da
 
 ---
 
+### 27. Causal Discovery
+**Description:** Discover causal relationships from data
+
+**Features:**
+- PC algorithm for causal structure learning
+- GES (Greedy Equivalence Search)
+- Constraint-based discovery methods
+- Score-based causal search
+- Conditional independence testing
+- Causal graph visualization (DAGs)
+- Markov blanket discovery
+- Orientation rules for edge direction
+- Bootstrap stability assessment
+
+**Technologies:** NumPy, Pandas, SciPy, Matplotlib, Seaborn
+
+**[View Project →](CausalDiscovery/)**
+
+---
+
+### Machine Learning & Predictive Modeling
+
+### 5. Predictive Analytics
+**Description:** End-to-end machine learning pipeline
+
+**Features:**
+- Data preparation and stratified splitting
+- Multiple model training and comparison
+- Comprehensive evaluation metrics
+- Cross-validation for robust estimates
+- Hyperparameter tuning with GridSearchCV
+- Feature importance ranking
+- Model persistence (save/load)
+- Prediction generation for new data
+
+**Technologies:** Scikit-learn, Joblib, Matplotlib, Seaborn
+
+**[View Project →](PredictiveAnalytics/)**
+
+---
+
+### 17. Cluster Analysis
+**Description:** Unsupervised learning and pattern discovery
+
+**Features:**
+- K-Means clustering with elbow method
+- Hierarchical clustering (agglomerative, divisive)
+- DBSCAN density-based clustering
+- Gaussian Mixture Models (GMM)
+- Silhouette analysis for optimal clusters
+- Dendrogram visualization
+- Cluster validation metrics (Calinski-Harabasz, Davies-Bouldin)
+- Consensus clustering
+- Cluster profiling and interpretation
+
+**Technologies:** Scikit-learn, SciPy, NumPy, Pandas, Matplotlib, Seaborn
+
+**[View Project →](ClusterAnalysis/)**
+
+---
+
+### 18. Recommender Systems
+**Description:** Personalized recommendation engines
+
+**Features:**
+- Collaborative filtering (user-based, item-based)
+- Matrix factorization (SVD, NMF)
+- Content-based filtering
+- Hybrid recommendation approaches
+- Similarity metrics (cosine, Pearson, Jaccard)
+- Cold start handling strategies
+- Rating prediction and ranking
+- Evaluation metrics (RMSE, precision@k, recall@k, NDCG)
+- Scalable recommendation generation
+
+**Technologies:** NumPy, Pandas, SciPy, Scikit-learn, Matplotlib
+
+**[View Project →](RecommenderSystems/)**
+
+---
+
+### 19. Dimensionality Reduction
+**Description:** Feature space reduction and visualization
+
+**Features:**
+- Principal Component Analysis (PCA)
+- t-SNE for visualization
+- UMAP for large datasets
+- Linear Discriminant Analysis (LDA)
+- Factor Analysis
+- Kernel PCA for non-linear reduction
+- Truncated SVD for sparse matrices
+- Explained variance analysis
+- Reconstruction error metrics
+
+**Technologies:** Scikit-learn, NumPy, Pandas, Matplotlib, Seaborn
+
+**[View Project →](DimensionalityReduction/)**
+
+---
+
+### 20. Model Interpretability
+**Description:** Explain and interpret ML model predictions
+
+**Features:**
+- SHAP values for feature importance
+- LIME for local interpretability
+- Partial dependence plots (PDP)
+- Individual conditional expectation (ICE) plots
+- Permutation feature importance
+- Feature interaction detection
+- Global surrogate models
+- Anchor explanations
+- Model-agnostic explanations
+
+**Technologies:** Scikit-learn, NumPy, Pandas, Matplotlib, Seaborn
+
+**[View Project →](ModelInterpretability/)**
+
+---
+
+### 21. Imbalanced Learning
+**Description:** Handle class imbalance in classification
+
+**Features:**
+- SMOTE (Synthetic Minority Over-sampling)
+- ADASYN adaptive sampling
+- Random under-sampling strategies
+- Tomek links for cleaning
+- Class weight adjustment
+- Cost-sensitive learning
+- Ensemble methods for imbalanced data
+- Evaluation metrics (F1, precision-recall, AUC-PR)
+- Threshold optimization
+
+**Technologies:** Scikit-learn, NumPy, Pandas, Matplotlib, Seaborn
+
+**[View Project →](ImbalancedLearning/)**
+
+---
+
+### 26. Ensemble Methods
+**Description:** Combine multiple models for better predictions
+
+**Features:**
+- Bagging (Bootstrap Aggregating)
+- Random Forest with feature importance
+- AdaBoost and Gradient Boosting
+- XGBoost-style implementations
+- Stacking and blending
+- Voting classifiers (hard/soft voting)
+- Out-of-bag error estimation
+- Feature importance aggregation
+- Ensemble diversity metrics
+
+**Technologies:** Scikit-learn, NumPy, Pandas, Matplotlib, Seaborn
+
+**[View Project →](EnsembleMethods/)**
+
+---
+
+### Advanced Methods & Optimization
+
 ### 11. Monte Carlo Simulation
 **Description:** Stochastic simulation and risk analysis
 
@@ -212,6 +380,68 @@ Comprehensive data science toolkit covering the full analytics lifecycle from da
 **[View Project →](MonteCarloSimulation/)**
 
 ---
+
+### 22. Optimization Methods
+**Description:** Mathematical optimization and constrained problems
+
+**Features:**
+- Linear programming (simplex method)
+- Non-linear optimization (gradient descent, BFGS, L-BFGS)
+- Constrained optimization (SLSQP, trust-constr)
+- Genetic algorithms for global optimization
+- Simulated annealing
+- Particle swarm optimization
+- Multi-objective optimization (Pareto fronts)
+- Integer programming
+- Convex optimization
+
+**Technologies:** SciPy, NumPy, Pandas, Matplotlib
+
+**[View Project →](OptimizationMethods/)**
+
+---
+
+### 23. Sequential Analysis
+**Description:** Sequential decision making and adaptive sampling
+
+**Features:**
+- Sequential probability ratio test (SPRT)
+- Sequential sampling plans
+- Multi-armed bandit algorithms (epsilon-greedy, UCB, Thompson sampling)
+- Sequential A/B testing with early stopping
+- Online learning and adaptive algorithms
+- Change point detection in sequences
+- Sequential hypothesis testing
+- Expected sample size calculations
+- Risk-adjusted sequential designs
+
+**Technologies:** NumPy, Pandas, SciPy, Matplotlib, Seaborn
+
+**[View Project →](SequentialAnalysis/)**
+
+---
+
+### 24. Data Drift Detection
+**Description:** Monitor and detect distribution shifts in production
+
+**Features:**
+- Population Stability Index (PSI)
+- Kolmogorov-Smirnov test for drift
+- Jensen-Shannon divergence
+- Wasserstein distance for distribution comparison
+- Concept drift detection (ADWIN, DDM)
+- Feature drift monitoring
+- Model performance degradation detection
+- Drift visualization and alerts
+- Statistical significance testing
+
+**Technologies:** NumPy, Pandas, SciPy, Matplotlib, Seaborn
+
+**[View Project →](DataDriftDetection/)**
+
+---
+
+### Specialized Analytics
 
 ### 12. Network Analysis
 **Description:** Graph and network analysis
@@ -290,6 +520,26 @@ Comprehensive data science toolkit covering the full analytics lifecycle from da
 
 ---
 
+### 25. Synthetic Data Generation
+**Description:** Generate realistic synthetic datasets
+
+**Features:**
+- Statistical sampling methods (parametric distributions)
+- Copula-based multivariate generation
+- Gaussian mixture models for data synthesis
+- SMOTE and variations for synthetic samples
+- Synthetic time series generation
+- Preserving statistical properties (correlations, distributions)
+- Privacy-preserving synthetic data
+- Data augmentation techniques
+- Validation of synthetic data quality
+
+**Technologies:** NumPy, Pandas, SciPy, Scikit-learn, Matplotlib, Seaborn
+
+**[View Project →](SyntheticDataGeneration/)**
+
+---
+
 ## Getting Started
 
 Each project contains:
@@ -352,24 +602,30 @@ python project_file.py
 ## Use Cases
 
 ### Business Analytics
-- Customer behavior analysis
+- Customer behavior analysis and segmentation
 - Marketing campaign optimization
 - A/B testing and experimentation
 - Churn prediction and retention
-- Sales forecasting
+- Sales forecasting and demand planning
+- Personalized recommendations
+- Customer lifetime value modeling
 
 ### Healthcare & Medical
-- Clinical trial analysis
+- Clinical trial analysis and design
 - Survival analysis for treatment outcomes
 - Patient risk stratification
-- Medical image analysis support
+- Disease outbreak detection
+- Medical diagnosis support
+- Treatment effect estimation
 
 ### Finance & Risk
 - Portfolio optimization and risk analysis
 - Option pricing and derivatives
 - Value at Risk (VaR) calculation
 - Credit risk modeling
-- Fraud detection
+- Fraud and anomaly detection
+- Algorithmic trading strategies
+- Market regime detection
 
 ### Operations & Engineering
 - Quality control and process optimization
@@ -377,31 +633,56 @@ python project_file.py
 - Experiment design and optimization
 - Supply chain forecasting
 - Network and infrastructure analysis
+- Resource allocation optimization
+- Production scheduling
+
+### Machine Learning & AI
+- Model performance monitoring
+- Interpretable AI and explainability
+- Handling imbalanced datasets
+- Feature engineering automation
+- Model drift detection
+- Ensemble model development
+- Dimensionality reduction for visualization
 
 ### Research & Science
-- Causal effect estimation
+- Causal effect estimation and discovery
 - Experimental design and analysis
 - Spatial and temporal data analysis
 - Text mining and NLP
 - Bayesian statistical inference
+- Synthetic data for privacy preservation
+- Multi-objective optimization
 
 ## Project Structure
 
 ```
 DataScience/
 ├── ABTesting/
+├── AnomalyDetection/
 ├── BayesianInference/
+├── CausalDiscovery/
 ├── CausalInference/
+├── ClusterAnalysis/
+├── DataDriftDetection/
 ├── DataPreprocessing/
+├── DimensionalityReduction/
+├── EnsembleMethods/
 ├── ExperimentDesign/
 ├── ExploratoryDataAnalysis/
 ├── FeatureEngineering/
+├── ImbalancedLearning/
+├── ModelInterpretability/
 ├── MonteCarloSimulation/
 ├── NetworkAnalysis/
+├── OptimizationMethods/
 ├── PredictiveAnalytics/
+├── RecommenderSystems/
+├── SequentialAnalysis/
 ├── SpatialStatistics/
 ├── StatisticalModeling/
 ├── SurvivalAnalysis/
+├── SyntheticDataGeneration/
 ├── TextMining/
 └── TimeSeriesAnalysis/
 ```
