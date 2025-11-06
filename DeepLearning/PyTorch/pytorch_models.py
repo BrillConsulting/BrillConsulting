@@ -439,6 +439,353 @@ if accuracy > best_accuracy:
         print("✓ Model checkpoint code generated")
         return code
 
+    def create_advanced_resnet(self, model_config: Dict[str, Any]) -> Dict[str, Any]:
+        """
+        Create Advanced ResNet with bottleneck blocks
+
+        Args:
+            model_config: Model configuration
+
+        Returns:
+            Model details
+        """
+        model = {
+            'name': model_config.get('name', 'AdvancedResNet'),
+            'type': 'residual',
+            'architecture': {
+                'num_blocks': model_config.get('num_blocks', [3, 4, 6, 3]),
+                'num_classes': model_config.get('num_classes', 1000),
+                'bottleneck': model_config.get('bottleneck', True)
+            },
+            'parameters': 25_500_000,
+            'created_at': datetime.now().isoformat()
+        }
+
+        code = f"""
+import torch
+import torch.nn as nn
+import torch.nn.functional as F
+
+class Bottleneck(nn.Module):
+    expansion = 4
+
+    def __init__(self, in_channels, out_channels, stride=1, downsample=None):
+        super(Bottleneck, self).__init__()
+
+        self.conv1 = nn.Conv2d(in_channels, out_channels, kernel_size=1, bias=False)
+        self.bn1 = nn.BatchNorm2d(out_channels)
+
+        self.conv2 = nn.Conv2d(out_channels, out_channels, kernel_size=3,
+                              stride=stride, padding=1, bias=False)
+        self.bn2 = nn.BatchNorm2d(out_channels)
+
+        self.conv3 = nn.Conv2d(out_channels, out_channels * self.expansion,
+                              kernel_size=1, bias=False)
+        self.bn3 = nn.BatchNorm2d(out_channels * self.expansion)
+
+        self.relu = nn.ReLU(inplace=True)
+        self.downsample = downsample
+
+    def forward(self, x):
+        identity = x
+
+        out = self.relu(self.bn1(self.conv1(x)))
+        out = self.relu(self.bn2(self.conv2(out)))
+        out = self.bn3(self.conv3(out))
+
+        if self.downsample is not None:
+            identity = self.downsample(x)
+
+        out += identity
+        out = self.relu(out)
+
+        return out
+
+class ResNet(nn.Module):
+    def __init__(self, block, layers, num_classes={model['architecture']['num_classes']}):
+        super(ResNet, self).__init__()
+
+        self.in_channels = 64
+
+        self.conv1 = nn.Conv2d(3, 64, kernel_size=7, stride=2, padding=3, bias=False)
+        self.bn1 = nn.BatchNorm2d(64)
+        self.relu = nn.ReLU(inplace=True)
+        self.maxpool = nn.MaxPool2d(kernel_size=3, stride=2, padding=1)
+
+        self.layer1 = self._make_layer(block, 64, layers[0])
+        self.layer2 = self._make_layer(block, 128, layers[1], stride=2)
+        self.layer3 = self._make_layer(block, 256, layers[2], stride=2)
+        self.layer4 = self._make_layer(block, 512, layers[3], stride=2)
+
+        self.avgpool = nn.AdaptiveAvgPool2d((1, 1))
+        self.fc = nn.Linear(512 * block.expansion, num_classes)
+
+    def _make_layer(self, block, out_channels, blocks, stride=1):
+        downsample = None
+        if stride != 1 or self.in_channels != out_channels * block.expansion:
+            downsample = nn.Sequential(
+                nn.Conv2d(self.in_channels, out_channels * block.expansion,
+                         kernel_size=1, stride=stride, bias=False),
+                nn.BatchNorm2d(out_channels * block.expansion)
+            )
+
+        layers = []
+        layers.append(block(self.in_channels, out_channels, stride, downsample))
+        self.in_channels = out_channels * block.expansion
+
+        for _ in range(1, blocks):
+            layers.append(block(self.in_channels, out_channels))
+
+        return nn.Sequential(*layers)
+
+    def forward(self, x):
+        x = self.relu(self.bn1(self.conv1(x)))
+        x = self.maxpool(x)
+
+        x = self.layer1(x)
+        x = self.layer2(x)
+        x = self.layer3(x)
+        x = self.layer4(x)
+
+        x = self.avgpool(x)
+        x = torch.flatten(x, 1)
+        x = self.fc(x)
+
+        return x
+
+# ResNet50
+model = ResNet(Bottleneck, [3, 4, 6, 3])
+"""
+
+        model['code'] = code
+        self.models.append(model)
+
+        print(f"✓ Advanced ResNet model created: {model['name']}")
+        print(f"  Blocks: {model['architecture']['num_blocks']}")
+        return model
+
+    def create_attention_mechanism(self, model_config: Dict[str, Any]) -> Dict[str, Any]:
+        """
+        Create Self-Attention mechanism
+
+        Args:
+            model_config: Model configuration
+
+        Returns:
+            Model details
+        """
+        model = {
+            'name': model_config.get('name', 'SelfAttention'),
+            'type': 'attention',
+            'architecture': {
+                'embed_dim': model_config.get('embed_dim', 512),
+                'num_heads': model_config.get('num_heads', 8),
+                'num_layers': model_config.get('num_layers', 6)
+            },
+            'parameters': 15_000_000,
+            'created_at': datetime.now().isoformat()
+        }
+
+        code = f"""
+import torch
+import torch.nn as nn
+import torch.nn.functional as F
+import math
+
+class MultiHeadAttention(nn.Module):
+    def __init__(self, embed_dim={model['architecture']['embed_dim']}, num_heads={model['architecture']['num_heads']}):
+        super(MultiHeadAttention, self).__init__()
+
+        self.embed_dim = embed_dim
+        self.num_heads = num_heads
+        self.head_dim = embed_dim // num_heads
+
+        assert self.head_dim * num_heads == embed_dim, "embed_dim must be divisible by num_heads"
+
+        self.q_linear = nn.Linear(embed_dim, embed_dim)
+        self.k_linear = nn.Linear(embed_dim, embed_dim)
+        self.v_linear = nn.Linear(embed_dim, embed_dim)
+        self.out_linear = nn.Linear(embed_dim, embed_dim)
+
+        self.dropout = nn.Dropout(0.1)
+
+    def forward(self, query, key, value, mask=None):
+        batch_size = query.size(0)
+
+        # Linear projections
+        Q = self.q_linear(query)
+        K = self.k_linear(key)
+        V = self.v_linear(value)
+
+        # Split into heads
+        Q = Q.view(batch_size, -1, self.num_heads, self.head_dim).transpose(1, 2)
+        K = K.view(batch_size, -1, self.num_heads, self.head_dim).transpose(1, 2)
+        V = V.view(batch_size, -1, self.num_heads, self.head_dim).transpose(1, 2)
+
+        # Scaled dot-product attention
+        scores = torch.matmul(Q, K.transpose(-2, -1)) / math.sqrt(self.head_dim)
+
+        if mask is not None:
+            scores = scores.masked_fill(mask == 0, -1e9)
+
+        attention = F.softmax(scores, dim=-1)
+        attention = self.dropout(attention)
+
+        # Apply attention to values
+        context = torch.matmul(attention, V)
+
+        # Concatenate heads
+        context = context.transpose(1, 2).contiguous().view(batch_size, -1, self.embed_dim)
+
+        # Final linear projection
+        output = self.out_linear(context)
+
+        return output, attention
+
+class TransformerEncoderLayer(nn.Module):
+    def __init__(self, embed_dim={model['architecture']['embed_dim']}, num_heads={model['architecture']['num_heads']},
+                 dim_feedforward=2048, dropout=0.1):
+        super(TransformerEncoderLayer, self).__init__()
+
+        self.self_attn = MultiHeadAttention(embed_dim, num_heads)
+
+        self.linear1 = nn.Linear(embed_dim, dim_feedforward)
+        self.dropout = nn.Dropout(dropout)
+        self.linear2 = nn.Linear(dim_feedforward, embed_dim)
+
+        self.norm1 = nn.LayerNorm(embed_dim)
+        self.norm2 = nn.LayerNorm(embed_dim)
+        self.dropout1 = nn.Dropout(dropout)
+        self.dropout2 = nn.Dropout(dropout)
+
+    def forward(self, src, src_mask=None):
+        # Self-attention
+        src2, _ = self.self_attn(src, src, src, src_mask)
+        src = src + self.dropout1(src2)
+        src = self.norm1(src)
+
+        # Feedforward
+        src2 = self.linear2(self.dropout(F.relu(self.linear1(src))))
+        src = src + self.dropout2(src2)
+        src = self.norm2(src)
+
+        return src
+
+model = TransformerEncoderLayer()
+"""
+
+        model['code'] = code
+        self.models.append(model)
+
+        print(f"✓ Attention mechanism created: {model['name']}")
+        print(f"  Embed dim: {model['architecture']['embed_dim']}, Heads: {model['architecture']['num_heads']}")
+        return model
+
+    def create_gan_model(self, model_config: Dict[str, Any]) -> Dict[str, Any]:
+        """
+        Create Generative Adversarial Network
+
+        Args:
+            model_config: Model configuration
+
+        Returns:
+            Model details
+        """
+        model = {
+            'name': model_config.get('name', 'GAN'),
+            'type': 'generative',
+            'architecture': {
+                'latent_dim': model_config.get('latent_dim', 100),
+                'img_channels': model_config.get('img_channels', 3),
+                'img_size': model_config.get('img_size', 64)
+            },
+            'parameters': 8_500_000,
+            'created_at': datetime.now().isoformat()
+        }
+
+        code = f"""
+import torch
+import torch.nn as nn
+
+class Generator(nn.Module):
+    def __init__(self, latent_dim={model['architecture']['latent_dim']},
+                 img_channels={model['architecture']['img_channels']}):
+        super(Generator, self).__init__()
+
+        self.init_size = {model['architecture']['img_size']} // 4
+        self.l1 = nn.Sequential(nn.Linear(latent_dim, 128 * self.init_size ** 2))
+
+        self.conv_blocks = nn.Sequential(
+            nn.BatchNorm2d(128),
+            nn.Upsample(scale_factor=2),
+            nn.Conv2d(128, 128, 3, stride=1, padding=1),
+            nn.BatchNorm2d(128, 0.8),
+            nn.LeakyReLU(0.2, inplace=True),
+            nn.Upsample(scale_factor=2),
+            nn.Conv2d(128, 64, 3, stride=1, padding=1),
+            nn.BatchNorm2d(64, 0.8),
+            nn.LeakyReLU(0.2, inplace=True),
+            nn.Conv2d(64, img_channels, 3, stride=1, padding=1),
+            nn.Tanh(),
+        )
+
+    def forward(self, z):
+        out = self.l1(z)
+        out = out.view(out.shape[0], 128, self.init_size, self.init_size)
+        img = self.conv_blocks(out)
+        return img
+
+class Discriminator(nn.Module):
+    def __init__(self, img_channels={model['architecture']['img_channels']},
+                 img_size={model['architecture']['img_size']}):
+        super(Discriminator, self).__init__()
+
+        def discriminator_block(in_filters, out_filters, bn=True):
+            block = [nn.Conv2d(in_filters, out_filters, 3, 2, 1)]
+            if bn:
+                block.append(nn.BatchNorm2d(out_filters, 0.8))
+            block.extend([nn.LeakyReLU(0.2, inplace=True), nn.Dropout2d(0.25)])
+            return block
+
+        self.model = nn.Sequential(
+            *discriminator_block(img_channels, 16, bn=False),
+            *discriminator_block(16, 32),
+            *discriminator_block(32, 64),
+            *discriminator_block(64, 128),
+        )
+
+        # Calculate output shape
+        ds_size = img_size // 2 ** 4
+        self.adv_layer = nn.Sequential(
+            nn.Linear(128 * ds_size ** 2, 1),
+            nn.Sigmoid()
+        )
+
+    def forward(self, img):
+        out = self.model(img)
+        out = out.view(out.shape[0], -1)
+        validity = self.adv_layer(out)
+        return validity
+
+# Initialize models
+generator = Generator()
+discriminator = Discriminator()
+
+# Optimizers
+optimizer_G = torch.optim.Adam(generator.parameters(), lr=0.0002, betas=(0.5, 0.999))
+optimizer_D = torch.optim.Adam(discriminator.parameters(), lr=0.0002, betas=(0.5, 0.999))
+
+# Loss function
+adversarial_loss = nn.BCELoss()
+"""
+
+        model['code'] = code
+        self.models.append(model)
+
+        print(f"✓ GAN model created: {model['name']}")
+        print(f"  Latent dim: {model['architecture']['latent_dim']}")
+        return model
+
     def get_pytorch_info(self) -> Dict[str, Any]:
         """Get PyTorch manager information"""
         return {
