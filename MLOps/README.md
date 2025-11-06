@@ -181,13 +181,103 @@ These projects now include comprehensive documentation, advanced algorithms, and
 - Model approval workflows
 - Audit trail logging
 - Bias and fairness testing
-- Regulatory compliance
-- Model documentation
-- Risk assessment
+- Regulatory compliance (SR 11-7, GDPR, Fair Lending)
+- Model documentation and model cards
+- Risk assessment and impact analysis
 
-**Technologies:** Pandas, NumPy
+**Technologies:** MLflow, Fairlearn, SHAP
 
 **[View Project →](ModelGovernance/)**
+
+---
+
+### 11. Model Registry
+**Description:** Centralized model lifecycle management and versioning
+
+**Features:**
+- Model registration and versioning
+- Stage management (staging, production, archived)
+- MLflow integration
+- Model lineage and metadata tracking
+- Model search and discovery
+- Promotion workflows and rollback
+- Performance comparison across versions
+
+**Technologies:** MLflow, Python
+
+**[View Project →](ModelRegistry/)**
+
+---
+
+### 12. Pipeline Orchestration
+**Description:** Workflow management and task scheduling for ML pipelines
+
+**Features:**
+- DAG-based workflow definition
+- Task dependency management
+- Apache Airflow integration
+- Retry and error handling
+- Schedule-based and event-triggered execution
+- Monitoring and logging
+- Multi-step ML pipeline coordination
+
+**Technologies:** Apache Airflow, Python
+
+**[View Project →](PipelineOrchestration/)**
+
+---
+
+### 13. Model Packaging
+**Description:** Containerization and packaging for reproducible deployments
+
+**Features:**
+- Docker containerization
+- Multi-stage builds for optimization
+- ONNX and TorchScript export
+- Model artifact bundling
+- Registry management (Docker Hub, ECR, GCR, ACR)
+- CI/CD integration
+- Health checks and resource limits
+
+**Technologies:** Docker, ONNX, Kubernetes
+
+**[View Project →](ModelPackaging/)**
+
+---
+
+### 14. Performance Monitoring
+**Description:** Real-time performance metrics and SLA tracking
+
+**Features:**
+- Latency monitoring (P50, P95, P99)
+- Throughput and request rate tracking
+- Error rate monitoring
+- Resource utilization (CPU, memory, GPU)
+- Prometheus metrics integration
+- Grafana dashboards
+- Alerting and notifications
+
+**Technologies:** Prometheus, Grafana, Python
+
+**[View Project →](PerformanceMonitoring/)**
+
+---
+
+### 15. Cost Optimization
+**Description:** Infrastructure cost monitoring and optimization for ML workloads
+
+**Features:**
+- Cost tracking by project/team
+- Resource right-sizing recommendations
+- Spot/preemptible instance usage
+- Storage lifecycle management
+- Budget alerts and thresholds
+- Cloud provider integration (AWS, Azure, GCP)
+- ROI analysis and optimization opportunities
+
+**Technologies:** Cloud Provider APIs, Python
+
+**[View Project →](CostOptimization/)**
 
 ---
 
