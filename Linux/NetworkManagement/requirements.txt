@@ -1,9 +1,191 @@
 # Linux Network Management Dependencies
+# Production-Ready v2.0.0
 
-# No external Python packages required for basic functionality
-# Standard library only
+# =============================================================================
+# Core Dependencies
+# =============================================================================
 
-# Optional: For advanced network operations
-# pyroute2>=0.7.0  # Netlink library for network configuration
-# scapy>=2.5.0  # Packet manipulation
-# dnspython>=2.4.0  # DNS toolkit
+# No external Python packages required for core functionality
+# All core features use Python 3.8+ standard library:
+# - json: Configuration export/import
+# - subprocess: System command execution
+# - socket: Port scanning and network operations
+# - re: Output parsing
+# - time: Bandwidth monitoring timing
+# - datetime: Timestamps and time tracking
+# - collections: Data structures (defaultdict)
+# - dataclasses: Data models
+# - enum: Enumeration types
+# - typing: Type hints
+# - ipaddress: IP address validation and manipulation
+
+# =============================================================================
+# Optional Advanced Dependencies
+# =============================================================================
+
+# For advanced network configuration and monitoring
+# Uncomment these if you need enhanced functionality:
+
+# pyroute2>=0.7.12
+# Modern netlink-based networking library for programmatic interface control
+# Provides: Direct netlink socket communication, advanced routing, tc (traffic control)
+# Install: pip install pyroute2
+
+# scapy>=2.5.0
+# Powerful packet manipulation and network scanning library
+# Provides: Advanced port scanning, packet crafting, protocol analysis
+# Install: pip install scapy
+
+# dnspython>=2.4.2
+# Complete DNS toolkit for Python
+# Provides: DNS queries, zone transfers, DNSSEC validation
+# Install: pip install dnspython
+
+# netifaces>=0.11.0
+# Cross-platform network interface information
+# Provides: Interface enumeration, address families, gateway detection
+# Install: pip install netifaces
+
+# psutil>=5.9.6
+# Cross-platform process and system utilities
+# Provides: Network connections, interface stats, system monitoring
+# Install: pip install psutil
+
+# netaddr>=0.9.0
+# Network address manipulation library
+# Provides: IP address manipulation, CIDR calculations, MAC address handling
+# Install: pip install netaddr
+
+# =============================================================================
+# Development Dependencies
+# =============================================================================
+
+# For development, testing, and documentation
+# Uncomment for development environment:
+
+# pytest>=7.4.3
+# Testing framework
+# Install: pip install pytest
+
+# pytest-cov>=4.1.0
+# Code coverage plugin for pytest
+# Install: pip install pytest-cov
+
+# black>=23.11.0
+# Code formatter
+# Install: pip install black
+
+# flake8>=6.1.0
+# Linting tool
+# Install: pip install flake8
+
+# mypy>=1.7.0
+# Static type checker
+# Install: pip install mypy
+
+# pylint>=3.0.2
+# Code analysis tool
+# Install: pip install pylint
+
+# sphinx>=7.2.6
+# Documentation generator
+# Install: pip install sphinx
+
+# sphinx-rtd-theme>=2.0.0
+# Read the Docs theme for Sphinx
+# Install: pip install sphinx-rtd-theme
+
+# =============================================================================
+# System Requirements (not installed via pip)
+# =============================================================================
+
+# These must be installed via system package manager:
+#
+# Ubuntu/Debian:
+#   sudo apt-get install -y python3 iproute2 iptables traceroute
+#   sudo apt-get install -y wireguard-tools openvpn  # Optional for VPN
+#
+# RHEL/CentOS:
+#   sudo yum install -y python3 iproute iptables traceroute
+#   sudo yum install -y wireguard-tools openvpn  # Optional for VPN
+#
+# Arch Linux:
+#   sudo pacman -S python iproute2 iptables traceroute
+#   sudo pacman -S wireguard-tools openvpn  # Optional for VPN
+#
+# Required System Tools:
+# - python3 (3.8+)          : Core Python interpreter
+# - ip (iproute2)           : Network interface configuration
+# - iptables                : Firewall management
+# - ss (iproute2)           : Socket statistics (netstat replacement)
+#
+# Optional System Tools:
+# - traceroute              : Network path tracing
+# - ping                    : ICMP echo testing
+# - wg (wireguard-tools)    : WireGuard VPN management
+# - openvpn                 : OpenVPN VPN server
+# - netstat                 : Legacy network statistics (fallback)
+# - mtr                     : Network diagnostic tool
+# - nc (netcat)             : Network connectivity testing
+
+# =============================================================================
+# Installation Instructions
+# =============================================================================
+
+# Basic Installation (No external dependencies):
+#   cd /home/user/BrillConsulting/Linux/NetworkManagement
+#   # No pip install needed - uses standard library only
+
+# With Optional Dependencies:
+#   pip install -r requirements.txt --user
+#   # Uncomment desired optional dependencies above first
+
+# Development Installation:
+#   pip install -e . --user
+#   pip install -r requirements-dev.txt --user
+#   # Create requirements-dev.txt with development dependencies
+
+# System Dependencies:
+#   # See system requirements section above
+#   # Install based on your Linux distribution
+
+# =============================================================================
+# Usage Notes
+# =============================================================================
+
+# 1. Root/Sudo Access:
+#    Most network operations require root privileges:
+#    sudo python3 network_manager.py
+
+# 2. Dry Run Mode:
+#    Test without root access using dry_run=True:
+#    manager = NetworkManager(dry_run=True)
+
+# 3. Virtual Environment:
+#    Recommended for development:
+#    python3 -m venv venv
+#    source venv/bin/activate
+#    pip install -r requirements.txt
+
+# 4. Python Version:
+#    Requires Python 3.8+ for:
+#    - Walrus operator (:=)
+#    - Type hints (Dict, List, Optional, etc.)
+#    - dataclasses module
+#    - f-strings with = debugging
+
+# =============================================================================
+# Version Information
+# =============================================================================
+
+# Python Version: 3.8+
+# Network Manager Version: 2.0.0
+# Last Updated: 2024-11
+# Maintainer: BrillConsulting
+
+# =============================================================================
+# License
+# =============================================================================
+
+# Copyright (c) 2024 BrillConsulting
+# All rights reserved.

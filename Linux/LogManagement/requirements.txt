@@ -1,2 +1,27 @@
-# Linux Log Management Dependencies
-# Standard library only
+# Linux Log Management System Dependencies
+# Production-Ready v2.0.0
+
+# Core dependencies - all features use Python standard library
+# No external packages required for basic functionality
+
+# Optional dependencies for enhanced features:
+# - elasticsearch>=7.0.0  # For Elasticsearch integration
+# - requests>=2.25.0      # For webhook alerting
+# - python-daemon>=2.3.0  # For background monitoring
+
+# System tools required (install via package manager):
+# - rsyslog              # Centralized logging daemon
+# - logrotate            # Log rotation utility
+# - systemd              # journalctl support
+
+# ELK Stack (optional, install separately):
+# - Elasticsearch 7.x or 8.x
+# - Logstash 7.x or 8.x
+# - Kibana 7.x or 8.x
+# - Filebeat 7.x or 8.x
+
+# Alternative log shippers (optional):
+# - Fluentd (td-agent 4.x)
+
+# Note: This implementation uses Python standard library only
+# Additional packages can be installed as needed for specific features
