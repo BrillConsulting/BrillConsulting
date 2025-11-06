@@ -5,30 +5,35 @@ Professional Machine Learning projects showcasing classic ML algorithms with pro
 ## 🆕 Latest Updates (v2.0)
 
 **Enhanced Projects with Production-Ready Implementations:**
-- **FeatureSelection** ⭐ - Complete rewrite with 7+ selection methods (Univariate, MI, RFE, Tree Importance, Lasso, Permutation, Ensemble Voting)
-- **ImbalancedLearning** ⭐ - Advanced techniques with SMOTE, ADASYN, Under-sampling, Tomek Links, and hybrid methods
-- **AutoML** ⭐ - Automated ML with hyperparameter optimization, model selection (6+ algorithms), and intelligent task detection
+- **FeatureSelection** ⭐ - Complete rewrite with 7+ selection methods (Univariate, MI, RFE, Tree Importance, Lasso, Permutation, Ensemble Voting) - 665 lines
+- **ImbalancedLearning** ⭐ - Advanced techniques with SMOTE, ADASYN, Under-sampling, Tomek Links, and hybrid methods - 579 lines
+- **AutoML** ⭐ - Automated ML with hyperparameter optimization, model selection (6+ algorithms), and intelligent task detection - 501 lines
+- **RegressionAnalysis** ⭐ **NEW** - 10+ algorithms including XGBoost, LightGBM, Random Forest, SVR, Gradient Boosting with hyperparameter tuning - 600+ lines
+- **ClassificationModels** ⭐ **NEW** - 14+ algorithms including XGBoost, LightGBM, Voting/Stacking ensembles, ROC curves, feature importance - 498 lines
 
-These projects now include comprehensive implementations with multiple algorithms, production patterns, and detailed documentation.
+**Total Enhancement:** 5 projects upgraded with ~2,840+ lines of production-ready code. All include comprehensive implementations, advanced diagnostics, hyperparameter tuning, and detailed documentation.
 
 ## 📦 Projects Overview (15 Projects)
 
-### 1. 📈 [Regression Analysis](RegressionAnalysis/)
-Multi-algorithm regression system with hyperparameter tuning.
+### 1. 📈 [Regression Analysis](RegressionAnalysis/) ⭐ **UPGRADED v2.0**
+Production-ready regression with 10+ algorithms including advanced gradient boosting.
 
 **Algorithms:**
-- Linear Regression
-- Ridge Regression (L2)
-- Lasso Regression (L1)
-- Polynomial Regression
+- **Linear Models**: Linear, Ridge, Lasso, Polynomial
+- **Tree-Based**: Random Forest, Gradient Boosting
+- **Advanced**: XGBoost, LightGBM (optional)
+- **Other**: Support Vector Regression (SVR)
 
 **Key Features:**
-- Automatic hyperparameter tuning
-- Model comparison with R², RMSE, MAE
-- Feature scaling and selection
-- Model persistence
+- 10+ algorithms with GridSearchCV hyperparameter tuning
+- Residual analysis with normality tests
+- Feature importance for tree-based models
+- Advanced diagnostics and model comparison
+- Automatic best model selection
 
-**Technologies:** scikit-learn, pandas, matplotlib
+**Technologies:** scikit-learn, pandas, matplotlib, XGBoost*, LightGBM*
+
+**Status:** 600+ lines, production-ready with comprehensive evaluation
 
 ```bash
 cd RegressionAnalysis
@@ -37,29 +42,30 @@ python regression_models.py --data housing.csv --target price --output results.p
 
 ---
 
-### 2. 🎯 [Classification Models](ClassificationModels/)
-Comprehensive classification with 7 algorithms.
+### 2. 🎯 [Classification Models](ClassificationModels/) ⭐ **UPGRADED v2.0**
+Advanced classification with 14+ algorithms and ensemble methods.
 
 **Algorithms:**
-- Logistic Regression
-- Support Vector Machines (SVM)
-- Decision Trees
-- Random Forest
-- Gradient Boosting
-- K-Nearest Neighbors
-- Naive Bayes
+- **Traditional ML**: Logistic Regression, SVM, KNN, Naive Bayes
+- **Tree-Based**: Decision Tree, Random Forest, Extra Trees
+- **Boosting**: Gradient Boosting, AdaBoost, XGBoost*, LightGBM*
+- **Ensemble**: Voting Classifier, Stacking Classifier
 
 **Key Features:**
-- Multi-class classification support
-- Confusion matrices
-- ROC curves and AUC scores
-- Precision, Recall, F1 scores
+- 14+ algorithms with optional GridSearchCV tuning
+- ROC curves for binary classification
+- Confusion matrices for all models
+- Feature importance visualization
+- Voting and Stacking ensemble methods
+- Comprehensive metrics (Accuracy, Precision, Recall, F1, ROC-AUC)
 
-**Technologies:** scikit-learn, seaborn
+**Technologies:** scikit-learn, seaborn, XGBoost*, LightGBM*
+
+**Status:** 498 lines, production-ready with ensemble methods
 
 ```bash
 cd ClassificationModels
-python classifiers.py --data data.csv --target label --output confusion.png
+python classifiers.py --data data.csv --target label --output-cm confusion.png --output-roc roc.png
 ```
 
 ---
