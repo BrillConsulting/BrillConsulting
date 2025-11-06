@@ -1,8 +1,50 @@
-# Linux Security Hardening Dependencies
+# Linux Security Hardening System v2.0.0
+# Production Dependencies
 
-# No external Python packages required for basic functionality
-# Standard library only
+# Core Python Requirements
+# All functionality uses Python standard library (json, os, subprocess, hashlib, datetime, dataclasses, enum, re)
+# No external Python packages required
 
-# Optional: For advanced security scanning
-# lynis  # Security auditing tool (not Python package)
-# clamav  # Antivirus scanning
+# System Package Dependencies (install via apt/yum)
+# ================================================
+
+# Ubuntu/Debian:
+# sudo apt-get install -y fail2ban aide clamav clamav-daemon auditd audispd-plugins
+# sudo apt-get install -y libpam-pwquality libpam-tmpdir apparmor apparmor-utils
+# sudo apt-get install -y iptables-persistent selinux-utils policycoreutils
+
+# RHEL/CentOS:
+# sudo yum install -y fail2ban aide clamav clamav-update audit audispd-plugins
+# sudo yum install -y pam_pwquality policycoreutils-python-utils iptables-services
+
+# Optional System Tools for Enhanced Features
+# ============================================
+# debsecan              # Debian package vulnerability scanner
+# lynis                 # Security auditing tool
+# rkhunter              # Rootkit detection
+# chkrootkit            # Rootkit checker
+# tripwire              # Alternative file integrity monitoring
+# ossec-hids            # Host-based intrusion detection
+# suricata              # Network IDS/IPS
+# snort                 # Network intrusion detection
+
+# Development/Testing Dependencies (optional)
+# ============================================
+# pytest>=7.0.0         # For unit testing
+# pytest-cov>=4.0.0     # Code coverage
+# black>=23.0.0         # Code formatting
+# pylint>=2.15.0        # Code linting
+# mypy>=1.0.0           # Type checking
+
+# Documentation Generation (optional)
+# ====================================
+# sphinx>=5.0.0         # Documentation generator
+# sphinx-rtd-theme>=1.0.0  # ReadTheDocs theme
+
+# Notes:
+# ------
+# 1. This module is designed to work with Python 3.7+
+# 2. Most functionality requires root/sudo privileges
+# 3. System tools must be installed separately via package manager
+# 4. Test in staging environment before production deployment
+# 5. Review and customize configurations for your environment

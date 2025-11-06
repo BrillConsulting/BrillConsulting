@@ -1,1 +1,45 @@
+# Disaster Recovery System Requirements
+# BrillConsulting - Enterprise DR Management
+
+# System and process utilities
 psutil>=5.9.0
+
+# YAML file handling for DR plans
+PyYAML>=6.0
+
+# Date and time utilities (standard library)
+# datetime - included in Python standard library
+
+# Path handling (standard library)
+# pathlib - included in Python standard library
+
+# File operations (standard library)
+# shutil - included in Python standard library
+# tarfile - included in Python standard library
+
+# Hashing and security (standard library)
+# hashlib - included in Python standard library
+
+# JSON handling (standard library)
+# json - included in Python standard library
+
+# Logging (standard library)
+# logging - included in Python standard library
+
+# Data classes (standard library, Python 3.7+)
+# dataclasses - included in Python standard library
+
+# Enum support (standard library)
+# enum - included in Python standard library
+
+# Network utilities (standard library)
+# socket - included in Python standard library
+
+# System information (standard library)
+# os, sys - included in Python standard library
+
+# Optional dependencies for production use:
+# cryptography>=41.0.0  # For backup encryption (uncomment if needed)
+# paramiko>=3.0.0       # For remote backup operations (uncomment if needed)
+# schedule>=1.2.0       # For advanced scheduling (uncomment if needed)
+# requests>=2.31.0      # For webhook notifications (uncomment if needed)
