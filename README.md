@@ -14,22 +14,6 @@
 
 ---
 
-## 🆕 Latest Updates
-
-### MLOps Portfolio v2.0 - Production-Ready Enhancements ⭐
-
-Three core MLOps projects have been completely upgraded with production-ready implementations:
-
-- **A/B Testing Framework** - Complete rewrite with multi-armed bandit algorithms (Epsilon-Greedy, UCB, Thompson Sampling), Bayesian A/B testing, sample size calculation, and comprehensive statistical analysis
-- **Feature Store** - Full implementation from scratch with online/offline serving, point-in-time correctness, feature validation, and metadata management
-- **Data Validation System** - Advanced validation with schema checking, distribution drift detection (KS test, Chi-square), constraint validation, and automated reporting
-
-All upgraded projects include comprehensive documentation, advanced algorithms, and production-ready patterns used in industry.
-
-**[Explore MLOps v2.0 →](MLOps/)**
-
----
-
 ## About Me
 
 I'm an AI Consultant and Data Scientist passionate about turning data into strategy.  
@@ -203,7 +187,19 @@ Comprehensive LLM toolkit from chatbots to fine-tuning and evaluation:
 **[Explore LLM Projects →](LLM/)**
 
 ---
+## 🆕 Latest Updates
 
+### MLOps Portfolio v2.0 - Production-Ready Enhancements ⭐
+
+Three core MLOps projects have been completely upgraded with production-ready implementations:
+
+- **A/B Testing Framework** - Complete rewrite with multi-armed bandit algorithms (Epsilon-Greedy, UCB, Thompson Sampling), Bayesian A/B testing, sample size calculation, and comprehensive statistical analysis
+- **Feature Store** - Full implementation from scratch with online/offline serving, point-in-time correctness, feature validation, and metadata management
+- **Data Validation System** - Advanced validation with schema checking, distribution drift detection (KS test, Chi-square), constraint validation, and automated reporting
+
+All upgraded projects include comprehensive documentation, advanced algorithms, and production-ready patterns used in industry.
+
+**[Explore MLOps v2.0 →](MLOps/)**
 ###  [MLOps (ML Operations) Portfolio](MLOps/) ⭐ **v2.0 UPGRADED**
 
 Production ML operations covering the full ML lifecycle with enhanced production-ready implementations:
