@@ -174,45 +174,52 @@ Comprehensive GCP cloud solutions covering compute, serverless, storage, data pr
 
 ---
 
-### 11. Compute Engine
-**Description:** VM instances and compute resources management
+### 11. Compute Engine - Advanced VM Management ⭐
+**Description:** Comprehensive VM, disk, and infrastructure management with autoscaling
 
 **Features:**
-- VM instance management
-- Instance templates
-- Managed instance groups
-- Autoscaling
+- VM instance management (regular, preemptible, GPU)
+- Persistent disks (SSD, balanced, standard) and snapshots
+- Instance templates and managed instance groups (MIGs)
+- CPU-based autoscaling (1-10+ instances)
+- HTTP(S) load balancing with backend services
+- Multi-zone redundancy and auto-healing
 
-**Technologies:** GCP Compute Engine
+**Technologies:** GCP Compute Engine, Load Balancers
 
 **[View Project →](ComputeEngine/)**
 
 ---
 
-### 12. Cloud Functions
-**Description:** Serverless functions on GCP
+### 12. Cloud Functions - Serverless Event-Driven Computing ⭐
+**Description:** Event-driven serverless functions with comprehensive trigger support
 
 **Features:**
-- HTTP triggers
-- Pub/Sub triggers
-- Storage triggers
-- Function management
+- HTTP triggers with CORS support
+- Pub/Sub, Cloud Storage, and Firestore triggers
+- Advanced configuration (memory 128MB-8GB, timeout 1-540s)
+- Environment variables and secrets integration
+- Function versioning and traffic splitting
+- IAM access control (public/private)
+- Monitoring with execution logs and metrics
 
-**Technologies:** GCP Cloud Functions
+**Technologies:** GCP Cloud Functions, Python/Node.js/Go/Java
 
 **[View Project →](CloudFunctions/)**
 
 ---
 
-### 13. Cloud Storage
-**Description:** Object storage and data management
+### 13. Cloud Storage - Advanced Object Storage ⭐
+**Description:** Scalable object storage with lifecycle management and access control
 
 **Features:**
-- Bucket management
-- Object operations
-- Lifecycle policies
-- Signed URLs
-- Versioning
+- Bucket management with versioning and CORS
+- Signed URLs (v4) with expiration (15-60 minutes)
+- Lifecycle policies (age-based deletion, storage class transitions)
+- IAM policies for fine-grained access control
+- Pub/Sub notifications (OBJECT_FINALIZE, OBJECT_DELETE)
+- Parallel uploads with ThreadPoolExecutor
+- Storage classes (STANDARD, NEARLINE, COLDLINE, ARCHIVE)
 
 **Technologies:** GCP Cloud Storage
 
@@ -220,33 +227,39 @@ Comprehensive GCP cloud solutions covering compute, serverless, storage, data pr
 
 ---
 
-### 14. Vertex AI
-**Description:** Machine learning platform
+### 14. Vertex AI - Unified ML Platform ⭐
+**Description:** End-to-end machine learning with AutoML, custom training, and deployment
 
 **Features:**
-- Dataset management
-- Model training
-- Model deployment
-- Online predictions
-- Endpoint management
+- Dataset management (tabular, image, text, video)
+- AutoML training (Tables, Vision, NLP)
+- Custom training with GPUs/TPUs (NVIDIA Tesla, TPU v3)
+- Hyperparameter tuning (1-100 trials)
+- Model versioning and evaluation
+- Endpoint deployment with autoscaling (1-100 replicas)
+- Batch predictions for large-scale inference
+- Feature Store for ML features
 
-**Technologies:** Vertex AI
+**Technologies:** Vertex AI, AutoML, TensorFlow, PyTorch
 
 **[View Project →](VertexAI/)**
 
 ---
 
-### 15. Cloud Build
-**Description:** CI/CD automation
+### 15. Cloud Build - Serverless CI/CD Platform ⭐
+**Description:** Automated CI/CD pipelines with build triggers and artifact management
 
 **Features:**
-- YAML build configuration
-- GitHub triggers
-- Multi-step builds
-- Container builds
-- Build history
+- Multi-step builds (sequential and parallel)
+- GitHub, Cloud Source, and webhook triggers
+- Branch/tag patterns with file filters
+- Build substitutions and environment variables
+- Maven and npm artifact publishing
+- Pub/Sub and Slack notifications
+- Build analytics (success rate, duration)
+- Machine types (E2_MEDIUM to E2_HIGHCPU_32)
 
-**Technologies:** GCP Cloud Build
+**Technologies:** GCP Cloud Build, Docker, Container Registry
 
 **[View Project →](CloudBuild/)**
 
@@ -331,9 +344,11 @@ python project_file.py
 ## 📊 Project Statistics
 
 - **Total Projects**: 15
-- **Lines of Code**: 10,000+
-- **Expanded Projects**: 10 (BigQuery, Pub/Sub, Cloud Logging, Firestore, Cloud Run, Secret Manager, Cloud Scheduler, Cloud Tasks, Dataflow, Dataproc)
-- **Coverage**: Compute, Storage, Databases, Messaging, Data Processing, ML, CI/CD
+- **Lines of Code**: 11,000+
+- **Fully Expanded Projects**: 15/15 ⭐
+- **Coverage**: Compute, Storage, Databases, Messaging, Data Processing, ML, CI/CD, Serverless
+- **Average Project Size**: 700+ lines with comprehensive features
+- **Total Expansion**: All projects include advanced production-ready features
 
 ## 📧 Contact
 
