@@ -2,7 +2,16 @@
 
 Professional Machine Learning projects showcasing classic ML algorithms with production-ready implementations, automatic model selection, and comprehensive evaluation.
 
-## 📦 Projects Overview
+## 🆕 Latest Updates (v2.0)
+
+**Enhanced Projects with Production-Ready Implementations:**
+- **FeatureSelection** ⭐ - Complete rewrite with 7+ selection methods (Univariate, MI, RFE, Tree Importance, Lasso, Permutation, Ensemble Voting)
+- **ImbalancedLearning** ⭐ - Advanced techniques with SMOTE, ADASYN, Under-sampling, Tomek Links, and hybrid methods
+- **AutoML** ⭐ - Automated ML with hyperparameter optimization, model selection (6+ algorithms), and intelligent task detection
+
+These projects now include comprehensive implementations with multiple algorithms, production patterns, and detailed documentation.
+
+## 📦 Projects Overview (15 Projects)
 
 ### 1. 📈 [Regression Analysis](RegressionAnalysis/)
 Multi-algorithm regression system with hyperparameter tuning.
@@ -194,31 +203,126 @@ python rl_agent.py --env CartPole-v1 --episodes 1000
 
 ---
 
-### 9. 🤖 [AutoML](AutoML/)
-Automated machine learning pipeline with model selection.
+### 9. 🤖 [AutoML](AutoML/) ⭐ **UPGRADED**
+Automated machine learning with intelligent model selection and hyperparameter optimization.
 
 **Features:**
-- Automatic algorithm selection
-- Hyperparameter optimization
-- Feature engineering
-- Model ensembling
+- Automatic task type detection (classification/regression)
+- Model selection from 6+ algorithms
+- Hyperparameter optimization with RandomizedSearchCV
+- Time-limited optimization
+- Cross-validation and model ranking
+- Comprehensive parameter grids
 
-**Key Features:**
-- End-to-end automation
-- Performance comparison
-- Pipeline optimization
-- Production deployment
+**Technologies:** scikit-learn, RandomizedSearchCV
 
-**Technologies:** Auto-sklearn, TPOT
+**Status:** Production-ready with automatic model selection and hyperparameter tuning
 
 ```bash
 cd AutoML
-python automl_pipeline.py --data dataset.csv --target label --time-limit 3600
+python automl.py
 ```
 
 ---
 
-### 10. 🔍 [Model Interpretability](ModelInterpretability/)
+### 10. 🎯 [Feature Selection](FeatureSelection/) ⭐ **UPGRADED**
+Advanced feature selection with multiple algorithms and ensemble methods.
+
+**Features:**
+- **Filter Methods**: Univariate tests, Mutual Information
+- **Wrapper Methods**: RFE, RFECV, Sequential selection
+- **Embedded Methods**: L1 regularization, Tree importance, Permutation importance
+- **Ensemble Voting**: Combine multiple methods
+- **Stability Analysis**: Features selected by majority of methods
+
+**Technologies:** scikit-learn
+
+**Status:** Production-ready with 7+ selection methods and visualization tools
+
+```bash
+cd FeatureSelection
+python feature_selection.py
+```
+
+---
+
+### 11. ⚖️ [Imbalanced Learning](ImbalancedLearning/) ⭐ **UPGRADED**
+Handle imbalanced datasets with advanced resampling techniques.
+
+**Features:**
+- **SMOTE**: Synthetic Minority Over-sampling
+- **ADASYN**: Adaptive Synthetic Sampling
+- **Under-sampling**: Random and Tomek Links
+- **Hybrid Methods**: SMOTE + Tomek Links
+- **ImbalancedClassifier**: Integrated wrapper
+- **Strategy Comparison**: Automatic evaluation
+
+**Technologies:** scikit-learn, custom implementations
+
+**Status:** Production-ready with multiple resampling strategies
+
+```bash
+cd ImbalancedLearning
+python imbalanced_learning.py
+```
+
+---
+
+### 12. 🌊 [Online Learning](OnlineLearning/)
+Incremental learning for streaming data.
+
+**Features:**
+- Incremental model updates
+- Partial fit methods
+- Concept drift detection
+- Memory-efficient processing
+
+**Technologies:** scikit-learn, River
+
+```bash
+cd OnlineLearning
+python online_learning.py
+```
+
+---
+
+### 13. 🧠 [Meta Learning](MetaLearning/)
+Learning to learn from multiple tasks.
+
+**Features:**
+- Few-shot learning
+- Transfer learning
+- Model adaptation
+- Task similarity analysis
+
+**Technologies:** PyTorch, scikit-learn
+
+```bash
+cd MetaLearning
+python meta_learning.py
+```
+
+---
+
+### 14. 🎯 [Multi-Task Learning](MultiTaskLearning/)
+Joint learning across related tasks.
+
+**Features:**
+- Shared representations
+- Task-specific layers
+- Multi-objective optimization
+- Transfer between tasks
+
+**Technologies:** PyTorch, scikit-learn
+
+```bash
+cd MultiTaskLearning
+python multi_task_learning.py
+```
+
+---
+
+### 15. 🔍 [Model Interpretability](ModelInterpretability/)
 Explain and interpret ML model predictions.
 
 **Techniques:**
