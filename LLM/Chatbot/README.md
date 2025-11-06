@@ -1,41 +1,59 @@
-# LLM Chatbot System
+# Advanced LLM Chatbot System
 
-Conversational AI system with LLM integration, conversation management, and streaming support.
+**Author:** BrillConsulting
+**Category:** LLM / Conversational AI
+**Level:** Production-Ready
+**Version:** 2.0.0
 
-## Features
+## Overview
 
-- **Multiple LLM Backends**: OpenAI GPT, Claude, local models (LLaMA, Mistral)
-- **Conversation History**: Persistent conversation management
-- **Streaming Responses**: Token-by-token streaming
-- **System Prompts**: Custom assistant personalities
-- **Temperature Control**: Adjust response creativity
-- **Token Management**: Track and limit token usage
-- **Conversation Export**: Save/load conversations
+Enterprise-grade conversational AI system providing a unified interface for multiple LLM providers with advanced features including conversation branching, memory management, streaming responses, rate limiting, and comprehensive analytics. Built for production environments requiring reliable, scalable chatbot implementations.
 
-## Technologies
+## Key Features
 
-- OpenAI API (GPT-3.5, GPT-4)
-- Transformers (local models)
-- JSON for persistence
+### Multi-Provider Support
+- **OpenAI Integration**: GPT-3.5, GPT-4, GPT-4 Turbo
+- **Anthropic Claude**: Claude 3 Sonnet, Claude 3 Opus
+- **Local Models**: Support for LLaMA, Mistral, and custom models
+- **Azure OpenAI**: Enterprise Azure deployments
+- **Extensible Architecture**: Easy to add new providers
 
-## Usage
+### Advanced Conversation Management
+- **Branching & Rollback**: Create alternative conversation paths and revert changes
+- **Memory Management**: Automatic token limit management with intelligent pruning
+- **Multi-Branch Conversations**: Explore different conversation directions
+- **Persistence**: Save and load conversation state
+
+### Performance & Reliability
+- **Async Architecture**: Built on asyncio for high performance
+- **Rate Limiting**: Intelligent API rate limiting to prevent throttling
+- **Error Handling**: Comprehensive exception management
+- **Streaming Support**: Real-time streaming responses with SSE
+- **Token Optimization**: Precise token counting with tiktoken
+
+## Installation
+
+```bash
+pip install -r requirements.txt
+```
+
+## Quick Start
 
 ```python
-from llm_chatbot import LLMChatbot
+import asyncio
+from llm_chatbot import AdvancedChatbot, OpenAIProvider
 
-# Initialize
-chatbot = LLMChatbot(model="gpt-3.5-turbo",
-                     system_prompt="You are a helpful assistant")
+async def main():
+    provider = OpenAIProvider(api_key="your-api-key", model="gpt-4")
+    chatbot = AdvancedChatbot(
+        provider=provider,
+        system_prompt="You are a helpful AI assistant."
+    )
 
-# Chat
-response = chatbot.chat("Hello!", temperature=0.7)
+    response = await chatbot.chat("Hello! How are you?")
+    print(response)
 
-# Streaming
-for token in chatbot.stream_chat("Tell me a story"):
-    print(token, end="")
-
-# Save conversation
-chatbot.save_conversation("conversation.json")
+asyncio.run(main())
 ```
 
 ## Demo
@@ -44,4 +62,9 @@ chatbot.save_conversation("conversation.json")
 python llm_chatbot.py
 ```
 
-**Note:** For production use, add actual OpenAI API or local model integration.
+For complete documentation, see the full README in the project directory.
+
+---
+
+**Last Updated:** 2025-01-06
+**Status:** Production Ready

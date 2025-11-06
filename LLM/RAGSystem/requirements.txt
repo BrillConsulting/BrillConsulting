@@ -1,4 +1,178 @@
-openai>=1.0.0
-sentence-transformers>=2.2.0
-faiss-cpu>=1.7.0
-numpy>=1.24.0
+# Production-Ready RAG System Dependencies
+# =========================================
+
+# Core Dependencies
+# -----------------
+numpy>=1.24.0,<2.0.0
+dataclasses>=0.6; python_version < '3.7'
+
+# Embedding Models
+# ----------------
+# OpenAI embeddings
+openai>=1.12.0
+
+# HuggingFace sentence transformers
+sentence-transformers>=2.3.0
+transformers>=4.36.0
+torch>=2.0.0  # Required for sentence-transformers
+
+# Cohere embeddings
+cohere>=4.37.0
+
+# Vector Storage & Search
+# -----------------------
+# FAISS for vector similarity search
+faiss-cpu>=1.7.4  # Use faiss-gpu for GPU support
+
+# Alternative: Chroma vector database
+chromadb>=0.4.22
+
+# Alternative: Pinecone (cloud-based)
+# pinecone-client>=2.2.4
+
+# Alternative: Weaviate (self-hosted or cloud)
+# weaviate-client>=3.25.0
+
+# Alternative: Qdrant (high-performance)
+# qdrant-client>=1.7.0
+
+# Text Processing
+# ---------------
+# NLP utilities
+nltk>=3.8.1
+spacy>=3.7.0
+
+# Sentence splitting and tokenization
+regex>=2023.10.3
+
+# BM25 keyword search (alternative: rank-bm25)
+rank-bm25>=0.2.2
+
+# Reranking
+# ---------
+# Cross-encoder models for reranking (included in sentence-transformers)
+# Additional reranking libraries:
+# cohere>=4.37.0  # Already listed above for Cohere Rerank API
+
+# LLM Integration
+# ---------------
+# OpenAI GPT models
+# openai>=1.12.0  # Already listed above
+
+# Anthropic Claude
+anthropic>=0.18.0
+
+# LangChain (optional, for advanced RAG patterns)
+langchain>=0.1.0
+langchain-community>=0.0.10
+langchain-openai>=0.0.5
+
+# LlamaIndex (alternative RAG framework)
+# llama-index>=0.9.0
+
+# Data & Serialization
+# --------------------
+# JSON handling (built-in, but ujson for performance)
+ujson>=5.9.0
+
+# YAML for configuration
+pyyaml>=6.0.1
+
+# Evaluation & Metrics
+# --------------------
+# ROUGE, BLEU metrics
+rouge-score>=0.1.2
+sacrebleu>=2.4.0
+
+# Semantic similarity metrics
+scikit-learn>=1.3.0
+
+# Web & API
+# ---------
+# HTTP requests
+requests>=2.31.0
+
+# FastAPI for REST API (optional)
+fastapi>=0.109.0
+uvicorn>=0.27.0
+pydantic>=2.5.0
+
+# Document Processing
+# -------------------
+# PDF parsing
+pypdf>=4.0.0
+pdfplumber>=0.10.0
+
+# DOCX parsing
+python-docx>=1.1.0
+
+# Markdown parsing
+markdown>=3.5.0
+
+# HTML parsing
+beautifulsoup4>=4.12.0
+lxml>=5.1.0
+
+# Utilities
+# ---------
+# Progress bars
+tqdm>=4.66.0
+
+# Logging
+loguru>=0.7.2
+
+# Environment variables
+python-dotenv>=1.0.0
+
+# Caching
+diskcache>=5.6.3
+
+# Type checking (development)
+# ---------------------------
+# mypy>=1.8.0
+# types-requests>=2.31.0
+
+# Testing (development)
+# ---------------------
+# pytest>=8.0.0
+# pytest-cov>=4.1.0
+# pytest-asyncio>=0.23.0
+
+# Code Quality (development)
+# --------------------------
+# black>=24.1.0
+# flake8>=7.0.0
+# isort>=5.13.0
+
+# Documentation (development)
+# ---------------------------
+# sphinx>=7.2.0
+# sphinx-rtd-theme>=2.0.0
+
+# Performance Optimization
+# ------------------------
+# Faster JSON parsing
+orjson>=3.9.0
+
+# Parallel processing
+joblib>=1.3.0
+
+# Memory profiling (development)
+# memory-profiler>=0.61.0
+
+# Monitoring & Observability
+# --------------------------
+# Prometheus metrics (optional)
+# prometheus-client>=0.19.0
+
+# OpenTelemetry (optional)
+# opentelemetry-api>=1.22.0
+# opentelemetry-sdk>=1.22.0
+
+# Notes:
+# ------
+# 1. For GPU support, replace faiss-cpu with faiss-gpu
+# 2. For production, pin exact versions instead of >=
+# 3. Consider using poetry or pipenv for better dependency management
+# 4. Some dependencies are optional and can be installed on-demand
+# 5. LangChain and LlamaIndex are alternatives - choose one based on your needs

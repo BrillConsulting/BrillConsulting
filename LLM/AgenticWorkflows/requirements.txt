@@ -1,1 +1,27 @@
+# Advanced Agentic Workflows System Requirements
 # Python 3.8+
+
+# Core async support
+asyncio>=3.4.3
+
+# Type hints support
+typing-extensions>=4.5.0
+
+# Optional LLM integrations
+# openai>=1.0.0
+# anthropic>=0.7.0
+# langchain>=0.1.0
+
+# Optional vector database for memory
+# chromadb>=0.4.0
+# faiss-cpu>=1.7.4
+
+# Optional monitoring and logging
+# prometheus-client>=0.17.0
+# structlog>=23.1.0
+
+# Development dependencies
+# pytest>=7.4.0
+# pytest-asyncio>=0.21.0
+# black>=23.0.0
+# mypy>=1.5.0

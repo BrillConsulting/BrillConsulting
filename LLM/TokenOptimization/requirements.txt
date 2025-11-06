@@ -1,1 +1,16 @@
+# Core dependencies
 numpy>=1.24.0
+
+# Token counting for OpenAI models (optional but recommended)
+tiktoken>=0.5.0
+
+# Python standard library enhancements
+# Note: dataclasses, typing, collections, re, json, logging, hashlib, functools, datetime, enum
+# are all part of Python standard library and don't need to be installed
+
+# Development dependencies (optional)
+# pytest>=7.4.0
+# pytest-cov>=4.1.0
+# black>=23.0.0
+# flake8>=6.0.0
+# mypy>=1.0.0
