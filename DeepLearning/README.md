@@ -1,8 +1,15 @@
 # Deep Learning Frameworks Portfolio
 
-Comprehensive deep learning implementations across the industry's leading frameworks.
+Comprehensive deep learning implementations across the industry's leading frameworks. 15 advanced projects covering everything from foundational frameworks to cutting-edge techniques.
 
 ## 📊 Projects Overview
+
+**15 Professional Deep Learning Projects:**
+- Core Frameworks: PyTorch, TensorFlow, Keras, JAX, FastAI
+- Advanced ML: XGBoost, LightGBM
+- Production Tools: ONNX, MLflow
+- Transformers: Hugging Face models
+- Advanced Research: Federated Learning, Model Compression, Model Interpretation, NAS, Transfer Learning
 
 ### 1. PyTorch
 **Description:** Complete PyTorch implementation for neural networks and deep learning
@@ -187,6 +194,91 @@ Comprehensive deep learning implementations across the industry's leading framew
 
 ---
 
+### 11. Federated Learning
+**Description:** Privacy-preserving distributed machine learning
+
+**Features:**
+- FedAvg algorithm for weight aggregation
+- Secure aggregation with differential privacy
+- Multi-client support with non-IID data
+- Client sampling and selection strategies
+- Comprehensive experiment tracking
+- PyTorch implementation
+
+**Technologies:** Python, NumPy, PyTorch
+
+**[View Project →](FederatedLearning/)**
+
+---
+
+### 12. Model Compression
+**Description:** Advanced model compression techniques
+
+**Features:**
+- Magnitude and structured pruning
+- Uniform and dynamic quantization
+- Knowledge distillation (teacher-student)
+- Progressive distillation pipeline
+- Quantization-aware training
+- 100x+ compression ratios
+
+**Technologies:** Python, NumPy, PyTorch
+
+**[View Project →](ModelCompression/)**
+
+---
+
+### 13. Model Interpretation
+**Description:** Neural network interpretability and explainability
+
+**Features:**
+- GradCAM and GradCAM++ visualization
+- SHAP (Shapley values) for feature importance
+- LIME local explanations
+- Attention mechanism visualization
+- Multi-head attention analysis
+- Model-agnostic techniques
+
+**Technologies:** Python, NumPy, PyTorch
+
+**[View Project →](ModelInterpretation/)**
+
+---
+
+### 14. Neural Architecture Search
+**Description:** Automated neural architecture discovery
+
+**Features:**
+- DARTS (Differentiable Architecture Search)
+- Evolutionary NAS with genetic algorithms
+- Architecture search space definition
+- Progressive architecture optimization
+- PyTorch supernet implementation
+- Automated hyperparameter tuning
+
+**Technologies:** Python, NumPy, PyTorch
+
+**[View Project →](NeuralArchitectureSearch/)**
+
+---
+
+### 15. Transfer Learning Hub
+**Description:** Comprehensive transfer learning framework
+
+**Features:**
+- 10+ pre-trained model registry (ResNet, EfficientNet, ViT, etc.)
+- Multiple fine-tuning strategies
+- Progressive unfreezing
+- Discriminative learning rates
+- Full and partial fine-tuning
+- Strategy comparison tools
+
+**Technologies:** Python, PyTorch, torchvision
+
+**[View Project →](TransferLearningHub/)**
+
+---
+
 ## 🚀 Getting Started
 
 Each project contains:
@@ -214,11 +306,14 @@ python project_file.py
 
 ## 🎯 Key Features
 
-- **Multi-Framework**: PyTorch, TensorFlow, FastAI, Transformers, JAX
-- **Production-Ready**: Battle-tested architectures
-- **Pre-trained Models**: Transfer learning with state-of-the-art models
-- **GPU/TPU Support**: Hardware acceleration
-- **Best Practices**: Industry-standard patterns
+- **15 Complete Projects**: From foundational to cutting-edge deep learning
+- **Multi-Framework**: PyTorch, TensorFlow, FastAI, Transformers, JAX, Keras
+- **Advanced Techniques**: Federated Learning, NAS, Model Compression, Interpretability
+- **Production-Ready**: Deployment tools (ONNX, MLflow), compression, optimization
+- **Pre-trained Models**: Transfer learning hub with 10+ models
+- **GPU/TPU Support**: Hardware acceleration across all frameworks
+- **Best Practices**: Industry-standard patterns and implementations
+- **Research-Grade**: State-of-the-art algorithms and techniques
 
 ## 📚 Technologies Used
 
@@ -230,11 +325,15 @@ python project_file.py
 
 ## 💡 Use Cases
 
-- **Computer Vision**: Image classification, object detection, segmentation
-- **Natural Language Processing**: Text classification, NER, QA, generation
-- **Sequence Modeling**: Time series, RNNs, LSTMs
-- **Transfer Learning**: Fine-tune pre-trained models
-- **Research**: Experiment with cutting-edge architectures
+- **Computer Vision**: Image classification, object detection, segmentation, GradCAM visualization
+- **Natural Language Processing**: Text classification, NER, QA, generation, transformers
+- **Sequence Modeling**: Time series, RNNs, LSTMs, attention mechanisms
+- **Transfer Learning**: Fine-tune pre-trained models with multiple strategies
+- **Privacy-Preserving ML**: Federated learning for sensitive data
+- **Model Deployment**: Compression, quantization, ONNX conversion
+- **Interpretability**: Explain model decisions with SHAP, LIME, GradCAM
+- **AutoML**: Neural architecture search for optimal models
+- **Research**: Experiment with cutting-edge architectures and algorithms
 
 ## 🔥 Framework Comparison
 
