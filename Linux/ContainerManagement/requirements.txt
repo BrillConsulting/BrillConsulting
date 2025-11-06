@@ -1,1 +1,31 @@
+# Container Management System v2.0.0
+# Author: BrillConsulting
+# Python dependencies for production container orchestration
+
+# System monitoring and resource management
 psutil>=5.9.0
+
+# YAML parsing for Docker Compose files
+PyYAML>=6.0.1
+
+# Type checking and validation
+typing-extensions>=4.8.0
+
+# Optional: Container runtime client libraries
+# Uncomment if using Python SDK instead of CLI
+# docker>=7.0.0              # Docker Python SDK
+# podman>=4.8.0              # Podman Python SDK
+
+# Optional: Security scanning tools (install separately)
+# These are command-line tools, not Python packages:
+# - trivy: https://github.com/aquasecurity/trivy
+# - grype: https://github.com/anchore/grype
+# - snyk: https://github.com/snyk/cli
+
+# Development dependencies (uncomment for development)
+# pytest>=7.4.0
+# pytest-cov>=4.1.0
+# black>=23.9.0
+# flake8>=6.1.0
+# mypy>=1.5.0
+# pylint>=3.0.0

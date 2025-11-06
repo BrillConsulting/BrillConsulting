@@ -1,2 +1,38 @@
-# Linux Backup and Recovery Dependencies
-# Standard library only
+# Linux Backup and Recovery System v2.0.0
+# Dependencies
+
+# Core Python (Standard Library)
+# - json: JSON metadata storage
+# - os: Operating system interface
+# - hashlib: SHA-256 checksums
+# - subprocess: Command execution
+# - shutil: File operations
+# - logging: Comprehensive logging
+# - datetime: Timestamp management
+# - pathlib: Path operations
+# - enum: Type enumerations
+# - configparser: Configuration parsing
+
+# No external Python packages required
+# All functionality uses Python standard library
+
+# System Requirements (install via apt/yum):
+# - rsync >= 3.1.0
+# - tar >= 1.28
+# - gzip, bzip2, xz-utils, zstd (compression tools)
+# - openssl (encryption)
+# - lvm2 (LVM snapshots, optional)
+# - postgresql-client (PostgreSQL backups, optional)
+# - mysql-client (MySQL backups, optional)
+# - mongodb-clients (MongoDB backups, optional)
+
+# Installation:
+# Ubuntu/Debian:
+#   sudo apt-get install -y rsync tar gzip bzip2 xz-utils zstd openssl lvm2
+#   sudo apt-get install -y postgresql-client mysql-client mongodb-clients
+#
+# RHEL/CentOS:
+#   sudo yum install -y rsync tar gzip bzip2 xz zstd openssl lvm2
+#   sudo yum install -y postgresql mysql mongodb-org-tools
+#
+# Python version: 3.8+

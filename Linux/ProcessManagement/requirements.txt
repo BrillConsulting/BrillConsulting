@@ -1,1 +1,13 @@
-psutil>=5.9.0
+# Linux Process Management System v2.0.0
+# Production Dependencies
+
+# Core process monitoring and system utilities
+psutil>=5.9.8
+
+# Data handling and validation
+dataclasses>=0.6; python_version < '3.7'
+
+# Optional: Enhanced features
+# colorama>=0.4.6  # For colored terminal output
+# tabulate>=0.9.0  # For formatted table display
+# click>=8.1.0     # For CLI interface
