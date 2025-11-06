@@ -1,1 +1,13 @@
+# Core dependencies
 numpy>=1.24.0
+
+# Vector database backends
+faiss-cpu>=1.7.4  # Use faiss-gpu for GPU support
+chromadb>=0.4.0
+pinecone-client>=2.2.0
+weaviate-client>=3.24.0
+qdrant-client>=1.6.0
+
+# Additional utilities
+typing-extensions>=4.5.0
+dataclasses>=0.6;python_version<'3.7'
