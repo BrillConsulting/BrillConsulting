@@ -1,1 +1,32 @@
+# ContextCompression v2.0.0 Requirements
+# Python 3.8+ required
+
+# Core numerical computing
 numpy>=1.24.0
+
+# Data structures and type checking (Python 3.8+ built-in, but listed for clarity)
+# dataclasses - built-in for Python 3.7+
+# typing - built-in
+# enum - built-in
+# abc - built-in
+
+# Async support (Python 3.8+ built-in)
+# asyncio - built-in
+
+# Text processing and regex (built-in)
+# re - built-in
+# collections - built-in
+
+# Development and testing (optional)
+pytest>=7.0.0
+pytest-asyncio>=0.21.0
+black>=23.0.0
+flake8>=6.0.0
+mypy>=1.0.0
+
+# Logging (built-in)
+# logging - built-in
+
+# Documentation (optional)
+sphinx>=6.0.0
+sphinx-rtd-theme>=1.2.0

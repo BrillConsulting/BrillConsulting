@@ -1,1 +1,57 @@
 # Python 3.8+
+
+# Core dependencies
+numpy>=1.21.0
+
+# Standard library dependencies (included with Python)
+# - json
+# - random
+# - logging
+# - hashlib
+# - datetime
+# - dataclasses
+# - pathlib
+# - collections
+# - pickle
+# - typing
+
+# Optional dependencies for enhanced functionality
+# (uncomment if needed)
+
+# For visualization
+# matplotlib>=3.5.0
+# seaborn>=0.11.0
+# plotly>=5.0.0
+
+# For advanced LLM integration
+# openai>=1.0.0
+# anthropic>=0.7.0
+# cohere>=4.0.0
+
+# For distributed optimization
+# ray>=2.0.0
+# dask>=2023.0.0
+
+# For database persistence
+# sqlalchemy>=2.0.0
+# pymongo>=4.0.0
+
+# For API serving
+# fastapi>=0.100.0
+# uvicorn>=0.20.0
+# pydantic>=2.0.0
+
+# For testing
+# pytest>=7.0.0
+# pytest-cov>=4.0.0
+# hypothesis>=6.0.0
+
+# For code quality
+# black>=23.0.0
+# flake8>=6.0.0
+# mypy>=1.0.0
+# pylint>=2.17.0
+
+# For documentation
+# sphinx>=5.0.0
+# sphinx-rtd-theme>=1.2.0

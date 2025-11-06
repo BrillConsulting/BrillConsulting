@@ -1,5 +1,49 @@
-openai>=1.0.0
+# Core Dependencies
+torch>=2.0.0
 transformers>=4.35.0
 peft>=0.7.0
-torch>=2.0.0
+accelerate>=0.25.0
+
+# Model Quantization (for QLoRA)
+bitsandbytes>=0.41.0
+
+# Data Processing
 numpy>=1.24.0
+pandas>=2.0.0
+
+# Training Utilities
+tqdm>=4.65.0
+datasets>=2.14.0
+
+# Experiment Tracking (Optional)
+wandb>=0.16.0
+
+# Distributed Training
+deepspeed>=0.12.0  # Optional, for advanced distributed training
+
+# Configuration Management
+pyyaml>=6.0
+
+# Tokenization
+sentencepiece>=0.1.99
+protobuf>=3.20.0
+
+# Development Tools (Optional)
+ipython>=8.12.0
+jupyter>=1.0.0
+
+# API Integration
+openai>=1.0.0
+
+# Performance Monitoring
+psutil>=5.9.0
+gpustat>=1.1.0  # For GPU monitoring
+
+# Testing (Optional)
+pytest>=7.4.0
+pytest-cov>=4.1.0
+
+# Code Quality (Optional)
+black>=23.0.0
+flake8>=6.0.0
+mypy>=1.0.0
