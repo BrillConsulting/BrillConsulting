@@ -2,6 +2,15 @@
 
 Production-ready ML operations toolkit covering the full ML lifecycle from training to deployment and monitoring.
 
+## 🆕 Recent Updates (v2.0)
+
+**Enhanced Projects with Production-Ready Implementations:**
+- **ABTesting**: Complete rewrite with multi-armed bandit algorithms (Epsilon-Greedy, UCB, Thompson Sampling), Bayesian A/B testing, sample size calculation, and comprehensive statistical analysis
+- **FeatureStore**: Full implementation from scratch with online/offline serving, point-in-time correctness, feature validation, and metadata management
+- **DataValidation**: Advanced validation system with schema checking, distribution drift detection (KS test, Chi-square), constraint validation, and automated reporting
+
+These projects now include comprehensive documentation, advanced algorithms, and production-ready patterns used in industry.
+
 ## 📊 Projects Overview
 
 ### 1. Training Pipeline
@@ -88,18 +97,21 @@ Production-ready ML operations toolkit covering the full ML lifecycle from train
 
 ---
 
-### 6. Feature Store
+### 6. Feature Store ⭐ **UPGRADED**
 **Description:** Centralized feature management and serving
 
 **Features:**
 - Feature registration and versioning
-- Online and offline serving
-- Point-in-time correctness
+- Online and offline serving (dual storage architecture)
+- Point-in-time correctness for training
 - Feature transformation pipeline
-- Feature monitoring
+- Feature validation and statistics
+- Metadata management and feature views
 - Integration with training/serving
 
-**Technologies:** Feast, Pandas, Redis
+**Technologies:** Pandas, NumPy (Redis-compatible architecture)
+
+**Status:** Production-ready implementation with comprehensive documentation
 
 **[View Project →](FeatureStore/)**
 
@@ -122,35 +134,41 @@ Production-ready ML operations toolkit covering the full ML lifecycle from train
 
 ---
 
-### 8. A/B Testing
-**Description:** Statistical testing for model comparisons
+### 8. A/B Testing ⭐ **UPGRADED**
+**Description:** Advanced statistical testing framework for model and feature comparisons
 
 **Features:**
-- Multi-armed bandit
-- Statistical significance testing
-- Traffic splitting
-- Metric collection
-- Winner selection
-- Automated experiment tracking
+- Multi-armed bandit algorithms (Epsilon-Greedy, UCB, Thompson Sampling)
+- Statistical significance testing (Z-test, T-test, Chi-square, Bayesian)
+- Traffic splitting and allocation strategies
+- Sample size calculation and power analysis
+- Confidence intervals and lift calculation
+- Winner selection with validation
+- Comprehensive experiment tracking and reporting
 
 **Technologies:** SciPy, NumPy, Pandas
+
+**Status:** Production-ready with advanced algorithms and detailed documentation
 
 **[View Project →](ABTesting/)**
 
 ---
 
-### 9. Data Validation
-**Description:** Input data quality checks for ML pipelines
+### 9. Data Validation ⭐ **UPGRADED**
+**Description:** Comprehensive data quality and validation system for ML pipelines
 
 **Features:**
-- Schema validation
-- Distribution shift detection
-- Constraint checking
-- Anomaly detection
-- Data profiling
-- Automated alerts
+- Schema validation (type, range, pattern, enum checks)
+- Distribution shift detection (KS test for numeric, Chi-square for categorical)
+- Constraint checking with custom rules
+- Null value and uniqueness validation
+- Data profiling and quality metrics
+- Automated reporting with error examples
+- Baseline computation and drift monitoring
 
-**Technologies:** Great Expectations, Pandas
+**Technologies:** Pandas, NumPy, SciPy
+
+**Status:** Production-ready with comprehensive validation rules and drift detection
 
 **[View Project →](DataValidation/)**
 
