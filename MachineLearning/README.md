@@ -8,10 +8,12 @@ Professional Machine Learning projects showcasing classic ML algorithms with pro
 - **FeatureSelection** ⭐ - Complete rewrite with 7+ selection methods (Univariate, MI, RFE, Tree Importance, Lasso, Permutation, Ensemble Voting) - 665 lines
 - **ImbalancedLearning** ⭐ - Advanced techniques with SMOTE, ADASYN, Under-sampling, Tomek Links, and hybrid methods - 579 lines
 - **AutoML** ⭐ - Automated ML with hyperparameter optimization, model selection (6+ algorithms), and intelligent task detection - 501 lines
-- **RegressionAnalysis** ⭐ **NEW** - 10+ algorithms including XGBoost, LightGBM, Random Forest, SVR, Gradient Boosting with hyperparameter tuning - 600+ lines
-- **ClassificationModels** ⭐ **NEW** - 14+ algorithms including XGBoost, LightGBM, Voting/Stacking ensembles, ROC curves, feature importance - 498 lines
+- **RegressionAnalysis** ⭐ - 10+ algorithms including XGBoost, LightGBM, Random Forest, SVR, Gradient Boosting with hyperparameter tuning - 600+ lines
+- **ClassificationModels** ⭐ - 14+ algorithms including XGBoost, LightGBM, Voting/Stacking ensembles, ROC curves, feature importance - 498 lines
+- **TimeSeriesForecasting** ⭐ **NEW** - 10+ forecasting models (ARIMA, SARIMA, Auto-ARIMA, Prophet, Exp Smoothing) with stationarity testing, decomposition, anomaly detection - 709 lines
+- **EnsembleMethods** ⭐ **NEW** - 10+ ensemble methods (Bagging, Random Forest, Extra Trees, AdaBoost, GB, XGBoost, LightGBM, Voting, Stacking) for classification/regression - 782 lines
 
-**Total Enhancement:** 5 projects upgraded with ~2,840+ lines of production-ready code. All include comprehensive implementations, advanced diagnostics, hyperparameter tuning, and detailed documentation.
+**Total Enhancement:** 7 projects upgraded with ~4,334+ lines of production-ready code. All include comprehensive implementations, advanced diagnostics, hyperparameter tuning, and detailed documentation.
 
 ## 📦 Projects Overview (15 Projects)
 
@@ -93,54 +95,87 @@ python clustering_analysis.py --data customers.csv --output clusters.png
 
 ---
 
-### 4. 📈 [Time Series Forecasting](TimeSeriesForecasting/)
-Statistical time series forecasting methods.
+### 4. 📈 [Time Series Forecasting](TimeSeriesForecasting/) ⭐ **UPGRADED v2.0**
+Production-ready time series forecasting with 10+ models and comprehensive diagnostics.
 
-**Algorithms:**
-- ARIMA
-- SARIMA (Seasonal)
-- Exponential Smoothing (Holt-Winters)
+**Models:**
+- **Baseline**: Naive, Seasonal Naive, Moving Average
+- **Statistical**: ARIMA, SARIMA, Auto-ARIMA*, Exponential Smoothing
+- **Advanced**: Prophet* (Facebook)
 
 **Key Features:**
-- Automatic parameter selection
-- Seasonal decomposition
-- Forecast intervals
-- Model diagnostics
+- 10+ forecasting models with automatic selection
+- Stationarity testing (ADF test)
+- ACF/PACF analysis for parameter selection
+- Time series decomposition (trend, seasonal, residual)
+- Anomaly detection (IQR, Z-score)
+- Comprehensive metrics (RMSE, MAE, MAPE, SMAPE)
+- Residual diagnostics (Ljung-Box test)
+- Walk-forward validation
 
-**Technologies:** statsmodels, pandas
+**Technologies:** statsmodels, scikit-learn, prophet*, pmdarima*
+
+**Status:** 709 lines, production-ready with full diagnostics
 
 ```bash
 cd TimeSeriesForecasting
-python time_series.py --data sales.csv --steps 30 --output forecast.png
+python time_series.py --data sales.csv --steps 12 --seasonal-period 12 --output forecast.png
 ```
 
 ---
 
-### 5. 🎭 [Ensemble Methods](EnsembleMethods/)
-Advanced ensemble techniques for improved predictions.
+### 5. 🎭 [Ensemble Methods](EnsembleMethods/) ⭐ **UPGRADED v2.0**
+Production-ready ensemble learning with 10+ methods for classification and regression.
 
-**Methods:**
-- Bagging
-- Boosting (Gradient Boosting, AdaBoost)
-- Voting Classifiers
-- Stacking
+**Algorithms:**
+- **Bagging**: Bagging, Random Forest, Extra Trees
+- **Boosting**: AdaBoost, Gradient Boosting, XGBoost*, LightGBM*
+- **Meta-Learning**: Voting (soft/hard), Stacking
 
 **Key Features:**
-- Model combination strategies
-- Variance reduction
-- Bias-variance tradeoff
-- Cross-validation
+- 10+ ensemble methods supporting both classification and regression
+- Hyperparameter tuning with GridSearchCV
+- Feature importance analysis
+- Out-of-bag (OOB) error estimation
+- Model persistence (save/load)
+- Performance comparison visualization
+- Automatic best model selection
 
-**Technologies:** scikit-learn
+**Technologies:** scikit-learn, XGBoost*, LightGBM*
+
+**Status:** 782 lines, production-ready for both tasks
 
 ```bash
 cd EnsembleMethods
-python ensemble_models.py --data data.csv --target label
+python ensemble_models.py --data data.csv --target label --task classification --tune --output comparison.png
 ```
 
 ---
 
-### 6. 📉 [Dimensionality Reduction](DimensionalityReduction/)
+### 6. 🎨 [Clustering](Clustering/)
+Unsupervised clustering with automatic cluster number selection.
+
+**Algorithms:**
+- K-Means (with elbow method)
+- DBSCAN (density-based)
+- Hierarchical Clustering
+
+**Key Features:**
+- Silhouette score optimization
+- PCA visualization
+- Elbow method for K-Means
+- Dendrogram generation
+
+**Technologies:** scikit-learn, scipy
+
+```bash
+cd Clustering
+python clustering_analysis.py --data customers.csv --output clusters.png
+```
+
+---
+
+### 7. 📉 [Dimensionality Reduction](DimensionalityReduction/)
 Reduce feature space while preserving important information.
 
 **Techniques:**
