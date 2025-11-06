@@ -1,15 +1,15 @@
 # Deep Learning Frameworks Portfolio
 
-Comprehensive deep learning implementations across the industry's leading frameworks. 15 advanced projects covering everything from foundational frameworks to cutting-edge techniques.
+Comprehensive deep learning implementations across the industry's leading frameworks. **15 advanced projects** featuring state-of-the-art architectures, production-ready deployment tools, and cutting-edge research techniques. Over **7,600 lines** of production-quality code with comprehensive documentation.
 
 ## 📊 Projects Overview
 
 **15 Professional Deep Learning Projects:**
-- Core Frameworks: PyTorch, TensorFlow, Keras, JAX, FastAI
-- Advanced ML: XGBoost, LightGBM
-- Production Tools: ONNX, MLflow
-- Transformers: Hugging Face models
-- Advanced Research: Federated Learning, Model Compression, Model Interpretation, NAS, Transfer Learning
+- **Core Frameworks** (471-867 lines): PyTorch, TensorFlow, Keras (ResNet, LSTM, Attention), JAX, FastAI
+- **Advanced ML** (415-455 lines): XGBoost, LightGBM with hyperparameter tuning and GPU support
+- **Production Tools** (459-708 lines): ONNX (conversion, quantization), MLflow (experiment tracking, registry)
+- **Transformers** (479 lines): Hugging Face models for NLP and vision
+- **Advanced Research** (410-545 lines): Federated Learning, Model Compression, Interpretation, NAS, Transfer Learning
 
 ### 1. PyTorch
 **Description:** Complete PyTorch implementation for neural networks and deep learning
@@ -110,85 +110,98 @@ Comprehensive deep learning implementations across the industry's leading framew
 ---
 
 ### 6. Keras
-**Description:** High-level neural networks API
+**Description:** Advanced deep learning with Keras high-level API
 
 **Features:**
-- Simple model building
-- Layer abstraction
-- Built-in preprocessing
-- Model serialization
-- Callbacks and metrics
-- Multi-backend support
+- Advanced CNN: ResNet-style networks with residual connections
+- Bidirectional LSTM: Sequential models for time series and NLP
+- Custom Attention Layer: Self-attention mechanism implementation
+- Learning Rate Schedulers: Cosine decay with warmup, cyclical LR, step decay
+- Data Augmentation: MixUp and CutMix for improved generalization
+- Batch Normalization: Stable training for deep networks
+- Functional API: Complex multi-input/multi-output architectures
+- Training Enhancements: Custom callbacks, early stopping, LR reduction
 
-**Technologies:** Keras, TensorFlow
+**Technologies:** Keras, TensorFlow, NumPy
 
 **[View Project →](Keras/)**
 
 ---
 
 ### 7. XGBoost
-**Description:** Gradient boosting framework
+**Description:** Advanced gradient boosting for classification and regression
 
 **Features:**
-- Classification and regression
-- Tree-based models
-- Feature importance
-- Cross-validation
-- Early stopping
-- GPU acceleration
+- Classification: Multi-class and binary with softmax/logistic objectives
+- Regression: Gradient boosted regression trees
+- Hyperparameter Tuning: Grid search across parameter space with validation
+- Cross-Validation: K-fold CV with stratification and early stopping
+- Feature Importance: Gain, cover, and frequency-based importance metrics
+- GPU Acceleration: CUDA-based tree construction for 10-100x speedup
+- Regularization: L1/L2 penalties for tree complexity control
+- Custom Objectives: User-defined loss functions
+- Early Stopping: Prevent overfitting with validation monitoring
 
-**Technologies:** XGBoost, scikit-learn
+**Technologies:** XGBoost, scikit-learn, NumPy, Pandas
 
 **[View Project →](XGBoost/)**
 
 ---
 
 ### 8. LightGBM
-**Description:** Fast gradient boosting framework
+**Description:** High-performance gradient boosting with native categorical support
 
 **Features:**
-- High performance and efficiency
-- Low memory usage
-- Categorical feature support
-- GPU support
-- Distributed training
-- Feature binning
+- Native Categorical Features: Direct categorical handling without encoding
+- Fast Training: Histogram-based algorithm 10-20x faster than traditional GBDT
+- Low Memory Usage: Efficient binning reduces memory by 50-70%
+- Classification & Regression: Binary, multi-class, and regression tasks
+- Hyperparameter Tuning: Grid search with early stopping and validation
+- Feature Importance: Split and gain-based importance analysis
+- GPU Acceleration: CUDA support for massive speedup
+- GOSS & EFB: Gradient-based sampling and feature bundling
+- Leaf-wise Growth: Better accuracy than depth-wise approaches
 
-**Technologies:** LightGBM, scikit-learn
+**Technologies:** LightGBM, scikit-learn, NumPy, Pandas
 
 **[View Project →](LightGBM/)**
 
 ---
 
 ### 9. ONNX
-**Description:** Open Neural Network Exchange format
+**Description:** Model conversion, optimization, and cross-platform deployment
 
 **Features:**
-- Model conversion between frameworks
-- PyTorch to ONNX export
-- TensorFlow to ONNX export
-- ONNX Runtime inference
-- Model optimization
-- Cross-platform deployment
+- PyTorch → ONNX: Convert PyTorch models with dynamic axes support
+- TensorFlow → ONNX: TensorFlow/Keras conversion via tf2onnx
+- Graph Optimization: Constant folding, node elimination, operator fusion
+- Model Quantization: Dynamic and static INT8 quantization (3-4x compression)
+- ONNX Runtime: High-performance inference with CPU/CUDA/TensorRT
+- Model Validation: Automatic verification after conversion
+- Performance: 2-3x inference speedup, 30-60% size reduction
+- Multi-backend: Deploy across platforms (mobile, edge, cloud)
 
-**Technologies:** ONNX, ONNX Runtime
+**Technologies:** ONNX, ONNX Runtime, tf2onnx, PyTorch, TensorFlow
 
 **[View Project →](ONNX/)**
 
 ---
 
 ### 10. MLflow
-**Description:** ML lifecycle management platform
+**Description:** End-to-end ML lifecycle management and production deployment
 
 **Features:**
-- Experiment tracking
-- Model registry
-- Model deployment
-- Parameter logging
-- Artifact storage
-- Model versioning
+- Experiment Tracking: Log parameters, metrics, and artifacts for all runs
+- Model Registry: Version control with None → Staging → Production → Archived
+- Hyperparameter Sweeps: Automated grid search with comprehensive logging
+- Autologging: Automatic logging for scikit-learn, TensorFlow, PyTorch, XGBoost
+- Run Comparison: Compare multiple experiments to identify best models
+- Model Deployment: Load production models by stage or version
+- Artifact Management: Save models, plots, configs, and training data
+- Stage Transitions: Promote models through deployment lifecycle
+- Lineage Tracking: Link models to training runs and experiments
 
-**Technologies:** MLflow, Python
+**Technologies:** MLflow, scikit-learn, TensorFlow, PyTorch
 
 **[View Project →](MLflow/)**
 
@@ -314,36 +327,52 @@ python project_file.py
 - **GPU/TPU Support**: Hardware acceleration across all frameworks
 - **Best Practices**: Industry-standard patterns and implementations
 - **Research-Grade**: State-of-the-art algorithms and techniques
+- **Advanced Architectures**: ResNet, LSTM, Attention, Transformers, GradCAM
+- **Hyperparameter Optimization**: Grid search, cross-validation, automated tuning
+- **Model Quantization**: INT8 quantization for 3-4x compression
+- **Experiment Tracking**: Comprehensive MLflow integration with autologging
+- **Data Augmentation**: MixUp, CutMix, and advanced augmentation strategies
 
 ## 📚 Technologies Used
 
-- **PyTorch**: Flexible, research-friendly deep learning
-- **TensorFlow/Keras**: Production-grade, scalable models
-- **FastAI**: High-level API with best practices
-- **Transformers**: State-of-the-art NLP and vision models
-- **JAX**: High-performance numerical computing
+- **PyTorch**: Flexible, research-friendly deep learning framework
+- **TensorFlow/Keras**: Production-grade, scalable models with advanced architectures
+- **FastAI**: High-level API with best practices and one-cycle training
+- **Transformers**: State-of-the-art NLP and vision models (BERT, GPT, ViT)
+- **JAX**: High-performance numerical computing with JIT compilation
+- **XGBoost/LightGBM**: High-performance gradient boosting with GPU support
+- **ONNX**: Cross-framework model interchange and optimization
+- **MLflow**: Experiment tracking, model registry, and deployment
+- **NumPy/Pandas**: Numerical computing and data manipulation
 
 ## 💡 Use Cases
 
-- **Computer Vision**: Image classification, object detection, segmentation, GradCAM visualization
-- **Natural Language Processing**: Text classification, NER, QA, generation, transformers
-- **Sequence Modeling**: Time series, RNNs, LSTMs, attention mechanisms
-- **Transfer Learning**: Fine-tune pre-trained models with multiple strategies
-- **Privacy-Preserving ML**: Federated learning for sensitive data
-- **Model Deployment**: Compression, quantization, ONNX conversion
-- **Interpretability**: Explain model decisions with SHAP, LIME, GradCAM
-- **AutoML**: Neural architecture search for optimal models
-- **Research**: Experiment with cutting-edge architectures and algorithms
+- **Computer Vision**: Image classification with ResNet, object detection, segmentation, GradCAM visualization
+- **Natural Language Processing**: Text classification, NER, QA, generation with transformers (BERT, GPT)
+- **Sequence Modeling**: Time series forecasting, RNNs, bidirectional LSTMs, attention mechanisms
+- **Transfer Learning**: Fine-tune pre-trained models with progressive unfreezing and discriminative LR
+- **Privacy-Preserving ML**: Federated learning with differential privacy for sensitive data
+- **Model Deployment**: Compression (3-4x), quantization (INT8), ONNX conversion for production
+- **Interpretability**: Explain model decisions with SHAP, LIME, GradCAM, attention visualization
+- **AutoML**: Neural architecture search (DARTS, Evolutionary) for optimal models
+- **Tabular Data**: XGBoost and LightGBM with hyperparameter tuning and categorical features
+- **Experiment Tracking**: MLflow for versioning, staging, and production deployment
+- **Research**: Experiment with cutting-edge architectures and state-of-the-art algorithms
 
 ## 🔥 Framework Comparison
 
 | Framework | Strengths | Best For |
 |-----------|-----------|----------|
-| PyTorch | Flexible, Pythonic | Research, prototyping |
-| TensorFlow | Production, scalable | Enterprise deployment |
-| FastAI | High-level, fast | Quick iteration, teaching |
-| Transformers | Pre-trained models | NLP, vision transformers |
-| JAX | Performance, functional | High-performance computing |
+| PyTorch | Flexible, Pythonic, dynamic | Research, prototyping, GANs |
+| TensorFlow | Production, scalable, TensorBoard | Enterprise deployment |
+| Keras | Simple API, fast prototyping | Rapid development, beginners |
+| FastAI | High-level, best practices | Quick iteration, competitions |
+| Transformers | Pre-trained models, 100+ models | NLP, vision transformers |
+| JAX | Performance, JIT, functional | High-performance computing |
+| XGBoost | Accuracy, regularization | Structured data, competitions |
+| LightGBM | Speed (10-20x), categorical | Large datasets, tabular data |
+| ONNX | Cross-platform, optimization | Production deployment, edge |
+| MLflow | Experiment tracking, registry | ML lifecycle, team collaboration |
 
 ## 📧 Contact
 
