@@ -1,1 +1,52 @@
 # Python 3.8+
+
+# Core dependencies - all built-in modules
+# No external dependencies required for core functionality
+
+# The LLMChaining framework uses only Python standard library:
+# - asyncio: Async execution support
+# - logging: Logging framework
+# - abc: Abstract base classes
+# - dataclasses: Data structures
+# - datetime: Timestamp management
+# - enum: Status enumerations
+# - typing: Type hints
+# - concurrent.futures: Thread pool execution
+# - time: Timing and delays
+# - json: State serialization
+# - functools: Decorators
+
+# Optional dependencies for production deployments:
+
+# Testing
+pytest>=7.0.0
+pytest-asyncio>=0.21.0
+pytest-cov>=4.0.0
+
+# Code quality
+black>=23.0.0
+flake8>=6.0.0
+mypy>=1.0.0
+pylint>=2.17.0
+
+# Documentation
+sphinx>=5.0.0
+sphinx-rtd-theme>=1.2.0
+
+# Development
+ipython>=8.0.0
+jupyter>=1.0.0
+
+# Optional: LLM integrations (install as needed)
+# openai>=1.0.0
+# anthropic>=0.3.0
+# langchain>=0.1.0
+# transformers>=4.30.0
+
+# Optional: Monitoring and observability
+# prometheus-client>=0.16.0
+# datadog>=0.45.0
+
+# Optional: State persistence
+# redis>=4.5.0
+# sqlalchemy>=2.0.0

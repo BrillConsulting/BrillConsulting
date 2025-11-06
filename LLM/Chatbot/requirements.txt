@@ -1,3 +1,13 @@
+# Advanced LLM Chatbot System Requirements
+# Python 3.8+
+
+# LLM Provider SDKs
 openai>=1.0.0
+anthropic>=0.7.0
+
+# Token counting
+tiktoken>=0.5.0
+
+# Optional: Local model support
 transformers>=4.35.0
 torch>=2.0.0
