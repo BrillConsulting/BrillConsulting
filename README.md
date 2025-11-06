@@ -12,6 +12,24 @@
   Welcome to my GitHub Portfolio! Here you'll find my passions and skills in the fields of Data Science, Machine Learning, NLP, Computer Vision, MLOps, and Data Architecture.
 </p>
 
+---
+
+## 🆕 Latest Updates
+
+### MLOps Portfolio v2.0 - Production-Ready Enhancements ⭐
+
+Three core MLOps projects have been completely upgraded with production-ready implementations:
+
+- **A/B Testing Framework** - Complete rewrite with multi-armed bandit algorithms (Epsilon-Greedy, UCB, Thompson Sampling), Bayesian A/B testing, sample size calculation, and comprehensive statistical analysis
+- **Feature Store** - Full implementation from scratch with online/offline serving, point-in-time correctness, feature validation, and metadata management
+- **Data Validation System** - Advanced validation with schema checking, distribution drift detection (KS test, Chi-square), constraint validation, and automated reporting
+
+All upgraded projects include comprehensive documentation, advanced algorithms, and production-ready patterns used in industry.
+
+**[Explore MLOps v2.0 →](MLOps/)**
+
+---
+
 ## About Me
 
 I'm an AI Consultant and Data Scientist passionate about turning data into strategy.  
@@ -186,9 +204,9 @@ Comprehensive LLM toolkit from chatbots to fine-tuning and evaluation:
 
 ---
 
-###  [MLOps (ML Operations) Portfolio](MLOps/)
+###  [MLOps (ML Operations) Portfolio](MLOps/) ⭐ **v2.0 UPGRADED**
 
-Production ML operations covering the full ML lifecycle:
+Production ML operations covering the full ML lifecycle with enhanced production-ready implementations:
 
 #### Projects:
 1. **Training Pipeline** - Automated end-to-end training with artifact management
@@ -196,10 +214,10 @@ Production ML operations covering the full ML lifecycle:
 3. **Model Monitoring** - Data drift detection and performance tracking
 4. **CI/CD Pipeline** - Automated testing, validation, and deployment
 5. **Experiment Tracking** - MLflow-like parameter and metric tracking
-6. **Feature Store** - Centralized feature management and serving
+6. **Feature Store ⭐ NEW** - Complete implementation with online/offline serving, point-in-time correctness, feature validation, statistics, and metadata management
 7. **Model Versioning** - Model registry with version control and lineage
-8. **A/B Testing** - Experiment framework for model comparison in production
-9. **Data Validation** - Schema validation, data quality checks, drift detection
+8. **A/B Testing ⭐ NEW** - Advanced framework with multi-armed bandits (Epsilon-Greedy, UCB, Thompson Sampling), Bayesian testing, sample size calculation, and winner selection
+9. **Data Validation ⭐ NEW** - Comprehensive validation with schema checks (type, range, pattern, enum), distribution drift detection (KS test, Chi-square), and automated reporting
 10. **Model Governance** - Compliance tracking, audit trails, model explainability
 11. **Model Registry** - Centralized model management with MLflow integration
 12. **Pipeline Orchestration** - Airflow-based ML pipeline automation and scheduling
@@ -207,7 +225,14 @@ Production ML operations covering the full ML lifecycle:
 14. **Performance Monitoring** - Real-time model performance and latency tracking
 15. **Cost Optimization** - Infrastructure cost monitoring and optimization
 
-**Technologies:** FastAPI, Docker, Pytest, MLflow, SciPy, NumPy, Feast, Great Expectations, Airflow, Prometheus
+**Technologies:** FastAPI, Docker, Pytest, MLflow, SciPy, NumPy, Pandas, Great Expectations, Airflow, Prometheus
+
+**Key Features:**
+- ⭐ **Multi-Armed Bandit Algorithms** for intelligent A/B testing
+- ⭐ **Dual Storage Architecture** (online + offline) for feature serving
+- ⭐ **Point-in-Time Correctness** to prevent data leakage
+- ⭐ **Distribution Drift Detection** with statistical tests
+- ⭐ **Production-Ready Code** with comprehensive documentation
 
 **[Explore MLOps Projects →](MLOps/)**
 
