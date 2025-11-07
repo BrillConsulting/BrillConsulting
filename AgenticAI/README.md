@@ -2,6 +2,8 @@
 
 Advanced AI agent systems with autonomous capabilities, multi-agent coordination, and intelligent orchestration.
 
+**23 cutting-edge projects** showcasing the full spectrum of agentic AI capabilities - from self-reflection and emotional intelligence to adversarial testing and workflow automation.
+
 ## 📊 Projects Overview
 
 ### 1. Autonomous Agent
@@ -254,6 +256,150 @@ Advanced AI agent systems with autonomous capabilities, multi-agent coordination
 
 ---
 
+### 16. Agent Reflection
+**Description:** Self-evaluation and metacognitive capabilities for autonomous agents
+
+**Features:**
+- Performance analysis and evaluation
+- Strategy assessment and improvement
+- Error analysis and learning
+- Metacognitive monitoring
+- Self-improvement recommendations
+- Experience replay
+- Reflection depth control (shallow to meta)
+
+**Technologies:** Python
+
+**[View Project →](AgentReflection/)**
+
+---
+
+### 17. Adversarial Agents
+**Description:** Red team / blue team system for testing and improving agent robustness
+
+**Features:**
+- Attack strategies (prompt injection, edge cases, logic traps)
+- Defense mechanisms and safeguards
+- Adversarial battle simulation
+- Vulnerability scanning
+- Robustness scoring
+- Improvement cycles through adversarial training
+- Security assessment
+
+**Technologies:** Python
+
+**[View Project →](AdversarialAgents/)**
+
+---
+
+### 18. Hierarchical Agents
+**Description:** Multi-level agent hierarchies with delegation and supervision
+
+**Features:**
+- Manager-worker relationships
+- Multi-level organization (CEO, managers, workers)
+- Dynamic task distribution
+- Performance monitoring
+- Escalation protocols
+- Skill-based routing
+- Team coordination
+
+**Technologies:** Python
+
+**[View Project →](HierarchicalAgents/)**
+
+---
+
+### 19. Emotional Agents
+**Description:** Agents with emotional intelligence, empathy, and affective computing
+
+**Features:**
+- Emotional states (Plutchik's model: joy, sadness, anger, fear, etc.)
+- Mood tracking and transitions
+- Empathy system
+- Sentiment analysis
+- Emotional memory
+- Affect-driven decisions
+- Emotional regulation strategies
+
+**Technologies:** Python
+
+**[View Project →](EmotionalAgents/)**
+
+---
+
+### 20. Collaborative Agents
+**Description:** Human-AI and AI-AI collaboration with shared goals
+
+**Features:**
+- Human-AI teaming
+- Complementary skills integration
+- Shared context and workspace
+- Turn-taking protocols
+- Contribution tracking
+- Conflict resolution
+- Joint problem solving
+
+**Technologies:** Python
+
+**[View Project →](CollaborativeAgents/)**
+
+---
+
+### 21. Agent Negotiation
+**Description:** Multi-agent negotiation with bargaining and consensus building
+
+**Features:**
+- Bilateral negotiation
+- Multi-party consensus
+- Utility functions and preferences
+- Concession strategies
+- Nash equilibrium optimization
+- Time-constrained negotiations
+- Trust building and reputation
+
+**Technologies:** Python
+
+**[View Project →](AgentNegotiation/)**
+
+---
+
+### 22. Agent Personalization
+**Description:** Adaptive agents that learn user preferences over time
+
+**Features:**
+- User profiling and modeling
+- Behavioral learning
+- Preference elicitation
+- Context awareness
+- Adaptive interfaces
+- Recommendation systems
+- Privacy-preserving personalization
+
+**Technologies:** Python
+
+**[View Project →](AgentPersonalization/)**
+
+---
+
+### 23. Agent Workflow
+**Description:** Business process automation with intelligent workflow agents
+
+**Features:**
+- Workflow definition and execution
+- Intelligent task routing
+- State management
+- Exception handling
+- Parallel execution
+- Conditional logic
+- Human-in-the-loop integration
+
+**Technologies:** Python
+
+**[View Project →](AgentWorkflow/)**
+
+---
+
 ## 🚀 Getting Started
 
 Each project contains:
@@ -277,34 +423,47 @@ python project_file.py
 
 ## 🎯 Key Features
 
-- **Autonomous**: Self-directed planning and execution
-- **Collaborative**: Multi-agent coordination
-- **Intelligent**: Memory and learning capabilities
+- **Autonomous**: Self-directed planning and execution with metacognition
+- **Collaborative**: Multi-agent coordination and human-AI teaming
+- **Intelligent**: Memory, learning, and emotional intelligence
 - **Extensible**: Tool integration and workflow orchestration
+- **Adaptive**: Personalization and preference learning
+- **Resilient**: Adversarial testing and security hardening
+- **Hierarchical**: Multi-level organizations with delegation
+- **Social**: Negotiation, empathy, and collaborative problem-solving
 
 ## 📚 Technologies Used
 
-- **Python**: Core implementation language
-- **Type Hints**: Enhanced code clarity and type safety
+- **Python 3.8+**: Core implementation language
+- **Type Hints & Dataclasses**: Enhanced code clarity and type safety
 - **Modular Design**: Reusable and extensible components
 - **OpenAI Functions**: Tool calling and function integration
 - **LangChain**: Agent frameworks and chains
 - **Mesa**: Agent-based modeling and simulation
 - **Neo4j**: Graph database for knowledge representation
 - **NumPy/SciPy**: Numerical computations for optimization
+- **Game Theory**: Negotiation and utility optimization algorithms
+- **Affective Computing**: Emotional intelligence and sentiment analysis
+- **State Machines**: Workflow and emotion state management
+- **Security Patterns**: Adversarial testing and defense mechanisms
 
 ## 💡 Use Cases
 
-- **Autonomous Systems**: Self-directed agents for task automation
+- **Autonomous Systems**: Self-directed agents for task automation with self-reflection
 - **Multi-Agent Collaboration**: Coordinated teams solving complex problems
-- **Intelligent Assistants**: Tool-using agents with memory and reasoning
+- **Intelligent Assistants**: Tool-using agents with memory, reasoning, and empathy
 - **Simulation and Modeling**: Agent-based simulations for research
 - **Knowledge Management**: Graph-based knowledge representation
-- **Workflow Orchestration**: Complex multi-step agent workflows
+- **Workflow Orchestration**: Business process automation with intelligent routing
 - **Swarm Robotics**: Distributed coordination algorithms
-- **Social AI**: Agents with social behavior and teamwork
+- **Social AI**: Agents with social behavior, teamwork, and emotional intelligence
 - **Planning Systems**: Hierarchical task planning and scheduling
-- **Adaptive Systems**: Learning agents that improve over time
+- **Adaptive Systems**: Learning agents that improve over time and personalize to users
+- **Security Testing**: Red team/blue team adversarial testing and hardening
+- **Enterprise Organization**: Hierarchical agent structures mimicking business organizations
+- **Negotiation Systems**: Multi-party bargaining and consensus building
+- **Human-AI Collaboration**: Seamless teaming between humans and AI agents
+- **Personalized Services**: Adaptive agents that learn and adapt to individual preferences
 
 ## 📧 Contact
 
