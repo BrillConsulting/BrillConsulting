@@ -1,0 +1,15 @@
+# Content Moderation Dependencies
+
+# OpenAI Moderation
+openai>=1.0.0
+
+# Local models
+transformers>=4.35.0
+detoxify>=0.5.0
+torch>=2.0.0
+
+# Caching
+redis>=5.0.0
+
+# Utilities
+pydantic>=2.0.0
