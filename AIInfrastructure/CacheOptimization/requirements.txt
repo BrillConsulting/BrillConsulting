@@ -1,0 +1,15 @@
+# Cache Optimization Dependencies
+
+# Core
+vllm>=0.2.0  # PagedAttention
+torch>=2.0.0
+
+# Memory management
+pynvml>=11.5.0
+py3nvml>=0.2.7
+
+# Profiling
+nvidia-ml-py>=12.535.0
+
+# Utilities
+numpy>=1.24.0

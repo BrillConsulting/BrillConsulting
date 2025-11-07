@@ -1,0 +1,25 @@
+# Multi-Modal Serving Dependencies
+
+# Vision-Language models
+transformers>=4.35.0
+open-clip-torch>=2.23.0
+
+# Image processing
+pillow>=10.0.0
+opencv-python>=4.8.0
+
+# Audio processing
+# whisper  # OpenAI Whisper
+librosa>=0.10.0
+
+# Multi-modal frameworks
+# llava  # Install from GitHub
+# imagebind  # Install from GitHub
+
+# Serving
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+
+# Utilities
+torch>=2.0.0
+numpy>=1.24.0
