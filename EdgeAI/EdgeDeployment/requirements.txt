@@ -1,0 +1,32 @@
+# Edge Deployment Dependencies
+
+# Computer Vision
+opencv-python>=4.8.0
+pillow>=10.0.0
+
+# Deep Learning
+torch>=2.0.0
+torchvision>=0.15.0
+ultralytics>=8.0.0  # YOLOv8
+
+# ONNX
+onnx>=1.14.0
+onnxruntime>=1.15.0
+
+# TensorFlow Lite (for ARM/edge)
+# tflite-runtime>=2.13.0  # Install based on platform
+
+# Optimization
+# tensorrt>=8.6.0  # Jetson platforms only
+# openvino>=2023.0  # Intel platforms
+
+# Coral Edge TPU (optional)
+# pycoral  # Google Coral devices
+
+# Monitoring
+psutil>=5.9.0
+# py3nvml>=0.2.7  # NVIDIA GPU monitoring
+
+# Utilities
+numpy>=1.24.0
+pydantic>=2.0.0
