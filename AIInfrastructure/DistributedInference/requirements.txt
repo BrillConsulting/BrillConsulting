@@ -1,0 +1,17 @@
+# Distributed Inference Dependencies
+
+# Ray Serve
+ray[serve]>=2.8.0
+
+# HuggingFace TGI
+text-generation>=0.6.0
+
+# DeepSpeed
+deepspeed>=0.12.0
+
+# vLLM
+vllm>=0.2.0
+
+# Utilities
+aiohttp>=3.9.0
+pydantic>=2.0.0

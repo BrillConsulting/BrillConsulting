@@ -1,0 +1,27 @@
+# Model Serving Framework Dependencies
+
+# Core server
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+pydantic>=2.0.0
+
+# Inference backends
+vllm>=0.2.0
+tritonclient[all]>=2.40.0
+# ollama (install via: curl https://ollama.ai/install.sh | sh)
+
+# Optional: TorchServe
+# torchserve>=0.9.0
+# torch-model-archiver>=0.9.0
+
+# Optional: ONNX Runtime
+# onnxruntime-gpu>=1.16.0
+
+# Monitoring & Metrics
+prometheus-client>=0.18.0
+pydantic-settings>=2.0.0
+
+# Utilities
+aiohttp>=3.9.0
+httpx>=0.25.0
+pyyaml>=6.0.1
