@@ -1,0 +1,17 @@
+# Bias Analysis Dependencies
+
+# Fairness libraries
+aif360>=0.6.0
+fairlearn>=0.9.0
+
+# ML frameworks
+scikit-learn>=1.3.0
+numpy>=1.24.0
+pandas>=2.0.0
+
+# Visualization
+matplotlib>=3.7.0
+plotly>=5.17.0
+
+# Reporting
+evidently>=0.4.0
