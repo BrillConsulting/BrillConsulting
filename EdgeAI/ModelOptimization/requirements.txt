@@ -1,0 +1,25 @@
+# Model Optimization Dependencies
+
+# Deep Learning Frameworks
+torch>=2.0.0
+tensorflow>=2.13.0
+
+# Quantization
+# tensorrt>=8.6.0  # NVIDIA platforms
+onnx>=1.14.0
+onnxruntime>=1.15.0
+
+# Pruning
+torch-pruning>=1.2.0
+
+# NAS/AutoML
+# nni>=2.10  # Neural Network Intelligence (Microsoft)
+
+# Profiling
+torch-tb-profiler>=0.4.0
+
+# Scientific computing
+numpy>=1.24.0
+
+# Utilities
+pydantic>=2.0.0
