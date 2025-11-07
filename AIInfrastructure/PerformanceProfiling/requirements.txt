@@ -1,0 +1,21 @@
+# Performance Profiling Dependencies
+
+# PyTorch profiling
+torch>=2.0.0
+torch-tb-profiler>=0.4.0
+
+# NVIDIA profiling
+# nvidia-nsight-systems  # Install separately
+# nvidia-nsight-compute  # Install separately
+pynvml>=11.5.0
+py3nvml>=0.2.7
+
+# Profiling tools
+line-profiler>=4.1.0
+memory-profiler>=0.61.0
+py-spy>=0.3.0
+
+# Visualization
+tensorboard>=2.14.0
+matplotlib>=3.7.0
+pandas>=2.0.0
