@@ -1,0 +1,22 @@
+# Edge Monitoring Dependencies
+
+# Metrics
+prometheus-client>=0.17.0
+influxdb-client>=1.36.0
+
+# Monitoring
+psutil>=5.9.0
+# py3nvml>=0.2.7  # NVIDIA GPU monitoring
+# RPi.GPIO>=0.7.1  # Raspberry Pi specific
+
+# Logging
+python-json-logger>=2.0.0
+
+# Alerting
+# pagerduty>=0.2.1
+
+# Scientific computing
+numpy>=1.24.0
+
+# Utilities
+pydantic>=2.0.0
