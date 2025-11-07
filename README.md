@@ -1,4 +1,3 @@
-
 <h1 align="center">👋 Hi, I'm Ava from Brill </h1>
 <p align="center">
   <b>AI Consultant | Data Scientist | MLOps Architect</b><br>
