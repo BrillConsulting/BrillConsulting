@@ -504,15 +504,38 @@ Complete GitLab CI/CD, API integration, and runner management:
 ---
 
 ###  Tools & Tech Stack
+
+**Core Technologies:**
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=python,pytorch,azure,aws,gcp,docker,kubernetes,fastapi,git,githubactions,postgresql,vscode" />
+  <img src="https://skillicons.dev/icons?i=python,pytorch,tensorflow,sklearn" alt="ML/AI Frameworks" />
+</p>
+
+**Cloud & DevOps:**
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=azure,aws,gcp,docker,kubernetes,terraform,gitlab,githubactions" alt="Cloud & DevOps" />
+</p>
+
+**Data & Backend:**
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=postgresql,mongodb,redis,kafka,fastapi,flask,prometheus,grafana" alt="Data & Backend" />
+</p>
+
+**Development Tools:**
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=git,vscode,linux,bash,selenium,postman" alt="Development Tools" />
 </p>
 
 ---
 
 ### 📈 GitHub Stats
+
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=BrillConsulting&layout=compact&theme=tokyonight"/>
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=BrillConsulting&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true"/>
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=BrillConsulting&layout=compact&langs_count=8&theme=tokyonight"/>
+</p>
+
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=BrillConsulting&theme=tokyonight" alt="GitHub Streak"/>
 </p>
 
 ---
