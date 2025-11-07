@@ -1,0 +1,25 @@
+# Secure Enclaves Dependencies
+
+# TEE SDKs (platform-specific, require separate installation)
+# Intel SGX SDK
+# AMD SEV SDK
+# ARM TrustZone SDK
+
+# Homomorphic Encryption
+tenseal>=0.3.14
+pycryptodome>=3.18.0
+
+# Cloud provider SDKs
+# azure-identity>=1.14.0  # For Azure Confidential Computing
+# boto3>=1.28.0  # For AWS Nitro Enclaves
+
+# ML Frameworks
+torch>=2.0.0
+tensorflow>=2.13.0
+
+# Scientific computing
+numpy>=1.24.0
+
+# Utilities
+pydantic>=2.0.0
+cryptography>=41.0.0

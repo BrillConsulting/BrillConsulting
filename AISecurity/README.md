@@ -4,13 +4,19 @@ Advanced security, fairness, and compliance tools for production AI systems. Thi
 
 ## Overview
 
-Modern AI systems face numerous security and governance challenges. This collection provides enterprise-grade tools for:
+Modern AI systems face numerous security and governance challenges. This comprehensive collection of 12 production-ready projects provides enterprise-grade tools for:
 
 - **Security**: Detecting and preventing prompt injection, jailbreaks, and adversarial attacks
 - **Content Safety**: Multi-layered content moderation and toxicity detection
 - **Governance**: Data lineage tracking, access control, and audit trails
 - **Fairness**: Bias detection and mitigation across protected attributes
 - **Transparency**: Model interpretability and explainability for stakeholders
+- **Attack Defense**: Adversarial robustness, poison detection, and backdoor mitigation
+- **Privacy**: Federated learning with differential privacy and secure aggregation
+- **IP Protection**: Model watermarking and provenance tracking
+- **Risk Assessment**: Threat modeling based on MITRE ATLAS and OWASP standards
+- **Testing**: Automated red teaming for LLMs and model vulnerability scanning
+- **Confidential Computing**: TEE-based secure inference with encrypted models
 
 ## Projects
 
@@ -132,6 +138,167 @@ Provide stakeholders with clear explanations of model predictions using SHAP, Ca
 
 ---
 
+### 6. AdversarialRobustness
+**Defense against adversarial attacks**
+
+Comprehensive adversarial attack detection, defense, and model hardening against FGSM, PGD, and C&W attacks.
+
+**Key Features:**
+- Multi-layer detection (statistical, neural, ensemble)
+- Adversarial training for model hardening
+- Attack generation (FGSM, PGD, C&W, DeepFool)
+- Input sanitization and perturbation removal
+- Robustness evaluation and metrics
+- Real-time attack monitoring
+
+**Technologies:** Adversarial Robustness Toolbox (ART), CleverHans, PyTorch
+
+**Use Cases:**
+- Computer vision robustness
+- Autonomous vehicle safety
+- Malware detection hardening
+- Biometric system security
+
+---
+
+### 7. ModelWatermarking
+**IP protection and provenance tracking**
+
+Embed invisible watermarks in ML models for ownership verification, provenance tracking, and IP protection.
+
+**Key Features:**
+- Multiple watermarking techniques (weight, backdoor, output)
+- Robust against fine-tuning and pruning
+- Cryptographic ownership verification
+- Provenance tracking and lineage
+- Tamper detection
+- Blockchain anchoring support
+
+**Technologies:** Custom watermarking algorithms, PyCryptodome, Web3.py
+
+**Use Cases:**
+- Model IP protection
+- Ownership disputes
+- Model marketplace verification
+- License enforcement
+
+---
+
+### 8. FederatedPrivacy
+**Privacy-preserving federated learning**
+
+Differential privacy, secure aggregation, and encrypted computation for federated learning systems.
+
+**Key Features:**
+- Differential privacy (Laplace, Gaussian mechanisms)
+- Privacy budgeting and composition
+- Secure aggregation (homomorphic encryption)
+- Privacy auditing and empirical tests
+- Federated training with privacy guarantees
+- (ε, δ)-DP guarantees
+
+**Technologies:** Opacus, TensorFlow Privacy, PySyft, Flower, TenSEAL
+
+**Use Cases:**
+- Healthcare collaborative AI
+- Financial data analysis
+- Privacy-preserving analytics
+- Cross-organizational ML
+
+---
+
+### 9. ThreatModeling
+**AI-specific threat modeling framework**
+
+Comprehensive threat modeling based on MITRE ATLAS, OWASP ML Top 10, and custom risk assessments.
+
+**Key Features:**
+- MITRE ATLAS threat mapping
+- Quantitative risk assessment
+- Attack surface analysis
+- Automated vulnerability scanning
+- Mitigation strategy recommendations
+- Compliance gap analysis
+
+**Technologies:** MITRE ATLAS, OWASP ML Top 10, NIST AI RMF
+
+**Use Cases:**
+- Pre-deployment security assessment
+- Risk quantification
+- Compliance planning
+- Security architecture design
+
+---
+
+### 10. RedTeaming
+**Automated LLM red teaming**
+
+Comprehensive red team testing framework for LLM security, safety, and jailbreak resistance.
+
+**Key Features:**
+- Automated jailbreak testing (DAN, UCAR, cognitive hacking)
+- Prompt injection detection
+- Harmful content generation testing
+- Bias elicitation tests
+- PII leakage detection
+- Comprehensive vulnerability reports
+
+**Technologies:** LangChain, OpenAI API, Anthropic API, custom attack generation
+
+**Use Cases:**
+- Pre-deployment LLM testing
+- Continuous security monitoring
+- Safety evaluation
+- Jailbreak resistance testing
+
+---
+
+### 11. PoisonDetection
+**Data poisoning and backdoor detection**
+
+Advanced detection and mitigation of data poisoning attacks and backdoors in training data and models.
+
+**Key Features:**
+- Anomaly-based poison detection
+- Backdoor detection (activation clustering, spectral signatures)
+- Trigger inversion and reconstruction
+- Neural Cleanse implementation
+- Data sanitization
+- Model repair (fine-pruning)
+
+**Technologies:** scikit-learn, PyOD, PyTorch, spectral analysis
+
+**Use Cases:**
+- Training data validation
+- Model integrity verification
+- Supply chain security
+- Federated learning defense
+
+---
+
+### 12. SecureEnclaves
+**Confidential AI computing**
+
+Trusted Execution Environments (TEE) and encrypted inference using Intel SGX, AMD SEV, and cloud confidential computing.
+
+**Key Features:**
+- TEE support (Intel SGX, AMD SEV, ARM TrustZone)
+- Encrypted inference (homomorphic encryption)
+- Remote attestation
+- Secure model loading and sealed storage
+- Side-channel protection
+- Hardware-backed key management
+
+**Technologies:** Intel SGX SDK, TenSEAL (CKKS), Azure/AWS confidential computing
+
+**Use Cases:**
+- Healthcare data processing
+- Financial AI without data exposure
+- Multi-party secure computation
+- Confidential model serving
+
+---
+
 ## Quick Start
 
 ### Installation
@@ -157,6 +324,34 @@ pip install -r requirements.txt
 
 # Explainable AI
 cd ExplainableAI
+pip install -r requirements.txt
+
+# Adversarial Robustness
+cd AdversarialRobustness
+pip install -r requirements.txt
+
+# Model Watermarking
+cd ModelWatermarking
+pip install -r requirements.txt
+
+# Federated Privacy
+cd FederatedPrivacy
+pip install -r requirements.txt
+
+# Threat Modeling
+cd ThreatModeling
+pip install -r requirements.txt
+
+# Red Teaming
+cd RedTeaming
+pip install -r requirements.txt
+
+# Poison Detection
+cd PoisonDetection
+pip install -r requirements.txt
+
+# Secure Enclaves
+cd SecureEnclaves
 pip install -r requirements.txt
 ```
 
@@ -292,11 +487,16 @@ Real-time security monitoring:
 
 | Category | Technologies |
 |----------|-------------|
-| **Security** | Guardrails AI, LangFuse, Custom ML |
+| **Security** | Guardrails AI, LangFuse, Custom ML, ART, CleverHans |
 | **Moderation** | OpenAI API, Detoxify, Transformers |
 | **Lineage** | Apache Atlas patterns, Neo4j concepts |
 | **Fairness** | AIF360, Fairlearn, EvidentlyAI |
 | **Explainability** | SHAP, Captum, Streamlit, Plotly |
+| **Privacy** | Opacus, TensorFlow Privacy, PySyft, Flower |
+| **Cryptography** | TenSEAL, PyCryptodome, homomorphic encryption |
+| **TEE** | Intel SGX, AMD SEV, AWS Nitro, Azure Confidential |
+| **Threat Intelligence** | MITRE ATLAS, OWASP ML Top 10, NIST AI RMF |
+| **Detection** | PyOD, scikit-learn, spectral analysis |
 | **Caching** | Redis |
 | **ML Frameworks** | PyTorch, scikit-learn, TensorFlow |
 
@@ -492,6 +692,6 @@ For general inquiries: contact@brillconsulting.com
 
 **Author:** Brill Consulting
 **Area:** AI Security, Governance & Compliance
-**Projects:** 5
-**Total Lines of Code:** ~1,800+
+**Projects:** 12
+**Total Lines of Code:** ~9,000+
 **Status:** Production Ready
