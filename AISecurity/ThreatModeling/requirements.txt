@@ -1,0 +1,14 @@
+# Threat Modeling Dependencies
+
+# Standards and frameworks (documentation references)
+# MITRE ATLAS: https://atlas.mitre.org/
+# OWASP ML Top 10
+
+# Reporting
+jinja2>=3.1.0
+
+# Data structures
+pydantic>=2.0.0
+
+# Utilities
+pyyaml>=6.0
