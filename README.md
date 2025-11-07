@@ -186,6 +186,8 @@ Comprehensive LLM toolkit from chatbots to fine-tuning and evaluation:
 
 ---
 
+##  Featured Projects
+
 ###  [MLOps (ML Operations) Portfolio](MLOps/)
 
 Production ML operations covering the full ML lifecycle with enhanced production-ready implementations:
@@ -241,6 +243,26 @@ Enterprise data architecture from ETL to governance:
 ---
 
 ### [DataOps & Synthetic Data Generation Portfolio](DataOps/)
+
+Production data operations with synthetic data generation, automated labeling, and quality monitoring:
+
+#### Projects:
+1. **Synthetic Data Generation** - GANs (StyleGAN2, CTGAN), diffusion models (Stable Diffusion), privacy-preserving synthesis
+2. **Auto Labeling** - Active learning (uncertainty, query-by-committee), Label Studio/CVAT integration, 60-80% cost savings
+3. **Data Quality** - Multi-method drift detection (KS, PSI, Wasserstein), Great Expectations validation, real-time alerting
+4. **Data Versioning** - DVC integration, model registry, experiment tracking, pipeline management, S3/GCS/Azure backends
+
+**Technologies:** PyTorch, TensorFlow, SDV, Diffusers, Opacus, modAL, Label Studio, CVAT, Great Expectations, Evidently AI, DVC, MLflow
+
+**[Explore DataOps Projects →](DataOps/)**
+
+---
+
+### [Edge AI & On-Device Intelligence Portfolio](EdgeAI/)
+
+Production-ready ML deployment on edge devices with 7 comprehensive projects:
+
+#### Projects:
 
 Production data operations with synthetic data generation, automated labeling, and quality monitoring:
 
@@ -517,6 +539,30 @@ Complete GitLab CI/CD, API integration, and runner management:
   <img src="https://skillicons.dev/icons?i=postgresql,mongodb,redis,kafka,fastapi,flask,prometheus,grafana" alt="Data & Backend" />
 </p>
 
+**Development Tools:**
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=git,vscode,linux,bash,selenium,postman" alt="Development Tools" />
+</p>
+
+**Cloud & DevOps:**
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=azure,aws,gcp,docker,kubernetes,terraform,gitlab,githubactions" alt="Cloud & DevOps" />
+</p>
+
+**Data & Backend:**
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=postgresql,mongodb,redis,kafka,fastapi,flask,prometheus,grafana" alt="Data & Backend" />
+</p>
+
+### 📈 GitHub Stats
+
+<p align="center">
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=BrillConsulting&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true"/>
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=BrillConsulting&layout=compact&langs_count=8&theme=tokyonight"/>
+</p>
+
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=BrillConsulting&theme=tokyonight" alt="GitHub Streak"/>
 **Development Tools:**
 <p align="center">
   <img src="https://skillicons.dev/icons?i=git,vscode,linux,bash,selenium,postman" alt="Development Tools" />
