@@ -1,0 +1,39 @@
+# Auto-Labeling Dependencies
+
+# Active Learning
+modAL>=0.4.1
+libact>=0.1.5
+
+# Labeling Tools
+label-studio-sdk>=0.0.30
+label-studio>=1.9.0
+cvat-sdk>=2.7.0
+
+# Machine Learning
+torch>=2.0.0
+torchvision>=0.15.0
+scikit-learn>=1.3.0
+
+# Semi-Supervised Learning
+scikit-learn>=1.3.0
+
+# Computer Vision
+opencv-python>=4.8.0
+Pillow>=10.0.0
+
+# Object Detection
+ultralytics>=8.0.0  # YOLOv8
+
+# Data
+pandas>=2.0.0
+numpy>=1.24.0
+
+# API Clients
+requests>=2.31.0
+
+# Clustering (for diversity sampling)
+scipy>=1.11.0
+
+# Utilities
+tqdm>=4.65.0
+pydantic>=2.0.0

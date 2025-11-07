@@ -2,7 +2,7 @@
 
 Advanced AI agent systems with autonomous capabilities, multi-agent coordination, and intelligent orchestration.
 
-**23 cutting-edge projects** showcasing the full spectrum of agentic AI capabilities - from self-reflection and emotional intelligence to adversarial testing and workflow automation.
+**26 cutting-edge projects** showcasing the full spectrum of agentic AI capabilities - from self-reflection and emotional intelligence to tool orchestration, graph-based workflows, and multi-framework integration.
 
 ## 📊 Projects Overview
 
@@ -400,6 +400,63 @@ Advanced AI agent systems with autonomous capabilities, multi-agent coordination
 
 ---
 
+### 24. Tool Orchestration
+**Description:** Advanced tool orchestration with code execution, browser automation, and file system operations
+
+**Features:**
+- Safe code execution (Python, JavaScript) in sandboxed environments
+- Browser automation (Selenium, Playwright)
+- File system operations with permissions
+- API integration and database tools
+- Tool composition and chaining
+- Docker-based execution
+- Security: sandboxing, resource limits, permissions
+- Monitoring and performance tracking
+
+**Technologies:** Python, RestrictedPython, Docker, Playwright, Selenium
+
+**[View Project →](ToolOrchestration/)**
+
+---
+
+### 25. LangGraph Workflows
+**Description:** Graph-based agentic workflows with stateful execution and human-in-the-loop
+
+**Features:**
+- Graph-based workflow definition (nodes and edges)
+- Stateful execution with checkpointing
+- Cyclic flows and conditional routing
+- Human-in-the-loop approvals
+- Real-time streaming
+- Parallel execution branches
+- Feedback loops and reflection patterns
+- Visualization and tracing
+
+**Technologies:** Python, LangGraph, LangChain, OpenAI
+
+**[View Project →](LangGraphWorkflows/)**
+
+---
+
+### 26. Agent Frameworks
+**Description:** Integration with AutoGen, CrewAI, and CAMEL multi-agent frameworks
+
+**Features:**
+- AutoGen: Conversational agents with code execution
+- CrewAI: Role-based agent collaboration
+- CAMEL: Role-playing autonomous cooperation
+- Framework comparison and migration
+- Unified interface across frameworks
+- Hybrid multi-framework systems
+- Group chat and team coordination
+- Task decomposition and planning
+
+**Technologies:** Python, AutoGen, CrewAI, CAMEL-AI, LangChain
+
+**[View Project →](AgentFrameworks/)**
+
+---
+
 ## 🚀 Getting Started
 
 Each project contains:
@@ -438,9 +495,14 @@ python project_file.py
 - **Type Hints & Dataclasses**: Enhanced code clarity and type safety
 - **Modular Design**: Reusable and extensible components
 - **OpenAI Functions**: Tool calling and function integration
-- **LangChain**: Agent frameworks and chains
+- **LangChain & LangGraph**: Agent frameworks, chains, and graph-based workflows
+- **AutoGen**: Microsoft's multi-agent conversation framework
+- **CrewAI**: Role-based agent collaboration platform
+- **CAMEL**: Communicative agents for autonomous cooperation
 - **Mesa**: Agent-based modeling and simulation
 - **Neo4j**: Graph database for knowledge representation
+- **Docker & RestrictedPython**: Sandboxed code execution
+- **Playwright & Selenium**: Browser automation
 - **NumPy/SciPy**: Numerical computations for optimization
 - **Game Theory**: Negotiation and utility optimization algorithms
 - **Affective Computing**: Emotional intelligence and sentiment analysis
@@ -450,11 +512,14 @@ python project_file.py
 ## 💡 Use Cases
 
 - **Autonomous Systems**: Self-directed agents for task automation with self-reflection
-- **Multi-Agent Collaboration**: Coordinated teams solving complex problems
+- **Multi-Agent Collaboration**: Coordinated teams solving complex problems with AutoGen, CrewAI, CAMEL
 - **Intelligent Assistants**: Tool-using agents with memory, reasoning, and empathy
+- **Code Generation**: Graph-based workflows for code generation, testing, and review
+- **Tool Orchestration**: Code execution, browser automation, API integration
+- **Content Creation**: Multi-agent pipelines with CrewAI for research, writing, and editing
 - **Simulation and Modeling**: Agent-based simulations for research
 - **Knowledge Management**: Graph-based knowledge representation
-- **Workflow Orchestration**: Business process automation with intelligent routing
+- **Workflow Orchestration**: LangGraph workflows with human-in-the-loop and checkpointing
 - **Swarm Robotics**: Distributed coordination algorithms
 - **Social AI**: Agents with social behavior, teamwork, and emotional intelligence
 - **Planning Systems**: Hierarchical task planning and scheduling
@@ -464,6 +529,7 @@ python project_file.py
 - **Negotiation Systems**: Multi-party bargaining and consensus building
 - **Human-AI Collaboration**: Seamless teaming between humans and AI agents
 - **Personalized Services**: Adaptive agents that learn and adapt to individual preferences
+- **Research & Development**: CAMEL-based role-playing scenarios for exploration
 
 ## 📧 Contact
 
