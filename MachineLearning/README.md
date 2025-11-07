@@ -10,10 +10,13 @@ Professional Machine Learning projects showcasing classic ML algorithms with pro
 - **AutoML** ⭐ - Automated ML with hyperparameter optimization, model selection (6+ algorithms), and intelligent task detection - 501 lines
 - **RegressionAnalysis** ⭐ - 10+ algorithms including XGBoost, LightGBM, Random Forest, SVR, Gradient Boosting with hyperparameter tuning - 600+ lines
 - **ClassificationModels** ⭐ - 14+ algorithms including XGBoost, LightGBM, Voting/Stacking ensembles, ROC curves, feature importance - 498 lines
-- **TimeSeriesForecasting** ⭐ **NEW** - 10+ forecasting models (ARIMA, SARIMA, Auto-ARIMA, Prophet, Exp Smoothing) with stationarity testing, decomposition, anomaly detection - 709 lines
-- **EnsembleMethods** ⭐ **NEW** - 10+ ensemble methods (Bagging, Random Forest, Extra Trees, AdaBoost, GB, XGBoost, LightGBM, Voting, Stacking) for classification/regression - 782 lines
+- **TimeSeriesForecasting** ⭐ - 10+ forecasting models (ARIMA, SARIMA, Auto-ARIMA, Prophet, Exp Smoothing) with stationarity testing, decomposition, anomaly detection - 709 lines
+- **EnsembleMethods** ⭐ - 10+ ensemble methods (Bagging, Random Forest, Extra Trees, AdaBoost, GB, XGBoost, LightGBM, Voting, Stacking) for classification/regression - 782 lines
+- **AnomalyDetection** ⭐ **NEW** - 8+ detection algorithms (Isolation Forest, One-Class SVM, LOF, Z-Score, IQR, DBSCAN) with ensemble voting and comprehensive visualization - 584 lines
+- **DimensionalityReduction** ⭐ **NEW** - 10+ reduction methods (PCA, t-SNE, UMAP, Isomap, LLE, Kernel PCA, LDA) with variance analysis and fast mode - 662 lines
+- **ModelInterpretability** ⭐ **NEW** - SHAP, LIME, permutation importance, partial dependence plots for model explanation - 570 lines
 
-**Total Enhancement:** 7 projects upgraded with ~4,334+ lines of production-ready code. All include comprehensive implementations, advanced diagnostics, hyperparameter tuning, and detailed documentation.
+**Total Enhancement:** 10 projects upgraded with ~6,150+ lines of production-ready code. All include comprehensive implementations, advanced diagnostics, hyperparameter tuning, and detailed documentation.
 
 ## 📦 Projects Overview (15 Projects)
 
@@ -175,53 +178,62 @@ python clustering_analysis.py --data customers.csv --output clusters.png
 
 ---
 
-### 7. 📉 [Dimensionality Reduction](DimensionalityReduction/)
-Reduce feature space while preserving important information.
+### 7. 📉 [Dimensionality Reduction](DimensionalityReduction/) ⭐ **UPGRADED v2.0**
+Production-ready dimensionality reduction with 10+ algorithms and comprehensive visualization.
 
-**Techniques:**
-- PCA (Principal Component Analysis)
-- t-SNE
-- UMAP
+**Algorithms:**
+- **Linear**: PCA, Incremental PCA, Truncated SVD, Factor Analysis
+- **Non-linear**: Kernel PCA, t-SNE, UMAP*, Isomap, LLE, MDS
+- **Supervised**: LDA
 
 **Key Features:**
-- Feature space visualization
-- Noise reduction
-- Data compression
-- Pattern discovery
+- 10+ reduction algorithms with automatic comparison
+- Variance explained analysis for interpretability
+- Reconstruction error computation
+- 2D/3D visualization support
+- Fast mode to skip slow algorithms
+- Model persistence (save/load)
 
-**Technologies:** scikit-learn, umap-learn
+**Technologies:** scikit-learn, umap-learn*
+
+**Status:** 662 lines, production-ready with comprehensive evaluation
 
 ```bash
 cd DimensionalityReduction
-python dimensionality_reduction.py --data highdim.csv --method umap
+python dimensionalityreduction.py --data highdim.csv --n-components 2 --output-viz viz.png
 ```
 
 ---
 
-### 7. 🚨 [Anomaly Detection](AnomalyDetection/)
-Identify outliers and anomalous patterns in data.
+### 8. 🚨 [Anomaly Detection](AnomalyDetection/) ⭐ **UPGRADED v2.0**
+Production-ready anomaly detection with 8+ algorithms and ensemble voting.
 
 **Algorithms:**
-- Isolation Forest
-- One-Class SVM
-- Local Outlier Factor
+- **Statistical**: Z-Score, IQR, Modified Z-Score
+- **ML Methods**: Isolation Forest, One-Class SVM, LOF, Elliptic Envelope
+- **Clustering**: DBSCAN
+- **Ensemble**: Voting for robust detection
 
 **Key Features:**
-- Unsupervised detection
-- Contamination estimation
-- Outlier scoring
-- Visualization
+- 8+ detection algorithms with automatic comparison
+- Ensemble voting for robust anomaly detection
+- PCA visualization for 2D anomaly plotting
+- Anomaly scoring with score distributions
+- Model persistence (save/load)
+- Comprehensive evaluation with Precision, Recall, F1-Score
 
-**Technologies:** scikit-learn, PyOD
+**Technologies:** scikit-learn, scipy
+
+**Status:** 584 lines, production-ready with ensemble methods
 
 ```bash
 cd AnomalyDetection
-python anomaly_detection.py --data transactions.csv --output anomalies.csv
+python anomalydetection.py --data transactions.csv --contamination 0.1 --output-anomalies anomalies.csv
 ```
 
 ---
 
-### 8. 🎮 [Reinforcement Learning](ReinforcementLearning/)
+### 9. 🎮 [Reinforcement Learning](ReinforcementLearning/)
 Learn optimal policies through trial and error.
 
 **Algorithms:**
@@ -244,7 +256,7 @@ python rl_agent.py --env CartPole-v1 --episodes 1000
 
 ---
 
-### 9. 🤖 [AutoML](AutoML/) ⭐ **UPGRADED**
+### 10. 🤖 [AutoML](AutoML/) ⭐ **UPGRADED v2.0**
 Automated machine learning with intelligent model selection and hyperparameter optimization.
 
 **Features:**
@@ -266,7 +278,7 @@ python automl.py
 
 ---
 
-### 10. 🎯 [Feature Selection](FeatureSelection/) ⭐ **UPGRADED**
+### 11. 🎯 [Feature Selection](FeatureSelection/) ⭐ **UPGRADED v2.0**
 Advanced feature selection with multiple algorithms and ensemble methods.
 
 **Features:**
@@ -287,7 +299,7 @@ python feature_selection.py
 
 ---
 
-### 11. ⚖️ [Imbalanced Learning](ImbalancedLearning/) ⭐ **UPGRADED**
+### 12. ⚖️ [Imbalanced Learning](ImbalancedLearning/) ⭐ **UPGRADED v2.0**
 Handle imbalanced datasets with advanced resampling techniques.
 
 **Features:**
@@ -309,7 +321,7 @@ python imbalanced_learning.py
 
 ---
 
-### 12. 🌊 [Online Learning](OnlineLearning/)
+### 13. 🌊 [Online Learning](OnlineLearning/)
 Incremental learning for streaming data.
 
 **Features:**
@@ -327,7 +339,7 @@ python online_learning.py
 
 ---
 
-### 13. 🧠 [Meta Learning](MetaLearning/)
+### 14. 🧠 [Meta Learning](MetaLearning/)
 Learning to learn from multiple tasks.
 
 **Features:**
@@ -345,7 +357,7 @@ python meta_learning.py
 
 ---
 
-### 14. 🎯 [Multi-Task Learning](MultiTaskLearning/)
+### 15. 🎯 [Multi-Task Learning](MultiTaskLearning/)
 Joint learning across related tasks.
 
 **Features:**
@@ -363,25 +375,28 @@ python multi_task_learning.py
 
 ---
 
-### 15. 🔍 [Model Interpretability](ModelInterpretability/)
-Explain and interpret ML model predictions.
+### 16. 🔍 [Model Interpretability](ModelInterpretability/) ⭐ **UPGRADED v2.0**
+Production-ready model interpretability with SHAP, LIME, and comprehensive explanation methods.
 
-**Techniques:**
-- SHAP (SHapley Additive exPlanations)
-- LIME (Local Interpretable Model-agnostic Explanations)
-- Feature Importance
+**Methods:**
+- **Global**: Feature Importance, Permutation Importance, SHAP Summary, Partial Dependence
+- **Local**: SHAP Waterfall, SHAP Force, LIME explanations
 
 **Key Features:**
-- Model-agnostic explanations
-- Individual prediction interpretation
-- Feature contribution analysis
-- Visualization tools
+- SHAP integration (TreeExplainer, LinearExplainer, KernelExplainer)
+- LIME integration for local explanations
+- Model-agnostic permutation importance
+- Partial dependence plots for feature effects
+- Multiple visualization types (summary, waterfall, force, bar)
+- Comparison of importance methods
 
-**Technologies:** SHAP, LIME, scikit-learn
+**Technologies:** SHAP*, LIME*, scikit-learn
+
+**Status:** 570 lines, production-ready with comprehensive explanations
 
 ```bash
 cd ModelInterpretability
-python model_explainer.py --model trained_model.pkl --data test.csv
+python modelinterpretability.py --model model.pkl --data-train train.csv --data-test test.csv --target label
 ```
 
 ---
