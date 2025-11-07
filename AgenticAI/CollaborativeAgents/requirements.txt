@@ -1,0 +1,13 @@
+# Collaborative Agents Framework Dependencies
+# Human-AI collaboration
+
+# No external dependencies required for basic functionality
+# Uses standard library: dataclasses, datetime, random
+
+# Optional: Real-time collaboration
+# websockets>=11.0
+# socketio>=5.9.0
+
+# Optional: Shared workspace
+# redis>=4.6.0
+# pymongo>=4.4.0
