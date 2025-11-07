@@ -15,8 +15,9 @@ Professional Machine Learning projects showcasing classic ML algorithms with pro
 - **AnomalyDetection** ⭐ **NEW** - 8+ detection algorithms (Isolation Forest, One-Class SVM, LOF, Z-Score, IQR, DBSCAN) with ensemble voting and comprehensive visualization - 584 lines
 - **DimensionalityReduction** ⭐ **NEW** - 10+ reduction methods (PCA, t-SNE, UMAP, Isomap, LLE, Kernel PCA, LDA) with variance analysis and fast mode - 662 lines
 - **ModelInterpretability** ⭐ **NEW** - SHAP, LIME, permutation importance, partial dependence plots for model explanation - 570 lines
+- **Clustering** ⭐ - 8+ clustering algorithms (K-Means, DBSCAN, OPTICS, GMM, Mean Shift, Spectral, Hierarchical, BIRCH) with automatic comparison - 397 lines
 
-**Total Enhancement:** 10 projects upgraded with ~6,150+ lines of production-ready code. All include comprehensive implementations, advanced diagnostics, hyperparameter tuning, and detailed documentation.
+**Total Enhancement:** 11 projects upgraded with ~6,547+ lines of production-ready code. All include comprehensive implementations, advanced diagnostics, hyperparameter tuning, and detailed documentation.
 
 ## 📦 Projects Overview (15 Projects)
 
@@ -75,21 +76,27 @@ python classifiers.py --data data.csv --target label --output-cm confusion.png -
 
 ---
 
-### 3. 🎨 [Clustering](Clustering/)
-Unsupervised clustering with automatic cluster number selection.
+### 3. 🎨 [Clustering](Clustering/) ⭐ **UPGRADED v2.0**
+Production-ready unsupervised clustering with 8+ algorithms and comprehensive evaluation.
 
 **Algorithms:**
-- K-Means (with elbow method)
-- DBSCAN (density-based)
-- Hierarchical Clustering
+- **Partition-Based**: K-Means (elbow method), Gaussian Mixture (GMM)
+- **Density-Based**: DBSCAN, OPTICS, Mean Shift
+- **Hierarchical**: Agglomerative with dendrogram
+- **Graph-Based**: Spectral Clustering
+- **Incremental**: BIRCH
 
 **Key Features:**
-- Silhouette score optimization
-- PCA visualization
-- Elbow method for K-Means
-- Dendrogram generation
+- 8+ clustering algorithms with automatic comparison
+- Multiple metrics (Silhouette, Davies-Bouldin, Calinski-Harabasz)
+- Automatic K selection using silhouette score
+- PCA visualization for all algorithms
+- Noise detection (DBSCAN, OPTICS)
+- BIC/AIC for GMM model selection
 
 **Technologies:** scikit-learn, scipy
+
+**Status:** 397 lines, production-ready with comprehensive evaluation
 
 ```bash
 cd Clustering
