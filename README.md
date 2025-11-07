@@ -186,44 +186,10 @@ Comprehensive LLM toolkit from chatbots to fine-tuning and evaluation:
 **[Explore LLM Projects →](LLM/)**
 
 ---
-## 🆕 Latest Updates
 
-### New Portfolio Areas - DataOps & Edge AI ⭐ NEW
+##  Featured Projects
 
-**DataOps & Synthetic Data Generation** - Complete data operations suite with 4 comprehensive projects:
-- **Synthetic Data Generation** - GANs, diffusion models, privacy-preserving synthesis (~1,500 lines)
-- **Auto Labeling** - Active learning with Label Studio/CVAT integration (~800 lines)
-- **Data Quality** - Drift detection and Great Expectations validation (~700 lines)
-- **Data Versioning** - DVC integration for datasets and models (~500 lines)
-
-**Edge AI & On-Device Intelligence** - Expanded to 7 projects for production edge deployment:
-- Edge deployment on RPi/Jetson/Coral with TensorRT optimization
-- TinyML for microcontrollers with Edge Impulse
-- Real-time pipelines with MQTT and sub-100ms latency
-- OTA model updates and fleet management
-- Advanced model optimization (quantization, pruning, NAS)
-- Device monitoring with Prometheus/Grafana
-- Federated learning on edge devices
-
-**Agentic AI Expansion** - Expanded from 23 to 26 projects with advanced tool orchestration:
-- **Tool Orchestration** - Code execution, browser automation, filesystem ops (~800 lines)
-- **LangGraph Workflows** - Graph-based stateful workflows with human-in-the-loop (~600 lines)
-- **Agent Frameworks** - AutoGen, CrewAI, CAMEL integration (~500 lines)
-
-**[Explore DataOps →](DataOps/)** | **[Explore Edge AI →](EdgeAI/)** | **[Explore Agentic AI →](AgenticAI/)**
-
----
-
-### MLOps Portfolio v2.0 - Production-Ready Enhancements
-
-Three core MLOps projects have been completely upgraded with production-ready implementations:
-
-- **A/B Testing Framework** - Complete rewrite with multi-armed bandit algorithms (Epsilon-Greedy, UCB, Thompson Sampling), Bayesian A/B testing, sample size calculation, and comprehensive statistical analysis
-- **Feature Store** - Full implementation from scratch with online/offline serving, point-in-time correctness, feature validation, and metadata management
-- **Data Validation System** - Advanced validation with schema checking, distribution drift detection (KS test, Chi-square), constraint validation, and automated reporting
-
-**[Explore MLOps v2.0 →](MLOps/)**
-###  [MLOps (ML Operations) Portfolio](MLOps/) ⭐ **v2.0 UPGRADED**
+###  [MLOps (ML Operations) Portfolio](MLOps/)
 
 Production ML operations covering the full ML lifecycle with enhanced production-ready implementations:
 
@@ -233,10 +199,10 @@ Production ML operations covering the full ML lifecycle with enhanced production
 3. **Model Monitoring** - Data drift detection and performance tracking
 4. **CI/CD Pipeline** - Automated testing, validation, and deployment
 5. **Experiment Tracking** - MLflow-like parameter and metric tracking
-6. **Feature Store ⭐ NEW** - Complete implementation with online/offline serving, point-in-time correctness, feature validation, statistics, and metadata management
+6. **Feature Store** - Complete implementation with online/offline serving, point-in-time correctness, feature validation
 7. **Model Versioning** - Model registry with version control and lineage
-8. **A/B Testing ⭐ NEW** - Advanced framework with multi-armed bandits (Epsilon-Greedy, UCB, Thompson Sampling), Bayesian testing, sample size calculation, and winner selection
-9. **Data Validation ⭐ NEW** - Comprehensive validation with schema checks (type, range, pattern, enum), distribution drift detection (KS test, Chi-square), and automated reporting
+8. **A/B Testing** - Multi-armed bandits (Epsilon-Greedy, UCB, Thompson Sampling), Bayesian testing
+9. **Data Validation** - Schema checks, distribution drift detection (KS test, Chi-square), automated reporting
 10. **Model Governance** - Compliance tracking, audit trails, model explainability
 11. **Model Registry** - Centralized model management with MLflow integration
 12. **Pipeline Orchestration** - Airflow-based ML pipeline automation and scheduling
@@ -245,13 +211,6 @@ Production ML operations covering the full ML lifecycle with enhanced production
 15. **Cost Optimization** - Infrastructure cost monitoring and optimization
 
 **Technologies:** FastAPI, Docker, Pytest, MLflow, SciPy, NumPy, Pandas, Great Expectations, Airflow, Prometheus
-
-**Key Features:**
-- ⭐ **Multi-Armed Bandit Algorithms** for intelligent A/B testing
-- ⭐ **Dual Storage Architecture** (online + offline) for feature serving
-- ⭐ **Point-in-Time Correctness** to prevent data leakage
-- ⭐ **Distribution Drift Detection** with statistical tests
-- ⭐ **Production-Ready Code** with comprehensive documentation
 
 **[Explore MLOps Projects →](MLOps/)**
 
@@ -284,7 +243,7 @@ Enterprise data architecture from ETL to governance:
 
 ---
 
-### 🆕 [DataOps & Synthetic Data Generation Portfolio](DataOps/) ⭐ **NEW**
+### [DataOps & Synthetic Data Generation Portfolio](DataOps/)
 
 Production data operations with synthetic data generation, automated labeling, and quality monitoring:
 
@@ -296,17 +255,11 @@ Production data operations with synthetic data generation, automated labeling, a
 
 **Technologies:** PyTorch, TensorFlow, SDV, Diffusers, Opacus, modAL, Label Studio, CVAT, Great Expectations, Evidently AI, DVC, MLflow
 
-**Key Features:**
-- ⭐ **92% similarity** for tabular synthetic data with CTGAN
-- ⭐ **60-80% labeling cost reduction** with active learning
-- ⭐ **<1ms latency** for drift detection per feature
-- ⭐ **Git-like versioning** for datasets up to TB scale
-
 **[Explore DataOps Projects →](DataOps/)**
 
 ---
 
-### 🆕 [Edge AI & On-Device Intelligence Portfolio](EdgeAI/) ⭐ **EXPANDED**
+### [Edge AI & On-Device Intelligence Portfolio](EdgeAI/)
 
 Production-ready ML deployment on edge devices with 7 comprehensive projects:
 
@@ -321,17 +274,11 @@ Production-ready ML deployment on edge devices with 7 comprehensive projects:
 
 **Technologies:** TensorRT, ONNX Runtime, TFLite, OpenVINO, Edge Impulse, Ultralytics, MQTT, FastAPI, Prometheus, Grafana, PySyft, Flower
 
-**Performance:**
-- ⚡ **120 FPS** on Coral TPU (MobileNetV2 INT8)
-- ⚡ **45 FPS** on Jetson Nano (YOLOv8n FP16)
-- ⚡ **37ms total latency** for real-time pipeline
-- ⚡ **100 days battery life** for TinyML keyword spotting
-
 **[Explore Edge AI Projects →](EdgeAI/)**
 
 ---
 
-###  [Agentic AI Portfolio](AgenticAI/) ⭐ **EXPANDED to 26 Projects**
+### [Agentic AI Portfolio](AgenticAI/)
 
 Advanced AI agent systems with tool orchestration, graph workflows, and multi-framework integration:
 
@@ -360,7 +307,7 @@ Advanced AI agent systems with tool orchestration, graph workflows, and multi-fr
 22. **Agent Personalization** - Adaptive learning of user preferences
 23. **Agent Workflow** - Business process automation
 
-#### 🆕 Advanced Projects (24-26):
+#### Advanced Projects (24-26):
 24. **Tool Orchestration** - Code execution (Docker, RestrictedPython), browser automation (Playwright, Selenium), filesystem ops
 25. **LangGraph Workflows** - Graph-based workflows, stateful execution, human-in-the-loop, checkpointing, streaming
 26. **Agent Frameworks** - AutoGen (Microsoft), CrewAI, CAMEL integration, unified interface, framework migration
