@@ -1,0 +1,28 @@
+# Quantization & Distillation Framework Dependencies
+
+# Core frameworks
+torch>=2.0.0
+transformers>=4.35.0
+
+# Quantization libraries
+auto-gptq>=0.5.0
+autoawq>=0.1.6
+bitsandbytes>=0.41.0
+
+# ONNX and TensorRT
+onnx>=1.15.0
+onnxruntime-gpu>=1.16.0
+# tensorrt>=8.6.0  # Requires separate NVIDIA installation
+
+# Optimization
+optimum>=1.14.0
+accelerate>=0.24.0
+
+# Distillation
+torch-distillation>=0.1.0
+
+# Utilities
+datasets>=2.14.0
+evaluate>=0.4.0
+numpy>=1.24.0
+pyyaml>=6.0.1
