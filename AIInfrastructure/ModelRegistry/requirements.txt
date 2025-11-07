@@ -1,0 +1,14 @@
+# Model Registry Dependencies
+
+mlflow>=2.8.0
+boto3>=1.28.0  # S3 storage
+azure-storage-blob>=12.19.0  # Azure storage
+google-cloud-storage>=2.10.0  # GCS storage
+
+# Database backends
+psycopg2-binary>=2.9.0  # PostgreSQL
+pymysql>=1.1.0  # MySQL
+
+# Utilities
+pyyaml>=6.0.1
+pydantic>=2.0.0
