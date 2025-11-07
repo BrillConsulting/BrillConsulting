@@ -1,0 +1,23 @@
+# Federated Edge Learning Dependencies
+
+# Federated Learning
+flower>=1.5.0  # FL framework
+# pysyft>=0.8.0  # Privacy-preserving ML
+
+# Differential Privacy
+opacus>=1.4.0
+# tensorflow-privacy>=0.9.0
+
+# Communication
+grpcio>=1.59.0
+protobuf>=4.24.0
+
+# ML Frameworks
+torch>=2.0.0
+tensorflow>=2.13.0
+
+# Scientific computing
+numpy>=1.24.0
+
+# Utilities
+pydantic>=2.0.0
