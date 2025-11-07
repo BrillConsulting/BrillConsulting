@@ -1,0 +1,29 @@
+# Federated Privacy Dependencies
+
+# Differential Privacy
+opacus>=1.4.0
+tensorflow-privacy>=0.9.0
+
+# Federated Learning
+pysyft>=0.8.0
+flower>=1.5.0
+
+# Homomorphic Encryption
+tenseal>=0.3.14
+
+# Cryptography
+pycryptodome>=3.18.0
+
+# SMPC (optional)
+# mp-spdz (requires separate installation)
+
+# ML Frameworks
+torch>=2.0.0
+tensorflow>=2.13.0
+
+# Scientific computing
+numpy>=1.24.0
+scipy>=1.10.0
+
+# Utilities
+pydantic>=2.0.0
