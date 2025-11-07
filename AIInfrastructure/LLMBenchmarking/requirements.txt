@@ -1,0 +1,19 @@
+# LLM Benchmarking Dependencies
+
+# Load testing
+locust>=2.17.0
+
+# Monitoring
+prometheus-client>=0.18.0
+
+# Metrics
+numpy>=1.24.0
+pandas>=2.0.0
+
+# Visualization
+matplotlib>=3.7.0
+plotly>=5.17.0
+
+# Quality metrics
+evaluate>=0.4.0
+rouge-score>=0.1.2
