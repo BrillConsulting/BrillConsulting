@@ -1,0 +1,34 @@
+# Data Versioning Dependencies
+
+# DVC (Data Version Control)
+dvc[all]>=3.30.0  # All backends
+# Or specific backends:
+# dvc[s3]>=3.30.0   # AWS S3
+# dvc[gs]>=3.30.0   # Google Cloud Storage
+# dvc[azure]>=3.30.0  # Azure Blob Storage
+# dvc[ssh]>=3.30.0  # SSH remote
+# dvc[hdfs]>=3.30.0  # HDFS
+
+# Experiment Tracking
+mlflow>=2.8.0
+# wandb>=0.15.0  # Weights & Biases (optional)
+
+# Git integration
+GitPython>=3.1.0
+
+# Cloud Storage SDKs
+boto3>=1.28.0  # AWS S3
+google-cloud-storage>=2.10.0  # GCS
+azure-storage-blob>=12.18.0  # Azure
+
+# Configuration
+pyyaml>=6.0
+configparser>=6.0.0
+
+# Data
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Utilities
+python-dateutil>=2.8.0
+tqdm>=4.65.0
