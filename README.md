@@ -554,15 +554,6 @@ Complete GitLab CI/CD, API integration, and runner management:
   <img src="https://skillicons.dev/icons?i=postgresql,mongodb,redis,kafka,fastapi,flask,prometheus,grafana" alt="Data & Backend" />
 </p>
 
-### 📈 GitHub Stats
-
-<p align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=BrillConsulting&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true"/>
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=BrillConsulting&layout=compact&langs_count=8&theme=tokyonight"/>
-</p>
-
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=BrillConsulting&theme=tokyonight" alt="GitHub Streak"/>
 **Development Tools:**
 <p align="center">
   <img src="https://skillicons.dev/icons?i=git,vscode,linux,bash,selenium,postman" alt="Development Tools" />
