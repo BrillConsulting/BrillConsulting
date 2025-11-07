@@ -1,7 +1,6 @@
 # API Management - GitLab REST API Integration
 
 Comprehensive GitLab REST API integration providing programmatic access to projects, issues, merge requests, pipelines, users, and webhooks with full CRUD operations and advanced filtering.
-
 ## Features
 
 ### Project Management
