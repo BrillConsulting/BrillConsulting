@@ -544,20 +544,6 @@ Complete GitLab CI/CD, API integration, and runner management:
   <img src="https://skillicons.dev/icons?i=git,vscode,linux,bash,selenium,postman" alt="Development Tools" />
 </p>
 
-**Cloud & DevOps:**
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=azure,aws,gcp,docker,kubernetes,terraform,gitlab,githubactions" alt="Cloud & DevOps" />
-</p>
-
-**Data & Backend:**
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=postgresql,mongodb,redis,kafka,fastapi,flask,prometheus,grafana" alt="Data & Backend" />
-</p>
-
-**Development Tools:**
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=git,vscode,linux,bash,selenium,postman" alt="Development Tools" />
-</p>
 
 ---
 ## 📧 Contact
