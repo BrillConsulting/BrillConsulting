@@ -1,0 +1,19 @@
+# Edge Deployment Dependencies
+
+# TensorFlow Lite
+tensorflow>=2.14.0
+# tflite-runtime>=2.14.0
+
+# Core ML
+coremltools>=7.0
+
+# ONNX
+onnx>=1.15.0
+onnxruntime>=1.16.0
+onnx-simplifier>=0.4.0
+
+# PyTorch Mobile
+torch>=2.0.0
+
+# Optimization
+tensorflow-model-optimization>=0.8.0
