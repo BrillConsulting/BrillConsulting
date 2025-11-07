@@ -23,7 +23,6 @@ I design intelligent systems that empower organizations to make smarter, faster,
 
 > "For me, artificial intelligence is not about algorithms, but about building systems that understand context, adapt, and create real value."
 
-##  Featured Projects
 
 ### [Computer Vision Portfolio](ComputerVision/)
 
@@ -186,8 +185,6 @@ Comprehensive LLM toolkit from chatbots to fine-tuning and evaluation:
 **[Explore LLM Projects →](LLM/)**
 
 ---
-
-##  Featured Projects
 
 ###  [MLOps (ML Operations) Portfolio](MLOps/)
 
@@ -530,13 +527,10 @@ Complete GitLab CI/CD, API integration, and runner management:
 ### 📈 GitHub Stats
 
 <p align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=BrillConsulting&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true"/>
+
   <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=BrillConsulting&layout=compact&langs_count=8&theme=tokyonight"/>
 </p>
 
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=BrillConsulting&theme=tokyonight" alt="GitHub Streak"/>
-</p>
 
 ---
 ## 📧 Contact
