@@ -1,0 +1,15 @@
+# Data Lineage Dependencies
+
+# Lineage tracking
+mlflow>=2.8.0
+# apache-atlas>=0.0.11
+
+# Data versioning
+dvc>=3.30.0
+
+# Visualization
+networkx>=3.1
+matplotlib>=3.7.0
+
+# Utilities
+pydantic>=2.0.0
