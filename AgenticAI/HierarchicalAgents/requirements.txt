@@ -1,0 +1,14 @@
+# Hierarchical Agents Framework Dependencies
+# Multi-level agent hierarchies and delegation
+
+# No external dependencies required for basic functionality
+# Uses standard library: dataclasses, json, datetime
+
+# Optional: Visualization
+# networkx>=3.1
+# matplotlib>=3.7.0
+# graphviz>=0.20.1
+
+# Optional: Advanced scheduling
+# schedule>=1.2.0
+# apscheduler>=3.10.0

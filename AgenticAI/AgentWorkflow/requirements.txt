@@ -1,0 +1,12 @@
+# Agent Workflow Framework Dependencies
+
+# No external dependencies required for basic functionality
+# Uses standard library: dataclasses, datetime, enum
+
+# Optional: Task queues
+# celery>=5.3.0
+# redis>=4.6.0
+
+# Optional: Workflow engines
+# prefect>=2.10.0
+# airflow>=2.6.0

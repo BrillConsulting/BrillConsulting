@@ -1,0 +1,15 @@
+# Emotional Agents Framework Dependencies
+# Emotional intelligence and empathy
+
+# No external dependencies required for basic functionality
+# Uses standard library: dataclasses, datetime, random
+
+# Optional: Advanced sentiment analysis
+# transformers>=4.30.0
+# torch>=2.0.0
+# textblob>=0.17.0
+# vaderSentiment>=3.3.2
+
+# Optional: Emotion detection
+# fer>=22.5.0  # Facial emotion recognition
+# opencv-python>=4.8.0
