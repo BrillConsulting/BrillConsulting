@@ -523,16 +523,6 @@ Complete GitLab CI/CD, API integration, and runner management:
 </p>
 
 ---
-
-### 📈 GitHub Stats
-
-<p align="center">
-
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=BrillConsulting&layout=compact&langs_count=8&theme=tokyonight"/>
-</p>
-
-
----
 ## 📧 Contact
 If you have questions, suggestions, or would like to get in touch with me for collaboration, don't hesitate to email me at [email address](clientbrill@gmail.com) or visit [my LinkedIn profile](https://www.linkedin.com/in/brillconsulting).
 
