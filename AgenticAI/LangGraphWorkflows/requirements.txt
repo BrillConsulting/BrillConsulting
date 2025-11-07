@@ -1,0 +1,22 @@
+# LangGraph Workflows Dependencies
+
+# LangGraph
+langgraph>=0.0.40
+langchain>=0.1.0
+langchain-openai>=0.0.5
+langchain-anthropic>=0.1.0
+
+# OpenAI
+openai>=1.10.0
+
+# State Management
+pydantic>=2.5.0
+
+# Checkpointing
+sqlalchemy>=2.0.25
+
+# Visualization
+graphviz>=0.20
+
+# Utilities
+typing-extensions>=4.9.0
