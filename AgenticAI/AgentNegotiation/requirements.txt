@@ -1,0 +1,11 @@
+# Agent Negotiation Framework Dependencies
+
+# No external dependencies required for basic functionality
+# Uses standard library: dataclasses, datetime, random
+
+# Optional: Game theory algorithms
+# nashpy>=0.0.35
+# scipy>=1.11.0
+
+# Optional: Optimization
+# cvxpy>=1.3.0

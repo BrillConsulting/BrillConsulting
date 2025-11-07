@@ -1,0 +1,13 @@
+# Adversarial Agents Framework Dependencies
+# Red team / blue team testing and hardening
+
+# No external dependencies required for basic functionality
+# Uses standard library: random, json, datetime, dataclasses
+
+# Optional: Advanced security testing
+# pytest>=7.4.0
+# hypothesis>=6.82.0  # Property-based testing
+
+# Optional: ML-based attack detection
+# scikit-learn>=1.3.0
+# tensorflow>=2.13.0

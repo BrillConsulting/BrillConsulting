@@ -1,0 +1,12 @@
+# Agent Personalization Framework Dependencies
+
+# No external dependencies required for basic functionality
+# Uses standard library: dataclasses, datetime, collections
+
+# Optional: Machine learning
+# scikit-learn>=1.3.0
+# pandas>=2.0.0
+
+# Optional: Recommendation systems
+# surprise>=0.1
+# implicit>=0.7.0
