@@ -186,8 +186,6 @@ Comprehensive LLM toolkit from chatbots to fine-tuning and evaluation:
 
 ---
 
-##  Featured Projects
-
 ###  [MLOps (ML Operations) Portfolio](MLOps/)
 
 Production ML operations covering the full ML lifecycle with enhanced production-ready implementations:
