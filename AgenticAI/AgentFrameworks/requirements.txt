@@ -1,0 +1,22 @@
+# Agent Frameworks Dependencies
+
+# AutoGen
+pyautogen>=0.2.0
+
+# CrewAI
+crewai>=0.11.0
+crewai-tools>=0.2.0
+
+# CAMEL
+camel-ai>=0.1.0
+
+# LangChain (for tool integration)
+langchain>=0.1.0
+langchain-openai>=0.0.5
+
+# OpenAI
+openai>=1.10.0
+
+# Utilities
+pydantic>=2.5.0
+python-dotenv>=1.0.0
