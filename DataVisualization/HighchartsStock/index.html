@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Highcharts Professional Charts</title>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/highcharts-more.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #f5f7fa;
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        .header h1 { font-size: 2.5em; margin-bottom: 10px; }
+        .container {
+            max-width: 1400px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+            gap: 25px;
+        }
+        .chart-card {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+        }
+        .chart { min-height: 400px; }
+        @media (max-width: 768px) {
+            .grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>📈 Highcharts Professional Charts</h1>
+        <p>Enterprise-grade visualization with export and drill-down features</p>
+    </div>
+
+    <div class="container">
+        <div class="grid">
+            <div class="chart-card">
+                <div id="splineChart" class="chart"></div>
+            </div>
+            <div class="chart-card">
+                <div id="columnChart" class="chart"></div>
+            </div>
+            <div class="chart-card">
+                <div id="pieChart" class="chart"></div>
+            </div>
+            <div class="chart-card">
+                <div id="areaChart" class="chart"></div>
+            </div>
+            <div class="chart-card">
+                <div id="gaugeChart" class="chart"></div>
+            </div>
+            <div class="chart-card">
+                <div id="bubbleChart" class="chart"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Spline Chart
+        Highcharts.chart('splineChart', {
+            chart: { type: 'spline' },
+            title: { text: 'Monthly Temperature' },
+            subtitle: { text: 'Source: Weather Station' },
+            xAxis: {
+                categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+                           'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+            },
+            yAxis: {
+                title: { text: 'Temperature (°C)' }
+            },
+            plotOptions: {
+                spline: {
+                    marker: { enabled: true }
+                }
+            },
+            series: [{
+                name: '2023',
+                data: [7, 7, 10, 13, 17, 21, 23, 23, 19, 15, 10, 7],
+                color: '#667eea'
+            }, {
+                name: '2024',
+                data: [6, 8, 11, 14, 18, 22, 24, 24, 20, 16, 11, 8],
+                color: '#764ba2'
+            }],
+            credits: { enabled: false }
+        });
+
+        // Column Chart with Drill-down
+        Highcharts.chart('columnChart', {
+            chart: { type: 'column' },
+            title: { text: 'Sales by Category' },
+            subtitle: { text: 'Click columns for details' },
+            xAxis: {
+                categories: ['Electronics', 'Clothing', 'Food', 'Books', 'Sports']
+            },
+            yAxis: {
+                title: { text: 'Total Sales ($)' }
+            },
+            tooltip: {
+                pointFormat: '<span style="color:{point.color}">{series.name}</span>: <b>${point.y:,.0f}</b><br/>',
+                shared: true
+            },
+            plotOptions: {
+                column: {
+                    dataLabels: {
+                        enabled: true,
+                        format: '${point.y:,.0f}'
+                    }
+                }
+            },
+            series: [{
+                name: 'Q1',
+                data: [49900, 71500, 106400, 129200, 144000],
+                color: '#667eea'
+            }, {
+                name: 'Q2',
+                data: [83600, 78800, 98800, 93400, 106000],
+                color: '#764ba2'
+            }],
+            credits: { enabled: false }
+        });
+
+        // 3D Pie Chart
+        Highcharts.chart('pieChart', {
+            chart: {
+                type: 'pie',
+                options3d: {
+                    enabled: true,
+                    alpha: 45
+                }
+            },
+            title: { text: 'Market Share Distribution' },
+            plotOptions: {
+                pie: {
+                    innerSize: 100,
+                    depth: 45,
+                    dataLabels: {
+                        enabled: true,
+                        format: '<b>{point.name}</b>: {point.percentage:.1f}%'
+                    }
+                }
+            },
+            series: [{
+                name: 'Market Share',
+                data: [
+                    { name: 'Product A', y: 25.8, color: '#667eea' },
+                    { name: 'Product B', y: 20.2, color: '#764ba2' },
+                    { name: 'Product C', y: 18.5, color: '#f093fb' },
+                    { name: 'Product D', y: 15.3, color: '#4facfe' },
+                    { name: 'Others', y: 20.2, color: '#43e97b' }
+                ]
+            }],
+            credits: { enabled: false }
+        });
+
+        // Area Chart
+        Highcharts.chart('areaChart', {
+            chart: { type: 'area' },
+            title: { text: 'Revenue Growth' },
+            subtitle: { text: 'Stacked area chart' },
+            xAxis: {
+                categories: ['Q1', 'Q2', 'Q3', 'Q4'],
+                tickmarkPlacement: 'on'
+            },
+            yAxis: {
+                title: { text: 'Revenue (Million $)' }
+            },
+            tooltip: {
+                split: true,
+                valueSuffix: 'M $'
+            },
+            plotOptions: {
+                area: {
+                    stacking: 'normal',
+                    lineColor: '#666666',
+                    lineWidth: 1,
+                    marker: {
+                        lineWidth: 1,
+                        lineColor: '#666666'
+                    }
+                }
+            },
+            series: [{
+                name: 'North America',
+                data: [45, 48, 52, 58],
+                color: '#667eea'
+            }, {
+                name: 'Europe',
+                data: [38, 42, 45, 48],
+                color: '#764ba2'
+            }, {
+                name: 'Asia',
+                data: [52, 58, 65, 72],
+                color: '#f093fb'
+            }],
+            credits: { enabled: false }
+        });
+
+        // Gauge Chart
+        Highcharts.chart('gaugeChart', {
+            chart: { type: 'gauge', plotBackgroundColor: null, plotBorderWidth: 0, plotShadow: false },
+            title: { text: 'Performance Gauge' },
+            pane: {
+                startAngle: -150,
+                endAngle: 150,
+                background: [{
+                    backgroundColor: { linearGradient: { x1: 0, y1: 0, x2: 0, y2: 1 }, stops: [[0, '#FFF'], [1, '#333']] },
+                    borderWidth: 0,
+                    outerRadius: '109%'
+                }]
+            },
+            yAxis: {
+                min: 0,
+                max: 100,
+                minorTickInterval: 'auto',
+                minorTickWidth: 1,
+                minorTickLength: 10,
+                minorTickPosition: 'inside',
+                minorTickColor: '#666',
+                tickPixelInterval: 30,
+                tickWidth: 2,
+                tickPosition: 'inside',
+                tickLength: 10,
+                tickColor: '#666',
+                labels: { step: 2, rotation: 'auto' },
+                title: { text: 'Score' },
+                plotBands: [{
+                    from: 0,
+                    to: 40,
+                    color: '#ef4444'
+                }, {
+                    from: 40,
+                    to: 70,
+                    color: '#fbbf24'
+                }, {
+                    from: 70,
+                    to: 100,
+                    color: '#10b981'
+                }]
+            },
+            series: [{
+                name: 'Performance',
+                data: [78],
+                tooltip: { valueSuffix: ' points' }
+            }],
+            credits: { enabled: false }
+        });
+
+        // Bubble Chart
+        Highcharts.chart('bubbleChart', {
+            chart: { type: 'bubble', plotBorderWidth: 1, zoomType: 'xy' },
+            title: { text: 'Product Analysis' },
+            subtitle: { text: 'Price vs Sales vs Profit' },
+            xAxis: {
+                gridLineWidth: 1,
+                title: { text: 'Price ($)' }
+            },
+            yAxis: {
+                startOnTick: false,
+                endOnTick: false,
+                title: { text: 'Sales (Units)' }
+            },
+            tooltip: {
+                useHTML: true,
+                headerFormat: '<table>',
+                pointFormat: '<tr><th colspan="2"><h3>{point.name}</h3></th></tr>' +
+                    '<tr><th>Price:</th><td>${point.x}</td></tr>' +
+                    '<tr><th>Sales:</th><td>{point.y} units</td></tr>' +
+                    '<tr><th>Profit:</th><td>${point.z}K</td></tr>',
+                footerFormat: '</table>',
+                followPointer: true
+            },
+            plotOptions: {
+                series: {
+                    dataLabels: {
+                        enabled: true,
+                        format: '{point.name}'
+                    }
+                }
+            },
+            series: [{
+                data: [
+                    { x: 95, y: 95, z: 13.8, name: 'Product A', color: '#667eea' },
+                    { x: 86.5, y: 102.9, z: 14.7, name: 'Product B', color: '#764ba2' },
+                    { x: 80.8, y: 91.5, z: 15.8, name: 'Product C', color: '#f093fb' },
+                    { x: 80.4, y: 102.5, z: 12.0, name: 'Product D', color: '#4facfe' },
+                    { x: 80.3, y: 86.1, z: 11.8, name: 'Product E', color: '#43e97b' }
+                ]
+            }],
+            credits: { enabled: false }
+        });
+
+        // Auto-resize on window resize
+        window.addEventListener('resize', function() {
+            Highcharts.charts.forEach(chart => {
+                if (chart) chart.reflow();
+            });
+        });
+    </script>
+</body>
+</html>

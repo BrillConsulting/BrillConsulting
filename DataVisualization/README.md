@@ -331,12 +331,115 @@ Cumulative effect visualization for financial analysis.
 
 ---
 
+## 🎨 Advanced JavaScript/WebGL Projects
+
+### 20. 🌟 [Three.js 3D WebGL Visualization](ThreeJS3D/)
+Advanced 3D graphics with particle systems and animated geometries.
+
+**Technologies:** Three.js r128, WebGL, HTML5 Canvas
+
+**Features:**
+- Particle system with 10,000 particles
+- 3D geometric shapes with Phong shading
+- Dynamic wave animation with vertex manipulation
+- Morphing icosahedron sphere
+- Torus knot with complex geometry
+- 3D bar chart for data visualization
+- GPU-accelerated rendering
+- Mouse-controlled camera
+
+**[View Project →](ThreeJS3D/)**
+
+---
+
+### 21. 📊 [Apache ECharts Dashboard](EChartsDashboard/)
+Enterprise visualization library with rich chart types.
+
+**Technologies:** Apache ECharts v5, JavaScript
+
+**Features:**
+- 8 professional chart types
+- Line, bar, pie, gauge charts
+- Scatter plot with 100 points
+- Radar chart for skills
+- Candlestick for stock data
+- Heatmap with color gradients
+- Export to PNG/SVG
+- Responsive design
+
+**[View Project →](EChartsDashboard/)**
+
+---
+
+### 22. 💼 [Highcharts Professional](HighchartsStock/)
+Enterprise-grade charts with 3D and export capabilities.
+
+**Technologies:** Highcharts v11, JavaScript
+
+**Features:**
+- Spline chart with smooth curves
+- Column chart with drill-down
+- 3D pie chart with perspective
+- Stacked area chart
+- Gauge chart with color bands
+- Bubble chart (3 dimensions)
+- Export to PDF/PNG/SVG
+- Professional styling
+
+**[View Project →](HighchartsStock/)**
+
+---
+
+## 📐 R Statistical Graphics
+
+### 23. 📈 [R ggplot2 Visualizations](RGgplot2/)
+Publication-quality statistical graphics with R.
+
+**Technologies:** R, ggplot2, dplyr, tidyr
+
+**Features:**
+- Scatter plot with regression lines
+- Box plots with outlier detection
+- Time series with 365 days data
+- Bar charts with error bars
+- Correlation heatmaps
+- Violin plots for distributions
+- Faceted plots (small multiples)
+- 300 DPI publication quality
+- Statistical overlays
+
+**[View Project →](RGgplot2/)**
+
+---
+
+## 🐍 Python Interactive Libraries
+
+### 24. 🎯 [Bokeh Interactive Plots](BokehInteractive/)
+Server-side interactive visualizations with Python.
+
+**Technologies:** Bokeh v3, Python, NumPy, Pandas
+
+**Features:**
+- Interactive line plots with hover
+- Scatter plot with selection tools
+- Bar charts with labels
+- Activity heatmaps (24x7)
+- Stacked area plots
+- Multi-line time series
+- Box plots for distributions
+- Pan, zoom, select tools
+- Export to HTML
+
+**[View Project →](BokehInteractive/)**
+
+---
+
 ## 🚀 Getting Started
 
 Each project contains:
-- Complete Python implementation
+- Complete implementation (Python, JavaScript, R)
 - Detailed README with usage examples
-- Requirements file for dependencies
+- Requirements/dependencies file
 - Demo functions to generate example visualizations
 
 ### Installation
@@ -379,11 +482,26 @@ python project_file.py
 - **Chart.js v4**: Responsive charts with smooth animations
 - **Leaflet.js v1.9**: Open-source interactive maps
 - **Mapbox GL JS v3**: Professional vector tile maps with 3D
+- **Three.js r128**: WebGL 3D graphics and particle systems
+- **Apache ECharts v5**: Enterprise visualization library
+- **Highcharts v11**: Professional charts with export features
 - **Leaflet.markercluster**: Marker clustering for large datasets
+
+### Python Libraries (Advanced)
+- **Bokeh v3**: Server-side interactive plots with widgets
+- **Altair**: Declarative statistical visualization
+- **Plotnine**: Grammar of graphics for Python
+
+### R Libraries
+- **ggplot2**: Grammar of graphics implementation
+- **dplyr & tidyr**: Data manipulation
+- **scales**: Scale functions for visualizations
+- **gridExtra**: Arranging multiple plots
 
 ### Web Technologies
 - **HTML5**: Semantic markup and structure
 - **CSS3**: Modern styling with gradients, transitions, animations
+- **WebGL**: GPU-accelerated 3D graphics
 - **Vanilla JavaScript**: No framework dependencies
 - **SVG**: Scalable vector graphics for data visualization
 - **Canvas API**: High-performance 2D rendering
