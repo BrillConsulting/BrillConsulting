@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chart.js Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
+<body>
+    <div class="dashboard">
+        <header>
+            <h1>📊 Chart.js Dashboard</h1>
+            <p>Professional responsive charts with real-time updates and animations</p>
+        </header>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-icon">📈</div>
+                <div class="stat-content">
+                    <h3>Total Sales</h3>
+                    <p class="stat-value">$45,320</p>
+                    <span class="stat-change positive">+12.5%</span>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">👥</div>
+                <div class="stat-content">
+                    <h3>Active Users</h3>
+                    <p class="stat-value">8,456</p>
+                    <span class="stat-change positive">+8.2%</span>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">💰</div>
+                <div class="stat-content">
+                    <h3>Revenue</h3>
+                    <p class="stat-value">$125,840</p>
+                    <span class="stat-change negative">-3.1%</span>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">⭐</div>
+                <div class="stat-content">
+                    <h3>Satisfaction</h3>
+                    <p class="stat-value">4.8/5.0</p>
+                    <span class="stat-change positive">+0.3</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="chart-grid">
+            <div class="chart-card">
+                <div class="chart-header">
+                    <h3>Sales Trend</h3>
+                    <button class="refresh-btn" data-chart="line">🔄</button>
+                </div>
+                <canvas id="lineChart"></canvas>
+            </div>
+
+            <div class="chart-card">
+                <div class="chart-header">
+                    <h3>Category Distribution</h3>
+                    <button class="refresh-btn" data-chart="doughnut">🔄</button>
+                </div>
+                <canvas id="doughnutChart"></canvas>
+            </div>
+
+            <div class="chart-card">
+                <div class="chart-header">
+                    <h3>Monthly Revenue</h3>
+                    <button class="refresh-btn" data-chart="bar">🔄</button>
+                </div>
+                <canvas id="barChart"></canvas>
+            </div>
+
+            <div class="chart-card">
+                <div class="chart-header">
+                    <h3>Performance Metrics</h3>
+                    <button class="refresh-btn" data-chart="radar">🔄</button>
+                </div>
+                <canvas id="radarChart"></canvas>
+            </div>
+
+            <div class="chart-card">
+                <div class="chart-header">
+                    <h3>Growth Rate</h3>
+                    <button class="refresh-btn" data-chart="polar">🔄</button>
+                </div>
+                <canvas id="polarChart"></canvas>
+            </div>
+
+            <div class="chart-card">
+                <div class="chart-header">
+                    <h3>Sales by Region</h3>
+                    <button class="refresh-btn" data-chart="pie">🔄</button>
+                </div>
+                <canvas id="pieChart"></canvas>
+            </div>
+        </div>
+
+        <footer>
+            <p>Made with Chart.js v4 | Real-time Data Visualization</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
