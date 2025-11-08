@@ -2,7 +2,8 @@
   <img src=".github/images/cover.jpeg" alt="AI & Data Science Banner" width="100%" style="border-radius: 10px; max-height: 400px; object-fit: cover;">
 </p>
 
-<h1 align="center">👋 Hi, I'm Ava from Brill </h1>
+<h1 align="center">👋 Hi, I'm Ava from Brill 
+</h1>
 <b>AI Consultant | Data Scientist | MLOps Architect</b><br>
   🚀 Transforming ideas into scalable, ethical, and intelligent systems.<br><br>
   🌐 <a href="https://www.linkedin.com/in/brillconsulting">LinkedIn</a> •
