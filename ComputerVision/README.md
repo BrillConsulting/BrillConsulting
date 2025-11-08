@@ -1,6 +1,6 @@
 # 🎯 Computer Vision Portfolio
 
-Professional Computer Vision portfolio with 15 production-ready projects showcasing state-of-the-art deep learning solutions for object detection, face recognition, image segmentation, OCR, classification, video analysis, pose estimation, and more.
+Professional Computer Vision portfolio with 23 production-ready projects showcasing state-of-the-art deep learning solutions for object detection, face recognition, image segmentation, OCR, classification, video analysis, pose estimation, and advanced techniques including panoptic segmentation, action recognition, GANs, 3D reconstruction, medical imaging, document AI, and zero-shot detection.
 
 ## 📦 Projects Overview
 
@@ -270,6 +270,157 @@ Monocular depth estimation from single images.
 ```bash
 cd DepthEstimation
 python depth_estimation.py --image photo.jpg --output depth_map.jpg
+```
+
+---
+
+## 🔬 Advanced Computer Vision Projects
+
+### 16. 🎯 [Advanced Object Detection](AdvancedObjectDetection/)
+Multi-model object detection with YOLOv8, Detectron2, and DETR (Transformer-based).
+
+**Key Features:**
+- 3 model backends: YOLOv8, Detectron2 (Faster R-CNN), DETR
+- Multiple model sizes (nano to xlarge)
+- Video processing with FPS counter
+- Best accuracy vs speed tradeoff options
+
+**Technologies:** YOLOv8, Detectron2, DETR, PyTorch, Transformers
+
+```bash
+cd AdvancedObjectDetection
+python advanced_detector.py --model yolov8 --size medium --source video.mp4
+```
+
+---
+
+### 17. 🎨 [Panoptic Segmentation](PanopticSegmentation/)
+Unified scene understanding combining semantic and instance segmentation.
+
+**Key Features:**
+- Semantic segmentation (stuff: sky, road, grass)
+- Instance segmentation (things: people, cars)
+- 133 COCO categories (54 stuff + 79 things)
+- Per-pixel classification with instance IDs
+
+**Technologies:** Detectron2 Panoptic FPN, PyTorch
+
+```bash
+cd PanopticSegmentation
+python panoptic_segmentation.py --image street.jpg --output result.jpg
+```
+
+---
+
+### 18. 🎬 [Action Recognition](ActionRecognition/)
+Video action recognition using 3D CNNs and Vision Transformers.
+
+**Key Features:**
+- VideoMAE and TimeSformer models
+- 400 Kinetics action classes
+- Temporal understanding
+- Sports, gestures, activities recognition
+
+**Technologies:** VideoMAE, TimeSformer, Transformers, PyTorch
+
+```bash
+cd ActionRecognition
+python action_recognition.py --video dancing.mp4 --model videomae
+```
+
+---
+
+### 19. 🖼️ [GAN Image Translation](GANImageTranslation/)
+Image-to-Image translation using Generative Adversarial Networks.
+
+**Key Features:**
+- Pix2Pix: Paired translation (sketch→photo)
+- CycleGAN: Unpaired domains (day→night)
+- StyleGAN: Style manipulation
+- Multiple translation tasks
+
+**Technologies:** GANs, PyTorch, Pix2Pix, CycleGAN
+
+```bash
+cd GANImageTranslation
+python gan_translation.py --task sketch2photo --input sketch.jpg
+```
+
+---
+
+### 20. 📐 [3D Reconstruction](ThreeDReconstruction/)
+Structure from Motion (SfM) - reconstruct 3D scenes from 2D images.
+
+**Key Features:**
+- Multi-view geometry
+- Feature matching (SIFT, ORB, SuperPoint)
+- Camera pose estimation
+- 3D point triangulation
+- Point cloud export (PLY format)
+
+**Technologies:** OpenCV, SIFT, Structure from Motion
+
+```bash
+cd ThreeDReconstruction
+python reconstruction_3d.py --images img1.jpg img2.jpg img3.jpg --output scene.ply
+```
+
+---
+
+### 21. 🏥 [Medical Image Segmentation](MedicalImaging/)
+U-Net based segmentation for medical images (CT, MRI, X-Ray).
+
+**Key Features:**
+- U-Net architecture
+- Organ segmentation
+- Tumor and lesion detection
+- Multi-class support
+- Medical image preprocessing
+
+**Technologies:** U-Net, PyTorch, Medical Imaging
+
+```bash
+cd MedicalImaging
+python medical_segmentation.py --image scan.jpg --output result.jpg
+```
+
+---
+
+### 22. 📄 [Document AI](DocumentAI/)
+Advanced document understanding using LayoutLM.
+
+**Key Features:**
+- Layout detection (title, paragraphs, tables)
+- Table extraction and parsing
+- Form understanding
+- Key-value pair extraction
+- Multi-language support
+
+**Technologies:** LayoutLMv3, Transformers, Document AI
+
+```bash
+cd DocumentAI
+python document_understanding.py --document invoice.pdf --output analysis.jpg
+```
+
+---
+
+### 23. 🔍 [Zero-Shot Detection](ZeroShotDetection/)
+Detect ANY object using natural language - no training required!
+
+**Key Features:**
+- Open-vocabulary detection
+- Text-based queries ("a red car", "person wearing hat")
+- CLIP and OWL-ViT models
+- No training data needed
+- Detect any object by description
+
+**Technologies:** CLIP, OWL-ViT, Transformers, Vision-Language Models
+
+```bash
+cd ZeroShotDetection
+python zero_shot_detector.py --image street.jpg \
+    --queries "a car" "a person" "a bicycle"
 ```
 
 ---
