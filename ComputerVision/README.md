@@ -1,6 +1,6 @@
 # 🎯 Computer Vision Portfolio
 
-Professional Computer Vision portfolio with 23 production-ready projects showcasing state-of-the-art deep learning solutions for object detection, face recognition, image segmentation, OCR, classification, video analysis, pose estimation, and advanced techniques including panoptic segmentation, action recognition, GANs, 3D reconstruction, medical imaging, document AI, and zero-shot detection.
+Professional Computer Vision portfolio with 33 production-ready projects showcasing state-of-the-art deep learning solutions for object detection, face recognition, image segmentation, OCR, classification, video analysis, pose estimation, and cutting-edge research techniques including neural architecture search, few-shot learning, visual question answering, image captioning, optical flow, self-supervised learning, multi-modal fusion, neural rendering, video object segmentation, change detection, panoptic segmentation, action recognition, GANs, 3D reconstruction, medical imaging, document AI, and zero-shot detection.
 
 ## 📦 Projects Overview
 
@@ -425,6 +425,200 @@ python zero_shot_detector.py --image street.jpg \
 
 ---
 
+## 🧠 Research & Advanced Deep Learning Projects
+
+### 24. 🏗️ [Neural Architecture Search](NeuralArchitectureSearch/)
+Automatic discovery of optimal neural network architectures.
+
+**Key Features:**
+- DARTS (Differentiable Architecture Search)
+- Evolutionary NAS with population-based optimization
+- Super network containing all possible architectures
+- Gradient-based architecture optimization
+- Multi-cell modular design
+
+**Technologies:** DARTS, Evolutionary Algorithms, PyTorch
+
+```bash
+cd NeuralArchitectureSearch
+python nas_search.py --method darts --epochs 50
+```
+
+---
+
+### 25. 🎯 [Few-Shot Learning](FewShotLearning/)
+Learn from limited examples using meta-learning approaches.
+
+**Key Features:**
+- Prototypical Networks with metric learning
+- Relation Networks with learned comparisons
+- MAML (Model-Agnostic Meta-Learning)
+- Matching Networks with attention
+- N-way K-shot episodic training
+
+**Technologies:** Meta-Learning, Prototypical Networks, MAML, PyTorch
+
+```bash
+cd FewShotLearning
+python few_shot_learning.py --n-way 5 --k-shot 5
+```
+
+---
+
+### 26. 💬 [Visual Question Answering](VisualQuestionAnswering/)
+Answer natural language questions about images using multi-modal learning.
+
+**Key Features:**
+- Stacked Attention Networks (SAN)
+- Multi-modal fusion with bilinear pooling
+- Transformer-based VQA
+- Cross-modal attention mechanisms
+- Vision-language understanding
+
+**Technologies:** Multi-Modal Transformers, Attention Mechanisms, LSTM, PyTorch
+
+```bash
+cd VisualQuestionAnswering
+python vqa_system.py --image photo.jpg --question "What color is the car?"
+```
+
+---
+
+### 27. 📝 [Image Captioning](ImageCaptioning/)
+Generate natural language descriptions of images automatically.
+
+**Key Features:**
+- Show, Attend and Tell architecture
+- LSTM decoder with Bahdanau attention
+- Transformer-based captioning
+- Beam search for diverse captions
+- Visual attention visualization
+
+**Technologies:** LSTM, Transformers, Attention Mechanisms, ResNet, PyTorch
+
+```bash
+cd ImageCaptioning
+python image_captioning.py --image beach.jpg --beam-size 5
+```
+
+---
+
+### 28. 🌊 [Optical Flow Estimation](OpticalFlowEstimation/)
+Estimate dense pixel-level motion between consecutive frames.
+
+**Key Features:**
+- FlowNetSimple encoder-decoder architecture
+- PWC-Net with pyramid, warping, and cost volume
+- Multi-scale coarse-to-fine refinement
+- Feature warping and correlation
+- Real-time motion estimation
+
+**Technologies:** FlowNet, PWC-Net, Pyramid Processing, PyTorch
+
+```bash
+cd OpticalFlowEstimation
+python optical_flow.py --frame1 img1.jpg --frame2 img2.jpg
+```
+
+---
+
+### 29. 🔄 [Self-Supervised Learning](SelfSupervisedLearning/)
+Learn visual representations without labels using contrastive methods.
+
+**Key Features:**
+- SimCLR with NT-Xent contrastive loss
+- MoCo (Momentum Contrast) with queue
+- BYOL (Bootstrap Your Own Latent) without negatives
+- SwAV with online clustering
+- Representation learning
+
+**Technologies:** SimCLR, MoCo, BYOL, SwAV, Contrastive Learning, PyTorch
+
+```bash
+cd SelfSupervisedLearning
+python self_supervised.py --method simclr --epochs 100
+```
+
+---
+
+### 30. 🎭 [Multi-Modal Fusion](MultiModalFusion/)
+Combine information from multiple modalities (vision, text, audio).
+
+**Key Features:**
+- Cross-modal attention mechanisms
+- Tensor fusion networks
+- Multi-modal transformers
+- Audio-visual fusion
+- CLIP-style contrastive learning
+- Bilinear pooling
+
+**Technologies:** Multi-Modal Transformers, Cross-Modal Attention, CLIP, PyTorch
+
+```bash
+cd MultiModalFusion
+python multimodal_fusion.py --image img.jpg --audio sound.wav --text "description"
+```
+
+---
+
+### 31. 🎨 [Neural Rendering](NeuralRendering/)
+Novel view synthesis and 3D scene representation using neural networks.
+
+**Key Features:**
+- NeRF (Neural Radiance Fields)
+- Instant-NGP with hash encoding
+- Neural texture mapping
+- PlenOctrees for real-time rendering
+- Volume rendering equation
+- Positional encoding
+
+**Technologies:** NeRF, Instant-NGP, Volume Rendering, PyTorch
+
+```bash
+cd NeuralRendering
+python neural_rendering.py --scene data/scene/ --output novel_view.jpg
+```
+
+---
+
+### 32. 🎬 [Video Object Segmentation](VideoObjectSegmentation/)
+Segment and track objects across video frames.
+
+**Key Features:**
+- Space-Time Memory Networks (STM)
+- AOT (Associating Objects with Transformers)
+- Memory-based segmentation
+- Mask propagation across frames
+- Semi-supervised tracking
+
+**Technologies:** STM, Transformers, Memory Networks, PyTorch
+
+```bash
+cd VideoObjectSegmentation
+python video_segmentation.py --video input.mp4 --mask initial_mask.png
+```
+
+---
+
+### 33. 🔍 [Change Detection](ChangeDetection/)
+Detect and localize changes between images from different time periods.
+
+**Key Features:**
+- Siamese networks with shared encoders
+- ChangeFormer with transformers
+- Spatial and temporal attention
+- Multi-scale difference computation
+- Satellite imagery analysis
+
+**Technologies:** Siamese Networks, Transformers, Attention Mechanisms, PyTorch
+
+```bash
+cd ChangeDetection
+python change_detection.py --image1 before.jpg --image2 after.jpg
+```
+
+---
+
 ## 🚀 Quick Start
 
 ### Installation
@@ -519,33 +713,61 @@ pip install torch torchvision --index-url https://download.pytorch.org/whl/cu118
 - **scikit-image**
 
 ### Model Architectures
+
+**Detection & Segmentation:**
 - **YOLOv8** (Object Detection)
-- **ResNet-34** (Face Recognition)
-- **DeepLabV3+** (Semantic Segmentation)
 - **Mask R-CNN** (Instance Segmentation)
-- **CRAFT + CRNN** (OCR)
+- **DeepLabV3+** (Semantic Segmentation)
+- **STM** (Video Object Segmentation)
+- **Siamese Networks** (Change Detection)
+
+**Recognition & Classification:**
+- **ResNet-34** (Face Recognition)
 - **ResNet/EfficientNet/ViT** (Classification)
-- **ESRGAN** (Super Resolution)
-- **MiDaS** (Depth Estimation)
 - **Places365-CNN** (Scene Recognition)
-- **DeepSORT/SORT** (Object Tracking)
+- **CRAFT + CRNN** (OCR)
+
+**Generative & Enhancement:**
+- **ESRGAN** (Super Resolution)
 - **VGG19** (Style Transfer)
+- **NeRF** (Neural Rendering)
+- **Instant-NGP** (Fast Neural Rendering)
+
+**Motion & Video:**
+- **DeepSORT/SORT** (Object Tracking)
+- **FlowNet/PWC-Net** (Optical Flow)
+- **MiDaS** (Depth Estimation)
+
+**Multi-Modal & Attention:**
+- **Stacked Attention Networks** (VQA)
+- **Show, Attend and Tell** (Image Captioning)
+- **CLIP** (Vision-Language)
+- **Cross-Modal Transformers** (Multi-Modal Fusion)
+
+**Meta-Learning & Self-Supervised:**
+- **Prototypical Networks** (Few-Shot Learning)
+- **MAML** (Meta-Learning)
+- **SimCLR/MoCo/BYOL** (Self-Supervised)
+- **DARTS** (Neural Architecture Search)
 
 ## 📈 Project Complexity
 
 ```
-Beginner        ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Advanced
-│               │                 │                  │
-Classification  Object Detection  Segmentation      Face Recognition
-Scene Recog     OCR, Tracking     Depth Estimation  + Custom Training
-Image Matching  Pose Estimation                     Restoration
+Beginner        ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Research
+│               │                 │                  │                  │
+Classification  Object Detection  Segmentation      Face Recognition  Neural Rendering
+Scene Recog     OCR, Tracking     Depth Estimation  + Custom Training Few-Shot Learning
+Image Matching  Pose Estimation   Video Analysis    Style Transfer    Meta-Learning
+                                                     GANs, 3D Recon    NAS, Self-Supervised
+                                                                       Multi-Modal VQA
 ```
 
 ### Learning Path Recommendation:
-1. **Beginner**: Image Classification, Scene Recognition
-2. **Intermediate**: Object Detection, OCR, Image Matching
-3. **Advanced**: Image Segmentation, Object Tracking, Pose Estimation, Depth Estimation
-4. **Expert**: Face Recognition, Image Restoration, Style Transfer, Custom training
+1. **Beginner**: Image Classification, Scene Recognition, Image Matching
+2. **Intermediate**: Object Detection, OCR, Tracking, Pose Estimation
+3. **Advanced**: Segmentation, Video Analysis, Depth Estimation, Super Resolution
+4. **Expert**: Face Recognition, GANs, 3D Reconstruction, Style Transfer
+5. **Research**: Neural Rendering, Few-Shot Learning, Self-Supervised Learning, NAS, VQA, Multi-Modal Fusion
 
 ## 🎓 Educational Value
 
@@ -561,11 +783,13 @@ Each project includes:
 ## 🏆 Key Achievements
 
 ### Technical Excellence
-- 🚀 **15 Production-ready Systems**
+- 🚀 **33 Production-ready Systems**
 - ⚡ **Real-time Performance** (30+ FPS)
 - 🎯 **State-of-the-art Accuracy**
 - 🌍 **Multi-language Support** (OCR)
 - 🔧 **Modular Architecture**
+- 🧠 **Research-level Implementations** (NAS, Few-Shot, NeRF)
+- 🎭 **Multi-Modal Learning** (Vision + Language + Audio)
 
 ### Best Practices
 - ✅ Clean, documented code
@@ -586,13 +810,24 @@ Each project includes:
 7. **Places365-CNN**: Scene Recognition with Deep Learning
 8. **ESRGAN**: Enhanced Super-Resolution Generative Adversarial Networks
 9. **DeepSORT**: Simple Online and Realtime Tracking with Deep Association Metric
+10. **DARTS**: Differentiable Architecture Search
+11. **NeRF**: Neural Radiance Fields for View Synthesis
+12. **SimCLR**: Simple Framework for Contrastive Learning
+13. **MAML**: Model-Agnostic Meta-Learning
+14. **Show, Attend and Tell**: Image Captioning with Attention
+15. **PWC-Net**: Pyramid, Warping, and Cost Volume for Optical Flow
+16. **CLIP**: Learning Transferable Visual Models from Natural Language
+17. **STM**: Space-Time Memory Networks for Video Object Segmentation
+18. **Prototypical Networks**: Few-Shot Learning
+19. **MoCo**: Momentum Contrast for Unsupervised Learning
+20. **BYOL**: Bootstrap Your Own Latent
 
 ### Future Additions
-- [ ] 3D Object Detection
-- [ ] Video Action Recognition
-- [ ] Gesture Recognition
-- [ ] GANs for Image Generation
-- [ ] Image Captioning
+- [ ] Diffusion Models for Image Generation
+- [ ] Point Cloud Processing
+- [ ] Multi-Task Learning
+- [ ] Neural Implicit Surfaces
+- [ ] Scene Flow Estimation
 
 ## 📚 Documentation
 
