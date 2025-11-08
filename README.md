@@ -111,26 +111,62 @@ NLP projects covering text analysis, entity extraction, and language understandi
 
 ###  [Data Visualization Portfolio](DataVisualization/)
 
-Professional data visualization projects with interactive dashboards and publication-ready plots:
+Professional data visualization projects with interactive dashboards and publication-ready plots across multiple languages and frameworks:
 
-#### Projects:
+#### Python Projects:
 1. **Interactive Dashboard** - Multi-tab Dash application with real-time filters and KPIs
 2. **Statistical Visualizations** - Publication-ready plots with matplotlib/seaborn (distributions, correlations, regression)
 3. **Geographic Visualizations** - Interactive maps with Folium (heatmaps, choropleth, clustering)
 4. **Network Visualizations** - Graph analysis with NetworkX (community detection, centrality)
 5. **Time Series Visualizations** - Financial charts with technical indicators (candlestick, Bollinger Bands)
 6. **Real-Time Dashboards** - Live streaming data visualization with WebSocket updates
-7. **3D Visualization** - Interactive 3D scatter plots, surface plots, volumetric rendering
-8. **Geospatial Mapping** - Advanced GIS analysis with spatial indexing and routing
-9. **Animated Charts** - Dynamic animations with transitions and keyframe control
-10. **Business Intelligence** - Executive dashboards with drill-down capabilities and KPI tracking
-11. **Heatmaps and Contours** - Advanced heatmap visualizations with contour overlays
-12. **Sankey Diagrams** - Flow and process visualization for resource tracking
-13. **Treemap Charts** - Hierarchical data visualization with nested rectangles
-14. **Radar Charts** - Multi-dimensional comparison and spider charts
-15. **Waterfall Charts** - Cumulative effect visualization for financial analysis
+7. **3D Visualization** - Interactive 3D scatter plots, surface plots, volumetric rendering (Plotly, PyVista)
 
-**Technologies:** Plotly, Dash, Matplotlib, Seaborn, Folium, NetworkX, Plotly Express, D3.js
+#### JavaScript/HTML Projects:
+8. **D3.js Interactive Charts** - Force-directed graphs, hierarchical edge bundling, custom transitions
+9. **Chart.js Dashboards** - Responsive charts with animations (line, bar, doughnut, polar area)
+10. **Leaflet Maps** - Interactive slippy maps with markers, popups, GeoJSON layers, custom tiles
+11. **Mapbox GL JS** - Vector tile maps with 3D buildings, real-time data layers, custom styling
+12. **Three.js 3D Visualization** - WebGL 3D graphics, particle systems, animated geometries
+13. **Observable Notebooks** - Interactive JavaScript notebooks with reactive data visualization
+14. **Highcharts** - Professional charts with drill-down, annotations, stock charts, gauges
+15. **ECharts** - Rich interactive charts with themes, Apache ECharts integration
+16. **Canvas API Animations** - Custom HTML5 Canvas visualizations with real-time rendering
+17. **SVG Animations** - Scalable vector graphics with SMIL and CSS animations
+
+#### Advanced Mapping Projects:
+18. **OpenLayers GIS** - Advanced mapping with WMS/WFS layers, vector editing, spatial queries
+19. **Deck.gl Large-Scale** - GPU-powered visualization for millions of data points on maps
+20. **Cesium 3D Globe** - 3D geospatial visualization with terrain, imagery, time-dynamic data
+21. **Google Maps API** - Custom maps with Street View, directions, places autocomplete
+22. **Turf.js Geospatial** - Spatial analysis operations (buffers, unions, intersections) with maps
+23. **Kepler.gl** - Large-scale geospatial data visualization with time-series animation
+
+#### Business Intelligence & Analytics:
+24. **Power BI Embedded** - Custom Power BI dashboards embedded in web applications
+25. **Tableau JavaScript API** - Interactive Tableau visualizations with parameter control
+26. **Vega/Vega-Lite** - Declarative visualization grammar for complex statistical graphics
+27. **Grafana Dashboards** - Time-series monitoring dashboards with alerts and panels
+28. **Apache Superset** - Modern data exploration and visualization platform
+
+#### Specialized Visualizations:
+29. **Sankey Diagrams** - Flow and process visualization for resource tracking (D3.js, Plotly)
+30. **Treemap Charts** - Hierarchical data visualization with nested rectangles (D3.js)
+31. **Radar Charts** - Multi-dimensional comparison and spider charts (Chart.js)
+32. **Waterfall Charts** - Cumulative effect visualization for financial analysis (Highcharts)
+33. **Heatmaps with Contours** - Advanced heatmap visualizations with contour overlays (Plotly, D3.js)
+34. **Chord Diagrams** - Relationship visualization between entities (D3.js)
+35. **Parallel Coordinates** - Multivariate data visualization for pattern discovery
+36. **Sunburst Charts** - Hierarchical data with radial layout (D3.js, Plotly)
+37. **Stream Graphs** - Flowing, organic shapes for time-series data visualization
+38. **Bullet Charts** - Performance metrics visualization for KPI dashboards
+
+**Technologies:**
+- **Python:** Plotly, Dash, Matplotlib, Seaborn, Folium, NetworkX, Bokeh, PyVista, Altair
+- **JavaScript:** D3.js, Chart.js, Leaflet, Mapbox GL, Three.js, Highcharts, ECharts, Observable
+- **Maps:** OpenLayers, Deck.gl, Cesium, Google Maps API, Turf.js, Kepler.gl
+- **BI Tools:** Power BI, Tableau, Grafana, Apache Superset, Vega/Vega-Lite
+- **Web:** HTML5 Canvas, SVG, WebGL, CSS3 Animations
 
 **[Explore Data Visualization Projects →](DataVisualization/)**
 
