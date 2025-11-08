@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three.js 3D Visualization</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            overflow: hidden;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+        }
+        #canvas-container {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+        .controls {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            z-index: 100;
+            max-width: 300px;
+        }
+        .controls h2 {
+            margin-bottom: 20px;
+            color: #333;
+            font-size: 1.5em;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 10px;
+        }
+        .controls button {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            border: none;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: all 0.3s;
+        }
+        .controls button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.5);
+        }
+        .controls button.active {
+            background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+        }
+        .info {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 15px 20px;
+            border-radius: 8px;
+            color: #333;
+            font-size: 0.9em;
+            z-index: 100;
+        }
+        .stats {
+            font-weight: bold;
+            color: #667eea;
+        }
+    </style>
+</head>
+<body>
+    <div id="canvas-container"></div>
+
+    <div class="controls">
+        <h2>🎮 Controls</h2>
+        <button onclick="showParticles()">Particle System</button>
+        <button onclick="showGeometries()">3D Geometries</button>
+        <button onclick="showWave()">Wave Animation</button>
+        <button onclick="showSphere()">Animated Sphere</button>
+        <button onclick="showTorus()">Torus Knot</button>
+        <button onclick="showDataViz()">Data Visualization</button>
+    </div>
+
+    <div class="info">
+        <div>🖱️ <strong>Mouse:</strong> Rotate camera</div>
+        <div>🎯 <strong>Scene:</strong> <span class="stats" id="scene-name">Particles</span></div>
+        <div>📊 <strong>Objects:</strong> <span class="stats" id="object-count">10000</span></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script>
+        let scene, camera, renderer, controls;
+        let currentAnimation = null;
+        let objects = [];
+
+        // Initialize Three.js
+        function init() {
+            scene = new THREE.Scene();
+            scene.fog = new THREE.Fog(0x1a1a2e, 1, 1000);
+
+            camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+            camera.position.z = 50;
+
+            renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+            renderer.setSize(window.innerWidth, window.innerHeight);
+            renderer.setPixelRatio(window.devicePixelRatio);
+            document.getElementById('canvas-container').appendChild(renderer.domElement);
+
+            // Mouse controls
+            let mouseX = 0, mouseY = 0;
+            document.addEventListener('mousemove', (e) => {
+                mouseX = (e.clientX / window.innerWidth) * 2 - 1;
+                mouseY = -(e.clientY / window.innerHeight) * 2 + 1;
+                camera.position.x = mouseX * 20;
+                camera.position.y = mouseY * 20;
+                camera.lookAt(scene.position);
+            });
+
+            window.addEventListener('resize', onWindowResize, false);
+
+            showParticles();
+            animate();
+        }
+
+        function clearScene() {
+            while(objects.length > 0) {
+                const obj = objects.pop();
+                scene.remove(obj);
+                if (obj.geometry) obj.geometry.dispose();
+                if (obj.material) obj.material.dispose();
+            }
+        }
+
+        function showParticles() {
+            clearScene();
+            document.getElementById('scene-name').textContent = 'Particle System';
+
+            const geometry = new THREE.BufferGeometry();
+            const vertices = [];
+            const colors = [];
+
+            for (let i = 0; i < 10000; i++) {
+                vertices.push(
+                    Math.random() * 200 - 100,
+                    Math.random() * 200 - 100,
+                    Math.random() * 200 - 100
+                );
+                colors.push(
+                    Math.random(),
+                    Math.random(),
+                    Math.random()
+                );
+            }
+
+            geometry.setAttribute('position', new THREE.Float32BufferAttribute(vertices, 3));
+            geometry.setAttribute('color', new THREE.Float32BufferAttribute(colors, 3));
+
+            const material = new THREE.PointsMaterial({
+                size: 2,
+                vertexColors: true,
+                transparent: true,
+                opacity: 0.8
+            });
+
+            const particles = new THREE.Points(geometry, material);
+            scene.add(particles);
+            objects.push(particles);
+            document.getElementById('object-count').textContent = '10000';
+
+            currentAnimation = () => {
+                particles.rotation.x += 0.001;
+                particles.rotation.y += 0.002;
+            };
+        }
+
+        function showGeometries() {
+            clearScene();
+            document.getElementById('scene-name').textContent = '3D Geometries';
+
+            const geometries = [
+                new THREE.BoxGeometry(10, 10, 10),
+                new THREE.SphereGeometry(8, 32, 32),
+                new THREE.ConeGeometry(6, 12, 32),
+                new THREE.TorusGeometry(8, 3, 16, 100),
+                new THREE.OctahedronGeometry(8)
+            ];
+
+            const colors = [0xff6b6b, 0x4ecdc4, 0x45b7d1, 0xffa07a, 0x98d8c8];
+
+            geometries.forEach((geometry, i) => {
+                const material = new THREE.MeshPhongMaterial({
+                    color: colors[i],
+                    flatShading: true,
+                    shininess: 100
+                });
+                const mesh = new THREE.Mesh(geometry, material);
+                mesh.position.x = (i - 2) * 15;
+                scene.add(mesh);
+                objects.push(mesh);
+            });
+
+            // Add lights
+            const light = new THREE.DirectionalLight(0xffffff, 1);
+            light.position.set(10, 10, 10);
+            scene.add(light);
+            objects.push(light);
+
+            const ambientLight = new THREE.AmbientLight(0x404040);
+            scene.add(ambientLight);
+            objects.push(ambientLight);
+
+            document.getElementById('object-count').textContent = geometries.length;
+
+            currentAnimation = () => {
+                objects.forEach((obj, i) => {
+                    if (obj.rotation) {
+                        obj.rotation.x += 0.01;
+                        obj.rotation.y += 0.01;
+                    }
+                });
+            };
+        }
+
+        function showWave() {
+            clearScene();
+            document.getElementById('scene-name').textContent = 'Wave Animation';
+
+            const size = 50;
+            const segments = 50;
+            const geometry = new THREE.PlaneGeometry(size, size, segments, segments);
+            const material = new THREE.MeshPhongMaterial({
+                color: 0x667eea,
+                side: THREE.DoubleSide,
+                wireframe: true
+            });
+
+            const plane = new THREE.Mesh(geometry, material);
+            plane.rotation.x = -Math.PI / 2;
+            scene.add(plane);
+            objects.push(plane);
+
+            const light = new THREE.PointLight(0xffffff, 1, 100);
+            light.position.set(0, 20, 0);
+            scene.add(light);
+            objects.push(light);
+
+            document.getElementById('object-count').textContent = segments * segments;
+
+            let time = 0;
+            currentAnimation = () => {
+                time += 0.05;
+                const positions = plane.geometry.attributes.position;
+                for (let i = 0; i < positions.count; i++) {
+                    const x = positions.getX(i);
+                    const y = positions.getY(i);
+                    const wave = Math.sin(x * 0.5 + time) * Math.cos(y * 0.5 + time) * 3;
+                    positions.setZ(i, wave);
+                }
+                positions.needsUpdate = true;
+            };
+        }
+
+        function showSphere() {
+            clearScene();
+            document.getElementById('scene-name').textContent = 'Animated Sphere';
+
+            const geometry = new THREE.IcosahedronGeometry(15, 1);
+            const material = new THREE.MeshPhongMaterial({
+                color: 0x4ecdc4,
+                flatShading: true,
+                shininess: 100
+            });
+
+            const sphere = new THREE.Mesh(geometry, material);
+            scene.add(sphere);
+            objects.push(sphere);
+
+            // Add wireframe
+            const wireframe = new THREE.WireframeGeometry(geometry);
+            const line = new THREE.LineSegments(wireframe);
+            line.material.color.setHex(0xffffff);
+            line.material.opacity = 0.3;
+            line.material.transparent = true;
+            sphere.add(line);
+
+            const light = new THREE.PointLight(0xffffff, 1, 100);
+            light.position.set(20, 20, 20);
+            scene.add(light);
+            objects.push(light);
+
+            document.getElementById('object-count').textContent = '1 (Complex)';
+
+            currentAnimation = () => {
+                sphere.rotation.x += 0.005;
+                sphere.rotation.y += 0.01;
+                const positions = geometry.attributes.position;
+                const time = Date.now() * 0.001;
+                for (let i = 0; i < positions.count; i++) {
+                    const p = new THREE.Vector3().fromBufferAttribute(positions, i);
+                    p.normalize().multiplyScalar(15 + Math.sin(time + p.x * 3) * 2);
+                    positions.setXYZ(i, p.x, p.y, p.z);
+                }
+                positions.needsUpdate = true;
+            };
+        }
+
+        function showTorus() {
+            clearScene();
+            document.getElementById('scene-name').textContent = 'Torus Knot';
+
+            const geometry = new THREE.TorusKnotGeometry(10, 3, 100, 16);
+            const material = new THREE.MeshPhongMaterial({
+                color: 0xff6b6b,
+                shininess: 100
+            });
+
+            const torus = new THREE.Mesh(geometry, material);
+            scene.add(torus);
+            objects.push(torus);
+
+            const light = new THREE.DirectionalLight(0xffffff, 1);
+            light.position.set(10, 10, 10);
+            scene.add(light);
+            objects.push(light);
+
+            const ambientLight = new THREE.AmbientLight(0x404040);
+            scene.add(ambientLight);
+            objects.push(ambientLight);
+
+            document.getElementById('object-count').textContent = '1 (TorusKnot)';
+
+            currentAnimation = () => {
+                torus.rotation.x += 0.01;
+                torus.rotation.y += 0.01;
+            };
+        }
+
+        function showDataViz() {
+            clearScene();
+            document.getElementById('scene-name').textContent = 'Data Visualization';
+
+            const data = Array.from({length: 50}, () => Math.random() * 30 + 5);
+
+            data.forEach((value, i) => {
+                const geometry = new THREE.BoxGeometry(2, value, 2);
+                const material = new THREE.MeshPhongMaterial({
+                    color: new THREE.Color().setHSL(value / 40, 1, 0.5)
+                });
+                const bar = new THREE.Mesh(geometry, material);
+                const x = (i % 10) * 3 - 15;
+                const z = Math.floor(i / 10) * 3 - 7.5;
+                bar.position.set(x, value / 2, z);
+                scene.add(bar);
+                objects.push(bar);
+            });
+
+            const light = new THREE.DirectionalLight(0xffffff, 1);
+            light.position.set(20, 30, 20);
+            scene.add(light);
+            objects.push(light);
+
+            const ambientLight = new THREE.AmbientLight(0x404040);
+            scene.add(ambientLight);
+            objects.push(ambientLight);
+
+            document.getElementById('object-count').textContent = data.length;
+
+            currentAnimation = () => {
+                camera.position.x = Math.sin(Date.now() * 0.0005) * 40;
+                camera.position.z = Math.cos(Date.now() * 0.0005) * 40;
+                camera.lookAt(scene.position);
+            };
+        }
+
+        function animate() {
+            requestAnimationFrame(animate);
+            if (currentAnimation) currentAnimation();
+            renderer.render(scene, camera);
+        }
+
+        function onWindowResize() {
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+        }
+
+        init();
+    </script>
+</body>
+</html>

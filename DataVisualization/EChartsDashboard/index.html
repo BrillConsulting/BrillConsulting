@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECharts Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #f5f7fa;
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        .header h1 { font-size: 2.5em; margin-bottom: 10px; }
+        .header p { font-size: 1.1em; opacity: 0.9; }
+        .dashboard {
+            max-width: 1400px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+        .chart-row {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            gap: 25px;
+            margin-bottom: 25px;
+        }
+        .chart-card {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s;
+        }
+        .chart-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+        .chart-card h3 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 1.3em;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 10px;
+        }
+        .chart {
+            width: 100%;
+            height: 400px;
+        }
+        @media (max-width: 768px) {
+            .chart-row { grid-template-columns: 1fr; }
+            .chart { height: 300px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>📊 Apache ECharts Dashboard</h1>
+        <p>Rich interactive visualizations with themes and animations</p>
+    </div>
+
+    <div class="dashboard">
+        <div class="chart-row">
+            <div class="chart-card">
+                <h3>Line Chart - Multi-Series Trends</h3>
+                <div id="lineChart" class="chart"></div>
+            </div>
+            <div class="chart-card">
+                <h3>Bar Chart - Category Comparison</h3>
+                <div id="barChart" class="chart"></div>
+            </div>
+        </div>
+
+        <div class="chart-row">
+            <div class="chart-card">
+                <h3>Pie Chart - Market Share</h3>
+                <div id="pieChart" class="chart"></div>
+            </div>
+            <div class="chart-card">
+                <h3>Gauge Chart - Performance KPI</h3>
+                <div id="gaugeChart" class="chart"></div>
+            </div>
+        </div>
+
+        <div class="chart-row">
+            <div class="chart-card">
+                <h3>Scatter Plot - Correlation Analysis</h3>
+                <div id="scatterChart" class="chart"></div>
+            </div>
+            <div class="chart-card">
+                <h3>Radar Chart - Skill Assessment</h3>
+                <div id="radarChart" class="chart"></div>
+            </div>
+        </div>
+
+        <div class="chart-row">
+            <div class="chart-card">
+                <h3>Candlestick Chart - Stock Price</h3>
+                <div id="candlestickChart" class="chart"></div>
+            </div>
+            <div class="chart-card">
+                <h3>Heatmap - Correlation Matrix</h3>
+                <div id="heatmapChart" class="chart"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Line Chart
+        const lineChart = echarts.init(document.getElementById('lineChart'));
+        lineChart.setOption({
+            tooltip: { trigger: 'axis' },
+            legend: { data: ['Sales', 'Revenue', 'Profit'] },
+            grid: { left: '3%', right: '4%', bottom: '3%', containLabel: true },
+            xAxis: {
+                type: 'category',
+                data: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+            },
+            yAxis: { type: 'value' },
+            series: [
+                {
+                    name: 'Sales',
+                    type: 'line',
+                    data: [120, 132, 101, 134, 90, 230, 210, 182, 191, 234, 290, 330],
+                    smooth: true,
+                    itemStyle: { color: '#667eea' }
+                },
+                {
+                    name: 'Revenue',
+                    type: 'line',
+                    data: [220, 182, 191, 234, 290, 330, 310, 301, 250, 280, 340, 380],
+                    smooth: true,
+                    itemStyle: { color: '#764ba2' }
+                },
+                {
+                    name: 'Profit',
+                    type: 'line',
+                    data: [150, 232, 201, 154, 190, 330, 410, 301, 281, 304, 390, 450],
+                    smooth: true,
+                    itemStyle: { color: '#f093fb' }
+                }
+            ]
+        });
+
+        // Bar Chart
+        const barChart = echarts.init(document.getElementById('barChart'));
+        barChart.setOption({
+            tooltip: { trigger: 'axis' },
+            legend: { data: ['2023', '2024'] },
+            xAxis: {
+                type: 'category',
+                data: ['Electronics', 'Clothing', 'Food', 'Books', 'Sports', 'Toys']
+            },
+            yAxis: { type: 'value' },
+            series: [
+                {
+                    name: '2023',
+                    type: 'bar',
+                    data: [320, 302, 301, 334, 390, 330],
+                    itemStyle: { color: '#667eea' }
+                },
+                {
+                    name: '2024',
+                    type: 'bar',
+                    data: [420, 382, 391, 434, 490, 430],
+                    itemStyle: { color: '#764ba2' }
+                }
+            ]
+        });
+
+        // Pie Chart
+        const pieChart = echarts.init(document.getElementById('pieChart'));
+        pieChart.setOption({
+            tooltip: { trigger: 'item' },
+            legend: { orient: 'vertical', left: 'left' },
+            series: [{
+                name: 'Market Share',
+                type: 'pie',
+                radius: '70%',
+                data: [
+                    { value: 1048, name: 'Product A' },
+                    { value: 735, name: 'Product B' },
+                    { value: 580, name: 'Product C' },
+                    { value: 484, name: 'Product D' },
+                    { value: 300, name: 'Product E' }
+                ],
+                emphasis: {
+                    itemStyle: {
+                        shadowBlur: 10,
+                        shadowOffsetX: 0,
+                        shadowColor: 'rgba(0, 0, 0, 0.5)'
+                    }
+                }
+            }]
+        });
+
+        // Gauge Chart
+        const gaugeChart = echarts.init(document.getElementById('gaugeChart'));
+        gaugeChart.setOption({
+            series: [{
+                type: 'gauge',
+                startAngle: 180,
+                endAngle: 0,
+                min: 0,
+                max: 100,
+                splitNumber: 10,
+                itemStyle: { color: '#667eea' },
+                progress: { show: true, width: 18 },
+                pointer: { show: false },
+                axisLine: { lineStyle: { width: 18 } },
+                axisTick: { distance: -35, length: 8 },
+                splitLine: { distance: -42, length: 14 },
+                axisLabel: { distance: -20, fontSize: 12 },
+                detail: {
+                    valueAnimation: true,
+                    formatter: '{value}%',
+                    color: 'inherit',
+                    fontSize: 24,
+                    offsetCenter: [0, '70%']
+                },
+                data: [{ value: 78.5, name: 'Performance' }]
+            }]
+        });
+
+        // Scatter Plot
+        const scatterChart = echarts.init(document.getElementById('scatterChart'));
+        const scatterData = Array.from({length: 100}, () => [
+            Math.random() * 100,
+            Math.random() * 100
+        ]);
+        scatterChart.setOption({
+            tooltip: { trigger: 'item' },
+            xAxis: { type: 'value', name: 'Variable X' },
+            yAxis: { type: 'value', name: 'Variable Y' },
+            series: [{
+                type: 'scatter',
+                data: scatterData,
+                symbolSize: 10,
+                itemStyle: { color: '#667eea', opacity: 0.7 }
+            }]
+        });
+
+        // Radar Chart
+        const radarChart = echarts.init(document.getElementById('radarChart'));
+        radarChart.setOption({
+            tooltip: {},
+            radar: {
+                indicator: [
+                    { name: 'Python', max: 100 },
+                    { name: 'JavaScript', max: 100 },
+                    { name: 'SQL', max: 100 },
+                    { name: 'Data Science', max: 100 },
+                    { name: 'Machine Learning', max: 100 },
+                    { name: 'Cloud', max: 100 }
+                ]
+            },
+            series: [{
+                type: 'radar',
+                data: [
+                    {
+                        value: [90, 85, 88, 92, 87, 83],
+                        name: 'Skill Level',
+                        areaStyle: { color: 'rgba(102, 126, 234, 0.3)' },
+                        itemStyle: { color: '#667eea' }
+                    }
+                ]
+            }]
+        });
+
+        // Candlestick Chart
+        const candlestickChart = echarts.init(document.getElementById('candlestickChart'));
+        const candleData = [
+            [20, 34, 10, 38], [40, 35, 30, 50], [31, 38, 33, 44], [38, 15, 5, 42],
+            [10, 30, 20, 35], [25, 40, 30, 45], [35, 30, 25, 40], [30, 45, 35, 50],
+            [40, 50, 45, 55], [50, 55, 48, 58], [52, 48, 45, 55], [48, 60, 50, 65]
+        ];
+        candlestickChart.setOption({
+            tooltip: { trigger: 'axis' },
+            xAxis: {
+                type: 'category',
+                data: ['Week 1', 'Week 2', 'Week 3', 'Week 4', 'Week 5', 'Week 6',
+                       'Week 7', 'Week 8', 'Week 9', 'Week 10', 'Week 11', 'Week 12']
+            },
+            yAxis: { type: 'value' },
+            series: [{
+                type: 'candlestick',
+                data: candleData,
+                itemStyle: {
+                    color: '#10b981',
+                    color0: '#ef4444',
+                    borderColor: '#10b981',
+                    borderColor0: '#ef4444'
+                }
+            }]
+        });
+
+        // Heatmap
+        const heatmapChart = echarts.init(document.getElementById('heatmapChart'));
+        const hours = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
+        const days = ['Morning', 'Afternoon', 'Evening', 'Night'];
+        const heatmapData = [];
+        for (let i = 0; i < hours.length; i++) {
+            for (let j = 0; j < days.length; j++) {
+                heatmapData.push([i, j, Math.random() * 100]);
+            }
+        }
+        heatmapChart.setOption({
+            tooltip: { position: 'top' },
+            grid: { height: '70%', top: '10%' },
+            xAxis: { type: 'category', data: hours, splitArea: { show: true } },
+            yAxis: { type: 'category', data: days, splitArea: { show: true } },
+            visualMap: {
+                min: 0,
+                max: 100,
+                calculable: true,
+                orient: 'horizontal',
+                left: 'center',
+                bottom: '5%',
+                inRange: { color: ['#50a3ba', '#eac736', '#d94e5d'] }
+            },
+            series: [{
+                type: 'heatmap',
+                data: heatmapData,
+                label: { show: false },
+                emphasis: { itemStyle: { shadowBlur: 10, shadowColor: 'rgba(0, 0, 0, 0.5)' } }
+            }]
+        });
+
+        // Responsive resize
+        window.addEventListener('resize', () => {
+            lineChart.resize();
+            barChart.resize();
+            pieChart.resize();
+            gaugeChart.resize();
+            scatterChart.resize();
+            radarChart.resize();
+            candlestickChart.resize();
+            heatmapChart.resize();
+        });
+    </script>
+</body>
+</html>
