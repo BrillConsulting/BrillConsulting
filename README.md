@@ -3,12 +3,8 @@
 </p>
 
 <h1 align="center">👋 Hi, I'm Ava from Brill 
-</h1>
+</h1 align="center">
 <b>AI Consultant | Data Scientist | MLOps Architect</b><br>
-  🚀 Transforming ideas into scalable, ethical, and intelligent systems.<br><br>
-  🌐 <a href="https://www.linkedin.com/in/brillconsulting">LinkedIn</a> •
-  💼 <a href="https://github.com/BrillConsulting">GitHub</a> •
-  📧 <a href="mailto:clientbrill@gmail.com">Contact</a>
 </p>
 
 <p align="center">
