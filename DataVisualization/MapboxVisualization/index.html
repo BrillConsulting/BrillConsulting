@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapbox GL Visualization</title>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.css' rel='stylesheet' />
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', sans-serif; }
+        #map { position: absolute; top: 0; bottom: 0; width: 100%; }
+
+        .map-overlay {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+            z-index: 1;
+            max-width: 350px;
+        }
+
+        .map-overlay h2 {
+            margin-bottom: 15px;
+            color: #333;
+            font-size: 1.5em;
+        }
+
+        .map-overlay button {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            border: none;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: transform 0.2s;
+        }
+
+        .map-overlay button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .info {
+            font-size: 0.9em;
+            color: #666;
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    <div class="map-overlay">
+        <h2>🗺️ Mapbox GL JS</h2>
+        <button onclick="show3DBuildings()">3D Buildings</button>
+        <button onclick="showSatellite()">Satellite View</button>
+        <button onclick="showStreets()">Street Map</button>
+        <button onclick="showDark()">Dark Theme</button>
+        <button onclick="flyToNYC()">Fly to NYC</button>
+        <button onclick="flyToLondon()">Fly to London</button>
+        <button onclick="flyToTokyo()">Fly to Tokyo</button>
+        <div class="info">
+            <strong>Note:</strong> Replace 'YOUR_MAPBOX_TOKEN' in script with actual token from mapbox.com
+        </div>
+    </div>
+
+    <script>
+        // IMPORTANT: Get your token at https://account.mapbox.com/access-tokens/
+        mapboxgl.accessToken = 'pk.eyJ1IjoiZXhhbXBsZSIsImEiOiJjbGV4YW1wbGUifQ.example';
+
+        const map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/streets-v12',
+            center: [-74.006, 40.7128],
+            zoom: 12,
+            pitch: 45,
+            bearing: -17.6
+        });
+
+        map.on('load', () => {
+            // Add 3D buildings
+            map.addLayer({
+                'id': '3d-buildings',
+                'source': 'composite',
+                'source-layer': 'building',
+                'filter': ['==', 'extrude', 'true'],
+                'type': 'fill-extrusion',
+                'minzoom': 15,
+                'paint': {
+                    'fill-extrusion-color': '#aaa',
+                    'fill-extrusion-height': ['get', 'height'],
+                    'fill-extrusion-base': ['get', 'min_height'],
+                    'fill-extrusion-opacity': 0.6
+                }
+            });
+
+            // Add markers
+            const cities = [
+                {coords: [-74.006, 40.7128], name: 'New York', desc: 'The Big Apple'},
+                {coords: [-0.1276, 51.5074], name: 'London', desc: 'Capital of England'},
+                {coords: [139.6917, 35.6895], name: 'Tokyo', desc: 'Capital of Japan'}
+            ];
+
+            cities.forEach(city => {
+                const popup = new mapboxgl.Popup({offset: 25})
+                    .setHTML(`<h3>${city.name}</h3><p>${city.desc}</p>`);
+
+                new mapboxgl.Marker({color: '#667eea'})
+                    .setLngLat(city.coords)
+                    .setPopup(popup)
+                    .addTo(map);
+            });
+        });
+
+        function show3DBuildings() {
+            map.setPitch(60);
+            map.setBearing(-17.6);
+            map.setLayoutProperty('3d-buildings', 'visibility', 'visible');
+        }
+
+        function showSatellite() {
+            map.setStyle('mapbox://styles/mapbox/satellite-v9');
+        }
+
+        function showStreets() {
+            map.setStyle('mapbox://styles/mapbox/streets-v12');
+        }
+
+        function showDark() {
+            map.setStyle('mapbox://styles/mapbox/dark-v11');
+        }
+
+        function flyToNYC() {
+            map.flyTo({center: [-74.006, 40.7128], zoom: 14, duration: 2000});
+        }
+
+        function flyToLondon() {
+            map.flyTo({center: [-0.1276, 51.5074], zoom: 14, duration: 2000});
+        }
+
+        function flyToTokyo() {
+            map.flyTo({center: [139.6917, 35.6895], zoom: 14, duration: 2000});
+        }
+    </script>
+</body>
+</html>
