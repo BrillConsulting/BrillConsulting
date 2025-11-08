@@ -2,8 +2,7 @@
   <img src=".github/images/cover.jpeg" alt="AI & Data Science Banner" width="100%" style="border-radius: 10px; max-height: 400px; object-fit: cover;">
 </p>
 
-<h1 align="center">👋 Hi, I'm Ava from Brill 
-  
+<h1 align="center">👋 Hi, I'm Ava from Brill </h1>  
 <p align="center">
   Welcome to my GitHub Portfolio! Here you'll find my passions and skills in the fields of Data Science, Machine Learning, NLP, Computer Vision, MLOps, and Data Architecture.
 </p>
