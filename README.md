@@ -4,7 +4,7 @@
 
 <h1 align="center">👋 Hi, I'm Ava from Brill 
 </h1 align="center">
-<b>AI Consultant | Data Scientist | MLOps Architect</b><br>
+<b align="center">>AI Consultant | Data Scientist | MLOps Architect</b><br>
 </p>
 
 <p align="center">
