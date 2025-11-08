@@ -22,9 +22,9 @@ I design intelligent systems that empower organizations to make smarter, faster,
 
 ### [Computer Vision Portfolio](ComputerVision/)
 
-Professional Computer Vision projects showcasing state-of-the-art deep learning solutions:
+Professional Computer Vision portfolio with **33 production-ready projects** showcasing state-of-the-art deep learning solutions and cutting-edge research implementations:
 
-#### Projects:
+#### Core Projects (1-23):
 1. **Object Detection** - Real-time detection with YOLOv8 (80+ classes, 60+ FPS)
 2. **Face Recognition** - Advanced enrollment and identification system (99.38% accuracy)
 3. **Image Segmentation** - Semantic & instance segmentation with DeepLabV3+ and Mask R-CNN
@@ -40,8 +40,34 @@ Professional Computer Vision projects showcasing state-of-the-art deep learning 
 13. **Scene Recognition** - Scene classification and context understanding (Places365)
 14. **Image Matching** - Feature matching, homography, image alignment (SIFT, RANSAC)
 15. **Depth Estimation** - Monocular depth estimation from single images (MiDaS)
+16. **Advanced Object Detection** - Multi-model backends (YOLOv8, Detectron2, DETR)
+17. **Panoptic Segmentation** - Unified scene understanding (133 COCO categories)
+18. **Action Recognition** - Video action classification (VideoMAE, TimeSformer)
+19. **GAN Image Translation** - Pix2Pix, CycleGAN, StyleGAN
+20. **3D Reconstruction** - Structure from Motion, point cloud generation
+21. **Medical Image Segmentation** - U-Net for organ and tumor detection
+22. **Document AI** - Layout detection, table extraction, form understanding
+23. **Zero-Shot Detection** - Open-vocabulary detection with CLIP/OWL-ViT
 
-**Technologies:** PyTorch, YOLOv8, OpenCV, EasyOCR, Transformers, MediaPipe, ESRGAN, MiDaS, Places365
+#### Research & Advanced Projects (24-33):
+24. **Neural Architecture Search** - DARTS, Evolutionary NAS, automated architecture discovery
+25. **Few-Shot Learning** - Prototypical Networks, MAML, Relation Networks
+26. **Visual Question Answering** - Multi-modal fusion, attention mechanisms, vision-language understanding
+27. **Image Captioning** - Show, Attend and Tell, Transformer-based captioning
+28. **Optical Flow Estimation** - FlowNet, PWC-Net, dense motion estimation
+29. **Self-Supervised Learning** - SimCLR, MoCo, BYOL, SwAV contrastive learning
+30. **Multi-Modal Fusion** - Cross-modal attention, tensor fusion, audio-visual integration
+31. **Neural Rendering** - NeRF, Instant-NGP, novel view synthesis
+32. **Video Object Segmentation** - Space-Time Memory Networks, mask propagation
+33. **Change Detection** - Siamese networks, ChangeFormer, temporal analysis
+
+**Technologies:** PyTorch, YOLOv8, Detectron2, Transformers, OpenCV, CLIP, NeRF, DARTS, SimCLR, MoCo, BYOL, STM
+
+**Key Achievements:**
+- 🚀 33 Production-ready Systems
+- 🧠 Research-level Implementations (NAS, Few-Shot, NeRF)
+- 🎭 Multi-Modal Learning (Vision + Language + Audio)
+- 📊 20+ Research Papers Implemented
 
 **[Explore Computer Vision Projects →](ComputerVision/)
 
