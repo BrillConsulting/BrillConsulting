@@ -3,7 +3,6 @@
 </p>
 
 <h1 align="center">👋 Hi, I'm Ava from Brill </h1>
-<img src="TWÓJ_URL_DO_OBRAZKA" alt="AI & Data Science Banner" width="100%">
 <b>AI Consultant | Data Scientist | MLOps Architect</b><br>
   🚀 Transforming ideas into scalable, ethical, and intelligent systems.<br><br>
   🌐 <a href="https://www.linkedin.com/in/brillconsulting">LinkedIn</a> •
