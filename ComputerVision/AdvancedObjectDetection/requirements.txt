@@ -1,0 +1,13 @@
+ultralytics>=8.0.0
+torch>=2.0.0
+torchvision>=0.15.0
+opencv-python>=4.8.0
+numpy>=1.24.0
+pillow>=10.0.0
+
+# Optional: For Detectron2
+# detectron2 @ git+https://github.com/facebookresearch/detectron2.git
+
+# Optional: For DETR
+transformers>=4.30.0
+timm>=0.9.0
