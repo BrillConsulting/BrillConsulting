@@ -578,11 +578,118 @@ Complete GitLab CI/CD, API integration, and runner management:
 
 ---
 
+### 💻 [Web Development Portfolio](WebDevelopment/)
+
+Modern web applications with JavaScript, TypeScript, and cutting-edge frameworks:
+
+#### Projects:
+1. **React Dashboard** - Analytics dashboard with real-time data visualization (React 18, TypeScript, Recharts)
+2. **Vue Portfolio** - Personal portfolio site with Vue 3 Composition API
+3. **TypeScript API** - Type-safe REST API with Express and TypeScript
+4. **Node Backend** - Scalable Node.js backend with microservices architecture
+5. **WebGL 3D** - 3D visualizations using Three.js and WebGL
+
+**Technologies:** React, TypeScript, Vue.js, Node.js, Express, Vite, Recharts, Three.js
+
+**[Explore Web Development Projects →](WebDevelopment/)**
+
+---
+
+### ⚡ [System Programming Portfolio](SystemProgramming/)
+
+High-performance system-level programming in C++ and Rust:
+
+#### Projects:
+1. **High-Performance Computing (C++)** - Matrix operations with SIMD, OpenMP, cache optimization
+2. **Memory Allocator (Rust)** - Custom allocators: bump, linked list, pool strategies
+3. **Concurrency Library** - Lock-free data structures and concurrent algorithms
+
+**Technologies:** C++17/20, Rust, AVX2 SIMD, OpenMP, unsafe Rust, atomics
+
+**Key Features:**
+- SIMD vectorization (AVX2)
+- Lock-free algorithms
+- Zero-cost abstractions
+- Cache-optimized code
+
+**[Explore System Programming Projects →](SystemProgramming/)**
+
+---
+
+### 📊 [Data Science with R Portfolio](DataScienceR/)
+
+Advanced statistical analysis and machine learning in R:
+
+#### Projects:
+1. **Statistical Modeling** - Linear, logistic, polynomial regression with full diagnostics
+2. **Time Series Analysis** - ARIMA, SARIMA, forecasting models
+3. **ML with caret** - Machine learning workflows using caret framework
+
+**Technologies:** R, tidyverse, caret, MASS, lme4, mgcv, glmnet
+
+**Features:**
+- Regularized regression (Ridge, Lasso, Elastic Net)
+- Mixed effects models
+- Generalized Additive Models (GAM)
+- Model comparison and diagnostics
+
+**[Explore R Projects →](DataScienceR/)**
+
+---
+
+### ☕ [Enterprise Java Portfolio](EnterpriseJava/)
+
+Production-ready Java applications with Spring Boot and enterprise patterns:
+
+#### Projects:
+1. **Spring Boot REST API** - Full-featured API with JWT auth, validation, Swagger docs
+2. **Hibernate ORM** - Advanced ORM patterns with Hibernate
+3. **Kafka Producer/Consumer** - Event-driven microservices with Apache Kafka
+
+**Technologies:** Spring Boot 3, Spring Security, Spring Data JPA, Hibernate, PostgreSQL, Swagger, Kafka
+
+**Features:**
+- RESTful CRUD operations
+- JWT authentication & authorization
+- Role-based access control (RBAC)
+- OpenAPI documentation
+- Request validation
+
+**[Explore Java Projects →](EnterpriseJava/)**
+
+---
+
+### 🚀 [Go Microservices Portfolio](GoMicroservices/)
+
+High-performance microservices built with Go:
+
+#### Projects:
+1. **RESTful API** - Production-ready REST API with Fiber framework
+2. **gRPC Service** - High-performance RPC with Protocol Buffers
+3. **Distributed Cache** - Redis-based caching layer with replication
+
+**Technologies:** Go, Fiber, GORM, PostgreSQL, gRPC, Redis
+
+**Features:**
+- Clean architecture (handler → service → repository)
+- Middleware (CORS, rate limiting, logging)
+- UUID-based IDs
+- Graceful error handling
+
+**[Explore Go Projects →](GoMicroservices/)**
+
+---
+
 ###  Tools & Tech Stack
+
+**Programming Languages:**
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=python,javascript,typescript,cpp,rust,java,go,r" alt="Programming Languages" />
+</p>
 
 **Core Technologies:**
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=python,pytorch,tensorflow,sklearn" alt="ML/AI Frameworks" />
+  <img src="https://skillicons.dev/icons?i=pytorch,tensorflow,react,nodejs,spring,postgres,redis" alt="ML/AI & Web Frameworks" />
 </p>
 
 **Cloud & DevOps:**
