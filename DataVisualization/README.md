@@ -1,8 +1,14 @@
 # Data Visualization Portfolio
 
-A comprehensive collection of professional data visualization projects featuring interactive dashboards, statistical plots, geographic maps, network graphs, and financial charts.
+A comprehensive collection of professional data visualization projects featuring interactive dashboards, statistical plots, geographic maps, network graphs, financial charts, and modern JavaScript/HTML visualizations.
 
 ## 📊 Projects Overview
+
+This portfolio showcases visualization expertise across multiple technologies:
+- **Python**: Dash, Plotly, Matplotlib, Seaborn, Folium
+- **JavaScript**: D3.js, Chart.js, Leaflet, Mapbox GL
+- **Interactive**: Real-time dashboards, 3D visualizations, animated charts
+- **Mapping**: GeoJSON, clustering, routing, satellite imagery
 
 ### 1. Interactive Dashboard
 **Technologies:** Dash, Plotly
@@ -166,6 +172,165 @@ Executive dashboards with comprehensive business metrics.
 
 ---
 
+## 🌐 JavaScript/HTML Visualization Projects
+
+### 11. 🎨 [D3.js Interactive Charts](D3jsCharts/)
+Advanced D3.js visualizations with custom interactions and animations.
+
+**Technologies:** D3.js v7, JavaScript, HTML5, CSS3
+
+**Features:**
+- Force-directed network graphs with physics simulation
+- Animated bar charts with smooth transitions
+- Hierarchical treemaps with drill-down
+- Interactive sunburst charts with zoom
+- Chord diagrams for relationship visualization
+- Drag-and-drop interactions
+- Custom controls and animations
+
+**[View Project →](D3jsCharts/)**
+
+---
+
+### 12. 📊 [Chart.js Dashboard](ChartJsDashboard/)
+Professional responsive dashboard with multiple chart types.
+
+**Technologies:** Chart.js v4, JavaScript, HTML5
+
+**Features:**
+- Line charts with multiple datasets
+- Doughnut and pie charts
+- Bar charts with grouped data
+- Radar charts for multi-dimensional data
+- Polar area charts
+- KPI stat cards with trend indicators
+- Real-time data refresh
+- Smooth animations
+- Mobile-responsive design
+
+**[View Project →](ChartJsDashboard/)**
+
+---
+
+### 13. 🗺️ [Leaflet Interactive Maps](LeafletMaps/)
+Open-source mapping solutions with markers, clustering, and GeoJSON.
+
+**Technologies:** Leaflet.js v1.9, OpenStreetMap
+
+**Features:**
+- Interactive marker maps with custom popups
+- Marker clustering for large datasets (100+ markers)
+- GeoJSON polygon visualization
+- Choropleth maps with color coding
+- Circle markers for heat visualization
+- Route visualization with polylines
+- Custom waypoint markers
+- Multiple base map tiles
+
+**[View Project →](LeafletMaps/)**
+
+---
+
+### 14. 🌍 [Mapbox GL Visualization](MapboxVisualization/)
+Professional vector tile maps with 3D buildings and satellite imagery.
+
+**Technologies:** Mapbox GL JS v3, Vector Tiles
+
+**Features:**
+- 3D building extrusions with real heights
+- Multiple map styles (streets, satellite, dark)
+- Smooth fly-to animations between locations
+- Custom marker styling
+- Interactive popups
+- Pitch and bearing controls
+- GPU-accelerated rendering
+- Responsive vector graphics
+
+**[View Project →](MapboxVisualization/)**
+
+---
+
+### 15. 📈 [Heatmaps and Contours](HeatmapsAndContours/)
+Advanced heatmap visualizations with contour overlays.
+
+**Technologies:** Plotly, Matplotlib, Seaborn
+
+**Features:**
+- 2D heatmaps with color scales
+- Contour plots and contour overlays
+- Density heatmaps
+- Correlation matrices
+- Annotated heatmaps
+- Multiple color schemes
+
+**[View Project →](HeatmapsAndContours/)**
+
+---
+
+### 16. 🔄 [Sankey Diagrams](SankeyDiagrams/)
+Flow and process visualization for resource tracking.
+
+**Technologies:** Plotly, D3.js
+
+**Features:**
+- Energy flow visualization
+- Budget allocation tracking
+- Process flow diagrams
+- Custom node colors
+- Interactive hover details
+
+**[View Project →](SankeyDiagrams/)**
+
+---
+
+### 17. 🌳 [Treemap Charts](TreemapCharts/)
+Hierarchical data visualization with nested rectangles.
+
+**Technologies:** Plotly, D3.js
+
+**Features:**
+- Hierarchical data representation
+- Size-proportional rectangles
+- Color-coded categories
+- Drill-down functionality
+- Portfolio allocation views
+
+**[View Project →](TreemapCharts/)**
+
+---
+
+### 18. 🕸️ [Radar Charts](RadarCharts/)
+Multi-dimensional comparison and spider charts.
+
+**Technologies:** Plotly, Chart.js
+
+**Features:**
+- Multi-variable visualization
+- Performance comparisons
+- Skill assessments
+- Product comparisons
+- Competitive analysis
+
+**[View Project →](RadarCharts/)**
+
+---
+
+### 19. 💧 [Waterfall Charts](WaterfallCharts/)
+Cumulative effect visualization for financial analysis.
+
+**Technologies:** Plotly, Highcharts
+
+**Features:**
+- Financial variance analysis
+- Step-by-step accumulation
+- Profit & loss breakdown
+- Revenue waterfall
+- Cost structure analysis
+
+**[View Project →](WaterfallCharts/)**
+
+---
+
 ## 🚀 Getting Started
 
 Each project contains:
@@ -201,6 +366,7 @@ python project_file.py
 
 ## 📚 Technologies Used
 
+### Python Libraries
 - **Dash & Plotly**: Interactive web-based visualizations
 - **Matplotlib & Seaborn**: Static publication-ready plots
 - **Folium & GeoPandas**: Geographic and spatial data
@@ -208,15 +374,46 @@ python project_file.py
 - **Statsmodels**: Time series decomposition and analysis
 - **Pandas & NumPy**: Data manipulation and processing
 
+### JavaScript Libraries
+- **D3.js v7**: Advanced interactive visualizations with SVG manipulation
+- **Chart.js v4**: Responsive charts with smooth animations
+- **Leaflet.js v1.9**: Open-source interactive maps
+- **Mapbox GL JS v3**: Professional vector tile maps with 3D
+- **Leaflet.markercluster**: Marker clustering for large datasets
+
+### Web Technologies
+- **HTML5**: Semantic markup and structure
+- **CSS3**: Modern styling with gradients, transitions, animations
+- **Vanilla JavaScript**: No framework dependencies
+- **SVG**: Scalable vector graphics for data visualization
+- **Canvas API**: High-performance 2D rendering
+
 ## 💡 Use Cases
 
+### Python Projects
 - Business Intelligence dashboards
 - Scientific publication figures
-- Geographic data analysis
-- Social network analysis
-- Financial market analysis
-- Statistical reporting
-- Exploratory data analysis
+- Statistical reporting and analysis
+- Time series and financial data
+- Network and graph analysis
+
+### JavaScript/HTML Projects
+- Interactive web dashboards
+- Geographic data visualization and mapping
+- Real-time data monitoring
+- Client-side data exploration
+- Embeddable visualizations
+- Mobile-responsive charts
+- 3D and animated visualizations
+- Store locators and route planning
+
+### Cross-Platform Applications
+- Data storytelling
+- Executive presentations
+- Customer analytics
+- Market research visualization
+- IoT data monitoring
+- Social media analytics
 
 ## 📧 Contact
 
