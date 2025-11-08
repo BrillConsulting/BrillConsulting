@@ -1,5 +1,5 @@
 <p align="center">
-  <img src=".github/images/banner.jpg" alt="AI & Data Science Banner" width="100%" style="border-radius: 10px; max-height: 400px; object-fit: cover;">
+  <img src=".github/images/banner.jpeg" alt="AI & Data Science Banner" width="100%" style="border-radius: 10px; max-height: 400px; object-fit: cover;">
 </p>
 
 <h1 align="center">👋 Hi, I'm Ava from Brill </h1>
