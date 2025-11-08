@@ -3,10 +3,6 @@
 </p>
 
 <h1 align="center">👋 Hi, I'm Ava from Brill 
-</h1 align="center">
-<b align="center">>AI Consultant | Data Scientist | MLOps Architect</b><br>
-</p>
-
 <p align="center">
   Welcome to my GitHub Portfolio! Here you'll find my passions and skills in the fields of Data Science, Machine Learning, NLP, Computer Vision, MLOps, and Data Architecture.
 </p>
