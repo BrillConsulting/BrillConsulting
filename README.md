@@ -1,9 +1,13 @@
+<p align="center">
+  <img src=".github/images/banner.jpg" alt="AI & Data Science Banner" width="100%" style="border-radius: 10px; max-height: 400px; object-fit: cover;">
+</p>
+
 <h1 align="center">👋 Hi, I'm Ava from Brill </h1>
 <img src="TWÓJ_URL_DO_OBRAZKA" alt="AI & Data Science Banner" width="100%">
 <b>AI Consultant | Data Scientist | MLOps Architect</b><br>
   🚀 Transforming ideas into scalable, ethical, and intelligent systems.<br><br>
-  🌐 <a href="https://www.linkedin.com/in/brillconsulting">LinkedIn</a> • 
-  💼 <a href="https://github.com/BrillConsulting">GitHub</a> • 
+  🌐 <a href="https://www.linkedin.com/in/brillconsulting">LinkedIn</a> •
+  💼 <a href="https://github.com/BrillConsulting">GitHub</a> •
   📧 <a href="mailto:clientbrill@gmail.com">Contact</a>
 </p>
 
