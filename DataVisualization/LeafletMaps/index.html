@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaflet Interactive Maps</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🗺️ Leaflet Interactive Maps</h1>
+            <p>Professional mapping solutions with markers, popups, GeoJSON, and clustering</p>
+        </header>
+
+        <div class="tabs">
+            <button class="tab-btn active" data-tab="marker-map">Marker Map</button>
+            <button class="tab-btn" data-tab="cluster-map">Cluster Map</button>
+            <button class="tab-btn" data-tab="geojson-map">GeoJSON Map</button>
+            <button class="tab-btn" data-tab="heatmap">Heat Map</button>
+            <button class="tab-btn" data-tab="route-map">Route Map</button>
+        </div>
+
+        <!-- Marker Map -->
+        <div id="marker-map-container" class="map-container active">
+            <div class="map-info">
+                <h3>Basic Marker Map</h3>
+                <p>Click markers to see location details. Drag map to explore.</p>
+            </div>
+            <div id="marker-map" class="map"></div>
+        </div>
+
+        <!-- Cluster Map -->
+        <div id="cluster-map-container" class="map-container">
+            <div class="map-info">
+                <h3>Marker Clustering</h3>
+                <p>Zoom in to see individual markers. Clusters show marker count.</p>
+            </div>
+            <div id="cluster-map" class="map"></div>
+        </div>
+
+        <!-- GeoJSON Map -->
+        <div id="geojson-map-container" class="map-container">
+            <div class="map-info">
+                <h3>GeoJSON Visualization</h3>
+                <p>Interactive polygons and features with custom styling.</p>
+            </div>
+            <div id="geojson-map" class="map"></div>
+        </div>
+
+        <!-- Heat Map -->
+        <div id="heatmap-container" class="map-container">
+            <div class="map-info">
+                <h3>Circle Markers (Heat Visualization)</h3>
+                <p>Circle sizes represent data values. Colors indicate intensity.</p>
+            </div>
+            <div id="heatmap" class="map"></div>
+        </div>
+
+        <!-- Route Map -->
+        <div id="route-map-container" class="map-container">
+            <div class="map-info">
+                <h3>Route Visualization</h3>
+                <p>Polylines showing paths and routes with waypoints.</p>
+            </div>
+            <div id="route-map" class="map"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

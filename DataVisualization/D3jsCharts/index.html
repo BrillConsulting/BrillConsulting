@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D3.js Interactive Charts</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>D3.js Interactive Visualizations</h1>
+            <p>Professional data visualization with D3.js - Force-directed graphs, hierarchical layouts, and custom transitions</p>
+        </header>
+
+        <nav class="tabs">
+            <button class="tab-btn active" data-tab="force-graph">Force-Directed Graph</button>
+            <button class="tab-btn" data-tab="bar-chart">Animated Bar Chart</button>
+            <button class="tab-btn" data-tab="treemap">Treemap</button>
+            <button class="tab-btn" data-tab="sunburst">Sunburst Chart</button>
+            <button class="tab-btn" data-tab="chord">Chord Diagram</button>
+        </nav>
+
+        <!-- Force-Directed Graph -->
+        <div id="force-graph" class="tab-content active">
+            <h2>Force-Directed Network Graph</h2>
+            <div class="controls">
+                <button id="reset-force">Reset Simulation</button>
+                <button id="toggle-labels">Toggle Labels</button>
+            </div>
+            <svg id="force-svg"></svg>
+        </div>
+
+        <!-- Bar Chart -->
+        <div id="bar-chart" class="tab-content">
+            <h2>Animated Bar Chart with Transitions</h2>
+            <div class="controls">
+                <button id="sort-bars">Sort Data</button>
+                <button id="randomize-bars">Randomize</button>
+                <button id="add-bar">Add Bar</button>
+            </div>
+            <svg id="bar-svg"></svg>
+        </div>
+
+        <!-- Treemap -->
+        <div id="treemap" class="tab-content">
+            <h2>Hierarchical Treemap</h2>
+            <div class="breadcrumb" id="treemap-breadcrumb"></div>
+            <svg id="treemap-svg"></svg>
+        </div>
+
+        <!-- Sunburst -->
+        <div id="sunburst" class="tab-content">
+            <h2>Interactive Sunburst Chart</h2>
+            <div class="info" id="sunburst-info">Click on segments to zoom</div>
+            <svg id="sunburst-svg"></svg>
+        </div>
+
+        <!-- Chord Diagram -->
+        <div id="chord" class="tab-content">
+            <h2>Chord Diagram - Relationship Visualization</h2>
+            <div class="info" id="chord-info">Hover over chords to see relationships</div>
+            <svg id="chord-svg"></svg>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
